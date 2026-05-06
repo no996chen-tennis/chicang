@@ -1,0 +1,36 @@
+name: Update holding disclosures
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "20 11 * * 1-5"
+    - cron: "30 23 * * 1-5"
+
+permissions:
+  contents: write
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: "npm"
+      - run: npm ci
+      - run: npm run data:update
+        env:
+          SEC_USER_AGENT: GuruHoldingsWatch/0.1 GitHubActions contact@example.com
+      - run: npm run build
+      - name: Commit updated feed
+        run: |
+          if git diff --quiet -- public/data/holding-feed.json; then
+            echo "No data changes"
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add public/data/holding-feed.json
+            git commit -m "chore: update holding disclosure feed"
+            git push
+          fi

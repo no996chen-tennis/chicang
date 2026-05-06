@@ -1,0 +1,140 @@
+{
+  "verified_at": "2026-05-06",
+  "disclaimer": "This registry describes public disclosure sources. Daily jobs check for new disclosures; they do not imply that every investor has daily portfolio disclosure.",
+  "investors": [
+    {
+      "id": "cathie_wood",
+      "display_name": "Cathie Wood",
+      "aliases": ["Cathy Wood", "Cathie Wood", "ARK Invest", "ARK"],
+      "vehicles": [
+        {
+          "id": "ark_active_etfs_combined",
+          "name": "ARK Active ETFs Combined",
+          "kind": "etf_group",
+          "disclosure_frequency": "trading_day",
+          "source_tier": "L1",
+          "primary_strategy": "Fetch official ARK ETF holdings CSV files daily, store snapshots, then diff share counts and weights by ETF and ticker.",
+          "funds": [
+            {
+              "id": "arkk",
+              "ticker": "ARKK",
+              "holdings_csv_url": "https://assets.ark-funds.com/fund-documents/funds-etf-csv/ARK_INNOVATION_ETF_ARKK_HOLDINGS.csv"
+            },
+            {
+              "id": "arkq",
+              "ticker": "ARKQ",
+              "holdings_csv_url": "https://assets.ark-funds.com/fund-documents/funds-etf-csv/ARK_AUTONOMOUS_TECH._%26_ROBOTICS_ETF_ARKQ_HOLDINGS.csv"
+            },
+            {
+              "id": "arkw",
+              "ticker": "ARKW",
+              "holdings_csv_url": "https://assets.ark-funds.com/fund-documents/funds-etf-csv/ARK_NEXT_GENERATION_INTERNET_ETF_ARKW_HOLDINGS.csv"
+            },
+            {
+              "id": "arkg",
+              "ticker": "ARKG",
+              "holdings_csv_url": "https://assets.ark-funds.com/fund-documents/funds-etf-csv/ARK_GENOMIC_REVOLUTION_ETF_ARKG_HOLDINGS.csv"
+            },
+            {
+              "id": "arkf",
+              "ticker": "ARKF",
+              "holdings_csv_url": "https://assets.ark-funds.com/fund-documents/funds-etf-csv/ARK_FINTECH_INNOVATION_ETF_ARKF_HOLDINGS.csv"
+            },
+            {
+              "id": "arkx",
+              "ticker": "ARKX",
+              "holdings_csv_url": "https://assets.ark-funds.com/fund-documents/funds-etf-csv/ARK_SPACE_EXPLORATION_%26_INNOVATION_ETF_ARKX_HOLDINGS.csv"
+            }
+          ],
+          "secondary_sources": [
+            {
+              "name": "ARK Trade Notifications",
+              "url": "https://www.ark-funds.com/ark-trade-notifications",
+              "usage": "Supplementary trade file only; ARK states trade files are not comprehensive."
+            },
+            {
+              "name": "CathiesArk Combined Trades",
+              "url": "https://cathiesark.com/ark-funds-combined/trades",
+              "usage": "Reference UI and fallback parser target; not the source of truth."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "duan_yongping",
+      "display_name": "段永平",
+      "aliases": ["Duan Yongping", "大道", "H&H International Investment"],
+      "vehicles": [
+        {
+          "id": "hh_international_investment",
+          "name": "H&H International Investment, LLC",
+          "kind": "sec_13f_manager",
+          "cik": "0001759760",
+          "disclosure_frequency": "quarterly",
+          "source_tier": "L2",
+          "submissions_url": "https://data.sec.gov/submissions/CIK0001759760.json",
+          "latest_verified_filings": [
+            {
+              "form": "13F-HR",
+              "filing_date": "2026-02-17",
+              "report_date": "2025-12-31",
+              "accession_number": "0001759760-26-000001"
+            },
+            {
+              "form": "13F-HR",
+              "filing_date": "2025-11-14",
+              "report_date": "2025-09-30",
+              "accession_number": "0001759760-25-000002"
+            }
+          ],
+          "primary_strategy": "Poll SEC submissions JSON, fetch new 13F-HR information tables, diff with previous report_date."
+        }
+      ]
+    },
+    {
+      "id": "dan_bin",
+      "display_name": "但斌",
+      "aliases": ["Dan Bin", "东方港湾", "Oriental Harbor"],
+      "vehicles": [
+        {
+          "id": "oriental_harbor_investment_master_fund",
+          "name": "Oriental Harbor Investment Master Fund",
+          "former_names": ["Oriental Harbor Investment Fund"],
+          "kind": "sec_13f_manager",
+          "cik": "0002046333",
+          "disclosure_frequency": "quarterly",
+          "source_tier": "L2",
+          "submissions_url": "https://data.sec.gov/submissions/CIK0002046333.json",
+          "latest_verified_filings": [
+            {
+              "form": "13F-HR",
+              "filing_date": "2026-04-28",
+              "report_date": "2026-03-31",
+              "accession_number": "0002046333-26-000002"
+            },
+            {
+              "form": "13F-HR",
+              "filing_date": "2026-01-27",
+              "report_date": "2025-12-31",
+              "accession_number": "0002046333-26-000001"
+            }
+          ],
+          "primary_strategy": "Poll SEC submissions JSON, fetch new 13F-HR information tables, diff with previous report_date.",
+          "secondary_sources": [
+            {
+              "name": "中国基金报",
+              "url": "https://www.chnfund.com/",
+              "usage": "Contextual article source for human-readable explanation; not primary holdings data."
+            },
+            {
+              "name": "私募排排网",
+              "url": "https://www.simuwang.com/",
+              "usage": "Private fund performance and media summary source; use as lead/context unless licensed data is available."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
