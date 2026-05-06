@@ -4,18 +4,17 @@ import {
   AlertTriangle,
   ArrowDownRight,
   ArrowUpRight,
-  CalendarDays,
   ExternalLink,
   Landmark,
   RefreshCw,
   Search,
   ShieldCheck,
-  Sparkles,
   TrendingDown,
   TrendingUp
 } from "lucide-react";
 import "./styles.css";
 
+type Market = "us" | "cn" | "hk";
 type Direction = "new" | "increase" | "decrease" | "closed";
 
 type Security = {
@@ -25,53 +24,72 @@ type Security = {
   title?: string;
 };
 
+type MoveSummary = {
+  ticker?: string;
+  name: string;
+  direction: Direction;
+  value?: number | null;
+  date?: string | null;
+  evidenceUrl?: string;
+};
+
 type HoldingEvent = {
   id: string;
+  market: Market;
   investorId: string;
   investorName: string;
   vehicleName: string;
-  sourceTier: "L1" | "L2" | string;
+  sourceTier: string;
   disclosureType: string;
+  sourceLabel?: string;
+  transactionCode?: string;
   reportDate: string | null;
-  previousReportDate?: string | null;
   filingDate: string | null;
   evidenceUrl: string;
   security: Security;
   direction: Direction;
   sharesDelta?: number | null;
-  sharesAfter?: number | null;
   marketValueDelta?: number | null;
-  marketValueAfter?: number | null;
-  weightPctDelta?: number | null;
-  confidence: string;
+  disclosedAmountRange?: string;
   staleDisclosure: boolean;
   significanceScore: number;
-  narrative: string;
 };
 
 type Profile = {
   id: string;
+  market: Market;
   displayName: string;
   vehicleName: string;
   audience: string;
-  cik?: string;
-  sourceTier: "L1" | "L2" | string;
+  sourceTier: string;
   disclosureType: string;
+  sourceLabel?: string;
+  sourceUrl?: string;
+  cadence?: string;
   latestFiling?: {
     form?: string;
     reportDate?: string | null;
     filingDate?: string | null;
   };
-  totalValue?: number;
-  positionCount?: number;
+  totalValue?: number | null;
+  positionCount?: number | null;
   topHoldings?: Array<{
     ticker?: string;
     name: string;
-    cusip?: string;
     marketValue: number;
     weight?: number | null;
-    funds?: string[];
   }>;
+  topIncreases?: MoveSummary[];
+  topDecreases?: MoveSummary[];
+  returns?: {
+    oneYearPct: number | null;
+    threeYearPct: number | null;
+    sourceLabel: string;
+    sourceUrl: string | null;
+    asOf: string | null;
+    isProxy?: boolean;
+    proxyDisclosure?: string;
+  };
   changes: HoldingEvent[];
 };
 
@@ -82,11 +100,15 @@ type HoldingFeed = {
     tagline: string;
     disclosure: string;
   };
+  markets: Record<Market, { label: string; profileCount: number; eventCount: number }>;
   stats: {
     investorCount: number;
     eventCount: number;
     arkTradeCount: number;
     secManagerCount: number;
+    congressTradeCount: number;
+    form4TradeCount: number;
+    regionalWatchlistCount: number;
     sourceErrorCount: number;
     latestEventDate: string | null;
   };
@@ -94,24 +116,40 @@ type HoldingFeed = {
   events: HoldingEvent[];
   sourceErrors: Array<{ id: string; displayName: string; error: string }>;
   sourceNotes: string[];
+  officialSources?: Array<{ label: string; url: string }>;
 };
 
-const directionText: Record<string, string> = {
+const marketOrder: Market[] = ["us", "cn", "hk"];
+
+const fallbackMarketLabels: Record<Market, string> = {
+  us: "美股",
+  cn: "A 股",
+  hk: "港股"
+};
+
+const directionText: Record<Direction, string> = {
+  new: "新",
+  increase: "增",
+  decrease: "减",
+  closed: "清"
+};
+
+const directionLongText: Record<Direction, string> = {
   new: "新进",
   increase: "增持",
   decrease: "减持",
   closed: "清仓"
 };
 
-const directionClass: Record<string, string> = {
+const directionClass: Record<Direction, string> = {
   new: "positive",
   increase: "positive",
   decrease: "negative",
   closed: "negative"
 };
 
-function formatCurrency(value?: number | null) {
-  if (value === undefined || value === null || Number.isNaN(value)) return "未披露";
+function formatCurrency(value?: number | null, fallback = "--") {
+  if (value === undefined || value === null || Number.isNaN(value)) return fallback;
   const abs = Math.abs(value);
   const sign = value < 0 ? "-" : "";
   if (abs >= 1_000_000_000) return `${sign}$${(abs / 1_000_000_000).toFixed(1)}B`;
@@ -120,33 +158,68 @@ function formatCurrency(value?: number | null) {
   return `${sign}$${abs.toFixed(0)}`;
 }
 
-function formatNumber(value?: number | null) {
-  if (value === undefined || value === null || Number.isNaN(value)) return "未披露";
-  return new Intl.NumberFormat("en-US", { maximumFractionDigits: 0 }).format(value);
+function formatPercent(value?: number | null) {
+  if (value === undefined || value === null || Number.isNaN(value)) return "--";
+  const sign = value > 0 ? "+" : "";
+  return `${sign}${value.toFixed(1)}%`;
 }
 
-function formatDate(value?: string | null) {
-  if (!value) return "未披露";
+function formatDate(value?: string | null, compact = false) {
+  if (!value) return "--";
   const date = new Date(value);
   if (Number.isNaN(date.valueOf())) return value;
   return new Intl.DateTimeFormat("zh-CN", {
-    year: "numeric",
+    year: compact ? undefined : "2-digit",
     month: "2-digit",
     day: "2-digit"
   }).format(date);
 }
 
-function securityLabel(event: HoldingEvent) {
-  return event.security.ticker
-    ? `${event.security.ticker} · ${event.security.name}`
-    : `${event.security.name}`;
+function eventTicker(event: HoldingEvent) {
+  return event.security.ticker || event.security.name;
+}
+
+function moveLabel(move: MoveSummary) {
+  return move.ticker || move.name;
+}
+
+function sourceName(profile: Profile) {
+  return profile.sourceLabel || profile.disclosureType || profile.sourceTier;
+}
+
+function eventMeta(event: HoldingEvent) {
+  if (event.staleDisclosure) {
+    return `${event.sourceLabel || event.disclosureType} · 报告 ${formatDate(event.reportDate, true)} / 披露 ${formatDate(event.filingDate, true)}`;
+  }
+  if (event.disclosedAmountRange) {
+    return `${event.sourceLabel || event.disclosureType} · 区间中点估算`;
+  }
+  if (event.transactionCode) {
+    return `${event.sourceLabel || event.disclosureType} · ${event.transactionCode}`;
+  }
+  return event.sourceLabel || event.disclosureType;
+}
+
+function matchesQuery(profile: Profile, query: string) {
+  if (!query) return true;
+  return [
+    profile.displayName,
+    profile.vehicleName,
+    profile.audience,
+    profile.sourceLabel,
+    profile.disclosureType,
+    ...(profile.topHoldings || []).map((holding) => `${holding.ticker || ""} ${holding.name}`)
+  ]
+    .join(" ")
+    .toLowerCase()
+    .includes(query);
 }
 
 function App() {
   const [feed, setFeed] = useState<HoldingFeed | null>(null);
   const [status, setStatus] = useState<"loading" | "ready" | "error">("loading");
+  const [market, setMarket] = useState<Market>("us");
   const [query, setQuery] = useState("");
-  const [tier, setTier] = useState<"all" | "L1" | "L2">("all");
 
   useEffect(() => {
     fetch("/data/holding-feed.json", { cache: "no-store" })
@@ -164,31 +237,36 @@ function App() {
       });
   }, []);
 
-  const filteredEvents = useMemo(() => {
+  const normalizedQuery = query.trim().toLowerCase();
+
+  const marketEvents = useMemo(() => {
     if (!feed) return [];
-    const normalizedQuery = query.trim().toLowerCase();
-    return feed.events.filter((event) => {
-      const matchesTier = tier === "all" || event.sourceTier === tier;
-      const haystack = [
-        event.investorName,
-        event.vehicleName,
-        event.security.ticker,
-        event.security.name,
-        event.security.cusip,
-        event.disclosureType
-      ]
+    return feed.events.filter((event) => event.market === market);
+  }, [feed, market]);
+
+  const profiles = useMemo(() => {
+    if (!feed) return [];
+    return feed.profiles
+      .filter((profile) => profile.market === market)
+      .filter((profile) => matchesQuery(profile, normalizedQuery));
+  }, [feed, market, normalizedQuery]);
+
+  const events = useMemo(() => {
+    return marketEvents.filter((event) => {
+      if (!normalizedQuery) return true;
+      return [event.investorName, event.vehicleName, event.security.ticker, event.security.name, event.disclosureType]
         .filter(Boolean)
         .join(" ")
-        .toLowerCase();
-      return matchesTier && (!normalizedQuery || haystack.includes(normalizedQuery));
+        .toLowerCase()
+        .includes(normalizedQuery);
     });
-  }, [feed, query, tier]);
+  }, [marketEvents, normalizedQuery]);
 
   if (status === "loading") {
     return (
       <main className="loading-shell">
-        <RefreshCw className="spin" size={28} />
-        <span>正在载入公开披露数据</span>
+        <RefreshCw className="spin" size={26} />
+        <span>正在载入公开披露</span>
       </main>
     );
   }
@@ -196,134 +274,104 @@ function App() {
   if (status === "error" || !feed) {
     return (
       <main className="loading-shell error">
-        <AlertTriangle size={28} />
+        <AlertTriangle size={26} />
         <span>数据载入失败，请稍后刷新。</span>
       </main>
     );
   }
 
-  const l1Count = feed.events.filter((event) => event.sourceTier === "L1").length;
-  const l2Count = feed.events.filter((event) => event.sourceTier === "L2").length;
+  const activeMarket = feed.markets?.[market] || {
+    label: fallbackMarketLabels[market],
+    profileCount: profiles.length,
+    eventCount: events.length
+  };
+  const headlineNames = profiles.slice(0, market === "us" ? 18 : 12).map((profile) => profile.displayName);
+  const positiveEventCount = marketEvents.filter((event) => ["new", "increase"].includes(event.direction)).length;
+  const negativeEventCount = marketEvents.filter((event) => ["decrease", "closed"].includes(event.direction)).length;
+  const marketLatestEventDate =
+    marketEvents.map((event) => event.filingDate || event.reportDate).filter(Boolean).sort().at(-1) || null;
+  const autoSourceStatus =
+    market === "us"
+      ? feed.stats.sourceErrorCount === 0
+        ? "自动源正常"
+        : `自动源 ${feed.stats.sourceErrorCount} 个异常`
+      : "当前为观察名单";
 
   return (
     <main>
       <TopBar generatedAt={feed.generatedAt} />
-      <section className="hero-band">
-        <div className="content-grid hero-grid">
-          <div className="hero-copy">
-            <div className="eyebrow">
-              <Sparkles size={16} />
-              公开持仓披露雷达
-            </div>
-            <h1>重要投资人持仓变化，一屏看清。</h1>
-            <p>
-              每天检查 ARK 交易日数据与 SEC 13F 季度披露，聚合 Cathie Wood、巴菲特、Burry、李录、张磊、段永平、但斌等重点人物。
-            </p>
-            <div className="hero-actions">
-              <a className="primary-link" href="#events">
-                查看变化
-                <ArrowDownRight size={18} />
-              </a>
-              <a className="secondary-link" href="#sources">
-                数据边界
-                <ShieldCheck size={18} />
-              </a>
-            </div>
+
+      <section className="hero">
+        <div className="hero-main">
+          <div className="eyebrow">
+            <Landmark size={16} />
+            chicang 持仓雷达
           </div>
-          <SignalPanel feed={feed} l1Count={l1Count} l2Count={l2Count} />
+          <h1>{feed.site.tagline}</h1>
+          <MarketTabs feed={feed} market={market} onChange={setMarket} />
+          <NameStrip names={headlineNames} />
+          <HeroPulse
+            events={marketEvents.slice(0, 3)}
+            positiveCount={positiveEventCount}
+            negativeCount={negativeEventCount}
+          />
+        </div>
+        <div className="hero-side">
+          <Metric label="观察对象" value={activeMarket.profileCount} />
+          <Metric label="可读事件" value={activeMarket.eventCount} />
+          <Metric label="最新披露" value={marketLatestEventDate ? formatDate(marketLatestEventDate, true) : "待解析"} />
         </div>
       </section>
 
-      <section className="summary-band">
-        <div className="content-grid stats-grid">
-          <Metric label="跟踪人物/机构" value={feed.stats.investorCount} helper="可继续扩展" />
-          <Metric label="近期变化事件" value={feed.stats.eventCount} helper="按重要性排序" />
-          <Metric label="ARK 交易卡片" value={feed.stats.arkTradeCount} helper="交易日级别" />
-          <Metric label="13F 管理人" value={feed.stats.secManagerCount} helper="季度披露" />
+      <section className="toolbar">
+        <div>
+          <span className="section-kicker">{activeMarket.label}</span>
+          <h2>近期值得看</h2>
+        </div>
+        <div className="search-box">
+          <Search size={17} />
+          <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="搜人物 / 股票" />
         </div>
       </section>
 
-      <section className="content-band" id="events">
-        <div className="section-head">
+      <section className="watch-panel">
+        <CompactMoves events={events.slice(0, 10)} />
+      </section>
+
+      <section className="profiles-section">
+        <div className="section-title-row">
           <div>
-            <span className="section-kicker">Today Watch</span>
-            <h2>近期值得看的披露变化</h2>
+            <span className="section-kicker">Tracked</span>
+            <h2>跟踪的机构和个人</h2>
           </div>
-          <div className="search-cluster">
-            <div className="search-box">
-              <Search size={18} />
-              <input
-                value={query}
-                onChange={(event) => setQuery(event.target.value)}
-                placeholder="搜索人物、股票、CUSIP"
-              />
-            </div>
-            <div className="segmented" aria-label="Source tier filter">
-              {(["all", "L1", "L2"] as const).map((value) => (
-                <button
-                  key={value}
-                  className={tier === value ? "active" : ""}
-                  type="button"
-                  onClick={() => setTier(value)}
-                >
-                  {value === "all" ? "全部" : value}
-                </button>
-              ))}
-            </div>
-          </div>
-        </div>
-        <EventGrid events={filteredEvents.slice(0, 18)} />
-      </section>
-
-      <section className="profiles-band">
-        <div className="section-head">
-          <div>
-            <span className="section-kicker">Managers</span>
-            <h2>已接入的大佬与机构</h2>
-          </div>
-          <span className="freshness">
-            <CalendarDays size={16} />
-            最新事件：{formatDate(feed.stats.latestEventDate)}
-          </span>
+          <span className="freshness">{autoSourceStatus}</span>
         </div>
         <div className="profile-grid">
-          {feed.profiles.map((profile) => (
+          {profiles.map((profile) => (
             <ProfileCard key={profile.id} profile={profile} />
           ))}
         </div>
       </section>
 
-      <section className="table-band">
-        <div className="section-head">
-          <div>
-            <span className="section-kicker">Audit Trail</span>
-            <h2>披露事件明细</h2>
-          </div>
+      <section className="sources">
+        <div className="source-copy">
+          <span className="section-kicker">Sources</span>
+          <h2>数据边界</h2>
+          <p>{feed.site.disclosure}</p>
         </div>
-        <EventTable events={filteredEvents.slice(0, 60)} />
-      </section>
-
-      <section className="sources-band" id="sources">
-        <div className="source-layout">
-          <div>
-            <span className="section-kicker">Data Notes</span>
-            <h2>数据边界</h2>
-            <p>{feed.site.disclosure}</p>
-          </div>
-          <div className="note-list">
-            {feed.sourceNotes.map((note) => (
-              <div className="note-row" key={note}>
-                <ShieldCheck size={18} />
-                <span>{note}</span>
-              </div>
-            ))}
-            {feed.sourceErrors.length > 0 && (
-              <div className="note-row warning">
-                <AlertTriangle size={18} />
-                <span>{feed.sourceErrors.length} 个来源本次更新失败，页面保留其余可验证数据。</span>
-              </div>
-            )}
-          </div>
+        <div className="source-list">
+          {feed.sourceNotes.map((note) => (
+            <div className="source-note" key={note}>
+              <ShieldCheck size={17} />
+              <span>{note}</span>
+            </div>
+          ))}
+          {(feed.officialSources || []).slice(0, 9).map((source) => (
+            <a className="source-link" key={source.url} href={source.url} target="_blank" rel="noreferrer">
+              {source.label}
+              <ExternalLink size={14} />
+            </a>
+          ))}
         </div>
       </section>
     </main>
@@ -334,204 +382,194 @@ function TopBar({ generatedAt }: { generatedAt: string }) {
   return (
     <header className="topbar">
       <a className="brand" href="#">
-        <Landmark size={22} />
-        <span>Guru Holdings Watch</span>
+        <Landmark size={21} />
+        <span>chicang</span>
       </a>
       <div className="topbar-meta">
-        <RefreshCw size={16} />
-        <span>更新于 {formatDate(generatedAt)}</span>
+        <RefreshCw size={15} />
+        <span>{formatDate(generatedAt)}</span>
       </div>
     </header>
   );
 }
 
-function SignalPanel({
+function MarketTabs({
   feed,
-  l1Count,
-  l2Count
+  market,
+  onChange
 }: {
   feed: HoldingFeed;
-  l1Count: number;
-  l2Count: number;
+  market: Market;
+  onChange: (market: Market) => void;
 }) {
-  const bars = [
-    { label: "交易日级", value: l1Count, className: "ark" },
-    { label: "13F 季度", value: l2Count, className: "sec" },
-    {
-      label: "减持/清仓",
-      value: feed.events.filter((event) => ["decrease", "closed"].includes(event.direction)).length,
-      className: "sell"
-    }
-  ];
-  const max = Math.max(...bars.map((bar) => bar.value), 1);
-  const highlights = feed.events.slice(0, 4);
-
   return (
-    <aside className="signal-panel" aria-label="Disclosure signal panel">
-      <div className="signal-top">
-        <div>
-          <span className="panel-label">Signal Mix</span>
-          <strong>{feed.stats.eventCount}</strong>
-        </div>
-        <span className="status-pill">PUBLIC</span>
-      </div>
-      <div className="signal-bars">
-        {bars.map((bar) => (
-          <div className="bar-row" key={bar.label}>
-            <span>{bar.label}</span>
-            <div className="bar-track">
-              <div className={`bar-fill ${bar.className}`} style={{ width: `${(bar.value / max) * 100}%` }} />
-            </div>
-            <b>{bar.value}</b>
-          </div>
-        ))}
-      </div>
-      <div className="mini-feed">
-        {highlights.map((event) => (
-          <a key={event.id} href={event.evidenceUrl} target="_blank" rel="noreferrer">
-            <span className={`dot ${directionClass[event.direction]}`} />
-            <span>{event.investorName}</span>
-            <b>{event.security.ticker || event.security.name}</b>
-          </a>
-        ))}
-      </div>
-    </aside>
-  );
-}
-
-function Metric({ label, value, helper }: { label: string; value: number; helper: string }) {
-  return (
-    <div className="metric">
-      <span>{label}</span>
-      <strong>{value}</strong>
-      <small>{helper}</small>
+    <div className="market-tabs" aria-label="市场切换">
+      {marketOrder.map((item) => {
+        const meta = feed.markets?.[item];
+        return (
+          <button key={item} className={market === item ? "active" : ""} type="button" onClick={() => onChange(item)}>
+            <span>{meta?.label || fallbackMarketLabels[item]}</span>
+            <b>{meta?.profileCount ?? 0}</b>
+          </button>
+        );
+      })}
     </div>
   );
 }
 
-function EventGrid({ events }: { events: HoldingEvent[] }) {
+function NameStrip({ names }: { names: string[] }) {
+  return (
+    <div className="name-strip">
+      {names.map((name) => (
+        <span key={name}>{name}</span>
+      ))}
+    </div>
+  );
+}
+
+function Metric({ label, value }: { label: string; value: number | string }) {
+  return (
+    <div className="metric">
+      <span>{label}</span>
+      <strong>{value}</strong>
+    </div>
+  );
+}
+
+function HeroPulse({
+  events,
+  positiveCount,
+  negativeCount
+}: {
+  events: HoldingEvent[];
+  positiveCount: number;
+  negativeCount: number;
+}) {
+  return (
+    <div className="hero-pulse">
+      <div className="pulse-score">
+        <span>
+          <TrendingUp size={15} />
+          增/新 {positiveCount}
+        </span>
+        <span>
+          <TrendingDown size={15} />
+          减/清 {negativeCount}
+        </span>
+      </div>
+      <div className="pulse-feed">
+        {events.length === 0 ? (
+          <span className="pulse-empty">暂无可核验变化</span>
+        ) : (
+          events.map((event) => (
+            <a key={event.id} href={event.evidenceUrl} target="_blank" rel="noreferrer">
+              <b>{eventTicker(event)}</b>
+              <span className={directionClass[event.direction]}>{directionLongText[event.direction]}</span>
+              <small>{formatCurrency(event.marketValueDelta)}</small>
+            </a>
+          ))
+        )}
+      </div>
+    </div>
+  );
+}
+
+function CompactMoves({ events }: { events: HoldingEvent[] }) {
   if (events.length === 0) {
-    return <div className="empty-state">没有匹配的披露事件。</div>;
+    return (
+      <div className="empty-state">
+        这个市场当前仅展示官方披露入口和观察名单，尚未自动解析事件。
+      </div>
+    );
   }
 
   return (
-    <div className="event-grid">
+    <div className="move-list">
       {events.map((event) => (
-        <article className="event-card" key={event.id}>
-          <div className="event-card-top">
-            <span className={`direction ${directionClass[event.direction]}`}>
-              {event.direction === "increase" || event.direction === "new" ? (
-                <TrendingUp size={16} />
-              ) : (
-                <TrendingDown size={16} />
-              )}
-              {directionText[event.direction]}
-            </span>
-            <span className="tier">{event.sourceTier}</span>
-          </div>
-          <h3>{securityLabel(event)}</h3>
-          <p>{event.narrative}</p>
-          <div className="event-numbers">
-            <div>
-              <span>变化市值</span>
-              <b>{formatCurrency(event.marketValueDelta)}</b>
-            </div>
-            <div>
-              <span>股数变化</span>
-              <b>{formatNumber(event.sharesDelta)}</b>
-            </div>
-          </div>
-          <div className="event-foot">
-            <span>{event.staleDisclosure ? "季度披露" : "交易日披露"}</span>
-            <a href={event.evidenceUrl} target="_blank" rel="noreferrer" aria-label="查看来源">
-              来源
-              <ExternalLink size={15} />
-            </a>
-          </div>
-        </article>
+        <a className="move-row" key={event.id} href={event.evidenceUrl} target="_blank" rel="noreferrer">
+          <span className={`direction-badge ${directionClass[event.direction]}`}>{directionText[event.direction]}</span>
+          <strong>{eventTicker(event)}</strong>
+          <span className="move-person">
+            {event.investorName}
+            <small className="move-source">{eventMeta(event)}</small>
+            <small className="move-mobile-meta">
+              {event.disclosedAmountRange || formatCurrency(event.marketValueDelta)} ·{" "}
+              {formatDate(event.filingDate || event.reportDate, true)}
+            </small>
+          </span>
+          <span className="move-value">{event.disclosedAmountRange || formatCurrency(event.marketValueDelta)}</span>
+          <span className="move-date">{formatDate(event.filingDate || event.reportDate, true)}</span>
+          <ExternalLink size={14} />
+        </a>
       ))}
     </div>
   );
 }
 
 function ProfileCard({ profile }: { profile: Profile }) {
-  const firstHolding = profile.topHoldings?.[0];
-  const latestChange = profile.changes?.[0];
+  const increased = profile.topIncreases || [];
+  const decreased = profile.topDecreases || [];
   return (
     <article className="profile-card">
-      <div className="profile-top">
+      <div className="profile-head">
         <div>
           <h3>{profile.displayName}</h3>
           <p>{profile.vehicleName}</p>
         </div>
         <span className="tier">{profile.sourceTier}</span>
       </div>
-      <div className="profile-meta">
-        <span>{profile.audience}</span>
-        <span>{profile.disclosureType}</span>
+      <div className="profile-tags">
+        <span>{sourceName(profile)}</span>
+        <span>{profile.cadence || profile.disclosureType}</span>
       </div>
-      <div className="profile-main">
-        <div>
-          <small>最新报告期</small>
-          <strong>{formatDate(profile.latestFiling?.reportDate)}</strong>
+      <div className="profile-scan">
+        <div className="return-row">
+          <ReturnCell label="1Y" value={profile.returns?.oneYearPct} />
+          <ReturnCell label="3Y" value={profile.returns?.threeYearPct} />
         </div>
-        <div>
-          <small>持仓数量</small>
-          <strong>{profile.positionCount ?? profile.topHoldings?.length ?? "未披露"}</strong>
+        <div className="move-stack">
+          <MoveChips title="增持 Top3" moves={increased} tone="positive" />
+          <MoveChips title="减持 Top3" moves={decreased} tone="negative" />
         </div>
       </div>
-      <div className="profile-bottom">
-        <span>最大持仓：{firstHolding?.ticker || firstHolding?.name || "未披露"}</span>
-        <span>最新动作：{latestChange ? directionText[latestChange.direction] : "待更新"}</span>
-      </div>
+      <small className="return-source">
+        {profile.returns?.sourceLabel || profile.returns?.proxyDisclosure || "收益率待接入"}
+      </small>
+      {increased.length === 0 && decreased.length === 0 && (
+        <div className="pending-note">已列入官方披露入口；当前仅作人工跟踪清单，尚未自动解析事件。</div>
+      )}
     </article>
   );
 }
 
-function EventTable({ events }: { events: HoldingEvent[] }) {
+function ReturnCell({ label, value }: { label: string; value?: number | null }) {
   return (
-    <div className="table-shell">
-      <table>
-        <thead>
-          <tr>
-            <th>人物</th>
-            <th>动作</th>
-            <th>标的</th>
-            <th>报告期</th>
-            <th>披露日</th>
-            <th>市值变化</th>
-            <th>来源</th>
-          </tr>
-        </thead>
-        <tbody>
-          {events.map((event) => (
-            <tr key={event.id}>
-              <td>
-                <strong>{event.investorName}</strong>
-                <span>{event.vehicleName}</span>
-              </td>
-              <td>
-                <span className={`direction compact ${directionClass[event.direction]}`}>
-                  {directionText[event.direction]}
-                </span>
-              </td>
-              <td>
-                <strong>{event.security.ticker || event.security.name}</strong>
-                <span>{event.security.cusip || event.security.name}</span>
-              </td>
-              <td>{formatDate(event.reportDate)}</td>
-              <td>{formatDate(event.filingDate)}</td>
-              <td>{formatCurrency(event.marketValueDelta)}</td>
-              <td>
-                <a href={event.evidenceUrl} target="_blank" rel="noreferrer">
-                  查看
-                  <ExternalLink size={14} />
-                </a>
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+    <div>
+      <span>{label}</span>
+      <strong className={value && value < 0 ? "negative-text" : value && value > 0 ? "positive-text" : ""}>
+        {formatPercent(value)}
+      </strong>
+    </div>
+  );
+}
+
+function MoveChips({ title, moves, tone }: { title: string; moves: MoveSummary[]; tone: "positive" | "negative" }) {
+  if (moves.length === 0) return null;
+  const Icon = tone === "positive" ? ArrowUpRight : ArrowDownRight;
+  return (
+    <div className={`move-chips ${tone}`}>
+      <span className="chip-title">
+        <Icon size={14} />
+        {title}
+      </span>
+      <div>
+        {moves.slice(0, 3).map((move, index) => (
+          <a key={`${moveLabel(move)}-${move.date}-${index}`} href={move.evidenceUrl} target="_blank" rel="noreferrer">
+            <span>{moveLabel(move)}</span>
+            <small>{formatCurrency(move.value, "")}</small>
+          </a>
+        ))}
+      </div>
     </div>
   );
 }

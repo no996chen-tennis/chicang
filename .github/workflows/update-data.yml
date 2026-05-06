@@ -21,7 +21,7 @@ jobs:
       - run: npm ci
       - run: npm run data:update
         env:
-          SEC_USER_AGENT: GuruHoldingsWatch/0.1 GitHubActions contact@example.com
+          SEC_USER_AGENT: chicang/0.2 GitHubActions public-data-research contact@example.com
       - run: npm run build
       - name: Commit updated feed
         run: |
