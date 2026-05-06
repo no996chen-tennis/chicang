@@ -29,6 +29,7 @@ type MoveSummary = {
   name: string;
   direction: Direction;
   value?: number | null;
+  valueCurrency?: string;
   date?: string | null;
   evidenceUrl?: string;
 };
@@ -50,6 +51,7 @@ type HoldingEvent = {
   direction: Direction;
   sharesDelta?: number | null;
   marketValueDelta?: number | null;
+  valueCurrency?: string;
   disclosedAmountRange?: string;
   staleDisclosure: boolean;
   significanceScore: number;
@@ -77,7 +79,12 @@ type Profile = {
     ticker?: string;
     name: string;
     marketValue: number;
+    valueCurrency?: string;
+    shares?: number | null;
     weight?: number | null;
+    evidenceUrl?: string;
+    holderName?: string;
+    reportDate?: string | null;
   }>;
   topIncreases?: MoveSummary[];
   topDecreases?: MoveSummary[];
@@ -109,6 +116,7 @@ type HoldingFeed = {
     congressTradeCount: number;
     form4TradeCount: number;
     regionalWatchlistCount: number;
+    regionalTradeCount?: number;
     sourceErrorCount: number;
     latestEventDate: string | null;
   };
@@ -148,14 +156,21 @@ const directionClass: Record<Direction, string> = {
   closed: "negative"
 };
 
-function formatCurrency(value?: number | null, fallback = "--") {
+function formatCurrency(value?: number | null, fallback = "--", currency = "USD") {
   if (value === undefined || value === null || Number.isNaN(value)) return fallback;
   const abs = Math.abs(value);
   const sign = value < 0 ? "-" : "";
-  if (abs >= 1_000_000_000) return `${sign}$${(abs / 1_000_000_000).toFixed(1)}B`;
-  if (abs >= 1_000_000) return `${sign}$${(abs / 1_000_000).toFixed(1)}M`;
-  if (abs >= 1_000) return `${sign}$${(abs / 1_000).toFixed(0)}K`;
-  return `${sign}$${abs.toFixed(0)}`;
+  if (currency === "SHARES") {
+    if (abs >= 1_000_000_000) return `${sign}${(abs / 1_000_000_000).toFixed(1)}B股`;
+    if (abs >= 1_000_000) return `${sign}${(abs / 1_000_000).toFixed(1)}M股`;
+    if (abs >= 1_000) return `${sign}${(abs / 1_000).toFixed(0)}K股`;
+    return `${sign}${abs.toFixed(0)}股`;
+  }
+  const prefix = currency === "CNY" ? "¥" : currency === "HKD" ? "HK$" : "$";
+  if (abs >= 1_000_000_000) return `${sign}${prefix}${(abs / 1_000_000_000).toFixed(1)}B`;
+  if (abs >= 1_000_000) return `${sign}${prefix}${(abs / 1_000_000).toFixed(1)}M`;
+  if (abs >= 1_000) return `${sign}${prefix}${(abs / 1_000).toFixed(0)}K`;
+  return `${sign}${prefix}${abs.toFixed(0)}`;
 }
 
 function formatPercent(value?: number | null) {
@@ -188,8 +203,11 @@ function sourceName(profile: Profile) {
 }
 
 function eventMeta(event: HoldingEvent) {
+  if (event.investorId === "cathie_wood") {
+    return `ARK ETFs · ${formatDate(event.reportDate, true)}`;
+  }
   if (event.staleDisclosure) {
-    return `${event.sourceLabel || event.disclosureType} · 报告 ${formatDate(event.reportDate, true)} / 披露 ${formatDate(event.filingDate, true)}`;
+    return `${event.sourceLabel || event.disclosureType} · ${formatDate(event.reportDate, true)}`;
   }
   if (event.disclosedAmountRange) {
     return `${event.sourceLabel || event.disclosureType} · 区间中点估算`;
@@ -213,6 +231,76 @@ function matchesQuery(profile: Profile, query: string) {
     .join(" ")
     .toLowerCase()
     .includes(query);
+}
+
+function compactEvents(input: HoldingEvent[]) {
+  const grouped = new Map<string, HoldingEvent & { fundCount?: number }>();
+  for (const event of input) {
+    const key =
+      event.investorId === "cathie_wood"
+        ? `${event.investorId}-${event.reportDate}-${event.security.ticker || event.security.name}-${event.direction}`
+        : event.id;
+    const existing = grouped.get(key);
+    if (!existing) {
+      grouped.set(key, {
+        ...event,
+        id: key,
+        vehicleName: event.investorId === "cathie_wood" ? "ARK ETFs 汇总" : event.vehicleName,
+        fundCount: event.investorId === "cathie_wood" ? 1 : undefined
+      });
+      continue;
+    }
+    existing.marketValueDelta = (existing.marketValueDelta || 0) + (event.marketValueDelta || 0);
+    existing.sharesDelta = (existing.sharesDelta || 0) + (event.sharesDelta || 0);
+    existing.significanceScore = (existing.significanceScore || 0) + Math.abs(event.marketValueDelta || 0);
+    existing.fundCount = (existing.fundCount || 1) + 1;
+  }
+
+  const sorted = Array.from(grouped.values()).sort((a, b) => {
+    const aDate = a.filingDate || a.reportDate || "";
+    const bDate = b.filingDate || b.reportDate || "";
+    if (aDate !== bDate) return bDate.localeCompare(aDate);
+    return (b.significanceScore || 0) - (a.significanceScore || 0);
+  });
+
+  const selected: HoldingEvent[] = [];
+  const buckets = new Map<string, HoldingEvent[]>();
+  for (const event of sorted) {
+    buckets.set(event.investorId, [...(buckets.get(event.investorId) || []), event]);
+  }
+  const investorOrder = Array.from(buckets.keys()).sort((a, b) => {
+    const firstA = buckets.get(a)?.[0];
+    const firstB = buckets.get(b)?.[0];
+    const dateA = firstA?.filingDate || firstA?.reportDate || "";
+    const dateB = firstB?.filingDate || firstB?.reportDate || "";
+    if (dateA !== dateB) return dateB.localeCompare(dateA);
+    return (firstB?.significanceScore || 0) - (firstA?.significanceScore || 0);
+  });
+  const byInvestor = new Map<string, number>();
+  while (selected.length < 10) {
+    let added = false;
+    for (const investorId of investorOrder) {
+      const count = byInvestor.get(investorId) || 0;
+      const limit = investorId === "cathie_wood" ? 3 : 2;
+      if (count >= limit) continue;
+      const next = buckets.get(investorId)?.[count];
+      if (!next) continue;
+      selected.push(next);
+      byInvestor.set(investorId, count + 1);
+      added = true;
+      if (selected.length >= 10) break;
+    }
+    if (!added) break;
+  }
+  if (selected.length < 10) {
+    const seen = new Set(selected.map((event) => event.id));
+    for (const event of sorted) {
+      if (seen.has(event.id)) continue;
+      selected.push(event);
+      if (selected.length >= 10) break;
+    }
+  }
+  return selected;
 }
 
 function App() {
@@ -262,6 +350,8 @@ function App() {
     });
   }, [marketEvents, normalizedQuery]);
 
+  const featuredEvents = useMemo(() => compactEvents(events), [events]);
+
   if (status === "loading") {
     return (
       <main className="loading-shell">
@@ -285,7 +375,7 @@ function App() {
     profileCount: profiles.length,
     eventCount: events.length
   };
-  const headlineNames = profiles.slice(0, market === "us" ? 18 : 12).map((profile) => profile.displayName);
+  const headlineProfiles = profiles.slice(0, market === "us" ? 18 : 12);
   const positiveEventCount = marketEvents.filter((event) => ["new", "increase"].includes(event.direction)).length;
   const negativeEventCount = marketEvents.filter((event) => ["decrease", "closed"].includes(event.direction)).length;
   const marketLatestEventDate =
@@ -309,9 +399,9 @@ function App() {
           </div>
           <h1>{feed.site.tagline}</h1>
           <MarketTabs feed={feed} market={market} onChange={setMarket} />
-          <NameStrip names={headlineNames} />
+          <NameStrip profiles={headlineProfiles} />
           <HeroPulse
-            events={marketEvents.slice(0, 3)}
+            events={featuredEvents.slice(0, 3)}
             positiveCount={positiveEventCount}
             negativeCount={negativeEventCount}
           />
@@ -335,7 +425,7 @@ function App() {
       </section>
 
       <section className="watch-panel">
-        <CompactMoves events={events.slice(0, 10)} />
+        <CompactMoves events={featuredEvents} />
       </section>
 
       <section className="profiles-section">
@@ -360,13 +450,13 @@ function App() {
           <p>{feed.site.disclosure}</p>
         </div>
         <div className="source-list">
-          {feed.sourceNotes.map((note) => (
+          {feed.sourceNotes.slice(0, 4).map((note) => (
             <div className="source-note" key={note}>
               <ShieldCheck size={17} />
               <span>{note}</span>
             </div>
           ))}
-          {(feed.officialSources || []).slice(0, 9).map((source) => (
+          {(feed.officialSources || []).slice(0, 6).map((source) => (
             <a className="source-link" key={source.url} href={source.url} target="_blank" rel="noreferrer">
               {source.label}
               <ExternalLink size={14} />
@@ -417,11 +507,16 @@ function MarketTabs({
   );
 }
 
-function NameStrip({ names }: { names: string[] }) {
+function NameStrip({ profiles }: { profiles: Profile[] }) {
   return (
     <div className="name-strip">
-      {names.map((name) => (
-        <span key={name}>{name}</span>
+      {profiles.map((profile) => (
+        <span className="name-pill" key={profile.id}>
+          <b>{profile.displayName}</b>
+          <small>
+            1Y {formatPercent(profile.returns?.oneYearPct)} · 3Y {formatPercent(profile.returns?.threeYearPct)}
+          </small>
+        </span>
       ))}
     </div>
   );
@@ -465,7 +560,7 @@ function HeroPulse({
             <a key={event.id} href={event.evidenceUrl} target="_blank" rel="noreferrer">
               <b>{eventTicker(event)}</b>
               <span className={directionClass[event.direction]}>{directionLongText[event.direction]}</span>
-              <small>{formatCurrency(event.marketValueDelta)}</small>
+              <small>{formatCurrency(event.marketValueDelta, "--", event.valueCurrency || "USD")}</small>
             </a>
           ))
         )}
@@ -493,11 +588,13 @@ function CompactMoves({ events }: { events: HoldingEvent[] }) {
             {event.investorName}
             <small className="move-source">{eventMeta(event)}</small>
             <small className="move-mobile-meta">
-              {event.disclosedAmountRange || formatCurrency(event.marketValueDelta)} ·{" "}
+              {event.disclosedAmountRange || formatCurrency(event.marketValueDelta, "--", event.valueCurrency || "USD")} ·{" "}
               {formatDate(event.filingDate || event.reportDate, true)}
             </small>
           </span>
-          <span className="move-value">{event.disclosedAmountRange || formatCurrency(event.marketValueDelta)}</span>
+          <span className="move-value">
+            {event.disclosedAmountRange || formatCurrency(event.marketValueDelta, "--", event.valueCurrency || "USD")}
+          </span>
           <span className="move-date">{formatDate(event.filingDate || event.reportDate, true)}</span>
           <ExternalLink size={14} />
         </a>
@@ -527,6 +624,7 @@ function ProfileCard({ profile }: { profile: Profile }) {
           <ReturnCell label="1Y" value={profile.returns?.oneYearPct} />
           <ReturnCell label="3Y" value={profile.returns?.threeYearPct} />
         </div>
+        <HoldingChips holdings={profile.topHoldings || []} />
         <div className="move-stack">
           <MoveChips title="增持 Top3" moves={increased} tone="positive" />
           <MoveChips title="减持 Top3" moves={decreased} tone="negative" />
@@ -539,6 +637,39 @@ function ProfileCard({ profile }: { profile: Profile }) {
         <div className="pending-note">已列入官方披露入口；当前仅作人工跟踪清单，尚未自动解析事件。</div>
       )}
     </article>
+  );
+}
+
+function HoldingChips({ holdings }: { holdings: NonNullable<Profile["topHoldings"]> }) {
+  if (holdings.length === 0) {
+    return <div className="holding-empty">前三大持仓待解析</div>;
+  }
+  return (
+    <div className="holding-chips">
+      <span className="holding-title">前三大持仓</span>
+      <div>
+        {holdings.slice(0, 3).map((holding, index) => {
+          const label = holding.ticker || holding.name;
+          const value =
+            holding.weight !== undefined && holding.weight !== null
+              ? `${holding.weight.toFixed(1)}%`
+              : formatCurrency(holding.marketValue || holding.shares, "", holding.valueCurrency || "USD");
+          const content = (
+            <>
+              <span>{label}</span>
+              <small>{value}</small>
+            </>
+          );
+          return holding.evidenceUrl ? (
+            <a key={`${label}-${index}`} href={holding.evidenceUrl} target="_blank" rel="noreferrer">
+              {content}
+            </a>
+          ) : (
+            <span key={`${label}-${index}`}>{content}</span>
+          );
+        })}
+      </div>
+    </div>
   );
 }
 
@@ -566,7 +697,7 @@ function MoveChips({ title, moves, tone }: { title: string; moves: MoveSummary[]
         {moves.slice(0, 3).map((move, index) => (
           <a key={`${moveLabel(move)}-${move.date}-${index}`} href={move.evidenceUrl} target="_blank" rel="noreferrer">
             <span>{moveLabel(move)}</span>
-            <small>{formatCurrency(move.value, "")}</small>
+            <small>{formatCurrency(move.value, "", move.valueCurrency || "USD")}</small>
           </a>
         ))}
       </div>

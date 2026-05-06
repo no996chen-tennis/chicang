@@ -174,7 +174,13 @@ const REGIONAL_WATCHLISTS = [
     disclosureType: "定期报告十大股东",
     sourceUrl: "http://www.cninfo.com.cn/new/disclosure",
     sourceLabel: "巨潮资讯 / 交易所定期报告",
-    cadence: "定期报告披露后"
+    cadence: "定期报告披露后",
+    eastmoney: {
+      holderNames: [
+        "上海高毅资产管理合伙企业(有限合伙)-高毅邻山1号远望基金",
+        "上海高毅资产管理合伙企业(有限合伙)-高毅晓峰2号致信基金"
+      ]
+    }
   },
   {
     id: "cn_social_security_fund",
@@ -186,7 +192,10 @@ const REGIONAL_WATCHLISTS = [
     disclosureType: "定期报告十大股东",
     sourceUrl: "http://www.cninfo.com.cn/new/disclosure",
     sourceLabel: "巨潮资讯 / 交易所定期报告",
-    cadence: "定期报告披露后"
+    cadence: "定期报告披露后",
+    eastmoney: {
+      holderType: "社保"
+    }
   },
   {
     id: "cn_central_huijin",
@@ -198,7 +207,10 @@ const REGIONAL_WATCHLISTS = [
     disclosureType: "定期报告十大股东",
     sourceUrl: "http://www.cninfo.com.cn/new/disclosure",
     sourceLabel: "巨潮资讯 / 上交所 / 深交所",
-    cadence: "定期报告披露后"
+    cadence: "定期报告披露后",
+    eastmoney: {
+      holderNames: ["中央汇金资产管理有限责任公司", "中央汇金投资有限责任公司"]
+    }
   },
   {
     id: "cn_china_securities_finance",
@@ -210,7 +222,10 @@ const REGIONAL_WATCHLISTS = [
     disclosureType: "定期报告十大股东",
     sourceUrl: "https://www.sse.com.cn/disclosure/listedinfo/regular/",
     sourceLabel: "交易所定期报告",
-    cadence: "定期报告披露后"
+    cadence: "定期报告披露后",
+    eastmoney: {
+      holderNames: ["中国证券金融股份有限公司"]
+    }
   },
   {
     id: "cn_ge_weidong",
@@ -222,7 +237,10 @@ const REGIONAL_WATCHLISTS = [
     disclosureType: "定期报告十大股东",
     sourceUrl: "http://www.cninfo.com.cn/new/disclosure",
     sourceLabel: "巨潮资讯 / 交易所定期报告",
-    cadence: "定期报告披露后"
+    cadence: "定期报告披露后",
+    eastmoney: {
+      holderNames: ["葛卫东"]
+    }
   },
   {
     id: "cn_linyuan",
@@ -234,7 +252,14 @@ const REGIONAL_WATCHLISTS = [
     disclosureType: "定期报告十大股东",
     sourceUrl: "http://www.cninfo.com.cn/new/disclosure",
     sourceLabel: "巨潮资讯 / 交易所定期报告",
-    cadence: "定期报告披露后"
+    cadence: "定期报告披露后",
+    eastmoney: {
+      holderNames: [
+        "深圳市林园投资管理有限责任公司-林园投资21号私募投资基金",
+        "深圳市林园投资管理有限责任公司-林园投资12号私募投资基金",
+        "深圳市林园投资管理有限责任公司-林园投资24号私募证券投资基金"
+      ]
+    }
   },
   {
     id: "cn_danshuiquan",
@@ -246,7 +271,14 @@ const REGIONAL_WATCHLISTS = [
     disclosureType: "定期报告十大股东",
     sourceUrl: "https://www.szse.cn/disclosure/listed/fixed/index.html",
     sourceLabel: "深交所 / 巨潮资讯",
-    cadence: "定期报告披露后"
+    cadence: "定期报告披露后",
+    eastmoney: {
+      holderNames: [
+        "北京淡水泉投资管理有限公司-淡水泉成长基金1期",
+        "北京淡水泉投资管理有限公司-淡水泉精选1期私募证券投资基金",
+        "北京淡水泉投资管理有限公司-淡水泉成长基金"
+      ]
+    }
   },
   {
     id: "cn_jinglin_assets",
@@ -258,7 +290,10 @@ const REGIONAL_WATCHLISTS = [
     disclosureType: "定期报告十大股东",
     sourceUrl: "http://www.cninfo.com.cn/new/disclosure",
     sourceLabel: "巨潮资讯 / 交易所定期报告",
-    cadence: "定期报告披露后"
+    cadence: "定期报告披露后",
+    eastmoney: {
+      holderNames: ["上海景林资产管理有限公司-景林丰收3号私募基金"]
+    }
   },
   {
     id: "hk_li_ka_shing",
@@ -318,7 +353,8 @@ const REGIONAL_WATCHLISTS = [
     disclosureType: "Stock Connect 持股披露",
     sourceUrl: "https://www3.hkexnews.hk/sdw/search/mutualmarket.aspx?t=hk",
     sourceLabel: "HKEX Stock Connect Shareholding",
-    cadence: "交易日"
+    cadence: "交易日",
+    hkexSouthbound: true
   }
 ];
 
@@ -342,12 +378,55 @@ const CUSIP_TICKERS = {
   "92826C839": "V",
   "931142103": "WMT",
   "084670702": "BRK.B",
+  "025816109": "AXP",
+  "166764100": "CVX",
+  "615369105": "MCO",
   "883556102": "TMO",
   "007903107": "AMD",
   "69608A108": "PLTR",
   "19260Q107": "COIN",
-  "79466L302": "CRM"
+  "79466L302": "CRM",
+  "406216101": "HAL",
+  "60855R100": "MOH",
+  "550021109": "LULU",
+  "11271J107": "BN",
+  "90353T100": "UBER",
+  "76131D103": "QSR",
+  "632307104": "NTRA",
+  "81369Y605": "XLF",
+  "464286400": "EWZ",
+  "46137V357": "RSP",
+  "78462F103": "SPY",
+  "464287200": "IVV",
+  "512807306": "LRCX",
+  "G96629103": "WTW",
+  "036752103": "ELV",
+  "907818108": "UNP",
+  "95082P105": "WCC",
+  "722304102": "PDD",
+  "27579R104": "EWBC",
+  "07725L102": "ONC",
+  "36118L106": "FUTU",
+  "52490G102": "LEGN",
+  "04272N102": "AVBP",
+  "674599105": "OXY",
+  "74347X831": "TQQQ",
+  "81141R100": "SE",
+  "874039100": "TSM",
+  "36828A101": "GEV",
+  "92840M102": "VST",
+  "146869102": "CVNA",
+  "50212V100": "LPLA",
+  "N07059210": "ASML",
+  "69331C108": "PCG",
+  "G25508105": "CRH",
+  "47215P106": "JD",
+  "056752108": "BIDU",
+  "64110W102": "NTES",
+  "62914V106": "NIO"
 };
+
+const priceReturnCache = new Map();
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
@@ -1188,12 +1267,33 @@ function closestOnOrBefore(rows, targetDate) {
     .sort((a, b) => b.isoDate.localeCompare(a.isoDate))[0];
 }
 
-async function fetchProxyReturns(proxy) {
-  if (!proxy?.ticker) return emptyReturns();
+function closestAround(rows, targetDate) {
+  return (
+    closestOnOrBefore(rows, targetDate) ||
+    rows.filter((row) => row.isoDate >= targetDate).sort((a, b) => a.isoDate.localeCompare(b.isoDate))[0]
+  );
+}
+
+function pctFromRows(rows) {
+  const latest = rows.sort((a, b) => b.isoDate.localeCompare(a.isoDate))[0];
+  if (!latest) return null;
+  const oneYear = closestAround(rows, daysAgoIso(365));
+  const threeYear = closestAround(rows, daysAgoIso(1095));
+  const pct = (base) => (base?.close ? ((latest.close - base.close) / base.close) * 100 : null);
+  return {
+    oneYearPct: pct(oneYear),
+    threeYearPct: pct(threeYear),
+    asOf: latest.isoDate
+  };
+}
+
+async function fetchNasdaqTickerReturns(ticker, assetClass = "stocks") {
+  const cacheKey = `nasdaq:${assetClass}:${ticker}`;
+  if (priceReturnCache.has(cacheKey)) return priceReturnCache.get(cacheKey);
   try {
     const todate = new Date().toISOString().slice(0, 10);
     const fromdate = daysAgoIso(1125);
-    const url = `https://api.nasdaq.com/api/quote/${encodeURIComponent(proxy.ticker)}/historical?assetclass=${proxy.assetClass || "stocks"}&fromdate=${fromdate}&todate=${todate}&limit=1200`;
+    const url = `https://api.nasdaq.com/api/quote/${encodeURIComponent(ticker)}/historical?assetclass=${assetClass}&fromdate=${fromdate}&todate=${todate}&limit=1200`;
     const response = JSON.parse(
       (
         await fetchText(url, {
@@ -1209,23 +1309,168 @@ async function fetchProxyReturns(proxy) {
         close: closeValue(row.close)
       }))
       .filter((row) => row.isoDate && row.close);
-    const latest = rows.sort((a, b) => b.isoDate.localeCompare(a.isoDate))[0];
-    if (!latest) return emptyReturns(`${proxy.label} 暂无价格数据`);
-    const oneYear = closestOnOrBefore(rows, daysAgoIso(365));
-    const threeYear = closestOnOrBefore(rows, daysAgoIso(1095));
-    const pct = (base) => (base?.close ? ((latest.close - base.close) / base.close) * 100 : null);
-    return {
-      oneYearPct: pct(oneYear),
-      threeYearPct: pct(threeYear),
-      sourceLabel: proxy.label || `${proxy.ticker} 价格代理`,
-      sourceUrl: `https://www.nasdaq.com/market-activity/${proxy.assetClass === "etf" ? "etf" : "stocks"}/${proxy.ticker.toLowerCase()}/historical`,
-      asOf: latest.isoDate,
-      isProxy: true,
-      proxyDisclosure: "价格代理，不代表管理人真实组合净值、基金 NAV 或私募产品收益"
-    };
+    const returns = pctFromRows(rows);
+    priceReturnCache.set(cacheKey, returns);
+    return returns;
   } catch (error) {
-    return emptyReturns(`${proxy.label || proxy.ticker} 价格代理暂不可用`);
+    priceReturnCache.set(cacheKey, null);
+    return null;
   }
+}
+
+function eastmoneySecid(symbol, market) {
+  const ticker = String(symbol || "").replace(/\D/g, "");
+  if (!ticker) return null;
+  if (market === "hk") return `116.${ticker.padStart(5, "0")}`;
+  if (/^6|^9/.test(ticker)) return `1.${ticker}`;
+  return `0.${ticker}`;
+}
+
+function yahooSymbol(symbol, market) {
+  const ticker = String(symbol || "").replace(/\D/g, "");
+  if (!ticker) return null;
+  if (market === "hk") return `${Number(ticker)}.HK`;
+  if (market === "cn") return `${ticker}.${/^6|^9/.test(ticker) ? "SS" : "SZ"}`;
+  return symbol;
+}
+
+async function fetchYahooTickerReturns(symbol, market) {
+  const yahooTicker = yahooSymbol(symbol, market);
+  if (!yahooTicker) return null;
+  const cacheKey = `yahoo:${market}:${yahooTicker}`;
+  if (priceReturnCache.has(cacheKey)) return priceReturnCache.get(cacheKey);
+  try {
+    const url = `https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(yahooTicker)}?range=3y&interval=1d&events=history`;
+    const response = JSON.parse(
+      (
+        await fetchText(url, {
+          headers: {
+            "user-agent": "Mozilla/5.0 chicang public-data-research"
+          }
+        })
+      ).text
+    );
+    const result = response.chart?.result?.[0];
+    const timestamps = result?.timestamp || [];
+    const closes = result?.indicators?.quote?.[0]?.close || [];
+    const rows = timestamps
+      .map((timestamp, index) => ({
+        isoDate: new Date(timestamp * 1000).toISOString().slice(0, 10),
+        close: closes[index]
+      }))
+      .filter((row) => row.isoDate && row.close);
+    const returns = pctFromRows(rows);
+    priceReturnCache.set(cacheKey, returns);
+    return returns;
+  } catch (error) {
+    priceReturnCache.set(cacheKey, null);
+    return null;
+  }
+}
+
+async function fetchEastmoneyTickerReturns(symbol, market) {
+  const secid = eastmoneySecid(symbol, market);
+  if (!secid) return null;
+  const cacheKey = `eastmoney:${market}:${secid}`;
+  if (priceReturnCache.has(cacheKey)) return priceReturnCache.get(cacheKey);
+  try {
+    const beg = daysAgoIso(1125).replaceAll("-", "");
+    const end = new Date().toISOString().slice(0, 10).replaceAll("-", "");
+    const url = `https://push2his.eastmoney.com/api/qt/stock/kline/get?secid=${encodeURIComponent(secid)}&fields1=f1,f2,f3,f4,f5,f6&fields2=f51,f53&klt=101&fqt=1&beg=${beg}&end=${end}&lmt=1200`;
+    const response = JSON.parse(
+      (
+        await fetchText(url, {
+          headers: {
+            "user-agent": "Mozilla/5.0 chicang public-data-research"
+          }
+        })
+      ).text
+    );
+    const rows = (response.data?.klines || [])
+      .map((item) => {
+        const [date, close] = String(item).split(",");
+        return {
+          isoDate: date,
+          close: numberFrom(close)
+        };
+      })
+      .filter((row) => row.isoDate && row.close);
+    const returns = pctFromRows(rows);
+    priceReturnCache.set(cacheKey, returns);
+    return returns;
+  } catch (error) {
+    priceReturnCache.set(cacheKey, null);
+    return null;
+  }
+}
+
+async function fetchProxyReturns(proxy) {
+  if (!proxy?.ticker) return emptyReturns();
+  const returns = await fetchNasdaqTickerReturns(proxy.ticker, proxy.assetClass || "stocks");
+  if (!returns) return emptyReturns(`${proxy.label || proxy.ticker} 价格代理暂不可用`);
+  return {
+    ...returns,
+    sourceLabel: proxy.label || `${proxy.ticker} 价格代理`,
+    sourceUrl: `https://www.nasdaq.com/market-activity/${proxy.assetClass === "etf" ? "etf" : "stocks"}/${proxy.ticker.toLowerCase()}/historical`,
+    isProxy: true,
+    proxyDisclosure: "价格代理，不代表管理人真实组合净值、基金 NAV 或私募产品收益"
+  };
+}
+
+async function fetchInstrumentReturns(holding, market) {
+  if (!holding?.ticker) return null;
+  if (market === "us") {
+    const assetClass = /ETF|TR|FUND/i.test(`${holding.name || ""} ${holding.title || ""}`) ? "etf" : "stocks";
+    return fetchNasdaqTickerReturns(holding.ticker, assetClass);
+  }
+  if (market === "cn" || market === "hk") {
+    return (await fetchYahooTickerReturns(holding.ticker, market)) || fetchEastmoneyTickerReturns(holding.ticker, market);
+  }
+  return null;
+}
+
+async function fetchPortfolioProxyReturns(profile) {
+  const holdings = (profile.topHoldings || []).filter((holding) => holding.ticker).slice(0, 6);
+  if (holdings.length === 0) return emptyReturns("暂无可计算价格代理");
+
+  const rawWeights = holdings.map((holding) => {
+    if (Number.isFinite(holding.marketValue) && holding.marketValue > 0) return holding.marketValue;
+    if (Number.isFinite(holding.weight) && holding.weight > 0) return holding.weight;
+    return 1;
+  });
+  const totalWeight = rawWeights.reduce((sum, item) => sum + item, 0);
+  let coveredWeight = 0;
+  let oneYear = 0;
+  let threeYear = 0;
+  let asOf = null;
+
+  for (let index = 0; index < holdings.length; index += 1) {
+    await sleep(profile.market === "us" ? 80 : 40);
+    const returns = await fetchInstrumentReturns(holdings[index], profile.market);
+    if (!returns || returns.oneYearPct === null || returns.threeYearPct === null) continue;
+    const weight = rawWeights[index] / totalWeight;
+    coveredWeight += weight;
+    oneYear += returns.oneYearPct * weight;
+    threeYear += returns.threeYearPct * weight;
+    asOf = !asOf || returns.asOf > asOf ? returns.asOf : asOf;
+  }
+
+  if (coveredWeight <= 0) return emptyReturns("Top持仓价格代理暂不可用");
+  const scale = 1 / coveredWeight;
+  const labelByMarket = {
+    us: "13F Top持仓价格代理",
+    cn: "A股前十大股东 Top持仓价格代理",
+    hk: "HKEX Stock Connect Top持仓价格代理"
+  };
+  return {
+    oneYearPct: oneYear * scale,
+    threeYearPct: threeYear * scale,
+    sourceLabel: `${labelByMarket[profile.market] || "Top持仓价格代理"} · 覆盖 ${Math.round(coveredWeight * 100)}%`,
+    sourceUrl: profile.sourceUrl || null,
+    asOf,
+    isProxy: true,
+    proxyDisclosure: "按当前公开 Top 持仓价格估算，不代表管理人真实组合净值或产品收益"
+  };
 }
 
 function topMoves(changes, directions) {
@@ -1240,6 +1485,7 @@ function topMoves(changes, directions) {
       value: ["decrease", "closed"].includes(event.direction)
         ? -Math.abs(event.significanceScore ?? event.marketValueDelta ?? 0)
         : Math.abs(event.significanceScore ?? event.marketValueDelta ?? 0),
+      valueCurrency: event.valueCurrency || "USD",
       date: event.filingDate || event.reportDate || null,
       evidenceUrl: event.evidenceUrl
     }));
@@ -1250,16 +1496,316 @@ async function enrichProfile(profile) {
     ...event,
     narrative: buildNarrative(event)
   }));
+  const directReturns = await fetchProxyReturns(profile.performanceProxy);
+  const returns =
+    directReturns.oneYearPct !== null || directReturns.threeYearPct !== null
+      ? directReturns
+      : await fetchPortfolioProxyReturns(profile);
   return {
     ...profile,
     changes,
     topIncreases: topMoves(changes, ["new", "increase"]),
     topDecreases: topMoves(changes, ["decrease", "closed"]),
-    returns: await fetchProxyReturns(profile.performanceProxy)
+    returns
   };
 }
 
-function regionalProfile(item) {
+function recentQuarterEndDates(count = 7) {
+  const now = new Date();
+  let year = now.getUTCFullYear();
+  let quarter = Math.floor(now.getUTCMonth() / 3);
+  if (quarter === 0) {
+    year -= 1;
+    quarter = 4;
+  }
+
+  const dates = [];
+  for (let index = 0; index < count; index += 1) {
+    const month = quarter * 3;
+    const day = month === 3 ? "31" : month === 6 ? "30" : month === 9 ? "30" : "31";
+    dates.push(`${year}-${String(month).padStart(2, "0")}-${day}`);
+    quarter -= 1;
+    if (quarter === 0) {
+      quarter = 4;
+      year -= 1;
+    }
+  }
+  return dates;
+}
+
+async function fetchEastmoneyRows({ date, holderName, holderType, pageSize = 12 }) {
+  const filters = [`(END_DATE='${date}')`];
+  if (holderName) filters.push(`(HOLDER_NAME="${holderName}")`);
+  if (holderType) filters.push(`(HOLDER_NEWTYPE="${holderType}")`);
+  const url = new URL("https://datacenter-web.eastmoney.com/api/data/v1/get");
+  const params = {
+    sortColumns: "HOLDER_MARKET_CAP",
+    sortTypes: "-1",
+    pageSize: String(pageSize),
+    pageNumber: "1",
+    reportName: "RPT_DMSK_HOLDERS",
+    columns: "ALL",
+    source: "WEB",
+    client: "WEB",
+    filter: filters.join("")
+  };
+  for (const [key, value] of Object.entries(params)) url.searchParams.set(key, value);
+  const json = JSON.parse(
+    (
+      await fetchText(url.toString(), {
+        headers: {
+          "user-agent": "Mozilla/5.0 chicang public-data-research"
+        }
+      })
+    ).text
+  );
+  return json.result?.data || [];
+}
+
+function eastmoneyDirection(row) {
+  const value = row.HOLDNUM_CHANGE_NAME || row.DIRECTION || row.HOLD_CHANGE || "";
+  if (/新进/.test(value)) return "new";
+  if (/增|加仓/.test(value)) return "increase";
+  if (/减/.test(value)) return "decrease";
+  return null;
+}
+
+function cnSecurityUrl(row) {
+  const market = String(row.SECUCODE || "").endsWith(".SH") ? "SH" : "SZ";
+  return `https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=${market}${row.SECURITY_CODE}`;
+}
+
+async function fetchCnRegionalProfile(item) {
+  if (!item.eastmoney) return regionalProfile(item);
+  const dates = recentQuarterEndDates();
+  const rows = [];
+  let reportDate = null;
+
+  for (const date of dates) {
+    const batch = [];
+    if (item.eastmoney.holderType) {
+      batch.push(...(await fetchEastmoneyRows({ date, holderType: item.eastmoney.holderType, pageSize: 24 })));
+    }
+    for (const holderName of item.eastmoney.holderNames || []) {
+      await sleep(80);
+      batch.push(...(await fetchEastmoneyRows({ date, holderName, pageSize: 16 })));
+    }
+    if (batch.length > 0) {
+      rows.push(...batch);
+      reportDate = date;
+      break;
+    }
+  }
+
+  const unique = new Map();
+  for (const row of rows) {
+    unique.set(`${row.SECURITY_CODE}-${row.HOLDER_NAME}-${row.END_DATE}`, row);
+  }
+
+  const normalized = Array.from(unique.values())
+    .map((row) => ({
+      row,
+      ticker: row.SECURITY_CODE,
+      name: row.SECURITY_NAME_ABBR,
+      holderName: row.HOLDER_NAME,
+      reportDate: String(row.END_DATE || reportDate || "").slice(0, 10),
+      filingDate: String(row.NOTICE_DATE || "").slice(0, 10) || null,
+      shares: numberFrom(row.HOLD_NUM),
+      sharesDelta: numberFrom(row.HOLD_NUM_CHANGE) || numberFrom(row.XZCHANGE),
+      marketValue: numberFrom(row.HOLDER_MARKET_CAP) || 0,
+      weight: numberFrom(row.HOLD_RATIO),
+      direction: eastmoneyDirection(row),
+      evidenceUrl: cnSecurityUrl(row)
+    }))
+    .sort((a, b) => b.marketValue - a.marketValue);
+
+  const groupedByTicker = new Map();
+  for (const holding of normalized) {
+    const existing =
+      groupedByTicker.get(holding.ticker) ||
+      {
+        ...holding,
+        holderNames: new Set(),
+        marketValue: 0,
+        shares: 0,
+        weight: 0
+      };
+    existing.marketValue += holding.marketValue || 0;
+    existing.shares += holding.shares || 0;
+    existing.weight += holding.weight || 0;
+    existing.holderNames.add(holding.holderName);
+    if ((holding.marketValue || 0) > (existing.primaryMarketValue || 0)) {
+      existing.primaryMarketValue = holding.marketValue || 0;
+      existing.evidenceUrl = holding.evidenceUrl;
+      existing.reportDate = holding.reportDate;
+      existing.filingDate = holding.filingDate;
+    }
+    groupedByTicker.set(holding.ticker, existing);
+  }
+  const groupedHoldings = Array.from(groupedByTicker.values()).sort((a, b) => b.marketValue - a.marketValue);
+
+  const topHoldings = groupedHoldings.slice(0, 8).map((holding) => ({
+    ticker: holding.ticker,
+    name: holding.name,
+    holderName: Array.from(holding.holderNames).slice(0, 2).join(" / "),
+    shares: holding.shares,
+    marketValue: holding.marketValue,
+    valueCurrency: "CNY",
+    weight: holding.weight,
+    evidenceUrl: holding.evidenceUrl,
+    reportDate: holding.reportDate
+  }));
+
+  const groupedChanges = new Map();
+  for (const holding of normalized.filter((item) => item.direction)) {
+    const key = `${holding.ticker}-${holding.direction}`;
+    const existing =
+      groupedChanges.get(key) ||
+      {
+        ...holding,
+        holderNames: new Set(),
+        marketValue: 0,
+        sharesDelta: 0
+      };
+    existing.marketValue += holding.marketValue || 0;
+    existing.sharesDelta += holding.sharesDelta || 0;
+    existing.holderNames.add(holding.holderName);
+    groupedChanges.set(key, existing);
+  }
+
+  const changes = normalized
+    .filter((holding) => holding.direction)
+    .map((holding) => groupedChanges.get(`${holding.ticker}-${holding.direction}`))
+    .filter((holding, index, arr) => holding && arr.indexOf(holding) === index)
+    .sort((a, b) => b.marketValue - a.marketValue)
+    .slice(0, 18)
+    .map((holding) => ({
+      id: `${item.id}-${holding.ticker}-${holding.holderName}-${holding.reportDate}`,
+      market: "cn",
+      investorId: item.id,
+      investorName: item.displayName,
+      vehicleName: Array.from(holding.holderNames).slice(0, 2).join(" / "),
+      sourceTier: "L2-derived",
+      disclosureType: "A股定期报告前十大股东",
+      sourceLabel: "东方财富股东分析索引",
+      reportDate: holding.reportDate,
+      previousReportDate: null,
+      filingDate: holding.filingDate,
+      evidenceUrl: holding.evidenceUrl,
+      security: {
+        ticker: holding.ticker,
+        name: holding.name,
+        cusip: "",
+        title: "A股前十大股东"
+      },
+      direction: holding.direction,
+      sharesBefore: null,
+      sharesAfter: holding.shares,
+      sharesDelta:
+        holding.sharesDelta && holding.direction === "decrease"
+          ? -Math.abs(holding.sharesDelta)
+          : holding.sharesDelta,
+      marketValueBefore: null,
+      marketValueAfter: holding.marketValue,
+      marketValueDelta:
+        holding.direction === "decrease" ? -Math.abs(holding.marketValue) : Math.abs(holding.marketValue),
+      valueCurrency: "CNY",
+      significanceScore: holding.marketValue,
+      confidence: "medium",
+      staleDisclosure: true
+    }));
+
+  return {
+    ...item,
+    sourceTier: changes.length > 0 || topHoldings.length > 0 ? "L2-derived" : item.sourceTier,
+    sourceLabel: topHoldings.length > 0 ? "东方财富股东分析索引 / 原始定期报告" : item.sourceLabel,
+    sourceUrl: topHoldings[0]?.evidenceUrl || item.sourceUrl,
+    latestFiling: {
+      form: "A股定期报告",
+      reportDate,
+      filingDate: normalized.map((holding) => holding.filingDate).filter(Boolean).sort().at(-1) || null
+    },
+    totalValue: topHoldings.reduce((sum, holding) => sum + (holding.marketValue || 0), 0),
+    positionCount: normalized.length || null,
+    topHoldings,
+    changes
+  };
+}
+
+function parseHkSouthboundRows(html) {
+  const reportDate = html.match(/Shareholding Date:\s*(\d{4}\/\d{2}\/\d{2})/)?.[1]?.replaceAll("/", "-") || null;
+  const rows = [];
+  const rowPattern = /<tr>\s*<td class="col-stock-code">[\s\S]*?<\/tr>/g;
+  const cell = (row, className) =>
+    stripHtml(
+      row.match(
+        new RegExp(`<td class="${className}">[\\s\\S]*?<div class="mobile-list-body">([\\s\\S]*?)<\\/div>`, "i")
+      )?.[1] || ""
+    );
+  for (const rowMatch of html.matchAll(rowPattern)) {
+    const row = rowMatch[0];
+    const code = cell(row, "col-stock-code").replace(/\D/g, "");
+    const name = cell(row, "col-stock-name");
+    const shares = cell(row, "col-shareholding");
+    const pct = cell(row, "col-shareholding-percent").replace("%", "");
+    if (!code || !name) continue;
+    rows.push({
+      ticker: code.padStart(5, "0"),
+      name,
+      shares: numberFrom(shares),
+      weight: numberFrom(pct),
+      reportDate
+    });
+  }
+  return rows;
+}
+
+async function fetchHkSouthboundProfile(item) {
+  const html = (await fetchText("https://www3.hkexnews.hk/sdw/search/mutualmarket.aspx?t=hk")).text;
+  const rows = parseHkSouthboundRows(html)
+    .filter((row) => row.shares)
+    .sort((a, b) => b.shares - a.shares);
+  const topHoldings = rows.slice(0, 8).map((row) => ({
+    ticker: row.ticker,
+    name: row.name,
+    shares: row.shares,
+    marketValue: 0,
+    valueCurrency: "SHARES",
+    weight: row.weight,
+    evidenceUrl: item.sourceUrl,
+    reportDate: row.reportDate
+  }));
+
+  return {
+    ...item,
+    sourceTier: topHoldings.length ? "L1" : item.sourceTier,
+    latestFiling: {
+      form: "HKEX Stock Connect Shareholding",
+      reportDate: rows[0]?.reportDate || null,
+      filingDate: rows[0]?.reportDate || null
+    },
+    totalValue: null,
+    positionCount: rows.length || null,
+    topHoldings,
+    changes: []
+  };
+}
+
+async function regionalProfile(item) {
+  if (item.market === "cn") {
+    try {
+      return await fetchCnRegionalProfile(item);
+    } catch (error) {
+      console.warn(`Skipped CN regional ${item.displayName}: ${error.message}`);
+    }
+  }
+  if (item.hkexSouthbound) {
+    try {
+      return await fetchHkSouthboundProfile(item);
+    } catch (error) {
+      console.warn(`Skipped HKEX southbound: ${error.message}`);
+    }
+  }
   return {
     ...item,
     latestFiling: {
@@ -1302,8 +1848,14 @@ async function main() {
     }
   }
 
+  const regionalProfiles = [];
+  for (const item of REGIONAL_WATCHLISTS) {
+    await sleep(120);
+    regionalProfiles.push(await regionalProfile(item));
+  }
+  const regionalChanges = regionalProfiles.flatMap((profile) => profile.changes || []);
   const secChanges = managers.flatMap((manager) => manager.changes);
-  const allChanges = [...ark.trades, ...secChanges, ...congress.changes, ...insiders.changes]
+  const allChanges = [...ark.trades, ...secChanges, ...congress.changes, ...insiders.changes, ...regionalChanges]
     .sort((a, b) => {
       if (a.filingDate !== b.filingDate) return String(b.filingDate).localeCompare(String(a.filingDate));
       return b.significanceScore - a.significanceScore;
@@ -1322,9 +1874,7 @@ async function main() {
   }
 
   const profiles = await Promise.all(
-    [ark.profile, ...managers, congress.profile, insiders.profile, ...REGIONAL_WATCHLISTS.map(regionalProfile)].map(
-      enrichProfile
-    )
+    [ark.profile, ...managers, congress.profile, insiders.profile, ...regionalProfiles].map(enrichProfile)
   );
 
   const markets = {
@@ -1351,7 +1901,7 @@ async function main() {
       name: "chicang",
       tagline: "重要资金公开披露雷达",
       disclosure:
-        "只展示可追溯到公开披露或官方链接的数据。美股已自动解析 ARK、SEC 13F、PTR、Form 4；A 股和港股当前为官方披露入口与观察名单。本站不构成投资建议。"
+        "只展示可追溯到公开披露、官方链接或明确标注的结构化索引。本站不构成投资建议。"
     },
     markets,
     stats: {
@@ -1362,6 +1912,7 @@ async function main() {
       congressTradeCount: congress.changes.length,
       form4TradeCount: insiders.changes.length,
       regionalWatchlistCount: REGIONAL_WATCHLISTS.length,
+      regionalTradeCount: regionalChanges.length,
       sourceErrorCount: sourceErrors.length,
       latestEventDate:
         allChanges.map((event) => event.filingDate || event.reportDate).filter(Boolean).sort().at(-1) || null
@@ -1371,13 +1922,10 @@ async function main() {
     arkHoldings: ark.holdings.slice(0, 400),
     sourceErrors,
     sourceNotes: [
-      "ARK 当前持仓来自 ARK 官方 ETF holdings CSV；交易卡片暂由 Cathie's Ark 第三方索引解析，非 ARK 官方交易清单。",
-      "SEC 13F 数值按 filing 原始 information table 的 value 字段展示并保留 evidence URL；本站不做千美元二次放大。",
-      "13F 变化按最近两个 reportDate 做差分，不代表披露日当天交易。",
-      "PTR 列表解析使用 CongressFlow 第三方索引；每条入库记录必须有 House Clerk 或 Senate eFD 官方 evidence URL，否则丢弃。金额为申报区间中点估算，不是精确成交额。",
-      "SEC Form 4 仅展示 non-derivative transactionCode=P/S 的公开市场买入/卖出；排除 A/M/F/G/J 等授予、期权行权、税务卖出、赠与或其他交易。",
-      "A 股与港股当前仅列出官方披露入口和观察对象，尚未自动解析持仓变化事件。",
-      "1Y/3Y 为可交易证券价格代理，不代表管理人真实组合净值、基金 NAV 或私募产品收益。"
+      "美股自动源：ARK 官方 CSV、SEC EDGAR 13F/Form 4、PTR 官方 evidence URL；第三方索引只用于发现记录。",
+      "A股自动源：东方财富股东分析结构化索引，原始事实来自上市公司定期报告；港股南向持股来自 HKEX Stock Connect 官方表。",
+      "13F 与 A股定期报告是报告期差分，不代表披露日当天交易；PTR 金额为申报区间估算。",
+      "1Y/3Y 是公开证券或 Top 持仓价格代理，不是私募真实净值、基金 NAV 或投资建议。"
     ],
     officialSources: [
       {
@@ -1417,8 +1965,12 @@ async function main() {
         url: "https://www3.hkexnews.hk/sdw/search/mutualmarket.aspx?t=hk"
       },
       {
-        label: "OGE public financial disclosure",
-        url: "https://www2.oge.gov/web/oge.nsf/publicresources_FOIA-landing"
+        label: "AkShare 股东分析接口参考",
+        url: "https://github.com/akfamily/akshare/blob/main/docs/tutorial.md"
+      },
+      {
+        label: "Senate Stock Watcher open data",
+        url: "https://github.com/timothycarambat/senate-stock-watcher-data"
       }
     ]
   };
