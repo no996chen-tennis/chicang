@@ -27,6 +27,7 @@ type Security = {
 type MoveSummary = {
   ticker?: string;
   name: string;
+  market?: Market;
   direction: Direction;
   value?: number | null;
   valueCurrency?: string;
@@ -53,6 +54,12 @@ type HoldingEvent = {
   marketValueDelta?: number | null;
   valueCurrency?: string;
   disclosedAmountRange?: string;
+  summaryEvents?: HoldingEvent[];
+  summaryStats?: {
+    increaseCount: number;
+    decreaseCount: number;
+    netValue: number;
+  };
   staleDisclosure: boolean;
   significanceScore: number;
 };
@@ -191,10 +198,17 @@ function formatDate(value?: string | null, compact = false) {
 }
 
 function eventTicker(event: HoldingEvent) {
+  if (event.summaryEvents?.length) return event.security.name;
+  if ((event.market === "cn" || event.market === "hk") && event.security.ticker && event.security.name) {
+    return `${event.security.ticker} ${event.security.name}`;
+  }
   return event.security.ticker || event.security.name;
 }
 
 function moveLabel(move: MoveSummary) {
+  if ((move.market === "cn" || move.market === "hk") && move.ticker && move.name) {
+    return `${move.ticker} ${move.name}`;
+  }
   return move.ticker || move.name;
 }
 
@@ -236,16 +250,26 @@ function matchesQuery(profile: Profile, query: string) {
 function compactEvents(input: HoldingEvent[]) {
   const grouped = new Map<string, HoldingEvent & { fundCount?: number }>();
   for (const event of input) {
-    const key =
-      event.investorId === "cathie_wood"
-        ? `${event.investorId}-${event.reportDate}-${event.security.ticker || event.security.name}-${event.direction}`
-        : event.id;
+    const key = event.investorId === "cathie_wood" ? event.investorId : event.id;
     const existing = grouped.get(key);
     if (!existing) {
       grouped.set(key, {
         ...event,
         id: key,
+        security:
+          event.investorId === "cathie_wood"
+            ? { ...event.security, ticker: "ARK", name: "Cathie Wood 汇总" }
+            : event.security,
         vehicleName: event.investorId === "cathie_wood" ? "ARK ETFs 汇总" : event.vehicleName,
+        summaryEvents: event.investorId === "cathie_wood" ? [event] : undefined,
+        summaryStats:
+          event.investorId === "cathie_wood"
+            ? {
+                increaseCount: ["new", "increase"].includes(event.direction) ? 1 : 0,
+                decreaseCount: ["decrease", "closed"].includes(event.direction) ? 1 : 0,
+                netValue: event.marketValueDelta || 0
+              }
+            : undefined,
         fundCount: event.investorId === "cathie_wood" ? 1 : undefined
       });
       continue;
@@ -254,6 +278,16 @@ function compactEvents(input: HoldingEvent[]) {
     existing.sharesDelta = (existing.sharesDelta || 0) + (event.sharesDelta || 0);
     existing.significanceScore = (existing.significanceScore || 0) + Math.abs(event.marketValueDelta || 0);
     existing.fundCount = (existing.fundCount || 1) + 1;
+    existing.summaryEvents = [...(existing.summaryEvents || []), event].sort(
+      (a, b) => (b.significanceScore || 0) - (a.significanceScore || 0)
+    );
+    existing.summaryStats = {
+      increaseCount:
+        (existing.summaryStats?.increaseCount || 0) + (["new", "increase"].includes(event.direction) ? 1 : 0),
+      decreaseCount:
+        (existing.summaryStats?.decreaseCount || 0) + (["decrease", "closed"].includes(event.direction) ? 1 : 0),
+      netValue: (existing.summaryStats?.netValue || 0) + (event.marketValueDelta || 0)
+    };
   }
 
   const sorted = Array.from(grouped.values()).sort((a, b) => {
@@ -281,7 +315,7 @@ function compactEvents(input: HoldingEvent[]) {
     let added = false;
     for (const investorId of investorOrder) {
       const count = byInvestor.get(investorId) || 0;
-      const limit = investorId === "cathie_wood" ? 3 : 2;
+      const limit = investorId === "cathie_wood" ? 1 : 2;
       if (count >= limit) continue;
       const next = buckets.get(investorId)?.[count];
       if (!next) continue;
@@ -375,7 +409,7 @@ function App() {
     profileCount: profiles.length,
     eventCount: events.length
   };
-  const headlineProfiles = profiles.slice(0, market === "us" ? 18 : 12);
+  const headlineProfiles = profiles.slice(0, market === "us" ? 18 : 10);
   const positiveEventCount = marketEvents.filter((event) => ["new", "increase"].includes(event.direction)).length;
   const negativeEventCount = marketEvents.filter((event) => ["decrease", "closed"].includes(event.direction)).length;
   const marketLatestEventDate =
@@ -385,7 +419,9 @@ function App() {
       ? feed.stats.sourceErrorCount === 0
         ? "自动源正常"
         : `自动源 ${feed.stats.sourceErrorCount} 个异常`
-      : "当前为观察名单";
+      : profiles.some((profile) => (profile.topHoldings || []).length > 0 || (profile.changes || []).length > 0)
+        ? "自动源正常"
+        : "当前为观察名单";
 
   return (
     <main>
@@ -513,9 +549,7 @@ function NameStrip({ profiles }: { profiles: Profile[] }) {
       {profiles.map((profile) => (
         <span className="name-pill" key={profile.id}>
           <b>{profile.displayName}</b>
-          <small>
-            1Y {formatPercent(profile.returns?.oneYearPct)} · 3Y {formatPercent(profile.returns?.threeYearPct)}
-          </small>
+          <small>近一年业绩 {formatPercent(profile.returns?.oneYearPct)}</small>
         </span>
       ))}
     </div>
@@ -581,25 +615,53 @@ function CompactMoves({ events }: { events: HoldingEvent[] }) {
   return (
     <div className="move-list">
       {events.map((event) => (
-        <a className="move-row" key={event.id} href={event.evidenceUrl} target="_blank" rel="noreferrer">
-          <span className={`direction-badge ${directionClass[event.direction]}`}>{directionText[event.direction]}</span>
-          <strong>{eventTicker(event)}</strong>
-          <span className="move-person">
-            {event.investorName}
-            <small className="move-source">{eventMeta(event)}</small>
-            <small className="move-mobile-meta">
-              {event.disclosedAmountRange || formatCurrency(event.marketValueDelta, "--", event.valueCurrency || "USD")} ·{" "}
-              {formatDate(event.filingDate || event.reportDate, true)}
-            </small>
-          </span>
-          <span className="move-value">
-            {event.disclosedAmountRange || formatCurrency(event.marketValueDelta, "--", event.valueCurrency || "USD")}
-          </span>
-          <span className="move-date">{formatDate(event.filingDate || event.reportDate, true)}</span>
-          <ExternalLink size={14} />
-        </a>
+        <MoveCard key={event.id} event={event} />
       ))}
     </div>
+  );
+}
+
+function MoveCard({ event }: { event: HoldingEvent }) {
+  if (event.summaryEvents?.length) {
+    return (
+      <a className="move-card summary" href={event.evidenceUrl} target="_blank" rel="noreferrer">
+        <div className="move-card-head">
+          <span className="direction-badge positive">汇</span>
+          <strong>Cathie Wood</strong>
+          <ExternalLink size={14} />
+        </div>
+        <div className="summary-counts">
+          <span>增/新 {event.summaryStats?.increaseCount || 0}</span>
+          <span>减/清 {event.summaryStats?.decreaseCount || 0}</span>
+          <b>{formatDate(event.filingDate || event.reportDate, true)}</b>
+        </div>
+        <div className="summary-items">
+          {event.summaryEvents.slice(0, 4).map((item) => (
+            <span key={item.id} className={directionClass[item.direction]}>
+              {item.security.ticker || item.security.name} {formatCurrency(item.marketValueDelta, "", item.valueCurrency || "USD")}
+            </span>
+          ))}
+        </div>
+      </a>
+    );
+  }
+
+  return (
+    <a className="move-card" href={event.evidenceUrl} target="_blank" rel="noreferrer">
+      <div className="move-card-head">
+        <span className={`direction-badge ${directionClass[event.direction]}`}>{directionText[event.direction]}</span>
+        <strong>{eventTicker(event)}</strong>
+        <ExternalLink size={14} />
+      </div>
+      <div className="move-card-body">
+        <span>{event.investorName}</span>
+        <small>{eventMeta(event)}</small>
+      </div>
+      <div className="move-card-foot">
+        <b>{event.disclosedAmountRange || formatCurrency(event.marketValueDelta, "--", event.valueCurrency || "USD")}</b>
+        <span>{formatDate(event.filingDate || event.reportDate, true)}</span>
+      </div>
+    </a>
   );
 }
 
@@ -649,7 +711,8 @@ function HoldingChips({ holdings }: { holdings: NonNullable<Profile["topHoldings
       <span className="holding-title">前三大持仓</span>
       <div>
         {holdings.slice(0, 3).map((holding, index) => {
-          const label = holding.ticker || holding.name;
+          const label =
+            holding.ticker && /^\d/.test(holding.ticker) ? `${holding.ticker} ${holding.name}` : holding.ticker || holding.name;
           const value =
             holding.weight !== undefined && holding.weight !== null
               ? `${holding.weight.toFixed(1)}%`

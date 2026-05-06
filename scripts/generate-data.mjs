@@ -243,41 +243,33 @@ const REGIONAL_WATCHLISTS = [
     }
   },
   {
-    id: "cn_linyuan",
+    id: "cn_northbound_hkcc",
     market: "cn",
-    displayName: "林园系产品",
-    vehicleName: "A 股上市公司前十大股东线索",
-    audience: "公开前十大股东线索",
+    displayName: "北向资金 / 香港中央结算",
+    vehicleName: "A 股定期报告前十大股东线索",
+    audience: "外资持股变化",
     sourceTier: "Watchlist",
     disclosureType: "定期报告十大股东",
     sourceUrl: "http://www.cninfo.com.cn/new/disclosure",
     sourceLabel: "巨潮资讯 / 交易所定期报告",
     cadence: "定期报告披露后",
     eastmoney: {
-      holderNames: [
-        "深圳市林园投资管理有限责任公司-林园投资21号私募投资基金",
-        "深圳市林园投资管理有限责任公司-林园投资12号私募投资基金",
-        "深圳市林园投资管理有限责任公司-林园投资24号私募证券投资基金"
-      ]
+      holderNames: ["香港中央结算有限公司"]
     }
   },
   {
-    id: "cn_danshuiquan",
+    id: "cn_qfii",
     market: "cn",
-    displayName: "淡水泉 / 赵军",
+    displayName: "QFII / 外资机构",
     vehicleName: "A 股定期报告前十大股东线索",
-    audience: "成长价值风格私募",
+    audience: "合格境外机构投资者",
     sourceTier: "Watchlist",
     disclosureType: "定期报告十大股东",
     sourceUrl: "https://www.szse.cn/disclosure/listed/fixed/index.html",
     sourceLabel: "深交所 / 巨潮资讯",
     cadence: "定期报告披露后",
     eastmoney: {
-      holderNames: [
-        "北京淡水泉投资管理有限公司-淡水泉成长基金1期",
-        "北京淡水泉投资管理有限公司-淡水泉精选1期私募证券投资基金",
-        "北京淡水泉投资管理有限公司-淡水泉成长基金"
-      ]
+      holderType: "QFII"
     }
   },
   {
@@ -294,54 +286,6 @@ const REGIONAL_WATCHLISTS = [
     eastmoney: {
       holderNames: ["上海景林资产管理有限公司-景林丰收3号私募基金"]
     }
-  },
-  {
-    id: "hk_li_ka_shing",
-    market: "hk",
-    displayName: "李嘉诚家族",
-    vehicleName: "长和系 / 长实系权益披露",
-    audience: "港股核心家族资本动向",
-    sourceTier: "Watchlist",
-    disclosureType: "HKEX DI notices",
-    sourceUrl: "https://di.hkex.com.hk/filing/di/NSSrchMethod.aspx?lang=EN&src=MAIN",
-    sourceLabel: "HKEX Disclosure of Interests",
-    cadence: "事件触发"
-  },
-  {
-    id: "hk_tencent_prosus",
-    market: "hk",
-    displayName: "Prosus / Naspers",
-    vehicleName: "腾讯主要股东权益披露",
-    audience: "腾讯大股东减持节奏",
-    sourceTier: "Watchlist",
-    disclosureType: "HKEX DI notices",
-    sourceUrl: "https://di.hkex.com.hk/filing/di/NSSrchMethod.aspx?lang=EN&src=MAIN",
-    sourceLabel: "HKEX Disclosure of Interests",
-    cadence: "事件触发"
-  },
-  {
-    id: "hk_hillhouse",
-    market: "hk",
-    displayName: "高瓴 / Hillhouse",
-    vehicleName: "港股主要股东权益披露",
-    audience: "医疗、消费、科技持仓线索",
-    sourceTier: "Watchlist",
-    disclosureType: "HKEX DI notices",
-    sourceUrl: "https://di.hkex.com.hk/filing/di/NSSrchMethod.aspx?lang=EN&src=MAIN",
-    sourceLabel: "HKEX Disclosure of Interests",
-    cadence: "事件触发"
-  },
-  {
-    id: "hk_blackrock_jpm",
-    market: "hk",
-    displayName: "国际大行主要股东 DI",
-    vehicleName: "BlackRock / JPMorgan 等港股权益披露",
-    audience: "国际长线资金阈值变动",
-    sourceTier: "Watchlist",
-    disclosureType: "HKEX DI notices",
-    sourceUrl: "https://di.hkex.com.hk/filing/di/NSSrchMethod.aspx?lang=EN&src=MAIN",
-    sourceLabel: "HKEX Disclosure of Interests",
-    cadence: "事件触发"
   },
   {
     id: "hk_southbound",
@@ -1481,6 +1425,7 @@ function topMoves(changes, directions) {
     .map((event) => ({
       ticker: event.security.ticker || "",
       name: event.security.name,
+      market: event.market,
       direction: event.direction,
       value: ["decrease", "closed"].includes(event.direction)
         ? -Math.abs(event.significanceScore ?? event.marketValueDelta ?? 0)
