@@ -64,6 +64,16 @@ type HoldingEvent = {
   significanceScore: number;
 };
 
+type RecentGroup = {
+  id: string;
+  name: string;
+  source: string;
+  latestDate: string | null;
+  evidenceUrl: string;
+  increases: HoldingEvent[];
+  decreases: HoldingEvent[];
+};
+
 type Profile = {
   id: string;
   market: Market;
@@ -592,8 +602,18 @@ function HeroPulse({
         ) : (
           events.map((event) => (
             <a key={event.id} href={event.evidenceUrl} target="_blank" rel="noreferrer">
-              <b>{eventTicker(event)}</b>
-              <span className={directionClass[event.direction]}>{directionLongText[event.direction]}</span>
+              <b>{event.summaryEvents?.length ? "Cathie Wood" : eventTicker(event)}</b>
+              <span
+                className={
+                  event.summaryEvents?.length
+                    ? (event.marketValueDelta || 0) >= 0
+                      ? "positive"
+                      : "negative"
+                    : directionClass[event.direction]
+                }
+              >
+                {event.summaryEvents?.length ? "ARK 汇总" : directionLongText[event.direction]}
+              </span>
               <small>{formatCurrency(event.marketValueDelta, "--", event.valueCurrency || "USD")}</small>
             </a>
           ))
@@ -612,57 +632,122 @@ function CompactMoves({ events }: { events: HoldingEvent[] }) {
     );
   }
 
+  const groups = groupRecentEvents(events);
+
   return (
     <div className="move-list">
-      {events.map((event) => (
-        <MoveCard key={event.id} event={event} />
+      {groups.map((group) => (
+        <RecentInvestorCard key={group.id} group={group} />
       ))}
     </div>
   );
 }
 
-function MoveCard({ event }: { event: HoldingEvent }) {
-  if (event.summaryEvents?.length) {
-    return (
-      <a className="move-card summary" href={event.evidenceUrl} target="_blank" rel="noreferrer">
-        <div className="move-card-head">
-          <span className="direction-badge positive">汇</span>
-          <strong>Cathie Wood</strong>
-          <ExternalLink size={14} />
-        </div>
-        <div className="summary-counts">
-          <span>增/新 {event.summaryStats?.increaseCount || 0}</span>
-          <span>减/清 {event.summaryStats?.decreaseCount || 0}</span>
-          <b>{formatDate(event.filingDate || event.reportDate, true)}</b>
-        </div>
-        <div className="summary-items">
-          {event.summaryEvents.slice(0, 4).map((item) => (
-            <span key={item.id} className={directionClass[item.direction]}>
-              {item.security.ticker || item.security.name} {formatCurrency(item.marketValueDelta, "", item.valueCurrency || "USD")}
-            </span>
-          ))}
-        </div>
-      </a>
-    );
+function groupRecentEvents(events: HoldingEvent[]) {
+  const groups = new Map<string, RecentGroup>();
+  for (const event of events) {
+    const sourceEvents = event.summaryEvents?.length ? event.summaryEvents : [event];
+    const key = event.investorId === "cathie_wood" ? "cathie_wood" : `${event.investorId}:${event.investorName}`;
+    const existing =
+      groups.get(key) ||
+      {
+        id: key,
+        name: event.investorId === "cathie_wood" ? "Cathie Wood" : event.investorName,
+        source: event.investorId === "cathie_wood" ? "ARK ETFs 汇总" : event.sourceLabel || event.disclosureType,
+        latestDate: event.filingDate || event.reportDate,
+        evidenceUrl: event.evidenceUrl,
+        increases: [],
+        decreases: []
+      };
+    for (const item of sourceEvents) {
+      if (["new", "increase"].includes(item.direction)) existing.increases.push(item);
+      if (["decrease", "closed"].includes(item.direction)) existing.decreases.push(item);
+      const itemDate = item.filingDate || item.reportDate;
+      if (itemDate && (!existing.latestDate || itemDate > existing.latestDate)) existing.latestDate = itemDate;
+    }
+    existing.increases.sort((a, b) => (b.significanceScore || 0) - (a.significanceScore || 0));
+    existing.decreases.sort((a, b) => (b.significanceScore || 0) - (a.significanceScore || 0));
+    groups.set(key, existing);
   }
 
+  return Array.from(groups.values())
+    .filter((group) => group.increases.length || group.decreases.length)
+    .sort((a, b) => {
+      if (a.latestDate !== b.latestDate) return String(b.latestDate).localeCompare(String(a.latestDate));
+      const aScore = [...a.increases, ...a.decreases][0]?.significanceScore || 0;
+      const bScore = [...b.increases, ...b.decreases][0]?.significanceScore || 0;
+      return bScore - aScore;
+    })
+    .slice(0, 10);
+}
+
+function RecentInvestorCard({ group }: { group: RecentGroup }) {
+  const columnCount = Number(group.increases.length > 0) + Number(group.decreases.length > 0);
   return (
-    <a className="move-card" href={event.evidenceUrl} target="_blank" rel="noreferrer">
-      <div className="move-card-head">
-        <span className={`direction-badge ${directionClass[event.direction]}`}>{directionText[event.direction]}</span>
-        <strong>{eventTicker(event)}</strong>
-        <ExternalLink size={14} />
+    <article className="recent-card">
+      <div className="recent-head">
+        <div>
+          <h3>{group.name}</h3>
+          <p>{group.source} · {formatDate(group.latestDate, true)}</p>
+        </div>
+        <a href={group.evidenceUrl} target="_blank" rel="noreferrer" aria-label={`${group.name} 来源`}>
+          <ExternalLink size={15} />
+        </a>
       </div>
-      <div className="move-card-body">
-        <span>{event.investorName}</span>
-        <small>{eventMeta(event)}</small>
+      <div className={`recent-move-columns ${columnCount === 1 ? "single" : ""}`}>
+        {group.increases.length > 0 && <RecentMoveList title="增持" events={group.increases} tone="positive" />}
+        {group.decreases.length > 0 && <RecentMoveList title="减持" events={group.decreases} tone="negative" />}
       </div>
-      <div className="move-card-foot">
-        <b>{event.disclosedAmountRange || formatCurrency(event.marketValueDelta, "--", event.valueCurrency || "USD")}</b>
-        <span>{formatDate(event.filingDate || event.reportDate, true)}</span>
-      </div>
-    </a>
+    </article>
   );
+}
+
+function RecentMoveList({
+  title,
+  events,
+  tone
+}: {
+  title: string;
+  events: HoldingEvent[];
+  tone: "positive" | "negative";
+}) {
+  const Icon = tone === "positive" ? ArrowUpRight : ArrowDownRight;
+  const displayEvents = uniqueRecentMoves(events).slice(0, 4);
+  return (
+    <div className={`recent-move-list ${tone}`}>
+      <span className="recent-move-title">
+        <Icon size={14} />
+        {title}
+      </span>
+      <div>
+        {displayEvents.map((event) => (
+          <a key={event.id} href={event.evidenceUrl} target="_blank" rel="noreferrer">
+            <span>{eventTicker(event)}</span>
+            <small>
+              {event.disclosedAmountRange || formatCurrency(event.marketValueDelta, "", event.valueCurrency || "USD")}
+            </small>
+          </a>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function uniqueRecentMoves(events: HoldingEvent[]) {
+  const seen = new Set<string>();
+  const unique: HoldingEvent[] = [];
+  for (const event of events) {
+    const key = [
+      event.security.ticker || event.security.name,
+      event.direction,
+      event.disclosedAmountRange || Math.round(event.marketValueDelta || 0),
+      event.filingDate || event.reportDate
+    ].join("|");
+    if (seen.has(key)) continue;
+    seen.add(key);
+    unique.push(event);
+  }
+  return unique;
 }
 
 function ProfileCard({ profile }: { profile: Profile }) {

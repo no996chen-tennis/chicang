@@ -380,8 +380,130 @@ a {
 
 .move-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(218px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 10px;
+}
+
+.recent-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 206px;
+  padding: 16px;
+  border-radius: 8px;
+  background: #fbfcfa;
+}
+
+.recent-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.recent-head h3 {
+  margin: 0;
+  font-size: 22px;
+  line-height: 1.15;
+}
+
+.recent-head p {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.recent-head a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 7px;
+  background: #eef2ec;
+  color: var(--muted);
+  flex: 0 0 auto;
+}
+
+.recent-move-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: auto;
+}
+
+.recent-move-columns.single {
+  grid-template-columns: 1fr;
+}
+
+.recent-move-list {
+  min-width: 0;
+}
+
+.recent-move-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 7px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.recent-move-list.positive .recent-move-title svg {
+  color: var(--green);
+}
+
+.recent-move-list.negative .recent-move-title svg {
+  color: var(--red);
+}
+
+.recent-move-list div {
+  display: grid;
+  gap: 6px;
+}
+
+.recent-move-list a,
+.recent-empty {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   gap: 8px;
+  min-width: 0;
+  min-height: 31px;
+  padding: 0 9px;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.recent-move-list.positive a {
+  background: var(--green-bg);
+}
+
+.recent-move-list.negative a {
+  background: var(--red-bg);
+}
+
+.recent-move-list a span {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.recent-move-list a small {
+  color: var(--muted);
+  flex: 0 0 auto;
+  font-weight: 850;
+}
+
+.recent-empty {
+  justify-content: center;
+  background: #eef2ec;
+  color: var(--muted);
 }
 
 .move-card {
