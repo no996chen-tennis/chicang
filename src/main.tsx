@@ -229,15 +229,15 @@ function formatDate(value?: string | null, compact = false) {
 
 function eventTicker(event: HoldingEvent) {
   if (event.summaryEvents?.length) return event.security.name;
-  if (event.market === "cn" && event.security.ticker && event.security.name) {
-    return `${event.security.ticker} ${event.security.name}`;
+  if (event.market === "cn") {
+    return event.security.name || event.security.ticker || "--";
   }
   return event.security.ticker || event.security.name;
 }
 
 function moveLabel(move: MoveSummary) {
-  if (move.market === "cn" && move.ticker && move.name) {
-    return `${move.ticker} ${move.name}`;
+  if (move.market === "cn") {
+    return move.name || move.ticker || "--";
   }
   return move.ticker || move.name;
 }
@@ -795,8 +795,8 @@ function MainFundFlowPanel({ rows }: { rows: MainFundFlow[] }) {
           <a key={`${row.ticker}-${index}`} className="fund-flow-card" href={row.evidenceUrl} target="_blank" rel="noreferrer">
             <span className="fund-rank">{index + 1}</span>
             <div className="fund-security">
-              <strong>{row.ticker}</strong>
-              <span>{row.name}</span>
+              <strong>{row.name}</strong>
+              <span>{row.periodLabel}</span>
             </div>
             <b>{formatCurrency(row.mainNetInflow, "--", "CNY")}</b>
             <small>
@@ -872,8 +872,7 @@ function HoldingChips({ holdings }: { holdings: NonNullable<Profile["topHoldings
       <span className="holding-title">前三大持仓</span>
       <div>
         {holdings.slice(0, 3).map((holding, index) => {
-          const label =
-            holding.ticker && /^\d/.test(holding.ticker) ? `${holding.ticker} ${holding.name}` : holding.ticker || holding.name;
+          const label = holding.ticker && /^\d/.test(holding.ticker) ? holding.name : holding.ticker || holding.name;
           const value =
             holding.weight !== undefined && holding.weight !== null
               ? `${holding.weight.toFixed(1)}%`
