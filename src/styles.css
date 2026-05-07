@@ -91,6 +91,7 @@ a {
 .hero,
 .toolbar,
 .watch-panel,
+.fund-flow-section,
 .profiles-section,
 .sources {
   width: min(1180px, calc(100% - 40px));
@@ -142,9 +143,9 @@ a {
 
 .market-tabs {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 8px;
-  max-width: 520px;
+  max-width: 360px;
   margin: 0 0 18px;
 }
 
@@ -376,6 +377,99 @@ a {
 
 .watch-panel {
   padding: 10px;
+}
+
+.fund-flow-section {
+  padding-top: 10px;
+}
+
+.section-title-row.compact {
+  margin-top: 20px;
+}
+
+.source-anchor {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 850;
+}
+
+.fund-flow-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 10px;
+}
+
+.fund-flow-card {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 8px 10px;
+  min-width: 0;
+  min-height: 118px;
+  padding: 13px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  box-shadow: var(--shadow);
+}
+
+.fund-flow-card:hover {
+  background: #fbfcfa;
+}
+
+.fund-rank {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 7px;
+  background: var(--ink);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.fund-security {
+  min-width: 0;
+}
+
+.fund-security strong,
+.fund-security span {
+  display: block;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.fund-security strong {
+  font-size: 17px;
+  line-height: 1.05;
+}
+
+.fund-security span {
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 850;
+}
+
+.fund-flow-card b,
+.fund-flow-card small {
+  grid-column: 1 / -1;
+}
+
+.fund-flow-card b {
+  color: var(--green);
+  font-size: 21px;
+  line-height: 1;
+}
+
+.fund-flow-card small {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 800;
 }
 
 .move-list {
@@ -1033,6 +1127,7 @@ a {
   .hero,
   .toolbar,
   .watch-panel,
+  .fund-flow-section,
   .profiles-section,
   .sources {
     width: min(100% - 28px, 1180px);

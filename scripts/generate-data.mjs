@@ -286,19 +286,6 @@ const REGIONAL_WATCHLISTS = [
     eastmoney: {
       holderNames: ["上海景林资产管理有限公司-景林丰收3号私募基金"]
     }
-  },
-  {
-    id: "hk_southbound",
-    market: "hk",
-    displayName: "南向资金 / 港股通",
-    vehicleName: "HKEX Stock Connect holdings",
-    audience: "内地资金配置变化",
-    sourceTier: "Watchlist",
-    disclosureType: "Stock Connect 持股披露",
-    sourceUrl: "https://www3.hkexnews.hk/sdw/search/mutualmarket.aspx?t=hk",
-    sourceLabel: "HKEX Stock Connect Shareholding",
-    cadence: "交易日",
-    hkexSouthbound: true
   }
 ];
 
@@ -1507,6 +1494,86 @@ async function fetchEastmoneyRows({ date, holderName, holderType, pageSize = 12 
   return json.result?.data || [];
 }
 
+function unixSecondDate(value) {
+  const seconds = numberFrom(value);
+  if (!seconds) return null;
+  const parsed = new Date(seconds * 1000);
+  return Number.isNaN(parsed.valueOf()) ? null : parsed.toISOString().slice(0, 10);
+}
+
+async function fetchCnMainFundFlowRank(indicator = "10日") {
+  const configs = {
+    今日: {
+      fid: "f62",
+      pctField: "f3",
+      mainField: "f62",
+      mainPctField: "f184",
+      fields: "f12,f14,f2,f3,f62,f184,f66,f69,f72,f75,f78,f81,f84,f87,f204,f205,f124"
+    },
+    "3日": {
+      fid: "f267",
+      pctField: "f127",
+      mainField: "f267",
+      mainPctField: "f268",
+      fields: "f12,f14,f2,f127,f267,f268,f269,f270,f271,f272,f273,f274,f275,f276,f257,f258,f124"
+    },
+    "5日": {
+      fid: "f164",
+      pctField: "f109",
+      mainField: "f164",
+      mainPctField: "f165",
+      fields: "f12,f14,f2,f109,f164,f165,f166,f167,f168,f169,f170,f171,f172,f173,f257,f258,f124"
+    },
+    "10日": {
+      fid: "f174",
+      pctField: "f160",
+      mainField: "f174",
+      mainPctField: "f175",
+      fields: "f12,f14,f2,f160,f174,f175,f176,f177,f178,f179,f180,f181,f182,f183,f260,f261,f124"
+    }
+  };
+  const config = configs[indicator] || configs["10日"];
+  const url = new URL("https://push2.eastmoney.com/api/qt/clist/get");
+  const params = {
+    fid: config.fid,
+    po: "1",
+    pz: "50",
+    pn: "1",
+    np: "1",
+    fltt: "2",
+    invt: "2",
+    ut: "b2884a393a59ad64002292a3e90d46a5",
+    fs: "m:0+t:6+f:!2,m:0+t:13+f:!2,m:0+t:80+f:!2,m:1+t:2+f:!2,m:1+t:23+f:!2,m:0+t:7+f:!2,m:1+t:3+f:!2",
+    fields: config.fields
+  };
+  for (const [key, value] of Object.entries(params)) url.searchParams.set(key, value);
+  const json = JSON.parse(
+    (
+      await fetchText(url.toString(), {
+        headers: {
+          "user-agent": "Mozilla/5.0 chicang public-data-research"
+        }
+      })
+    ).text
+  );
+  return (json.data?.diff || [])
+    .map((row) => ({
+      ticker: String(row.f12 || ""),
+      name: String(row.f14 || ""),
+      periodLabel: `近${indicator}`,
+      latestPrice: numberFrom(row.f2),
+      pctChange: numberFrom(row[config.pctField]),
+      mainNetInflow: numberFrom(row[config.mainField]) || 0,
+      mainNetInflowPct: numberFrom(row[config.mainPctField]),
+      sourceLabel: "东方财富资金流向",
+      evidenceUrl: "https://data.eastmoney.com/zjlx/list.html?mkt=all",
+      asOf: unixSecondDate(row.f124)
+    }))
+    .filter((row) => row.ticker && row.name && row.mainNetInflow > 0)
+    .sort((a, b) => b.mainNetInflow - a.mainNetInflow)
+    .slice(0, 20);
+}
+
 function eastmoneyDirection(row) {
   const value = row.HOLDNUM_CHANGE_NAME || row.DIRECTION || row.HOLD_CHANGE || "";
   if (/新进/.test(value)) return "new";
@@ -1777,6 +1844,18 @@ async function main() {
   const insiders = await fetchInsiderProfile();
   const managers = [];
   const sourceErrors = [];
+  let cnMainFundInflow = [];
+
+  try {
+    cnMainFundInflow = await fetchCnMainFundFlowRank("10日");
+  } catch (error) {
+    console.warn(`Skipped CN main fund flow: ${error.message}`);
+    sourceErrors.push({
+      id: "cn_main_fund_flow",
+      displayName: "A股主力资金净流入",
+      error: error.message
+    });
+  }
 
   for (const manager of SEC_MANAGERS) {
     try {
@@ -1832,11 +1911,6 @@ async function main() {
       label: "A 股",
       profileCount: profiles.filter((profile) => profile.market === "cn").length,
       eventCount: allChanges.filter((event) => event.market === "cn").length
-    },
-    hk: {
-      label: "港股",
-      profileCount: profiles.filter((profile) => profile.market === "hk").length,
-      eventCount: allChanges.filter((event) => event.market === "hk").length
     }
   };
 
@@ -1859,16 +1933,18 @@ async function main() {
       regionalWatchlistCount: REGIONAL_WATCHLISTS.length,
       regionalTradeCount: regionalChanges.length,
       sourceErrorCount: sourceErrors.length,
+      cnMainFundInflowCount: cnMainFundInflow.length,
       latestEventDate:
         allChanges.map((event) => event.filingDate || event.reportDate).filter(Boolean).sort().at(-1) || null
     },
     profiles,
-    events: allChanges.slice(0, 120),
+    events: allChanges,
+    cnMainFundInflow,
     arkHoldings: ark.holdings.slice(0, 400),
     sourceErrors,
     sourceNotes: [
       "美股自动源：ARK 官方 CSV、SEC EDGAR 13F/Form 4、PTR 官方 evidence URL；第三方索引只用于发现记录。",
-      "A股自动源：东方财富股东分析结构化索引，原始事实来自上市公司定期报告；港股南向持股来自 HKEX Stock Connect 官方表。",
+      "A股自动源：东方财富股东分析结构化索引与资金流向榜；原始事实来自上市公司定期报告和东方财富数据中心。",
       "13F 与 A股定期报告是报告期差分，不代表披露日当天交易；PTR 金额为申报区间估算。",
       "1Y/3Y 是公开证券或 Top 持仓价格代理，不是私募真实净值、基金 NAV 或投资建议。"
     ],
@@ -1902,16 +1978,12 @@ async function main() {
         url: "https://www.szse.cn/disclosure/listed/fixed/index.html"
       },
       {
-        label: "HKEX Disclosure of Interests",
-        url: "https://di.hkex.com.hk/filing/di/NSSrchMethod.aspx?lang=EN&src=MAIN"
-      },
-      {
-        label: "HKEX Stock Connect Shareholding",
-        url: "https://www3.hkexnews.hk/sdw/search/mutualmarket.aspx?t=hk"
+        label: "东方财富资金流向",
+        url: "https://data.eastmoney.com/zjlx/list.html?mkt=all"
       },
       {
         label: "AkShare 股东分析接口参考",
-        url: "https://github.com/akfamily/akshare/blob/main/docs/tutorial.md"
+        url: "https://akshare.akfamily.xyz/data/stock/stock.html"
       },
       {
         label: "Senate Stock Watcher open data",

@@ -25,8 +25,7 @@ npm run check
 - ARK 当前持仓来自官方 ETF holdings CSV；交易卡片暂由 Cathie's Ark 第三方索引解析。
 - SEC 13F 来自 EDGAR，通常是季度末持仓，披露存在滞后，不代表披露当天买卖；数值按 filing 原始 information table 的 value 字段展示。
 - 美国国会议员 PTR 使用第三方索引发现记录，但每条事件必须保留 House Clerk 或 Senate eFD 官方 evidence URL。
-- A 股使用东方财富股东分析结构化索引补充前十大股东持仓和变动；原始事实仍来自上市公司定期报告。
-- 港股当前仅展示 HKEX Stock Connect 南向持股；没有自动解析结果的 DI 观察项不放进页面。
+- A 股使用东方财富股东分析结构化索引补充前十大股东持仓和变动，并展示东方财富资金流向的近 10 日主力净流入榜；股东事实仍来自上市公司定期报告。
 - GitHub 上可复用的数据项目：`akfamily/akshare` 覆盖 A 股股东分析接口；`timothycarambat/senate-stock-watcher-data` 可作为美国参议员 PTR 开放数据参考。
 - 本站只整理公开披露，不构成投资建议。
 - 当前生产发布通过 Cloudflare Pages 项目 `chicang-watch`；Codex 自动任务 `chicang-daily-disclosure-update` 每天更新数据、构建并重新部署。

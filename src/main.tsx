@@ -14,7 +14,7 @@ import {
 } from "lucide-react";
 import "./styles.css";
 
-type Market = "us" | "cn" | "hk";
+type Market = "us" | "cn";
 type Direction = "new" | "increase" | "decrease" | "closed";
 
 type Security = {
@@ -117,6 +117,19 @@ type Profile = {
   changes: HoldingEvent[];
 };
 
+type MainFundFlow = {
+  ticker: string;
+  name: string;
+  periodLabel: string;
+  latestPrice?: number | null;
+  pctChange?: number | null;
+  mainNetInflow: number;
+  mainNetInflowPct?: number | null;
+  sourceLabel: string;
+  evidenceUrl: string;
+  asOf?: string | null;
+};
+
 type HoldingFeed = {
   generatedAt: string;
   site: {
@@ -139,17 +152,19 @@ type HoldingFeed = {
   };
   profiles: Profile[];
   events: HoldingEvent[];
+  cnMainFundInflow?: MainFundFlow[];
   sourceErrors: Array<{ id: string; displayName: string; error: string }>;
   sourceNotes: string[];
   officialSources?: Array<{ label: string; url: string }>;
 };
 
-const marketOrder: Market[] = ["us", "cn", "hk"];
+const RECENT_WINDOW_DAYS = 30;
+
+const marketOrder: Market[] = ["us", "cn"];
 
 const fallbackMarketLabels: Record<Market, string> = {
   us: "美股",
-  cn: "A 股",
-  hk: "港股"
+  cn: "A 股"
 };
 
 const directionText: Record<Direction, string> = {
@@ -183,6 +198,11 @@ function formatCurrency(value?: number | null, fallback = "--", currency = "USD"
     if (abs >= 1_000) return `${sign}${(abs / 1_000).toFixed(0)}K股`;
     return `${sign}${abs.toFixed(0)}股`;
   }
+  if (currency === "CNY") {
+    if (abs >= 100_000_000) return `${sign}¥${(abs / 100_000_000).toFixed(1)}亿`;
+    if (abs >= 10_000) return `${sign}¥${(abs / 10_000).toFixed(0)}万`;
+    return `${sign}¥${abs.toFixed(0)}`;
+  }
   const prefix = currency === "CNY" ? "¥" : currency === "HKD" ? "HK$" : "$";
   if (abs >= 1_000_000_000) return `${sign}${prefix}${(abs / 1_000_000_000).toFixed(1)}B`;
   if (abs >= 1_000_000) return `${sign}${prefix}${(abs / 1_000_000).toFixed(1)}M`;
@@ -209,14 +229,14 @@ function formatDate(value?: string | null, compact = false) {
 
 function eventTicker(event: HoldingEvent) {
   if (event.summaryEvents?.length) return event.security.name;
-  if ((event.market === "cn" || event.market === "hk") && event.security.ticker && event.security.name) {
+  if (event.market === "cn" && event.security.ticker && event.security.name) {
     return `${event.security.ticker} ${event.security.name}`;
   }
   return event.security.ticker || event.security.name;
 }
 
 function moveLabel(move: MoveSummary) {
-  if ((move.market === "cn" || move.market === "hk") && move.ticker && move.name) {
+  if (move.market === "cn" && move.ticker && move.name) {
     return `${move.ticker} ${move.name}`;
   }
   return move.ticker || move.name;
@@ -347,6 +367,25 @@ function compactEvents(input: HoldingEvent[]) {
   return selected;
 }
 
+function eventTimeValue(event: HoldingEvent) {
+  const rawDate = event.filingDate || event.reportDate;
+  if (!rawDate) return Number.NaN;
+  const parsed = Date.parse(`${rawDate}T00:00:00Z`);
+  return Number.isFinite(parsed) ? parsed : Number.NaN;
+}
+
+function recentWindowEvents(input: HoldingEvent[], days = RECENT_WINDOW_DAYS) {
+  const validTimes = input.map(eventTimeValue).filter(Number.isFinite);
+  if (validTimes.length === 0) return input;
+  const latest = Math.max(...validTimes);
+  const cutoff = latest - days * 24 * 60 * 60 * 1000;
+  const windowed = input.filter((event) => {
+    const time = eventTimeValue(event);
+    return Number.isFinite(time) && time >= cutoff && time <= latest;
+  });
+  return windowed.length ? windowed : input;
+}
+
 function App() {
   const [feed, setFeed] = useState<HoldingFeed | null>(null);
   const [status, setStatus] = useState<"loading" | "ready" | "error">("loading");
@@ -394,7 +433,8 @@ function App() {
     });
   }, [marketEvents, normalizedQuery]);
 
-  const featuredEvents = useMemo(() => compactEvents(events), [events]);
+  const recentEvents = useMemo(() => recentWindowEvents(events), [events]);
+  const featuredEvents = useMemo(() => compactEvents(recentEvents), [recentEvents]);
 
   if (status === "loading") {
     return (
@@ -461,7 +501,7 @@ function App() {
 
       <section className="toolbar">
         <div>
-          <span className="section-kicker">{activeMarket.label}</span>
+          <span className="section-kicker">{activeMarket.label} · 近{RECENT_WINDOW_DAYS}天</span>
           <h2>近期值得看</h2>
         </div>
         <div className="search-box">
@@ -471,8 +511,10 @@ function App() {
       </section>
 
       <section className="watch-panel">
-        <CompactMoves events={featuredEvents} />
+        <CompactMoves events={recentEvents} />
       </section>
+
+      {market === "cn" && <MainFundFlowPanel rows={feed.cnMainFundInflow || []} />}
 
       <section className="profiles-section">
         <div className="section-title-row">
@@ -730,6 +772,40 @@ function RecentMoveList({
         ))}
       </div>
     </div>
+  );
+}
+
+function MainFundFlowPanel({ rows }: { rows: MainFundFlow[] }) {
+  if (rows.length === 0) return null;
+  const period = rows[0]?.periodLabel || "近10日";
+  return (
+    <section className="fund-flow-section">
+      <div className="section-title-row compact">
+        <div>
+          <span className="section-kicker">A 股 · {period}</span>
+          <h2>主力净流入</h2>
+        </div>
+        <a className="freshness source-anchor" href={rows[0].evidenceUrl} target="_blank" rel="noreferrer">
+          {rows[0].sourceLabel}
+          <ExternalLink size={14} />
+        </a>
+      </div>
+      <div className="fund-flow-grid">
+        {rows.slice(0, 10).map((row, index) => (
+          <a key={`${row.ticker}-${index}`} className="fund-flow-card" href={row.evidenceUrl} target="_blank" rel="noreferrer">
+            <span className="fund-rank">{index + 1}</span>
+            <div className="fund-security">
+              <strong>{row.ticker}</strong>
+              <span>{row.name}</span>
+            </div>
+            <b>{formatCurrency(row.mainNetInflow, "--", "CNY")}</b>
+            <small>
+              涨跌 {formatPercent(row.pctChange)} · 净占比 {formatPercent(row.mainNetInflowPct)}
+            </small>
+          </a>
+        ))}
+      </div>
+    </section>
   );
 }
 
