@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-15T13:07:38.894Z",
+  "generatedAt": "2026-05-16T00:14:05.846Z",
   "site": {
     "name": "chicang",
     "tagline": "重要资金公开披露雷达",
@@ -9,7 +9,7 @@
     "us": {
       "label": "美股",
       "profileCount": 3,
-      "eventCount": 147
+      "eventCount": 146
     },
     "cn": {
       "label": "A 股",
@@ -19,16 +19,16 @@
   },
   "stats": {
     "investorCount": 11,
-    "eventCount": 217,
+    "eventCount": 216,
     "arkTradeCount": 100,
     "secManagerCount": 0,
-    "congressTradeCount": 47,
+    "congressTradeCount": 46,
     "form4TradeCount": 0,
     "regionalWatchlistCount": 8,
     "regionalTradeCount": 70,
     "sourceErrorCount": 15,
     "cnMainFundInflowCount": 0,
-    "latestEventDate": "2026-05-14"
+    "latestEventDate": "2026-05-15"
   },
   "profiles": [
     {
@@ -817,8 +817,8 @@
         }
       ],
       "returns": {
-        "oneYearPct": 37.49338974087785,
-        "threeYearPct": 107.33652312599682,
+        "oneYearPct": 33.63028953229399,
+        "threeYearPct": 102.1772939346812,
         "asOf": "2026-05-14",
         "sourceLabel": "ARKK ETF 市价代理，非 Cathie Wood 全部管理资产真实净值",
         "sourceUrl": "https://www.nasdaq.com/market-activity/etf/arkk/historical",
@@ -844,43 +844,43 @@
       "cadence": "披露后更新",
       "latestFiling": {
         "form": "PTR",
-        "reportDate": "2026-04-15",
-        "filingDate": "2026-05-14"
+        "reportDate": "2026-04-08",
+        "filingDate": "2026-05-15"
       },
-      "positionCount": 47,
+      "positionCount": 46,
       "changes": [
         {
-          "id": "congress-2026-05-14-2026-04-15-john-mcguire-MSFT-Buy",
+          "id": "congress-2026-05-15-2026-04-08-laura-friedman-HOLX-Sell",
           "market": "us",
           "investorId": "us_congress",
-          "investorName": "John McGuire",
+          "investorName": "Laura Friedman",
           "vehicleName": "US Congress PTR",
           "sourceTier": "L1",
           "disclosureType": "STOCK Act PTR",
           "sourceLabel": "House Clerk PTR",
           "indexSourceLabel": "CongressFlow third-party index",
-          "reportDate": "2026-04-15",
+          "reportDate": "2026-04-08",
           "previousReportDate": null,
-          "filingDate": "2026-05-14",
-          "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034521.pdf",
+          "filingDate": "2026-05-15",
+          "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034563.pdf",
           "security": {
-            "ticker": "MSFT",
-            "name": "MSFT",
+            "ticker": "HOLX",
+            "name": "HOLX",
             "cusip": "",
             "title": "Disclosed range"
           },
-          "direction": "increase",
+          "direction": "decrease",
           "sharesBefore": null,
           "sharesAfter": null,
           "sharesDelta": null,
           "marketValueBefore": null,
           "marketValueAfter": null,
-          "marketValueDelta": 8000.5,
+          "marketValueDelta": -8000.5,
           "disclosedAmountRange": "$1,001 - $15,000",
           "significanceScore": 8000.5,
           "confidence": "medium",
           "staleDisclosure": false,
-          "narrative": "John McGuire 通过 US Congress PTR 增持 MSFT / MSFT。交易日 2026-04-15。"
+          "narrative": "Laura Friedman 通过 US Congress PTR 减持 HOLX / HOLX。交易日 2026-04-08。"
         },
         {
           "id": "congress-2026-05-14-2026-04-15-john-mcguire-NVDA-Buy",
@@ -947,6 +947,39 @@
           "confidence": "medium",
           "staleDisclosure": false,
           "narrative": "John McGuire 通过 US Congress PTR 增持 AAPL / AAPL。交易日 2026-04-15。"
+        },
+        {
+          "id": "congress-2026-05-14-2026-04-15-john-mcguire-MSFT-Buy",
+          "market": "us",
+          "investorId": "us_congress",
+          "investorName": "John McGuire",
+          "vehicleName": "US Congress PTR",
+          "sourceTier": "L1",
+          "disclosureType": "STOCK Act PTR",
+          "sourceLabel": "House Clerk PTR",
+          "indexSourceLabel": "CongressFlow third-party index",
+          "reportDate": "2026-04-15",
+          "previousReportDate": null,
+          "filingDate": "2026-05-14",
+          "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034521.pdf",
+          "security": {
+            "ticker": "MSFT",
+            "name": "MSFT",
+            "cusip": "",
+            "title": "Disclosed range"
+          },
+          "direction": "increase",
+          "sharesBefore": null,
+          "sharesAfter": null,
+          "sharesDelta": null,
+          "marketValueBefore": null,
+          "marketValueAfter": null,
+          "marketValueDelta": 8000.5,
+          "disclosedAmountRange": "$1,001 - $15,000",
+          "significanceScore": 8000.5,
+          "confidence": "medium",
+          "staleDisclosure": false,
+          "narrative": "John McGuire 通过 US Congress PTR 增持 MSFT / MSFT。交易日 2026-04-15。"
         },
         {
           "id": "congress-2026-05-14-2026-04-02-byron-donalds-MRVL-Buy",
@@ -1576,7 +1609,7 @@
           "narrative": "Rich McCormick 通过 US Congress PTR 减持 AMT / AMT。交易日 2026-04-17。"
         },
         {
-          "id": "congress-2026-05-13-2026-04-13-ro-khanna-TJX-Buy",
+          "id": "congress-2026-05-13-2026-04-13-ro-khanna-TYL-Buy",
           "market": "us",
           "investorId": "us_congress",
           "investorName": "Ro Khanna",
@@ -1590,8 +1623,8 @@
           "filingDate": "2026-05-13",
           "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/9115822.pdf",
           "security": {
-            "ticker": "TJX",
-            "name": "TJX",
+            "ticker": "TYL",
+            "name": "TYL",
             "cusip": "",
             "title": "Disclosed range"
           },
@@ -1606,40 +1639,7 @@
           "significanceScore": 8000.5,
           "confidence": "medium",
           "staleDisclosure": false,
-          "narrative": "Ro Khanna 通过 US Congress PTR 增持 TJX / TJX。交易日 2026-04-13。"
-        },
-        {
-          "id": "congress-2026-05-13-2026-04-13-ro-khanna-F-Buy",
-          "market": "us",
-          "investorId": "us_congress",
-          "investorName": "Ro Khanna",
-          "vehicleName": "US Congress PTR",
-          "sourceTier": "L1",
-          "disclosureType": "STOCK Act PTR",
-          "sourceLabel": "House Clerk PTR",
-          "indexSourceLabel": "CongressFlow third-party index",
-          "reportDate": "2026-04-13",
-          "previousReportDate": null,
-          "filingDate": "2026-05-13",
-          "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/9115822.pdf",
-          "security": {
-            "ticker": "F",
-            "name": "F",
-            "cusip": "",
-            "title": "Disclosed range"
-          },
-          "direction": "increase",
-          "sharesBefore": null,
-          "sharesAfter": null,
-          "sharesDelta": null,
-          "marketValueBefore": null,
-          "marketValueAfter": null,
-          "marketValueDelta": 8000.5,
-          "disclosedAmountRange": "$1,001 - $15,000",
-          "significanceScore": 8000.5,
-          "confidence": "medium",
-          "staleDisclosure": false,
-          "narrative": "Ro Khanna 通过 US Congress PTR 增持 F / F。交易日 2026-04-13。"
+          "narrative": "Ro Khanna 通过 US Congress PTR 增持 TYL / TYL。交易日 2026-04-13。"
         }
       ],
       "topIncreases": [
@@ -1664,8 +1664,8 @@
           "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/9115822.pdf"
         },
         {
-          "ticker": "MSFT",
-          "name": "MSFT",
+          "ticker": "NVDA",
+          "name": "NVDA",
           "market": "us",
           "direction": "increase",
           "value": 8000.5,
@@ -1686,18 +1686,18 @@
           "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/9115821.pdf"
         },
         {
-          "ticker": "INTU",
-          "name": "INTU",
+          "ticker": "HOLX",
+          "name": "HOLX",
           "market": "us",
           "direction": "decrease",
           "value": -8000.5,
           "valueCurrency": "USD",
-          "date": "2026-05-14",
-          "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034478.pdf"
+          "date": "2026-05-15",
+          "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034563.pdf"
         },
         {
-          "ticker": "CMG",
-          "name": "CMG",
+          "ticker": "INTU",
+          "name": "INTU",
           "market": "us",
           "direction": "decrease",
           "value": -8000.5,
@@ -1773,8 +1773,8 @@
       "topIncreases": [],
       "topDecreases": [],
       "returns": {
-        "oneYearPct": 26.971632363930794,
-        "threeYearPct": 212.07070716348144,
+        "oneYearPct": 26.435547482515293,
+        "threeYearPct": 204.26916601232224,
         "sourceLabel": "13F Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://www.sec.gov/edgar/search/",
         "asOf": "2026-05-14",
@@ -2177,8 +2177,8 @@
         }
       ],
       "returns": {
-        "oneYearPct": 19.746261077075093,
-        "threeYearPct": 1.676169408266502,
+        "oneYearPct": 19.69350782017415,
+        "threeYearPct": 2.6357204096892453,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SZ002415",
         "asOf": "2026-05-15",
@@ -2940,8 +2940,8 @@
         }
       ],
       "returns": {
-        "oneYearPct": 47.77419825636382,
-        "threeYearPct": 63.84396587594263,
+        "oneYearPct": 47.45577767989223,
+        "threeYearPct": 64.04551614826228,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SZ002594",
         "asOf": "2026-05-15",
@@ -3067,8 +3067,8 @@
       "topIncreases": [],
       "topDecreases": [],
       "returns": {
-        "oneYearPct": 6.348171991479915,
-        "threeYearPct": 51.64550279142933,
+        "oneYearPct": 7.3679404987079975,
+        "threeYearPct": 52.84031611805201,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SH601939",
         "asOf": "2026-05-15",
@@ -3577,8 +3577,8 @@
         }
       ],
       "returns": {
-        "oneYearPct": 3.055051557856155,
-        "threeYearPct": 34.11288730272542,
+        "oneYearPct": 4.025644137454563,
+        "threeYearPct": 35.49671089905437,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SH601988",
         "asOf": "2026-05-15",
@@ -3779,8 +3779,8 @@
         }
       ],
       "returns": {
-        "oneYearPct": 52.32778716642859,
-        "threeYearPct": 90.24323390806443,
+        "oneYearPct": 51.814002756724626,
+        "threeYearPct": 87.07451194445156,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 99%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SH688802",
         "asOf": "2026-05-15",
@@ -4480,8 +4480,8 @@
         }
       ],
       "returns": {
-        "oneYearPct": 110.07970639562137,
-        "threeYearPct": 148.3708435187592,
+        "oneYearPct": 107.44479187407114,
+        "threeYearPct": 145.16693035133423,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SZ300750",
         "asOf": "2026-05-15",
@@ -5127,8 +5127,8 @@
         }
       ],
       "returns": {
-        "oneYearPct": 19.281976660252756,
-        "threeYearPct": 62.58376598842291,
+        "oneYearPct": 20.390243945428654,
+        "threeYearPct": 63.5817488066263,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SH601328",
         "asOf": "2026-05-15",
@@ -5220,8 +5220,8 @@
         }
       ],
       "returns": {
-        "oneYearPct": 20.667518158681368,
-        "threeYearPct": -31.92200471681498,
+        "oneYearPct": 20.978116365572948,
+        "threeYearPct": -32.44886795165735,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SZ002153",
         "asOf": "2026-05-15",
@@ -5231,6 +5231,39 @@
     }
   ],
   "events": [
+    {
+      "id": "congress-2026-05-15-2026-04-08-laura-friedman-HOLX-Sell",
+      "market": "us",
+      "investorId": "us_congress",
+      "investorName": "Laura Friedman",
+      "vehicleName": "US Congress PTR",
+      "sourceTier": "L1",
+      "disclosureType": "STOCK Act PTR",
+      "sourceLabel": "House Clerk PTR",
+      "indexSourceLabel": "CongressFlow third-party index",
+      "reportDate": "2026-04-08",
+      "previousReportDate": null,
+      "filingDate": "2026-05-15",
+      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034563.pdf",
+      "security": {
+        "ticker": "HOLX",
+        "name": "HOLX",
+        "cusip": "",
+        "title": "Disclosed range"
+      },
+      "direction": "decrease",
+      "sharesBefore": null,
+      "sharesAfter": null,
+      "sharesDelta": null,
+      "marketValueBefore": null,
+      "marketValueAfter": null,
+      "marketValueDelta": -8000.5,
+      "disclosedAmountRange": "$1,001 - $15,000",
+      "significanceScore": 8000.5,
+      "confidence": "medium",
+      "staleDisclosure": false,
+      "narrative": "Laura Friedman 通过 US Congress PTR 减持 HOLX / HOLX。交易日 2026-04-08。"
+    },
     {
       "id": "cathiesark-2026-05-14T00:00:00.000Z-ARKK-TSM-Sell-29167",
       "market": "us",
@@ -5520,39 +5553,6 @@
       "narrative": "Cathie Wood 通过 ARKG / ARK Active ETFs 减持 TWST / Twist Bioscience。交易日 2026-05-14。"
     },
     {
-      "id": "congress-2026-05-14-2026-04-15-john-mcguire-MSFT-Buy",
-      "market": "us",
-      "investorId": "us_congress",
-      "investorName": "John McGuire",
-      "vehicleName": "US Congress PTR",
-      "sourceTier": "L1",
-      "disclosureType": "STOCK Act PTR",
-      "sourceLabel": "House Clerk PTR",
-      "indexSourceLabel": "CongressFlow third-party index",
-      "reportDate": "2026-04-15",
-      "previousReportDate": null,
-      "filingDate": "2026-05-14",
-      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034521.pdf",
-      "security": {
-        "ticker": "MSFT",
-        "name": "MSFT",
-        "cusip": "",
-        "title": "Disclosed range"
-      },
-      "direction": "increase",
-      "sharesBefore": null,
-      "sharesAfter": null,
-      "sharesDelta": null,
-      "marketValueBefore": null,
-      "marketValueAfter": null,
-      "marketValueDelta": 8000.5,
-      "disclosedAmountRange": "$1,001 - $15,000",
-      "significanceScore": 8000.5,
-      "confidence": "medium",
-      "staleDisclosure": false,
-      "narrative": "John McGuire 通过 US Congress PTR 增持 MSFT / MSFT。交易日 2026-04-15。"
-    },
-    {
       "id": "congress-2026-05-14-2026-04-15-john-mcguire-NVDA-Buy",
       "market": "us",
       "investorId": "us_congress",
@@ -5617,6 +5617,39 @@
       "confidence": "medium",
       "staleDisclosure": false,
       "narrative": "John McGuire 通过 US Congress PTR 增持 AAPL / AAPL。交易日 2026-04-15。"
+    },
+    {
+      "id": "congress-2026-05-14-2026-04-15-john-mcguire-MSFT-Buy",
+      "market": "us",
+      "investorId": "us_congress",
+      "investorName": "John McGuire",
+      "vehicleName": "US Congress PTR",
+      "sourceTier": "L1",
+      "disclosureType": "STOCK Act PTR",
+      "sourceLabel": "House Clerk PTR",
+      "indexSourceLabel": "CongressFlow third-party index",
+      "reportDate": "2026-04-15",
+      "previousReportDate": null,
+      "filingDate": "2026-05-14",
+      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034521.pdf",
+      "security": {
+        "ticker": "MSFT",
+        "name": "MSFT",
+        "cusip": "",
+        "title": "Disclosed range"
+      },
+      "direction": "increase",
+      "sharesBefore": null,
+      "sharesAfter": null,
+      "sharesDelta": null,
+      "marketValueBefore": null,
+      "marketValueAfter": null,
+      "marketValueDelta": 8000.5,
+      "disclosedAmountRange": "$1,001 - $15,000",
+      "significanceScore": 8000.5,
+      "confidence": "medium",
+      "staleDisclosure": false,
+      "narrative": "John McGuire 通过 US Congress PTR 增持 MSFT / MSFT。交易日 2026-04-15。"
     },
     {
       "id": "congress-2026-05-14-2026-04-02-byron-donalds-MRVL-Buy",
@@ -6462,7 +6495,7 @@
       "narrative": "Rich McCormick 通过 US Congress PTR 减持 AMT / AMT。交易日 2026-04-17。"
     },
     {
-      "id": "congress-2026-05-13-2026-04-13-ro-khanna-TJX-Buy",
+      "id": "congress-2026-05-13-2026-04-13-ro-khanna-TYL-Buy",
       "market": "us",
       "investorId": "us_congress",
       "investorName": "Ro Khanna",
@@ -6476,8 +6509,8 @@
       "filingDate": "2026-05-13",
       "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/9115822.pdf",
       "security": {
-        "ticker": "TJX",
-        "name": "TJX",
+        "ticker": "TYL",
+        "name": "TYL",
         "cusip": "",
         "title": "Disclosed range"
       },
@@ -6492,7 +6525,7 @@
       "significanceScore": 8000.5,
       "confidence": "medium",
       "staleDisclosure": false,
-      "narrative": "Ro Khanna 通过 US Congress PTR 增持 TJX / TJX。交易日 2026-04-13。"
+      "narrative": "Ro Khanna 通过 US Congress PTR 增持 TYL / TYL。交易日 2026-04-13。"
     },
     {
       "id": "congress-2026-05-13-2026-04-13-ro-khanna-F-Buy",
@@ -6528,6 +6561,105 @@
       "narrative": "Ro Khanna 通过 US Congress PTR 增持 F / F。交易日 2026-04-13。"
     },
     {
+      "id": "congress-2026-05-13-2026-04-13-ro-khanna-DELL-Buy",
+      "market": "us",
+      "investorId": "us_congress",
+      "investorName": "Ro Khanna",
+      "vehicleName": "US Congress PTR",
+      "sourceTier": "L1",
+      "disclosureType": "STOCK Act PTR",
+      "sourceLabel": "House Clerk PTR",
+      "indexSourceLabel": "CongressFlow third-party index",
+      "reportDate": "2026-04-13",
+      "previousReportDate": null,
+      "filingDate": "2026-05-13",
+      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/9115822.pdf",
+      "security": {
+        "ticker": "DELL",
+        "name": "DELL",
+        "cusip": "",
+        "title": "Disclosed range"
+      },
+      "direction": "increase",
+      "sharesBefore": null,
+      "sharesAfter": null,
+      "sharesDelta": null,
+      "marketValueBefore": null,
+      "marketValueAfter": null,
+      "marketValueDelta": 8000.5,
+      "disclosedAmountRange": "$1,001 - $15,000",
+      "significanceScore": 8000.5,
+      "confidence": "medium",
+      "staleDisclosure": false,
+      "narrative": "Ro Khanna 通过 US Congress PTR 增持 DELL / DELL。交易日 2026-04-13。"
+    },
+    {
+      "id": "congress-2026-05-13-2026-04-13-ro-khanna-TJX-Buy",
+      "market": "us",
+      "investorId": "us_congress",
+      "investorName": "Ro Khanna",
+      "vehicleName": "US Congress PTR",
+      "sourceTier": "L1",
+      "disclosureType": "STOCK Act PTR",
+      "sourceLabel": "House Clerk PTR",
+      "indexSourceLabel": "CongressFlow third-party index",
+      "reportDate": "2026-04-13",
+      "previousReportDate": null,
+      "filingDate": "2026-05-13",
+      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/9115822.pdf",
+      "security": {
+        "ticker": "TJX",
+        "name": "TJX",
+        "cusip": "",
+        "title": "Disclosed range"
+      },
+      "direction": "increase",
+      "sharesBefore": null,
+      "sharesAfter": null,
+      "sharesDelta": null,
+      "marketValueBefore": null,
+      "marketValueAfter": null,
+      "marketValueDelta": 8000.5,
+      "disclosedAmountRange": "$1,001 - $15,000",
+      "significanceScore": 8000.5,
+      "confidence": "medium",
+      "staleDisclosure": false,
+      "narrative": "Ro Khanna 通过 US Congress PTR 增持 TJX / TJX。交易日 2026-04-13。"
+    },
+    {
+      "id": "congress-2026-05-13-2026-04-13-ro-khanna-SCHW-Buy",
+      "market": "us",
+      "investorId": "us_congress",
+      "investorName": "Ro Khanna",
+      "vehicleName": "US Congress PTR",
+      "sourceTier": "L1",
+      "disclosureType": "STOCK Act PTR",
+      "sourceLabel": "House Clerk PTR",
+      "indexSourceLabel": "CongressFlow third-party index",
+      "reportDate": "2026-04-13",
+      "previousReportDate": null,
+      "filingDate": "2026-05-13",
+      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/9115822.pdf",
+      "security": {
+        "ticker": "SCHW",
+        "name": "SCHW",
+        "cusip": "",
+        "title": "Disclosed range"
+      },
+      "direction": "increase",
+      "sharesBefore": null,
+      "sharesAfter": null,
+      "sharesDelta": null,
+      "marketValueBefore": null,
+      "marketValueAfter": null,
+      "marketValueDelta": 8000.5,
+      "disclosedAmountRange": "$1,001 - $15,000",
+      "significanceScore": 8000.5,
+      "confidence": "medium",
+      "staleDisclosure": false,
+      "narrative": "Ro Khanna 通过 US Congress PTR 增持 SCHW / SCHW。交易日 2026-04-13。"
+    },
+    {
       "id": "congress-2026-05-13-2026-04-13-ro-khanna-HBAN-Buy",
       "market": "us",
       "investorId": "us_congress",
@@ -6561,7 +6693,7 @@
       "narrative": "Ro Khanna 通过 US Congress PTR 增持 HBAN / HBAN。交易日 2026-04-13。"
     },
     {
-      "id": "congress-2026-05-13-2026-04-13-ro-khanna-ARES-Buy",
+      "id": "congress-2026-05-13-2026-04-13-ro-khanna-ADI-Buy",
       "market": "us",
       "investorId": "us_congress",
       "investorName": "Ro Khanna",
@@ -6575,8 +6707,8 @@
       "filingDate": "2026-05-13",
       "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/9115822.pdf",
       "security": {
-        "ticker": "ARES",
-        "name": "ARES",
+        "ticker": "ADI",
+        "name": "ADI",
         "cusip": "",
         "title": "Disclosed range"
       },
@@ -6591,10 +6723,10 @@
       "significanceScore": 8000.5,
       "confidence": "medium",
       "staleDisclosure": false,
-      "narrative": "Ro Khanna 通过 US Congress PTR 增持 ARES / ARES。交易日 2026-04-13。"
+      "narrative": "Ro Khanna 通过 US Congress PTR 增持 ADI / ADI。交易日 2026-04-13。"
     },
     {
-      "id": "congress-2026-05-13-2026-04-13-ro-khanna-ADBE-Buy",
+      "id": "congress-2026-05-13-2026-04-13-ro-khanna-PAYX-Buy",
       "market": "us",
       "investorId": "us_congress",
       "investorName": "Ro Khanna",
@@ -6608,8 +6740,8 @@
       "filingDate": "2026-05-13",
       "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/9115822.pdf",
       "security": {
-        "ticker": "ADBE",
-        "name": "ADBE",
+        "ticker": "PAYX",
+        "name": "PAYX",
         "cusip": "",
         "title": "Disclosed range"
       },
@@ -6624,40 +6756,7 @@
       "significanceScore": 8000.5,
       "confidence": "medium",
       "staleDisclosure": false,
-      "narrative": "Ro Khanna 通过 US Congress PTR 增持 ADBE / ADBE。交易日 2026-04-13。"
-    },
-    {
-      "id": "congress-2026-05-13-2026-04-13-ro-khanna-YUM-Buy",
-      "market": "us",
-      "investorId": "us_congress",
-      "investorName": "Ro Khanna",
-      "vehicleName": "US Congress PTR",
-      "sourceTier": "L1",
-      "disclosureType": "STOCK Act PTR",
-      "sourceLabel": "House Clerk PTR",
-      "indexSourceLabel": "CongressFlow third-party index",
-      "reportDate": "2026-04-13",
-      "previousReportDate": null,
-      "filingDate": "2026-05-13",
-      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/9115822.pdf",
-      "security": {
-        "ticker": "YUM",
-        "name": "YUM",
-        "cusip": "",
-        "title": "Disclosed range"
-      },
-      "direction": "increase",
-      "sharesBefore": null,
-      "sharesAfter": null,
-      "sharesDelta": null,
-      "marketValueBefore": null,
-      "marketValueAfter": null,
-      "marketValueDelta": 8000.5,
-      "disclosedAmountRange": "$1,001 - $15,000",
-      "significanceScore": 8000.5,
-      "confidence": "medium",
-      "staleDisclosure": false,
-      "narrative": "Ro Khanna 通过 US Congress PTR 增持 YUM / YUM。交易日 2026-04-13。"
+      "narrative": "Ro Khanna 通过 US Congress PTR 增持 PAYX / PAYX。交易日 2026-04-13。"
     },
     {
       "id": "congress-2026-05-13-2026-04-13-ro-khanna-EMR-Buy",
@@ -6693,7 +6792,7 @@
       "narrative": "Ro Khanna 通过 US Congress PTR 增持 EMR / EMR。交易日 2026-04-13。"
     },
     {
-      "id": "congress-2026-05-13-2026-04-13-ro-khanna-GM-Buy",
+      "id": "congress-2026-05-13-2026-04-13-ro-khanna-YUM-Buy",
       "market": "us",
       "investorId": "us_congress",
       "investorName": "Ro Khanna",
@@ -6707,8 +6806,8 @@
       "filingDate": "2026-05-13",
       "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/9115822.pdf",
       "security": {
-        "ticker": "GM",
-        "name": "GM",
+        "ticker": "YUM",
+        "name": "YUM",
         "cusip": "",
         "title": "Disclosed range"
       },
@@ -6723,73 +6822,7 @@
       "significanceScore": 8000.5,
       "confidence": "medium",
       "staleDisclosure": false,
-      "narrative": "Ro Khanna 通过 US Congress PTR 增持 GM / GM。交易日 2026-04-13。"
-    },
-    {
-      "id": "congress-2026-05-13-2026-04-13-ro-khanna-LEN-Buy",
-      "market": "us",
-      "investorId": "us_congress",
-      "investorName": "Ro Khanna",
-      "vehicleName": "US Congress PTR",
-      "sourceTier": "L1",
-      "disclosureType": "STOCK Act PTR",
-      "sourceLabel": "House Clerk PTR",
-      "indexSourceLabel": "CongressFlow third-party index",
-      "reportDate": "2026-04-13",
-      "previousReportDate": null,
-      "filingDate": "2026-05-13",
-      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/9115822.pdf",
-      "security": {
-        "ticker": "LEN",
-        "name": "LEN",
-        "cusip": "",
-        "title": "Disclosed range"
-      },
-      "direction": "increase",
-      "sharesBefore": null,
-      "sharesAfter": null,
-      "sharesDelta": null,
-      "marketValueBefore": null,
-      "marketValueAfter": null,
-      "marketValueDelta": 8000.5,
-      "disclosedAmountRange": "$1,001 - $15,000",
-      "significanceScore": 8000.5,
-      "confidence": "medium",
-      "staleDisclosure": false,
-      "narrative": "Ro Khanna 通过 US Congress PTR 增持 LEN / LEN。交易日 2026-04-13。"
-    },
-    {
-      "id": "congress-2026-05-13-2026-04-13-ro-khanna-PGR-Buy",
-      "market": "us",
-      "investorId": "us_congress",
-      "investorName": "Ro Khanna",
-      "vehicleName": "US Congress PTR",
-      "sourceTier": "L1",
-      "disclosureType": "STOCK Act PTR",
-      "sourceLabel": "House Clerk PTR",
-      "indexSourceLabel": "CongressFlow third-party index",
-      "reportDate": "2026-04-13",
-      "previousReportDate": null,
-      "filingDate": "2026-05-13",
-      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/9115822.pdf",
-      "security": {
-        "ticker": "PGR",
-        "name": "PGR",
-        "cusip": "",
-        "title": "Disclosed range"
-      },
-      "direction": "increase",
-      "sharesBefore": null,
-      "sharesAfter": null,
-      "sharesDelta": null,
-      "marketValueBefore": null,
-      "marketValueAfter": null,
-      "marketValueDelta": 8000.5,
-      "disclosedAmountRange": "$1,001 - $15,000",
-      "significanceScore": 8000.5,
-      "confidence": "medium",
-      "staleDisclosure": false,
-      "narrative": "Ro Khanna 通过 US Congress PTR 增持 PGR / PGR。交易日 2026-04-13。"
+      "narrative": "Ro Khanna 通过 US Congress PTR 增持 YUM / YUM。交易日 2026-04-13。"
     },
     {
       "id": "congress-2026-05-13-2026-04-13-ro-khanna-LULU-Buy",
@@ -6891,7 +6924,7 @@
       "narrative": "Ro Khanna 通过 US Congress PTR 增持 MSCI / MSCI。交易日 2026-04-13。"
     },
     {
-      "id": "congress-2026-05-13-2026-04-13-ro-khanna-CPRT-Buy",
+      "id": "congress-2026-05-13-2026-04-13-ro-khanna-ARES-Buy",
       "market": "us",
       "investorId": "us_congress",
       "investorName": "Ro Khanna",
@@ -6905,8 +6938,8 @@
       "filingDate": "2026-05-13",
       "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/9115822.pdf",
       "security": {
-        "ticker": "CPRT",
-        "name": "CPRT",
+        "ticker": "ARES",
+        "name": "ARES",
         "cusip": "",
         "title": "Disclosed range"
       },
@@ -6921,10 +6954,10 @@
       "significanceScore": 8000.5,
       "confidence": "medium",
       "staleDisclosure": false,
-      "narrative": "Ro Khanna 通过 US Congress PTR 增持 CPRT / CPRT。交易日 2026-04-13。"
+      "narrative": "Ro Khanna 通过 US Congress PTR 增持 ARES / ARES。交易日 2026-04-13。"
     },
     {
-      "id": "congress-2026-05-13-2026-04-13-ro-khanna-NOW-Buy",
+      "id": "congress-2026-05-13-2026-04-13-ro-khanna-BK-Buy",
       "market": "us",
       "investorId": "us_congress",
       "investorName": "Ro Khanna",
@@ -6938,8 +6971,8 @@
       "filingDate": "2026-05-13",
       "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/9115822.pdf",
       "security": {
-        "ticker": "NOW",
-        "name": "NOW",
+        "ticker": "BK",
+        "name": "BK",
         "cusip": "",
         "title": "Disclosed range"
       },
@@ -6954,7 +6987,7 @@
       "significanceScore": 8000.5,
       "confidence": "medium",
       "staleDisclosure": false,
-      "narrative": "Ro Khanna 通过 US Congress PTR 增持 NOW / NOW。交易日 2026-04-13。"
+      "narrative": "Ro Khanna 通过 US Congress PTR 增持 BK / BK。交易日 2026-04-13。"
     },
     {
       "id": "congress-2026-05-13-2026-04-13-ro-khanna-AVGO-Buy",
@@ -6990,7 +7023,7 @@
       "narrative": "Ro Khanna 通过 US Congress PTR 增持 AVGO / AVGO。交易日 2026-04-13。"
     },
     {
-      "id": "congress-2026-05-13-2026-04-13-ro-khanna-ORLY-Buy",
+      "id": "congress-2026-05-13-2026-04-13-ro-khanna-PGR-Buy",
       "market": "us",
       "investorId": "us_congress",
       "investorName": "Ro Khanna",
@@ -7004,8 +7037,8 @@
       "filingDate": "2026-05-13",
       "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/9115822.pdf",
       "security": {
-        "ticker": "ORLY",
-        "name": "ORLY",
+        "ticker": "PGR",
+        "name": "PGR",
         "cusip": "",
         "title": "Disclosed range"
       },
@@ -7020,10 +7053,10 @@
       "significanceScore": 8000.5,
       "confidence": "medium",
       "staleDisclosure": false,
-      "narrative": "Ro Khanna 通过 US Congress PTR 增持 ORLY / ORLY。交易日 2026-04-13。"
+      "narrative": "Ro Khanna 通过 US Congress PTR 增持 PGR / PGR。交易日 2026-04-13。"
     },
     {
-      "id": "congress-2026-05-13-2026-04-13-ro-khanna-XYL-Buy",
+      "id": "congress-2026-05-13-2026-04-13-ro-khanna-ADBE-Buy",
       "market": "us",
       "investorId": "us_congress",
       "investorName": "Ro Khanna",
@@ -7037,8 +7070,8 @@
       "filingDate": "2026-05-13",
       "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/9115822.pdf",
       "security": {
-        "ticker": "XYL",
-        "name": "XYL",
+        "ticker": "ADBE",
+        "name": "ADBE",
         "cusip": "",
         "title": "Disclosed range"
       },
@@ -7053,7 +7086,7 @@
       "significanceScore": 8000.5,
       "confidence": "medium",
       "staleDisclosure": false,
-      "narrative": "Ro Khanna 通过 US Congress PTR 增持 XYL / XYL。交易日 2026-04-13。"
+      "narrative": "Ro Khanna 通过 US Congress PTR 增持 ADBE / ADBE。交易日 2026-04-13。"
     },
     {
       "id": "congress-2026-05-13-2026-04-13-ro-khanna-ECL-Buy",
@@ -7122,7 +7155,7 @@
       "narrative": "Ro Khanna 通过 US Congress PTR 增持 IBKR / IBKR。交易日 2026-04-13。"
     },
     {
-      "id": "congress-2026-05-13-2026-04-13-ro-khanna-CVS-Buy",
+      "id": "congress-2026-05-13-2026-04-13-ro-khanna-NOW-Buy",
       "market": "us",
       "investorId": "us_congress",
       "investorName": "Ro Khanna",
@@ -7136,8 +7169,8 @@
       "filingDate": "2026-05-13",
       "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/9115822.pdf",
       "security": {
-        "ticker": "CVS",
-        "name": "CVS",
+        "ticker": "NOW",
+        "name": "NOW",
         "cusip": "",
         "title": "Disclosed range"
       },
@@ -7152,7 +7185,7 @@
       "significanceScore": 8000.5,
       "confidence": "medium",
       "staleDisclosure": false,
-      "narrative": "Ro Khanna 通过 US Congress PTR 增持 CVS / CVS。交易日 2026-04-13。"
+      "narrative": "Ro Khanna 通过 US Congress PTR 增持 NOW / NOW。交易日 2026-04-13。"
     },
     {
       "id": "congress-2026-05-13-2026-04-13-ro-khanna-VRTX-Buy",
@@ -7186,72 +7219,6 @@
       "confidence": "medium",
       "staleDisclosure": false,
       "narrative": "Ro Khanna 通过 US Congress PTR 增持 VRTX / VRTX。交易日 2026-04-13。"
-    },
-    {
-      "id": "congress-2026-05-13-2026-04-13-ro-khanna-BR-Buy",
-      "market": "us",
-      "investorId": "us_congress",
-      "investorName": "Ro Khanna",
-      "vehicleName": "US Congress PTR",
-      "sourceTier": "L1",
-      "disclosureType": "STOCK Act PTR",
-      "sourceLabel": "House Clerk PTR",
-      "indexSourceLabel": "CongressFlow third-party index",
-      "reportDate": "2026-04-13",
-      "previousReportDate": null,
-      "filingDate": "2026-05-13",
-      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/9115822.pdf",
-      "security": {
-        "ticker": "BR",
-        "name": "BR",
-        "cusip": "",
-        "title": "Disclosed range"
-      },
-      "direction": "increase",
-      "sharesBefore": null,
-      "sharesAfter": null,
-      "sharesDelta": null,
-      "marketValueBefore": null,
-      "marketValueAfter": null,
-      "marketValueDelta": 8000.5,
-      "disclosedAmountRange": "$1,001 - $15,000",
-      "significanceScore": 8000.5,
-      "confidence": "medium",
-      "staleDisclosure": false,
-      "narrative": "Ro Khanna 通过 US Congress PTR 增持 BR / BR。交易日 2026-04-13。"
-    },
-    {
-      "id": "congress-2026-05-13-2026-04-13-ro-khanna-RJF-Buy",
-      "market": "us",
-      "investorId": "us_congress",
-      "investorName": "Ro Khanna",
-      "vehicleName": "US Congress PTR",
-      "sourceTier": "L1",
-      "disclosureType": "STOCK Act PTR",
-      "sourceLabel": "House Clerk PTR",
-      "indexSourceLabel": "CongressFlow third-party index",
-      "reportDate": "2026-04-13",
-      "previousReportDate": null,
-      "filingDate": "2026-05-13",
-      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/9115822.pdf",
-      "security": {
-        "ticker": "RJF",
-        "name": "RJF",
-        "cusip": "",
-        "title": "Disclosed range"
-      },
-      "direction": "increase",
-      "sharesBefore": null,
-      "sharesAfter": null,
-      "sharesDelta": null,
-      "marketValueBefore": null,
-      "marketValueAfter": null,
-      "marketValueDelta": 8000.5,
-      "disclosedAmountRange": "$1,001 - $15,000",
-      "significanceScore": 8000.5,
-      "confidence": "medium",
-      "staleDisclosure": false,
-      "narrative": "Ro Khanna 通过 US Congress PTR 增持 RJF / RJF。交易日 2026-04-13。"
     },
     {
       "id": "congress-2026-05-13-2026-04-13-ro-khanna-DIS-Buy",
