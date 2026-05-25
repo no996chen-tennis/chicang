@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-23T01:22:09.946Z",
+  "generatedAt": "2026-05-25T14:18:13.902Z",
   "site": {
     "name": "chicang",
     "tagline": "重要资金公开披露雷达",
@@ -28,7 +28,7 @@
     "regionalTradeCount": 70,
     "sourceErrorCount": 15,
     "cnMainFundInflowCount": 0,
-    "latestEventDate": "2026-05-21"
+    "latestEventDate": "2026-05-23"
   },
   "profiles": [
     {
@@ -49,7 +49,7 @@
       },
       "latestFiling": {
         "reportDate": "2026-05-22",
-        "filingDate": "Fri, 22 May 2026 11:11:08 GMT",
+        "filingDate": "Sat, 23 May 2026 06:06:10 GMT",
         "form": "ARK ETF CSV"
       },
       "topHoldings": [
@@ -278,7 +278,7 @@
           "name": "ARK Innovation ETF",
           "rowCount": 43,
           "asOfDate": "2026-05-22",
-          "lastModified": "Fri, 22 May 2026 11:11:08 GMT",
+          "lastModified": "Sat, 23 May 2026 06:06:10 GMT",
           "url": "https://assets.ark-funds.com/fund-documents/funds-etf-csv/ARK_INNOVATION_ETF_ARKK_HOLDINGS.csv"
         },
         {
@@ -287,7 +287,7 @@
           "name": "ARK Autonomous Tech. & Robotics ETF",
           "rowCount": 38,
           "asOfDate": "2026-05-22",
-          "lastModified": "Fri, 22 May 2026 11:11:06 GMT",
+          "lastModified": "Sat, 23 May 2026 06:06:07 GMT",
           "url": "https://assets.ark-funds.com/fund-documents/funds-etf-csv/ARK_AUTONOMOUS_TECH._%26_ROBOTICS_ETF_ARKQ_HOLDINGS.csv"
         },
         {
@@ -296,7 +296,7 @@
           "name": "ARK Next Generation Internet ETF",
           "rowCount": 39,
           "asOfDate": "2026-05-22",
-          "lastModified": "Fri, 22 May 2026 11:11:07 GMT",
+          "lastModified": "Sat, 23 May 2026 06:06:07 GMT",
           "url": "https://assets.ark-funds.com/fund-documents/funds-etf-csv/ARK_NEXT_GENERATION_INTERNET_ETF_ARKW_HOLDINGS.csv"
         },
         {
@@ -305,7 +305,7 @@
           "name": "ARK Genomic Revolution ETF",
           "rowCount": 32,
           "asOfDate": "2026-05-22",
-          "lastModified": "Fri, 22 May 2026 11:11:05 GMT",
+          "lastModified": "Sat, 23 May 2026 06:06:07 GMT",
           "url": "https://assets.ark-funds.com/fund-documents/funds-etf-csv/ARK_GENOMIC_REVOLUTION_ETF_ARKG_HOLDINGS.csv"
         },
         {
@@ -827,7 +827,7 @@
       ],
       "returns": {
         "oneYearPct": 36.25824861779919,
-        "threeYearPct": 93.61378611251901,
+        "threeYearPct": 95.39641943734016,
         "asOf": "2026-05-22",
         "sourceLabel": "ARKK ETF 市价代理，非 Cathie Wood 全部管理资产真实净值",
         "sourceUrl": "https://www.nasdaq.com/market-activity/etf/arkk/historical",
@@ -853,11 +853,44 @@
       "cadence": "披露后更新",
       "latestFiling": {
         "form": "PTR",
-        "reportDate": "2026-05-07",
-        "filingDate": "2026-05-21"
+        "reportDate": "2026-05-06",
+        "filingDate": "2026-05-23"
       },
       "positionCount": 50,
       "changes": [
+        {
+          "id": "congress-2026-05-23-2026-05-06-bernie-moreno-ETOR-Sell",
+          "market": "us",
+          "investorId": "us_congress",
+          "investorName": "Bernie Moreno",
+          "vehicleName": "US Congress PTR",
+          "sourceTier": "L1",
+          "disclosureType": "STOCK Act PTR",
+          "sourceLabel": "Senate eFD PTR",
+          "indexSourceLabel": "CongressFlow third-party index",
+          "reportDate": "2026-05-06",
+          "previousReportDate": null,
+          "filingDate": "2026-05-23",
+          "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/86810b3e-3dee-4e8e-9b47-6d3822385b7d/",
+          "security": {
+            "ticker": "ETOR",
+            "name": "ETOR",
+            "cusip": "",
+            "title": "Disclosed range"
+          },
+          "direction": "decrease",
+          "sharesBefore": null,
+          "sharesAfter": null,
+          "sharesDelta": null,
+          "marketValueBefore": null,
+          "marketValueAfter": null,
+          "marketValueDelta": -175000.5,
+          "disclosedAmountRange": "$100,001 - $250,000",
+          "significanceScore": 175000.5,
+          "confidence": "medium",
+          "staleDisclosure": false,
+          "narrative": "Bernie Moreno 通过 US Congress PTR 减持 ETOR / ETOR。交易日 2026-05-06。"
+        },
         {
           "id": "congress-2026-05-21-2026-05-07-sara-jacobs-QCOM-Sell",
           "market": "us",
@@ -1255,39 +1288,6 @@
           "narrative": "Josh Gottheimer 通过 US Congress PTR 减持 MLM / MLM。交易日 2026-04-09。"
         },
         {
-          "id": "congress-2026-05-20-2026-05-07-tim-moore-IHG-Buy",
-          "market": "us",
-          "investorId": "us_congress",
-          "investorName": "Tim Moore",
-          "vehicleName": "US Congress PTR",
-          "sourceTier": "L1",
-          "disclosureType": "STOCK Act PTR",
-          "sourceLabel": "House Clerk PTR",
-          "indexSourceLabel": "CongressFlow third-party index",
-          "reportDate": "2026-05-07",
-          "previousReportDate": null,
-          "filingDate": "2026-05-20",
-          "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034587.pdf",
-          "security": {
-            "ticker": "IHG",
-            "name": "IHG",
-            "cusip": "",
-            "title": "Disclosed range"
-          },
-          "direction": "increase",
-          "sharesBefore": null,
-          "sharesAfter": null,
-          "sharesDelta": null,
-          "marketValueBefore": null,
-          "marketValueAfter": null,
-          "marketValueDelta": 8000.5,
-          "disclosedAmountRange": "$1,001 - $15,000",
-          "significanceScore": 8000.5,
-          "confidence": "medium",
-          "staleDisclosure": false,
-          "narrative": "Tim Moore 通过 US Congress PTR 增持 IHG / IHG。交易日 2026-05-07。"
-        },
-        {
           "id": "congress-2026-05-20-2026-05-07-tim-moore-RYCEY-Buy",
           "market": "us",
           "investorId": "us_congress",
@@ -1319,6 +1319,39 @@
           "confidence": "medium",
           "staleDisclosure": false,
           "narrative": "Tim Moore 通过 US Congress PTR 增持 RYCEY / RYCEY。交易日 2026-05-07。"
+        },
+        {
+          "id": "congress-2026-05-20-2026-05-07-tim-moore-IHG-Buy",
+          "market": "us",
+          "investorId": "us_congress",
+          "investorName": "Tim Moore",
+          "vehicleName": "US Congress PTR",
+          "sourceTier": "L1",
+          "disclosureType": "STOCK Act PTR",
+          "sourceLabel": "House Clerk PTR",
+          "indexSourceLabel": "CongressFlow third-party index",
+          "reportDate": "2026-05-07",
+          "previousReportDate": null,
+          "filingDate": "2026-05-20",
+          "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034587.pdf",
+          "security": {
+            "ticker": "IHG",
+            "name": "IHG",
+            "cusip": "",
+            "title": "Disclosed range"
+          },
+          "direction": "increase",
+          "sharesBefore": null,
+          "sharesAfter": null,
+          "sharesDelta": null,
+          "marketValueBefore": null,
+          "marketValueAfter": null,
+          "marketValueDelta": 8000.5,
+          "disclosedAmountRange": "$1,001 - $15,000",
+          "significanceScore": 8000.5,
+          "confidence": "medium",
+          "staleDisclosure": false,
+          "narrative": "Tim Moore 通过 US Congress PTR 增持 IHG / IHG。交易日 2026-05-07。"
         },
         {
           "id": "congress-2026-05-20-2026-04-28-josh-gottheimer-MMM-Sell",
@@ -1616,39 +1649,6 @@
           "confidence": "medium",
           "staleDisclosure": false,
           "narrative": "Josh Gottheimer 通过 US Congress PTR 减持 HDB / HDB。交易日 2026-04-13。"
-        },
-        {
-          "id": "congress-2026-05-20-2026-04-09-josh-gottheimer-DLTR-Sell",
-          "market": "us",
-          "investorId": "us_congress",
-          "investorName": "Josh Gottheimer",
-          "vehicleName": "US Congress PTR",
-          "sourceTier": "L1",
-          "disclosureType": "STOCK Act PTR",
-          "sourceLabel": "House Clerk PTR",
-          "indexSourceLabel": "CongressFlow third-party index",
-          "reportDate": "2026-04-09",
-          "previousReportDate": null,
-          "filingDate": "2026-05-20",
-          "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034585.pdf",
-          "security": {
-            "ticker": "DLTR",
-            "name": "DLTR",
-            "cusip": "",
-            "title": "Disclosed range"
-          },
-          "direction": "decrease",
-          "sharesBefore": null,
-          "sharesAfter": null,
-          "sharesDelta": null,
-          "marketValueBefore": null,
-          "marketValueAfter": null,
-          "marketValueDelta": -8000.5,
-          "disclosedAmountRange": "$1,001 - $15,000",
-          "significanceScore": 8000.5,
-          "confidence": "medium",
-          "staleDisclosure": false,
-          "narrative": "Josh Gottheimer 通过 US Congress PTR 减持 DLTR / DLTR。交易日 2026-04-09。"
         }
       ],
       "topIncreases": [
@@ -1663,8 +1663,8 @@
           "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034587.pdf"
         },
         {
-          "ticker": "IHG",
-          "name": "IHG",
+          "ticker": "RYCEY",
+          "name": "RYCEY",
           "market": "us",
           "direction": "increase",
           "value": 8000.5,
@@ -1673,8 +1673,8 @@
           "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034587.pdf"
         },
         {
-          "ticker": "RYCEY",
-          "name": "RYCEY",
+          "ticker": "IHG",
+          "name": "IHG",
           "market": "us",
           "direction": "increase",
           "value": 8000.5,
@@ -1705,14 +1705,14 @@
           "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034498.pdf"
         },
         {
-          "ticker": "PFGC",
-          "name": "PFGC",
+          "ticker": "ETOR",
+          "name": "ETOR",
           "market": "us",
           "direction": "decrease",
-          "value": -32500.5,
+          "value": -175000.5,
           "valueCurrency": "USD",
-          "date": "2026-05-20",
-          "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034585.pdf"
+          "date": "2026-05-23",
+          "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/86810b3e-3dee-4e8e-9b47-6d3822385b7d/"
         }
       ],
       "returns": {
@@ -1783,7 +1783,7 @@
       "topDecreases": [],
       "returns": {
         "oneYearPct": 28.417546099945884,
-        "threeYearPct": 187.351704006652,
+        "threeYearPct": 154.97041875706483,
         "sourceLabel": "13F Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://www.sec.gov/edgar/search/",
         "asOf": "2026-05-22",
@@ -2186,11 +2186,11 @@
         }
       ],
       "returns": {
-        "oneYearPct": 24.092322706139537,
-        "threeYearPct": 5.095441957128215,
+        "oneYearPct": 24.94156003767038,
+        "threeYearPct": 6.360962909923666,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SZ002415",
-        "asOf": "2026-05-22",
+        "asOf": "2026-05-25",
         "isProxy": true,
         "proxyDisclosure": "按当前公开 Top 持仓价格估算，不代表管理人真实组合净值或产品收益"
       }
@@ -2949,11 +2949,11 @@
         }
       ],
       "returns": {
-        "oneYearPct": 51.73711370381416,
-        "threeYearPct": 67.8321326552734,
+        "oneYearPct": 54.9229366132555,
+        "threeYearPct": 73.70107682091306,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SZ002594",
-        "asOf": "2026-05-22",
+        "asOf": "2026-05-25",
         "isProxy": true,
         "proxyDisclosure": "按当前公开 Top 持仓价格估算，不代表管理人真实组合净值或产品收益"
       }
@@ -3076,11 +3076,11 @@
       "topIncreases": [],
       "topDecreases": [],
       "returns": {
-        "oneYearPct": 8.745581719199635,
-        "threeYearPct": 60.89629917951309,
+        "oneYearPct": 8.988994623889527,
+        "threeYearPct": 59.54977123695077,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SH601939",
-        "asOf": "2026-05-22",
+        "asOf": "2026-05-25",
         "isProxy": true,
         "proxyDisclosure": "按当前公开 Top 持仓价格估算，不代表管理人真实组合净值或产品收益"
       }
@@ -3586,11 +3586,11 @@
         }
       ],
       "returns": {
-        "oneYearPct": 3.993862298576874,
-        "threeYearPct": 41.58447542488964,
+        "oneYearPct": 4.11362242862884,
+        "threeYearPct": 41.984717786470846,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SH601988",
-        "asOf": "2026-05-22",
+        "asOf": "2026-05-25",
         "isProxy": true,
         "proxyDisclosure": "按当前公开 Top 持仓价格估算，不代表管理人真实组合净值或产品收益"
       }
@@ -3788,11 +3788,11 @@
         }
       ],
       "returns": {
-        "oneYearPct": 78.44207995946519,
-        "threeYearPct": 113.05410592269402,
+        "oneYearPct": 90.99535314612609,
+        "threeYearPct": 117.94247727487934,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 99%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SH688802",
-        "asOf": "2026-05-22",
+        "asOf": "2026-05-25",
         "isProxy": true,
         "proxyDisclosure": "按当前公开 Top 持仓价格估算，不代表管理人真实组合净值或产品收益"
       }
@@ -4489,11 +4489,11 @@
         }
       ],
       "returns": {
-        "oneYearPct": 107.81014341533617,
-        "threeYearPct": 140.0770290377959,
+        "oneYearPct": 111.16927822660452,
+        "threeYearPct": 141.63361154824747,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SZ300750",
-        "asOf": "2026-05-22",
+        "asOf": "2026-05-25",
         "isProxy": true,
         "proxyDisclosure": "按当前公开 Top 持仓价格估算，不代表管理人真实组合净值或产品收益"
       }
@@ -5136,11 +5136,11 @@
         }
       ],
       "returns": {
-        "oneYearPct": 23.998747138171424,
-        "threeYearPct": 74.8281110002696,
+        "oneYearPct": 26.434042864308047,
+        "threeYearPct": 78.87424637658648,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SH601328",
-        "asOf": "2026-05-22",
+        "asOf": "2026-05-25",
         "isProxy": true,
         "proxyDisclosure": "按当前公开 Top 持仓价格估算，不代表管理人真实组合净值或产品收益"
       }
@@ -5229,17 +5229,50 @@
         }
       ],
       "returns": {
-        "oneYearPct": 14.993475972505333,
-        "threeYearPct": -33.72254199223943,
+        "oneYearPct": 15.123857051806025,
+        "threeYearPct": -37.444139954096514,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SZ002153",
-        "asOf": "2026-05-22",
+        "asOf": "2026-05-25",
         "isProxy": true,
         "proxyDisclosure": "按当前公开 Top 持仓价格估算，不代表管理人真实组合净值或产品收益"
       }
     }
   ],
   "events": [
+    {
+      "id": "congress-2026-05-23-2026-05-06-bernie-moreno-ETOR-Sell",
+      "market": "us",
+      "investorId": "us_congress",
+      "investorName": "Bernie Moreno",
+      "vehicleName": "US Congress PTR",
+      "sourceTier": "L1",
+      "disclosureType": "STOCK Act PTR",
+      "sourceLabel": "Senate eFD PTR",
+      "indexSourceLabel": "CongressFlow third-party index",
+      "reportDate": "2026-05-06",
+      "previousReportDate": null,
+      "filingDate": "2026-05-23",
+      "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/86810b3e-3dee-4e8e-9b47-6d3822385b7d/",
+      "security": {
+        "ticker": "ETOR",
+        "name": "ETOR",
+        "cusip": "",
+        "title": "Disclosed range"
+      },
+      "direction": "decrease",
+      "sharesBefore": null,
+      "sharesAfter": null,
+      "sharesDelta": null,
+      "marketValueBefore": null,
+      "marketValueAfter": null,
+      "marketValueDelta": -175000.5,
+      "disclosedAmountRange": "$100,001 - $250,000",
+      "significanceScore": 175000.5,
+      "confidence": "medium",
+      "staleDisclosure": false,
+      "narrative": "Bernie Moreno 通过 US Congress PTR 减持 ETOR / ETOR。交易日 2026-05-06。"
+    },
     {
       "id": "congress-2026-05-21-2026-05-07-sara-jacobs-QCOM-Sell",
       "market": "us",
@@ -5961,39 +5994,6 @@
       "narrative": "Josh Gottheimer 通过 US Congress PTR 减持 MLM / MLM。交易日 2026-04-09。"
     },
     {
-      "id": "congress-2026-05-20-2026-05-07-tim-moore-IHG-Buy",
-      "market": "us",
-      "investorId": "us_congress",
-      "investorName": "Tim Moore",
-      "vehicleName": "US Congress PTR",
-      "sourceTier": "L1",
-      "disclosureType": "STOCK Act PTR",
-      "sourceLabel": "House Clerk PTR",
-      "indexSourceLabel": "CongressFlow third-party index",
-      "reportDate": "2026-05-07",
-      "previousReportDate": null,
-      "filingDate": "2026-05-20",
-      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034587.pdf",
-      "security": {
-        "ticker": "IHG",
-        "name": "IHG",
-        "cusip": "",
-        "title": "Disclosed range"
-      },
-      "direction": "increase",
-      "sharesBefore": null,
-      "sharesAfter": null,
-      "sharesDelta": null,
-      "marketValueBefore": null,
-      "marketValueAfter": null,
-      "marketValueDelta": 8000.5,
-      "disclosedAmountRange": "$1,001 - $15,000",
-      "significanceScore": 8000.5,
-      "confidence": "medium",
-      "staleDisclosure": false,
-      "narrative": "Tim Moore 通过 US Congress PTR 增持 IHG / IHG。交易日 2026-05-07。"
-    },
-    {
       "id": "congress-2026-05-20-2026-05-07-tim-moore-RYCEY-Buy",
       "market": "us",
       "investorId": "us_congress",
@@ -6025,6 +6025,39 @@
       "confidence": "medium",
       "staleDisclosure": false,
       "narrative": "Tim Moore 通过 US Congress PTR 增持 RYCEY / RYCEY。交易日 2026-05-07。"
+    },
+    {
+      "id": "congress-2026-05-20-2026-05-07-tim-moore-IHG-Buy",
+      "market": "us",
+      "investorId": "us_congress",
+      "investorName": "Tim Moore",
+      "vehicleName": "US Congress PTR",
+      "sourceTier": "L1",
+      "disclosureType": "STOCK Act PTR",
+      "sourceLabel": "House Clerk PTR",
+      "indexSourceLabel": "CongressFlow third-party index",
+      "reportDate": "2026-05-07",
+      "previousReportDate": null,
+      "filingDate": "2026-05-20",
+      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034587.pdf",
+      "security": {
+        "ticker": "IHG",
+        "name": "IHG",
+        "cusip": "",
+        "title": "Disclosed range"
+      },
+      "direction": "increase",
+      "sharesBefore": null,
+      "sharesAfter": null,
+      "sharesDelta": null,
+      "marketValueBefore": null,
+      "marketValueAfter": null,
+      "marketValueDelta": 8000.5,
+      "disclosedAmountRange": "$1,001 - $15,000",
+      "significanceScore": 8000.5,
+      "confidence": "medium",
+      "staleDisclosure": false,
+      "narrative": "Tim Moore 通过 US Congress PTR 增持 IHG / IHG。交易日 2026-05-07。"
     },
     {
       "id": "congress-2026-05-20-2026-04-28-josh-gottheimer-MMM-Sell",
@@ -7468,39 +7501,6 @@
       "confidence": "medium",
       "staleDisclosure": false,
       "narrative": "William R. Keating 通过 US Congress PTR 增持 TMUS / TMUS。交易日 2026-04-17。"
-    },
-    {
-      "id": "congress-2026-05-18-2026-05-11-dwight-evans-AMT-Sell",
-      "market": "us",
-      "investorId": "us_congress",
-      "investorName": "Dwight Evans",
-      "vehicleName": "US Congress PTR",
-      "sourceTier": "L1",
-      "disclosureType": "STOCK Act PTR",
-      "sourceLabel": "House Clerk PTR",
-      "indexSourceLabel": "CongressFlow third-party index",
-      "reportDate": "2026-05-11",
-      "previousReportDate": null,
-      "filingDate": "2026-05-18",
-      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034556.pdf",
-      "security": {
-        "ticker": "AMT",
-        "name": "AMT",
-        "cusip": "",
-        "title": "Disclosed range"
-      },
-      "direction": "decrease",
-      "sharesBefore": null,
-      "sharesAfter": null,
-      "sharesDelta": null,
-      "marketValueBefore": null,
-      "marketValueAfter": null,
-      "marketValueDelta": -8000.5,
-      "disclosedAmountRange": "$1,001 - $15,000",
-      "significanceScore": 8000.5,
-      "confidence": "medium",
-      "staleDisclosure": false,
-      "narrative": "Dwight Evans 通过 US Congress PTR 减持 AMT / AMT。交易日 2026-05-11。"
     },
     {
       "id": "cathiesark-2026-05-15T00:00:00.000Z-ARKK-TSM-Sell-44854",
