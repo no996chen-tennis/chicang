@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-27T14:34:33.095Z",
+  "generatedAt": "2026-05-28T01:21:46.919Z",
   "site": {
     "name": "chicang",
     "tagline": "重要资金公开披露雷达",
@@ -826,9 +826,9 @@
         }
       ],
       "returns": {
-        "oneYearPct": 33.040482342807934,
-        "threeYearPct": 97.51918158567776,
-        "asOf": "2026-05-26",
+        "oneYearPct": 36.80238680238681,
+        "threeYearPct": 99.36061381074168,
+        "asOf": "2026-05-27",
         "sourceLabel": "ARKK ETF 市价代理，非 Cathie Wood 全部管理资产真实净值",
         "sourceUrl": "https://www.nasdaq.com/market-activity/etf/arkk/historical",
         "isProxy": true,
@@ -1782,11 +1782,11 @@
       "topIncreases": [],
       "topDecreases": [],
       "returns": {
-        "oneYearPct": 24.410248613576115,
-        "threeYearPct": 155.23893572433613,
+        "oneYearPct": 26.31895254689567,
+        "threeYearPct": 157.29483816186374,
         "sourceLabel": "13F Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://www.sec.gov/edgar/search/",
-        "asOf": "2026-05-26",
+        "asOf": "2026-05-27",
         "isProxy": true,
         "proxyDisclosure": "按当前公开 Top 持仓价格估算，不代表管理人真实组合净值或产品收益"
       }
@@ -2186,7 +2186,7 @@
         }
       ],
       "returns": {
-        "oneYearPct": 25.32361400714909,
+        "oneYearPct": 25.69817505270121,
         "threeYearPct": 8.935196093308319,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SZ002415",
@@ -2949,7 +2949,7 @@
         }
       ],
       "returns": {
-        "oneYearPct": 52.797437036288855,
+        "oneYearPct": 53.49849872921799,
         "threeYearPct": 69.80752201551542,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SZ002594",
@@ -3076,7 +3076,7 @@
       "topIncreases": [],
       "topDecreases": [],
       "returns": {
-        "oneYearPct": 8.57468176902539,
+        "oneYearPct": 8.872391482802444,
         "threeYearPct": 55.79277128935252,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SH601939",
@@ -3586,7 +3586,7 @@
         }
       ],
       "returns": {
-        "oneYearPct": 4.381027528374028,
+        "oneYearPct": 4.366964432621244,
         "threeYearPct": 40.76608710346601,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SH601988",
@@ -3788,7 +3788,7 @@
         }
       ],
       "returns": {
-        "oneYearPct": 88.1546329723924,
+        "oneYearPct": 88.08808449570239,
         "threeYearPct": 113.36900124932303,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 99%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SH688802",
@@ -4489,7 +4489,7 @@
         }
       ],
       "returns": {
-        "oneYearPct": 120.06989974356591,
+        "oneYearPct": 118.13254959127926,
         "threeYearPct": 141.8665250965468,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SZ300750",
@@ -5136,7 +5136,7 @@
         }
       ],
       "returns": {
-        "oneYearPct": 32.23647685567828,
+        "oneYearPct": 31.778661134101547,
         "threeYearPct": 84.86679276719181,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SH601328",
@@ -5229,7 +5229,7 @@
         }
       ],
       "returns": {
-        "oneYearPct": 6.683804201842344,
+        "oneYearPct": 6.410256253505212,
         "threeYearPct": -43.50785125874002,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SZ002153",
