@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-03T15:55:09.664Z",
+  "generatedAt": "2026-06-04T02:05:05.065Z",
   "site": {
     "name": "chicang",
     "tagline": "重要资金公开披露雷达",
@@ -9,7 +9,7 @@
     "us": {
       "label": "美股",
       "profileCount": 3,
-      "eventCount": 139
+      "eventCount": 137
     },
     "cn": {
       "label": "A 股",
@@ -19,16 +19,16 @@
   },
   "stats": {
     "investorCount": 11,
-    "eventCount": 209,
+    "eventCount": 207,
     "arkTradeCount": 100,
     "secManagerCount": 0,
-    "congressTradeCount": 39,
+    "congressTradeCount": 37,
     "form4TradeCount": 0,
     "regionalWatchlistCount": 8,
     "regionalTradeCount": 70,
     "sourceErrorCount": 15,
     "cnMainFundInflowCount": 0,
-    "latestEventDate": "2026-06-02"
+    "latestEventDate": "2026-06-03"
   },
   "profiles": [
     {
@@ -826,9 +826,9 @@
         }
       ],
       "returns": {
-        "oneYearPct": 37.91853641698309,
-        "threeYearPct": 91.99903892359444,
-        "asOf": "2026-06-02",
+        "oneYearPct": 34.80510520869265,
+        "threeYearPct": 85.82976699952447,
+        "asOf": "2026-06-03",
         "sourceLabel": "ARKK ETF 市价代理，非 Cathie Wood 全部管理资产真实净值",
         "sourceUrl": "https://www.nasdaq.com/market-activity/etf/arkk/historical",
         "isProxy": true,
@@ -853,11 +853,44 @@
       "cadence": "披露后更新",
       "latestFiling": {
         "form": "PTR",
-        "reportDate": "2026-05-08",
-        "filingDate": "2026-06-02"
+        "reportDate": "2026-05-15",
+        "filingDate": "2026-06-03"
       },
-      "positionCount": 39,
+      "positionCount": 37,
       "changes": [
+        {
+          "id": "congress-2026-06-03-2026-05-15-virginia-foxx-ARLP-Buy",
+          "market": "us",
+          "investorId": "us_congress",
+          "investorName": "Virginia Foxx",
+          "vehicleName": "US Congress PTR",
+          "sourceTier": "L1",
+          "disclosureType": "STOCK Act PTR",
+          "sourceLabel": "House Clerk PTR",
+          "indexSourceLabel": "CongressFlow third-party index",
+          "reportDate": "2026-05-15",
+          "previousReportDate": null,
+          "filingDate": "2026-06-03",
+          "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034670.pdf",
+          "security": {
+            "ticker": "ARLP",
+            "name": "ARLP",
+            "cusip": "",
+            "title": "Disclosed range"
+          },
+          "direction": "increase",
+          "sharesBefore": null,
+          "sharesAfter": null,
+          "sharesDelta": null,
+          "marketValueBefore": null,
+          "marketValueAfter": null,
+          "marketValueDelta": 8000.5,
+          "disclosedAmountRange": "$1,001 - $15,000",
+          "significanceScore": 8000.5,
+          "confidence": "medium",
+          "staleDisclosure": false,
+          "narrative": "Virginia Foxx 通过 US Congress PTR 增持 ARLP / ARLP。交易日 2026-05-15。"
+        },
         {
           "id": "congress-2026-06-02-2026-05-08-sheldon-whitehouse-NVDA-Sell",
           "market": "us",
@@ -1090,7 +1123,7 @@
           "narrative": "Ed Case 通过 US Congress PTR 增持 AAPL / AAPL。交易日 2026-05-14。"
         },
         {
-          "id": "congress-2026-05-29-2026-05-15-david-taylor-MEDP-Buy",
+          "id": "congress-2026-05-29-2026-05-15-david-taylor-AAPL-Sell",
           "market": "us",
           "investorId": "us_congress",
           "investorName": "David Taylor",
@@ -1104,56 +1137,23 @@
           "filingDate": "2026-05-29",
           "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034650.pdf",
           "security": {
-            "ticker": "MEDP",
-            "name": "MEDP",
+            "ticker": "AAPL",
+            "name": "AAPL",
             "cusip": "",
             "title": "Disclosed range"
           },
-          "direction": "increase",
+          "direction": "decrease",
           "sharesBefore": null,
           "sharesAfter": null,
           "sharesDelta": null,
           "marketValueBefore": null,
           "marketValueAfter": null,
-          "marketValueDelta": 8000.5,
+          "marketValueDelta": -8000.5,
           "disclosedAmountRange": "$1,001 - $15,000",
           "significanceScore": 8000.5,
           "confidence": "medium",
           "staleDisclosure": false,
-          "narrative": "David Taylor 通过 US Congress PTR 增持 MEDP / MEDP。交易日 2026-05-15。"
-        },
-        {
-          "id": "congress-2026-05-29-2026-05-15-david-taylor-HD-Buy",
-          "market": "us",
-          "investorId": "us_congress",
-          "investorName": "David Taylor",
-          "vehicleName": "US Congress PTR",
-          "sourceTier": "L1",
-          "disclosureType": "STOCK Act PTR",
-          "sourceLabel": "House Clerk PTR",
-          "indexSourceLabel": "CongressFlow third-party index",
-          "reportDate": "2026-05-15",
-          "previousReportDate": null,
-          "filingDate": "2026-05-29",
-          "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034650.pdf",
-          "security": {
-            "ticker": "HD",
-            "name": "HD",
-            "cusip": "",
-            "title": "Disclosed range"
-          },
-          "direction": "increase",
-          "sharesBefore": null,
-          "sharesAfter": null,
-          "sharesDelta": null,
-          "marketValueBefore": null,
-          "marketValueAfter": null,
-          "marketValueDelta": 8000.5,
-          "disclosedAmountRange": "$1,001 - $15,000",
-          "significanceScore": 8000.5,
-          "confidence": "medium",
-          "staleDisclosure": false,
-          "narrative": "David Taylor 通过 US Congress PTR 增持 HD / HD。交易日 2026-05-15。"
+          "narrative": "David Taylor 通过 US Congress PTR 减持 AAPL / AAPL。交易日 2026-05-15。"
         },
         {
           "id": "congress-2026-05-29-2026-05-15-david-taylor-PH-Buy",
@@ -1189,39 +1189,6 @@
           "narrative": "David Taylor 通过 US Congress PTR 增持 PH / PH。交易日 2026-05-15。"
         },
         {
-          "id": "congress-2026-05-29-2026-05-15-david-taylor-AAPL-Sell",
-          "market": "us",
-          "investorId": "us_congress",
-          "investorName": "David Taylor",
-          "vehicleName": "US Congress PTR",
-          "sourceTier": "L1",
-          "disclosureType": "STOCK Act PTR",
-          "sourceLabel": "House Clerk PTR",
-          "indexSourceLabel": "CongressFlow third-party index",
-          "reportDate": "2026-05-15",
-          "previousReportDate": null,
-          "filingDate": "2026-05-29",
-          "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034650.pdf",
-          "security": {
-            "ticker": "AAPL",
-            "name": "AAPL",
-            "cusip": "",
-            "title": "Disclosed range"
-          },
-          "direction": "decrease",
-          "sharesBefore": null,
-          "sharesAfter": null,
-          "sharesDelta": null,
-          "marketValueBefore": null,
-          "marketValueAfter": null,
-          "marketValueDelta": -8000.5,
-          "disclosedAmountRange": "$1,001 - $15,000",
-          "significanceScore": 8000.5,
-          "confidence": "medium",
-          "staleDisclosure": false,
-          "narrative": "David Taylor 通过 US Congress PTR 减持 AAPL / AAPL。交易日 2026-05-15。"
-        },
-        {
           "id": "congress-2026-05-29-2026-05-15-david-taylor-GOOGL-Sell",
           "market": "us",
           "investorId": "us_congress",
@@ -1253,6 +1220,72 @@
           "confidence": "medium",
           "staleDisclosure": false,
           "narrative": "David Taylor 通过 US Congress PTR 减持 GOOGL / GOOGL。交易日 2026-05-15。"
+        },
+        {
+          "id": "congress-2026-05-29-2026-05-15-david-taylor-HD-Buy",
+          "market": "us",
+          "investorId": "us_congress",
+          "investorName": "David Taylor",
+          "vehicleName": "US Congress PTR",
+          "sourceTier": "L1",
+          "disclosureType": "STOCK Act PTR",
+          "sourceLabel": "House Clerk PTR",
+          "indexSourceLabel": "CongressFlow third-party index",
+          "reportDate": "2026-05-15",
+          "previousReportDate": null,
+          "filingDate": "2026-05-29",
+          "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034650.pdf",
+          "security": {
+            "ticker": "HD",
+            "name": "HD",
+            "cusip": "",
+            "title": "Disclosed range"
+          },
+          "direction": "increase",
+          "sharesBefore": null,
+          "sharesAfter": null,
+          "sharesDelta": null,
+          "marketValueBefore": null,
+          "marketValueAfter": null,
+          "marketValueDelta": 8000.5,
+          "disclosedAmountRange": "$1,001 - $15,000",
+          "significanceScore": 8000.5,
+          "confidence": "medium",
+          "staleDisclosure": false,
+          "narrative": "David Taylor 通过 US Congress PTR 增持 HD / HD。交易日 2026-05-15。"
+        },
+        {
+          "id": "congress-2026-05-29-2026-05-15-david-taylor-MEDP-Buy",
+          "market": "us",
+          "investorId": "us_congress",
+          "investorName": "David Taylor",
+          "vehicleName": "US Congress PTR",
+          "sourceTier": "L1",
+          "disclosureType": "STOCK Act PTR",
+          "sourceLabel": "House Clerk PTR",
+          "indexSourceLabel": "CongressFlow third-party index",
+          "reportDate": "2026-05-15",
+          "previousReportDate": null,
+          "filingDate": "2026-05-29",
+          "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034650.pdf",
+          "security": {
+            "ticker": "MEDP",
+            "name": "MEDP",
+            "cusip": "",
+            "title": "Disclosed range"
+          },
+          "direction": "increase",
+          "sharesBefore": null,
+          "sharesAfter": null,
+          "sharesDelta": null,
+          "marketValueBefore": null,
+          "marketValueAfter": null,
+          "marketValueDelta": 8000.5,
+          "disclosedAmountRange": "$1,001 - $15,000",
+          "significanceScore": 8000.5,
+          "confidence": "medium",
+          "staleDisclosure": false,
+          "narrative": "David Taylor 通过 US Congress PTR 增持 MEDP / MEDP。交易日 2026-05-15。"
         },
         {
           "id": "congress-2026-05-29-2026-05-15-david-taylor-T-Buy",
@@ -1616,39 +1649,6 @@
           "confidence": "medium",
           "staleDisclosure": false,
           "narrative": "Thomas H. Kean 通过 US Congress PTR 增持 TXN / TXN。交易日 2026-04-14。"
-        },
-        {
-          "id": "congress-2026-05-25-2026-04-14-thomas-h-kean-FCNCA-Sell",
-          "market": "us",
-          "investorId": "us_congress",
-          "investorName": "Thomas H. Kean",
-          "vehicleName": "US Congress PTR",
-          "sourceTier": "L1",
-          "disclosureType": "STOCK Act PTR",
-          "sourceLabel": "House Clerk PTR",
-          "indexSourceLabel": "CongressFlow third-party index",
-          "reportDate": "2026-04-14",
-          "previousReportDate": null,
-          "filingDate": "2026-05-25",
-          "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034616.pdf",
-          "security": {
-            "ticker": "FCNCA",
-            "name": "FCNCA",
-            "cusip": "",
-            "title": "Disclosed range"
-          },
-          "direction": "decrease",
-          "sharesBefore": null,
-          "sharesAfter": null,
-          "sharesDelta": null,
-          "marketValueBefore": null,
-          "marketValueAfter": null,
-          "marketValueDelta": -8000.5,
-          "disclosedAmountRange": "$1,001 - $15,000",
-          "significanceScore": 8000.5,
-          "confidence": "medium",
-          "staleDisclosure": false,
-          "narrative": "Thomas H. Kean 通过 US Congress PTR 减持 FCNCA / FCNCA。交易日 2026-04-14。"
         }
       ],
       "topIncreases": [
@@ -1663,6 +1663,16 @@
           "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034519.pdf"
         },
         {
+          "ticker": "ARLP",
+          "name": "ARLP",
+          "market": "us",
+          "direction": "increase",
+          "value": 8000.5,
+          "valueCurrency": "USD",
+          "date": "2026-06-03",
+          "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034670.pdf"
+        },
+        {
           "ticker": "AAPL",
           "name": "AAPL",
           "market": "us",
@@ -1671,16 +1681,6 @@
           "valueCurrency": "USD",
           "date": "2026-06-01",
           "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034668.pdf"
-        },
-        {
-          "ticker": "MEDP",
-          "name": "MEDP",
-          "market": "us",
-          "direction": "increase",
-          "value": 8000.5,
-          "valueCurrency": "USD",
-          "date": "2026-05-29",
-          "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034650.pdf"
         }
       ],
       "topDecreases": [
@@ -1782,11 +1782,11 @@
       "topIncreases": [],
       "topDecreases": [],
       "returns": {
-        "oneYearPct": 24.26194801993894,
-        "threeYearPct": 149.3448075001062,
+        "oneYearPct": 22.536915241029885,
+        "threeYearPct": 145.33484271880477,
         "sourceLabel": "13F Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://www.sec.gov/edgar/search/",
-        "asOf": "2026-06-02",
+        "asOf": "2026-06-03",
         "isProxy": true,
         "proxyDisclosure": "按当前公开 Top 持仓价格估算，不代表管理人真实组合净值或产品收益"
       }
@@ -2186,11 +2186,11 @@
         }
       ],
       "returns": {
-        "oneYearPct": 23.68337028152037,
-        "threeYearPct": 3.038192769170603,
+        "oneYearPct": 23.40205083111082,
+        "threeYearPct": 4.044881347707632,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SZ002415",
-        "asOf": "2026-06-03",
+        "asOf": "2026-06-04",
         "isProxy": true,
         "proxyDisclosure": "按当前公开 Top 持仓价格估算，不代表管理人真实组合净值或产品收益"
       }
@@ -2949,11 +2949,11 @@
         }
       ],
       "returns": {
-        "oneYearPct": 53.885858794195485,
-        "threeYearPct": 64.48607915446907,
+        "oneYearPct": 48.78780609545781,
+        "threeYearPct": 62.01729538784772,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SZ002594",
-        "asOf": "2026-06-03",
+        "asOf": "2026-06-04",
         "isProxy": true,
         "proxyDisclosure": "按当前公开 Top 持仓价格估算，不代表管理人真实组合净值或产品收益"
       }
@@ -3076,11 +3076,11 @@
       "topIncreases": [],
       "topDecreases": [],
       "returns": {
-        "oneYearPct": 8.967067244941209,
-        "threeYearPct": 55.88685330114602,
+        "oneYearPct": 9.530629188793052,
+        "threeYearPct": 56.254657399569716,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SH601939",
-        "asOf": "2026-06-03",
+        "asOf": "2026-06-04",
         "isProxy": true,
         "proxyDisclosure": "按当前公开 Top 持仓价格估算，不代表管理人真实组合净值或产品收益"
       }
@@ -3586,11 +3586,11 @@
         }
       ],
       "returns": {
-        "oneYearPct": 6.868153266989845,
-        "threeYearPct": 43.7574393881222,
+        "oneYearPct": 7.47383176872856,
+        "threeYearPct": 44.34738780543168,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SH601988",
-        "asOf": "2026-06-03",
+        "asOf": "2026-06-04",
         "isProxy": true,
         "proxyDisclosure": "按当前公开 Top 持仓价格估算，不代表管理人真实组合净值或产品收益"
       }
@@ -3788,11 +3788,11 @@
         }
       ],
       "returns": {
-        "oneYearPct": 87.49923017128503,
-        "threeYearPct": 113.65990714146314,
+        "oneYearPct": 89.59416937379623,
+        "threeYearPct": 119.30816080850833,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 99%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SH688802",
-        "asOf": "2026-06-03",
+        "asOf": "2026-06-04",
         "isProxy": true,
         "proxyDisclosure": "按当前公开 Top 持仓价格估算，不代表管理人真实组合净值或产品收益"
       }
@@ -4489,11 +4489,11 @@
         }
       ],
       "returns": {
-        "oneYearPct": 135.3347000885577,
-        "threeYearPct": 141.17771240061418,
+        "oneYearPct": 127.73154285374927,
+        "threeYearPct": 139.13721202390727,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SZ300750",
-        "asOf": "2026-06-03",
+        "asOf": "2026-06-04",
         "isProxy": true,
         "proxyDisclosure": "按当前公开 Top 持仓价格估算，不代表管理人真实组合净值或产品收益"
       }
@@ -5136,11 +5136,11 @@
         }
       ],
       "returns": {
-        "oneYearPct": 35.566661293789636,
-        "threeYearPct": 91.75285519794744,
+        "oneYearPct": 31.917505272242416,
+        "threeYearPct": 89.05363230323381,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SH601328",
-        "asOf": "2026-06-03",
+        "asOf": "2026-06-04",
         "isProxy": true,
         "proxyDisclosure": "按当前公开 Top 持仓价格估算，不代表管理人真实组合净值或产品收益"
       }
@@ -5229,17 +5229,50 @@
         }
       ],
       "returns": {
-        "oneYearPct": 1.8541361644139207,
-        "threeYearPct": -46.224898723565275,
+        "oneYearPct": 0.7370941451077506,
+        "threeYearPct": -46.485942662818715,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SZ002153",
-        "asOf": "2026-06-03",
+        "asOf": "2026-06-04",
         "isProxy": true,
         "proxyDisclosure": "按当前公开 Top 持仓价格估算，不代表管理人真实组合净值或产品收益"
       }
     }
   ],
   "events": [
+    {
+      "id": "congress-2026-06-03-2026-05-15-virginia-foxx-ARLP-Buy",
+      "market": "us",
+      "investorId": "us_congress",
+      "investorName": "Virginia Foxx",
+      "vehicleName": "US Congress PTR",
+      "sourceTier": "L1",
+      "disclosureType": "STOCK Act PTR",
+      "sourceLabel": "House Clerk PTR",
+      "indexSourceLabel": "CongressFlow third-party index",
+      "reportDate": "2026-05-15",
+      "previousReportDate": null,
+      "filingDate": "2026-06-03",
+      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034670.pdf",
+      "security": {
+        "ticker": "ARLP",
+        "name": "ARLP",
+        "cusip": "",
+        "title": "Disclosed range"
+      },
+      "direction": "increase",
+      "sharesBefore": null,
+      "sharesAfter": null,
+      "sharesDelta": null,
+      "marketValueBefore": null,
+      "marketValueAfter": null,
+      "marketValueDelta": 8000.5,
+      "disclosedAmountRange": "$1,001 - $15,000",
+      "significanceScore": 8000.5,
+      "confidence": "medium",
+      "staleDisclosure": false,
+      "narrative": "Virginia Foxx 通过 US Congress PTR 增持 ARLP / ARLP。交易日 2026-05-15。"
+    },
     {
       "id": "congress-2026-06-02-2026-05-08-sheldon-whitehouse-NVDA-Sell",
       "market": "us",
@@ -6264,7 +6297,7 @@
       "narrative": "Cathie Wood 通过 ARKF / ARK Active ETFs 减持 ICE / Intercontinental Exchange。交易日 2026-05-29。"
     },
     {
-      "id": "congress-2026-05-29-2026-05-15-david-taylor-MEDP-Buy",
+      "id": "congress-2026-05-29-2026-05-15-david-taylor-AAPL-Sell",
       "market": "us",
       "investorId": "us_congress",
       "investorName": "David Taylor",
@@ -6278,56 +6311,23 @@
       "filingDate": "2026-05-29",
       "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034650.pdf",
       "security": {
-        "ticker": "MEDP",
-        "name": "MEDP",
+        "ticker": "AAPL",
+        "name": "AAPL",
         "cusip": "",
         "title": "Disclosed range"
       },
-      "direction": "increase",
+      "direction": "decrease",
       "sharesBefore": null,
       "sharesAfter": null,
       "sharesDelta": null,
       "marketValueBefore": null,
       "marketValueAfter": null,
-      "marketValueDelta": 8000.5,
+      "marketValueDelta": -8000.5,
       "disclosedAmountRange": "$1,001 - $15,000",
       "significanceScore": 8000.5,
       "confidence": "medium",
       "staleDisclosure": false,
-      "narrative": "David Taylor 通过 US Congress PTR 增持 MEDP / MEDP。交易日 2026-05-15。"
-    },
-    {
-      "id": "congress-2026-05-29-2026-05-15-david-taylor-HD-Buy",
-      "market": "us",
-      "investorId": "us_congress",
-      "investorName": "David Taylor",
-      "vehicleName": "US Congress PTR",
-      "sourceTier": "L1",
-      "disclosureType": "STOCK Act PTR",
-      "sourceLabel": "House Clerk PTR",
-      "indexSourceLabel": "CongressFlow third-party index",
-      "reportDate": "2026-05-15",
-      "previousReportDate": null,
-      "filingDate": "2026-05-29",
-      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034650.pdf",
-      "security": {
-        "ticker": "HD",
-        "name": "HD",
-        "cusip": "",
-        "title": "Disclosed range"
-      },
-      "direction": "increase",
-      "sharesBefore": null,
-      "sharesAfter": null,
-      "sharesDelta": null,
-      "marketValueBefore": null,
-      "marketValueAfter": null,
-      "marketValueDelta": 8000.5,
-      "disclosedAmountRange": "$1,001 - $15,000",
-      "significanceScore": 8000.5,
-      "confidence": "medium",
-      "staleDisclosure": false,
-      "narrative": "David Taylor 通过 US Congress PTR 增持 HD / HD。交易日 2026-05-15。"
+      "narrative": "David Taylor 通过 US Congress PTR 减持 AAPL / AAPL。交易日 2026-05-15。"
     },
     {
       "id": "congress-2026-05-29-2026-05-15-david-taylor-PH-Buy",
@@ -6363,39 +6363,6 @@
       "narrative": "David Taylor 通过 US Congress PTR 增持 PH / PH。交易日 2026-05-15。"
     },
     {
-      "id": "congress-2026-05-29-2026-05-15-david-taylor-AAPL-Sell",
-      "market": "us",
-      "investorId": "us_congress",
-      "investorName": "David Taylor",
-      "vehicleName": "US Congress PTR",
-      "sourceTier": "L1",
-      "disclosureType": "STOCK Act PTR",
-      "sourceLabel": "House Clerk PTR",
-      "indexSourceLabel": "CongressFlow third-party index",
-      "reportDate": "2026-05-15",
-      "previousReportDate": null,
-      "filingDate": "2026-05-29",
-      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034650.pdf",
-      "security": {
-        "ticker": "AAPL",
-        "name": "AAPL",
-        "cusip": "",
-        "title": "Disclosed range"
-      },
-      "direction": "decrease",
-      "sharesBefore": null,
-      "sharesAfter": null,
-      "sharesDelta": null,
-      "marketValueBefore": null,
-      "marketValueAfter": null,
-      "marketValueDelta": -8000.5,
-      "disclosedAmountRange": "$1,001 - $15,000",
-      "significanceScore": 8000.5,
-      "confidence": "medium",
-      "staleDisclosure": false,
-      "narrative": "David Taylor 通过 US Congress PTR 减持 AAPL / AAPL。交易日 2026-05-15。"
-    },
-    {
       "id": "congress-2026-05-29-2026-05-15-david-taylor-GOOGL-Sell",
       "market": "us",
       "investorId": "us_congress",
@@ -6427,6 +6394,72 @@
       "confidence": "medium",
       "staleDisclosure": false,
       "narrative": "David Taylor 通过 US Congress PTR 减持 GOOGL / GOOGL。交易日 2026-05-15。"
+    },
+    {
+      "id": "congress-2026-05-29-2026-05-15-david-taylor-HD-Buy",
+      "market": "us",
+      "investorId": "us_congress",
+      "investorName": "David Taylor",
+      "vehicleName": "US Congress PTR",
+      "sourceTier": "L1",
+      "disclosureType": "STOCK Act PTR",
+      "sourceLabel": "House Clerk PTR",
+      "indexSourceLabel": "CongressFlow third-party index",
+      "reportDate": "2026-05-15",
+      "previousReportDate": null,
+      "filingDate": "2026-05-29",
+      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034650.pdf",
+      "security": {
+        "ticker": "HD",
+        "name": "HD",
+        "cusip": "",
+        "title": "Disclosed range"
+      },
+      "direction": "increase",
+      "sharesBefore": null,
+      "sharesAfter": null,
+      "sharesDelta": null,
+      "marketValueBefore": null,
+      "marketValueAfter": null,
+      "marketValueDelta": 8000.5,
+      "disclosedAmountRange": "$1,001 - $15,000",
+      "significanceScore": 8000.5,
+      "confidence": "medium",
+      "staleDisclosure": false,
+      "narrative": "David Taylor 通过 US Congress PTR 增持 HD / HD。交易日 2026-05-15。"
+    },
+    {
+      "id": "congress-2026-05-29-2026-05-15-david-taylor-MEDP-Buy",
+      "market": "us",
+      "investorId": "us_congress",
+      "investorName": "David Taylor",
+      "vehicleName": "US Congress PTR",
+      "sourceTier": "L1",
+      "disclosureType": "STOCK Act PTR",
+      "sourceLabel": "House Clerk PTR",
+      "indexSourceLabel": "CongressFlow third-party index",
+      "reportDate": "2026-05-15",
+      "previousReportDate": null,
+      "filingDate": "2026-05-29",
+      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034650.pdf",
+      "security": {
+        "ticker": "MEDP",
+        "name": "MEDP",
+        "cusip": "",
+        "title": "Disclosed range"
+      },
+      "direction": "increase",
+      "sharesBefore": null,
+      "sharesAfter": null,
+      "sharesDelta": null,
+      "marketValueBefore": null,
+      "marketValueAfter": null,
+      "marketValueDelta": 8000.5,
+      "disclosedAmountRange": "$1,001 - $15,000",
+      "significanceScore": 8000.5,
+      "confidence": "medium",
+      "staleDisclosure": false,
+      "narrative": "David Taylor 通过 US Congress PTR 增持 MEDP / MEDP。交易日 2026-05-15。"
     },
     {
       "id": "congress-2026-05-29-2026-05-15-david-taylor-T-Buy",
@@ -7867,105 +7900,6 @@
       "confidence": "medium",
       "staleDisclosure": false,
       "narrative": "Josh Gottheimer 通过 US Congress PTR 增持 AMD / AMD。交易日 2026-04-23。"
-    },
-    {
-      "id": "congress-2026-05-20-2026-04-16-josh-gottheimer-GS-Buy",
-      "market": "us",
-      "investorId": "us_congress",
-      "investorName": "Josh Gottheimer",
-      "vehicleName": "US Congress PTR",
-      "sourceTier": "L1",
-      "disclosureType": "STOCK Act PTR",
-      "sourceLabel": "House Clerk PTR",
-      "indexSourceLabel": "CongressFlow third-party index",
-      "reportDate": "2026-04-16",
-      "previousReportDate": null,
-      "filingDate": "2026-05-20",
-      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034585.pdf",
-      "security": {
-        "ticker": "GS",
-        "name": "GS",
-        "cusip": "",
-        "title": "Disclosed range"
-      },
-      "direction": "increase",
-      "sharesBefore": null,
-      "sharesAfter": null,
-      "sharesDelta": null,
-      "marketValueBefore": null,
-      "marketValueAfter": null,
-      "marketValueDelta": 8000.5,
-      "disclosedAmountRange": "$1,001 - $15,000",
-      "significanceScore": 8000.5,
-      "confidence": "medium",
-      "staleDisclosure": false,
-      "narrative": "Josh Gottheimer 通过 US Congress PTR 增持 GS / GS。交易日 2026-04-16。"
-    },
-    {
-      "id": "congress-2026-05-20-2026-04-15-josh-gottheimer-FCX-Buy",
-      "market": "us",
-      "investorId": "us_congress",
-      "investorName": "Josh Gottheimer",
-      "vehicleName": "US Congress PTR",
-      "sourceTier": "L1",
-      "disclosureType": "STOCK Act PTR",
-      "sourceLabel": "House Clerk PTR",
-      "indexSourceLabel": "CongressFlow third-party index",
-      "reportDate": "2026-04-15",
-      "previousReportDate": null,
-      "filingDate": "2026-05-20",
-      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034585.pdf",
-      "security": {
-        "ticker": "FCX",
-        "name": "FCX",
-        "cusip": "",
-        "title": "Disclosed range"
-      },
-      "direction": "increase",
-      "sharesBefore": null,
-      "sharesAfter": null,
-      "sharesDelta": null,
-      "marketValueBefore": null,
-      "marketValueAfter": null,
-      "marketValueDelta": 8000.5,
-      "disclosedAmountRange": "$1,001 - $15,000",
-      "significanceScore": 8000.5,
-      "confidence": "medium",
-      "staleDisclosure": false,
-      "narrative": "Josh Gottheimer 通过 US Congress PTR 增持 FCX / FCX。交易日 2026-04-15。"
-    },
-    {
-      "id": "congress-2026-05-20-2026-04-13-josh-gottheimer-HDB-Sell",
-      "market": "us",
-      "investorId": "us_congress",
-      "investorName": "Josh Gottheimer",
-      "vehicleName": "US Congress PTR",
-      "sourceTier": "L1",
-      "disclosureType": "STOCK Act PTR",
-      "sourceLabel": "House Clerk PTR",
-      "indexSourceLabel": "CongressFlow third-party index",
-      "reportDate": "2026-04-13",
-      "previousReportDate": null,
-      "filingDate": "2026-05-20",
-      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034585.pdf",
-      "security": {
-        "ticker": "HDB",
-        "name": "HDB",
-        "cusip": "",
-        "title": "Disclosed range"
-      },
-      "direction": "decrease",
-      "sharesBefore": null,
-      "sharesAfter": null,
-      "sharesDelta": null,
-      "marketValueBefore": null,
-      "marketValueAfter": null,
-      "marketValueDelta": -8000.5,
-      "disclosedAmountRange": "$1,001 - $15,000",
-      "significanceScore": 8000.5,
-      "confidence": "medium",
-      "staleDisclosure": false,
-      "narrative": "Josh Gottheimer 通过 US Congress PTR 减持 HDB / HDB。交易日 2026-04-13。"
     },
     {
       "id": "cathiesark-2026-05-19T00:00:00.000Z-ARKK-ROKU-Sell-14786",
