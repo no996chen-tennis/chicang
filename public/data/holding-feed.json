@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-29T14:53:07.967Z",
+  "generatedAt": "2026-06-30T01:29:51.004Z",
   "site": {
     "name": "chicang",
     "tagline": "重要资金公开披露雷达",
@@ -9,7 +9,7 @@
     "us": {
       "label": "美股",
       "profileCount": 3,
-      "eventCount": 147
+      "eventCount": 145
     },
     "cn": {
       "label": "A 股",
@@ -19,16 +19,16 @@
   },
   "stats": {
     "investorCount": 11,
-    "eventCount": 217,
+    "eventCount": 215,
     "arkTradeCount": 100,
     "secManagerCount": 0,
-    "congressTradeCount": 47,
+    "congressTradeCount": 45,
     "form4TradeCount": 0,
     "regionalWatchlistCount": 8,
     "regionalTradeCount": 70,
-    "sourceErrorCount": 14,
-    "cnMainFundInflowCount": 20,
-    "latestEventDate": "2026-06-27"
+    "sourceErrorCount": 15,
+    "cnMainFundInflowCount": 0,
+    "latestEventDate": "2026-06-29"
   },
   "profiles": [
     {
@@ -826,9 +826,9 @@
         }
       ],
       "returns": {
-        "oneYearPct": 11.869988545246265,
-        "threeYearPct": 77.00498414136835,
-        "asOf": "2026-06-26",
+        "oneYearPct": 14.710485133020326,
+        "threeYearPct": 82.66878115088355,
+        "asOf": "2026-06-29",
         "sourceLabel": "ARKK ETF 市价代理，非 Cathie Wood 全部管理资产真实净值",
         "sourceUrl": "https://www.nasdaq.com/market-activity/etf/arkk/historical",
         "isProxy": true,
@@ -853,11 +853,110 @@
       "cadence": "披露后更新",
       "latestFiling": {
         "form": "PTR",
-        "reportDate": "2026-06-02",
-        "filingDate": "2026-06-27"
+        "reportDate": "2026-05-28",
+        "filingDate": "2026-06-29"
       },
-      "positionCount": 47,
+      "positionCount": 45,
       "changes": [
+        {
+          "id": "congress-2026-06-29-2026-05-28-greg-stanton-TCNNF-Sell",
+          "market": "us",
+          "investorId": "us_congress",
+          "investorName": "Greg Stanton",
+          "vehicleName": "US Congress PTR",
+          "sourceTier": "L1",
+          "disclosureType": "STOCK Act PTR",
+          "sourceLabel": "House Clerk PTR",
+          "indexSourceLabel": "CongressFlow third-party index",
+          "reportDate": "2026-05-28",
+          "previousReportDate": null,
+          "filingDate": "2026-06-29",
+          "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034717.pdf",
+          "security": {
+            "ticker": "TCNNF",
+            "name": "TCNNF",
+            "cusip": "",
+            "title": "Disclosed range"
+          },
+          "direction": "decrease",
+          "sharesBefore": null,
+          "sharesAfter": null,
+          "sharesDelta": null,
+          "marketValueBefore": null,
+          "marketValueAfter": null,
+          "marketValueDelta": -175000.5,
+          "disclosedAmountRange": "$100,001 - $250,000",
+          "significanceScore": 175000.5,
+          "confidence": "medium",
+          "staleDisclosure": false,
+          "narrative": "Greg Stanton 通过 US Congress PTR 减持 TCNNF / TCNNF。交易日 2026-05-28。"
+        },
+        {
+          "id": "congress-2026-06-29-2026-06-15-cleo-fields-GOOGL-Buy",
+          "market": "us",
+          "investorId": "us_congress",
+          "investorName": "Cleo Fields",
+          "vehicleName": "US Congress PTR",
+          "sourceTier": "L1",
+          "disclosureType": "STOCK Act PTR",
+          "sourceLabel": "House Clerk PTR",
+          "indexSourceLabel": "CongressFlow third-party index",
+          "reportDate": "2026-06-15",
+          "previousReportDate": null,
+          "filingDate": "2026-06-29",
+          "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034800.pdf",
+          "security": {
+            "ticker": "GOOGL",
+            "name": "GOOGL",
+            "cusip": "",
+            "title": "Disclosed range"
+          },
+          "direction": "increase",
+          "sharesBefore": null,
+          "sharesAfter": null,
+          "sharesDelta": null,
+          "marketValueBefore": null,
+          "marketValueAfter": null,
+          "marketValueDelta": 8000.5,
+          "disclosedAmountRange": "$1,001 - $15,000",
+          "significanceScore": 8000.5,
+          "confidence": "medium",
+          "staleDisclosure": false,
+          "narrative": "Cleo Fields 通过 US Congress PTR 增持 GOOGL / GOOGL。交易日 2026-06-15。"
+        },
+        {
+          "id": "congress-2026-06-29-2026-06-11-cleo-fields-MSFT-Buy",
+          "market": "us",
+          "investorId": "us_congress",
+          "investorName": "Cleo Fields",
+          "vehicleName": "US Congress PTR",
+          "sourceTier": "L1",
+          "disclosureType": "STOCK Act PTR",
+          "sourceLabel": "House Clerk PTR",
+          "indexSourceLabel": "CongressFlow third-party index",
+          "reportDate": "2026-06-11",
+          "previousReportDate": null,
+          "filingDate": "2026-06-29",
+          "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034800.pdf",
+          "security": {
+            "ticker": "MSFT",
+            "name": "MSFT",
+            "cusip": "",
+            "title": "Disclosed range"
+          },
+          "direction": "increase",
+          "sharesBefore": null,
+          "sharesAfter": null,
+          "sharesDelta": null,
+          "marketValueBefore": null,
+          "marketValueAfter": null,
+          "marketValueDelta": 8000.5,
+          "disclosedAmountRange": "$1,001 - $15,000",
+          "significanceScore": 8000.5,
+          "confidence": "medium",
+          "staleDisclosure": false,
+          "narrative": "Cleo Fields 通过 US Congress PTR 增持 MSFT / MSFT。交易日 2026-06-11。"
+        },
         {
           "id": "congress-2026-06-27-2026-06-02-dave-mccormick-GS-Buy",
           "market": "us",
@@ -1453,6 +1552,39 @@
           "narrative": "Richard W. Allen 通过 US Congress PTR 减持 ACN / ACN。交易日 2026-05-08。"
         },
         {
+          "id": "congress-2026-06-17-2026-06-16-matt-van-epps-NVDA-Sell",
+          "market": "us",
+          "investorId": "us_congress",
+          "investorName": "Matt Van Epps",
+          "vehicleName": "US Congress PTR",
+          "sourceTier": "L1",
+          "disclosureType": "STOCK Act PTR",
+          "sourceLabel": "House Clerk PTR",
+          "indexSourceLabel": "CongressFlow third-party index",
+          "reportDate": "2026-06-16",
+          "previousReportDate": null,
+          "filingDate": "2026-06-17",
+          "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034807.pdf",
+          "security": {
+            "ticker": "NVDA",
+            "name": "NVDA",
+            "cusip": "",
+            "title": "Disclosed range"
+          },
+          "direction": "decrease",
+          "sharesBefore": null,
+          "sharesAfter": null,
+          "sharesDelta": null,
+          "marketValueBefore": null,
+          "marketValueAfter": null,
+          "marketValueDelta": -8000.5,
+          "disclosedAmountRange": "$1,001 - $15,000",
+          "significanceScore": 8000.5,
+          "confidence": "medium",
+          "staleDisclosure": false,
+          "narrative": "Matt Van Epps 通过 US Congress PTR 减持 NVDA / NVDA。交易日 2026-06-16。"
+        },
+        {
           "id": "congress-2026-06-17-2026-06-16-matt-van-epps-IBM-Sell",
           "market": "us",
           "investorId": "us_congress",
@@ -1486,7 +1618,7 @@
           "narrative": "Matt Van Epps 通过 US Congress PTR 减持 IBM / IBM。交易日 2026-06-16。"
         },
         {
-          "id": "congress-2026-06-17-2026-06-16-matt-van-epps-GEV-Sell",
+          "id": "congress-2026-06-17-2026-06-16-matt-van-epps-XOM-Sell",
           "market": "us",
           "investorId": "us_congress",
           "investorName": "Matt Van Epps",
@@ -1500,8 +1632,8 @@
           "filingDate": "2026-06-17",
           "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034807.pdf",
           "security": {
-            "ticker": "GEV",
-            "name": "GEV",
+            "ticker": "XOM",
+            "name": "XOM",
             "cusip": "",
             "title": "Disclosed range"
           },
@@ -1516,139 +1648,7 @@
           "significanceScore": 8000.5,
           "confidence": "medium",
           "staleDisclosure": false,
-          "narrative": "Matt Van Epps 通过 US Congress PTR 减持 GEV / GEV。交易日 2026-06-16。"
-        },
-        {
-          "id": "congress-2026-06-17-2026-06-16-matt-van-epps-INTC-Sell",
-          "market": "us",
-          "investorId": "us_congress",
-          "investorName": "Matt Van Epps",
-          "vehicleName": "US Congress PTR",
-          "sourceTier": "L1",
-          "disclosureType": "STOCK Act PTR",
-          "sourceLabel": "House Clerk PTR",
-          "indexSourceLabel": "CongressFlow third-party index",
-          "reportDate": "2026-06-16",
-          "previousReportDate": null,
-          "filingDate": "2026-06-17",
-          "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034807.pdf",
-          "security": {
-            "ticker": "INTC",
-            "name": "INTC",
-            "cusip": "",
-            "title": "Disclosed range"
-          },
-          "direction": "decrease",
-          "sharesBefore": null,
-          "sharesAfter": null,
-          "sharesDelta": null,
-          "marketValueBefore": null,
-          "marketValueAfter": null,
-          "marketValueDelta": -8000.5,
-          "disclosedAmountRange": "$1,001 - $15,000",
-          "significanceScore": 8000.5,
-          "confidence": "medium",
-          "staleDisclosure": false,
-          "narrative": "Matt Van Epps 通过 US Congress PTR 减持 INTC / INTC。交易日 2026-06-16。"
-        },
-        {
-          "id": "congress-2026-06-17-2026-06-16-matt-van-epps-META-Sell",
-          "market": "us",
-          "investorId": "us_congress",
-          "investorName": "Matt Van Epps",
-          "vehicleName": "US Congress PTR",
-          "sourceTier": "L1",
-          "disclosureType": "STOCK Act PTR",
-          "sourceLabel": "House Clerk PTR",
-          "indexSourceLabel": "CongressFlow third-party index",
-          "reportDate": "2026-06-16",
-          "previousReportDate": null,
-          "filingDate": "2026-06-17",
-          "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034807.pdf",
-          "security": {
-            "ticker": "META",
-            "name": "META",
-            "cusip": "",
-            "title": "Disclosed range"
-          },
-          "direction": "decrease",
-          "sharesBefore": null,
-          "sharesAfter": null,
-          "sharesDelta": null,
-          "marketValueBefore": null,
-          "marketValueAfter": null,
-          "marketValueDelta": -8000.5,
-          "disclosedAmountRange": "$1,001 - $15,000",
-          "significanceScore": 8000.5,
-          "confidence": "medium",
-          "staleDisclosure": false,
-          "narrative": "Matt Van Epps 通过 US Congress PTR 减持 META / META。交易日 2026-06-16。"
-        },
-        {
-          "id": "congress-2026-06-17-2026-06-16-matt-van-epps-MSFT-Sell",
-          "market": "us",
-          "investorId": "us_congress",
-          "investorName": "Matt Van Epps",
-          "vehicleName": "US Congress PTR",
-          "sourceTier": "L1",
-          "disclosureType": "STOCK Act PTR",
-          "sourceLabel": "House Clerk PTR",
-          "indexSourceLabel": "CongressFlow third-party index",
-          "reportDate": "2026-06-16",
-          "previousReportDate": null,
-          "filingDate": "2026-06-17",
-          "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034807.pdf",
-          "security": {
-            "ticker": "MSFT",
-            "name": "MSFT",
-            "cusip": "",
-            "title": "Disclosed range"
-          },
-          "direction": "decrease",
-          "sharesBefore": null,
-          "sharesAfter": null,
-          "sharesDelta": null,
-          "marketValueBefore": null,
-          "marketValueAfter": null,
-          "marketValueDelta": -8000.5,
-          "disclosedAmountRange": "$1,001 - $15,000",
-          "significanceScore": 8000.5,
-          "confidence": "medium",
-          "staleDisclosure": false,
-          "narrative": "Matt Van Epps 通过 US Congress PTR 减持 MSFT / MSFT。交易日 2026-06-16。"
-        },
-        {
-          "id": "congress-2026-06-17-2026-06-16-matt-van-epps-LUV-Sell",
-          "market": "us",
-          "investorId": "us_congress",
-          "investorName": "Matt Van Epps",
-          "vehicleName": "US Congress PTR",
-          "sourceTier": "L1",
-          "disclosureType": "STOCK Act PTR",
-          "sourceLabel": "House Clerk PTR",
-          "indexSourceLabel": "CongressFlow third-party index",
-          "reportDate": "2026-06-16",
-          "previousReportDate": null,
-          "filingDate": "2026-06-17",
-          "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034807.pdf",
-          "security": {
-            "ticker": "LUV",
-            "name": "LUV",
-            "cusip": "",
-            "title": "Disclosed range"
-          },
-          "direction": "decrease",
-          "sharesBefore": null,
-          "sharesAfter": null,
-          "sharesDelta": null,
-          "marketValueBefore": null,
-          "marketValueAfter": null,
-          "marketValueDelta": -8000.5,
-          "disclosedAmountRange": "$1,001 - $15,000",
-          "significanceScore": 8000.5,
-          "confidence": "medium",
-          "staleDisclosure": false,
-          "narrative": "Matt Van Epps 通过 US Congress PTR 减持 LUV / LUV。交易日 2026-06-16。"
+          "narrative": "Matt Van Epps 通过 US Congress PTR 减持 XOM / XOM。交易日 2026-06-16。"
         }
       ],
       "topIncreases": [
@@ -1685,6 +1685,16 @@
       ],
       "topDecreases": [
         {
+          "ticker": "TCNNF",
+          "name": "TCNNF",
+          "market": "us",
+          "direction": "decrease",
+          "value": -175000.5,
+          "valueCurrency": "USD",
+          "date": "2026-06-29",
+          "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034717.pdf"
+        },
+        {
           "ticker": "RF",
           "name": "RF",
           "market": "us",
@@ -1703,16 +1713,6 @@
           "valueCurrency": "USD",
           "date": "2026-06-24",
           "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034815.pdf"
-        },
-        {
-          "ticker": "TPR",
-          "name": "TPR",
-          "market": "us",
-          "direction": "decrease",
-          "value": -32500.5,
-          "valueCurrency": "USD",
-          "date": "2026-06-17",
-          "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034807.pdf"
         }
       ],
       "returns": {
@@ -1782,11 +1782,11 @@
       "topIncreases": [],
       "topDecreases": [],
       "returns": {
-        "oneYearPct": 5.819566510678775,
-        "threeYearPct": 104.37452577318257,
+        "oneYearPct": 8.359083889206612,
+        "threeYearPct": 108.66065694269435,
         "sourceLabel": "13F Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://www.sec.gov/edgar/search/",
-        "asOf": "2026-06-26",
+        "asOf": "2026-06-29",
         "isProxy": true,
         "proxyDisclosure": "按当前公开 Top 持仓价格估算，不代表管理人真实组合净值或产品收益"
       }
@@ -2186,7 +2186,7 @@
         }
       ],
       "returns": {
-        "oneYearPct": 36.9167073482444,
+        "oneYearPct": 36.40300703417386,
         "threeYearPct": 19.581719983877544,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SZ002415",
@@ -2949,7 +2949,7 @@
         }
       ],
       "returns": {
-        "oneYearPct": 34.599623643353084,
+        "oneYearPct": 34.78269977260623,
         "threeYearPct": 51.69722237791678,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SZ002594",
@@ -3076,7 +3076,7 @@
       "topIncreases": [],
       "topDecreases": [],
       "returns": {
-        "oneYearPct": 2.9494767789304173,
+        "oneYearPct": 2.3864760780755914,
         "threeYearPct": 56.83150757160923,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SH601939",
@@ -3586,7 +3586,7 @@
         }
       ],
       "returns": {
-        "oneYearPct": -0.19597786698742153,
+        "oneYearPct": -0.8187131998145938,
         "threeYearPct": 37.1634130494944,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SH601988",
@@ -3788,7 +3788,7 @@
         }
       ],
       "returns": {
-        "oneYearPct": 150.25252536401626,
+        "oneYearPct": 149.9502102582397,
         "threeYearPct": 199.40197380426713,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 99%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SH688802",
@@ -4489,7 +4489,7 @@
         }
       ],
       "returns": {
-        "oneYearPct": 95.26992117522026,
+        "oneYearPct": 91.2260106891747,
         "threeYearPct": 109.51115611172304,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SZ300750",
@@ -5136,7 +5136,7 @@
         }
       ],
       "returns": {
-        "oneYearPct": 30.886820044801407,
+        "oneYearPct": 31.593228700974024,
         "threeYearPct": 112.82306430692672,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SH601328",
@@ -5229,7 +5229,7 @@
         }
       ],
       "returns": {
-        "oneYearPct": -18.29689013265292,
+        "oneYearPct": -18.013856469590124,
         "threeYearPct": -49.28571496691023,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SZ002153",
@@ -5240,6 +5240,105 @@
     }
   ],
   "events": [
+    {
+      "id": "congress-2026-06-29-2026-05-28-greg-stanton-TCNNF-Sell",
+      "market": "us",
+      "investorId": "us_congress",
+      "investorName": "Greg Stanton",
+      "vehicleName": "US Congress PTR",
+      "sourceTier": "L1",
+      "disclosureType": "STOCK Act PTR",
+      "sourceLabel": "House Clerk PTR",
+      "indexSourceLabel": "CongressFlow third-party index",
+      "reportDate": "2026-05-28",
+      "previousReportDate": null,
+      "filingDate": "2026-06-29",
+      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034717.pdf",
+      "security": {
+        "ticker": "TCNNF",
+        "name": "TCNNF",
+        "cusip": "",
+        "title": "Disclosed range"
+      },
+      "direction": "decrease",
+      "sharesBefore": null,
+      "sharesAfter": null,
+      "sharesDelta": null,
+      "marketValueBefore": null,
+      "marketValueAfter": null,
+      "marketValueDelta": -175000.5,
+      "disclosedAmountRange": "$100,001 - $250,000",
+      "significanceScore": 175000.5,
+      "confidence": "medium",
+      "staleDisclosure": false,
+      "narrative": "Greg Stanton 通过 US Congress PTR 减持 TCNNF / TCNNF。交易日 2026-05-28。"
+    },
+    {
+      "id": "congress-2026-06-29-2026-06-15-cleo-fields-GOOGL-Buy",
+      "market": "us",
+      "investorId": "us_congress",
+      "investorName": "Cleo Fields",
+      "vehicleName": "US Congress PTR",
+      "sourceTier": "L1",
+      "disclosureType": "STOCK Act PTR",
+      "sourceLabel": "House Clerk PTR",
+      "indexSourceLabel": "CongressFlow third-party index",
+      "reportDate": "2026-06-15",
+      "previousReportDate": null,
+      "filingDate": "2026-06-29",
+      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034800.pdf",
+      "security": {
+        "ticker": "GOOGL",
+        "name": "GOOGL",
+        "cusip": "",
+        "title": "Disclosed range"
+      },
+      "direction": "increase",
+      "sharesBefore": null,
+      "sharesAfter": null,
+      "sharesDelta": null,
+      "marketValueBefore": null,
+      "marketValueAfter": null,
+      "marketValueDelta": 8000.5,
+      "disclosedAmountRange": "$1,001 - $15,000",
+      "significanceScore": 8000.5,
+      "confidence": "medium",
+      "staleDisclosure": false,
+      "narrative": "Cleo Fields 通过 US Congress PTR 增持 GOOGL / GOOGL。交易日 2026-06-15。"
+    },
+    {
+      "id": "congress-2026-06-29-2026-06-11-cleo-fields-MSFT-Buy",
+      "market": "us",
+      "investorId": "us_congress",
+      "investorName": "Cleo Fields",
+      "vehicleName": "US Congress PTR",
+      "sourceTier": "L1",
+      "disclosureType": "STOCK Act PTR",
+      "sourceLabel": "House Clerk PTR",
+      "indexSourceLabel": "CongressFlow third-party index",
+      "reportDate": "2026-06-11",
+      "previousReportDate": null,
+      "filingDate": "2026-06-29",
+      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034800.pdf",
+      "security": {
+        "ticker": "MSFT",
+        "name": "MSFT",
+        "cusip": "",
+        "title": "Disclosed range"
+      },
+      "direction": "increase",
+      "sharesBefore": null,
+      "sharesAfter": null,
+      "sharesDelta": null,
+      "marketValueBefore": null,
+      "marketValueAfter": null,
+      "marketValueDelta": 8000.5,
+      "disclosedAmountRange": "$1,001 - $15,000",
+      "significanceScore": 8000.5,
+      "confidence": "medium",
+      "staleDisclosure": false,
+      "narrative": "Cleo Fields 通过 US Congress PTR 增持 MSFT / MSFT。交易日 2026-06-11。"
+    },
     {
       "id": "congress-2026-06-27-2026-06-02-dave-mccormick-GS-Buy",
       "market": "us",
@@ -9435,6 +9534,39 @@
       "narrative": "Richard W. Allen 通过 US Congress PTR 减持 ACN / ACN。交易日 2026-05-08。"
     },
     {
+      "id": "congress-2026-06-17-2026-06-16-matt-van-epps-NVDA-Sell",
+      "market": "us",
+      "investorId": "us_congress",
+      "investorName": "Matt Van Epps",
+      "vehicleName": "US Congress PTR",
+      "sourceTier": "L1",
+      "disclosureType": "STOCK Act PTR",
+      "sourceLabel": "House Clerk PTR",
+      "indexSourceLabel": "CongressFlow third-party index",
+      "reportDate": "2026-06-16",
+      "previousReportDate": null,
+      "filingDate": "2026-06-17",
+      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034807.pdf",
+      "security": {
+        "ticker": "NVDA",
+        "name": "NVDA",
+        "cusip": "",
+        "title": "Disclosed range"
+      },
+      "direction": "decrease",
+      "sharesBefore": null,
+      "sharesAfter": null,
+      "sharesDelta": null,
+      "marketValueBefore": null,
+      "marketValueAfter": null,
+      "marketValueDelta": -8000.5,
+      "disclosedAmountRange": "$1,001 - $15,000",
+      "significanceScore": 8000.5,
+      "confidence": "medium",
+      "staleDisclosure": false,
+      "narrative": "Matt Van Epps 通过 US Congress PTR 减持 NVDA / NVDA。交易日 2026-06-16。"
+    },
+    {
       "id": "congress-2026-06-17-2026-06-16-matt-van-epps-IBM-Sell",
       "market": "us",
       "investorId": "us_congress",
@@ -9468,7 +9600,7 @@
       "narrative": "Matt Van Epps 通过 US Congress PTR 减持 IBM / IBM。交易日 2026-06-16。"
     },
     {
-      "id": "congress-2026-06-17-2026-06-16-matt-van-epps-GEV-Sell",
+      "id": "congress-2026-06-17-2026-06-16-matt-van-epps-XOM-Sell",
       "market": "us",
       "investorId": "us_congress",
       "investorName": "Matt Van Epps",
@@ -9482,8 +9614,8 @@
       "filingDate": "2026-06-17",
       "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034807.pdf",
       "security": {
-        "ticker": "GEV",
-        "name": "GEV",
+        "ticker": "XOM",
+        "name": "XOM",
         "cusip": "",
         "title": "Disclosed range"
       },
@@ -9498,7 +9630,7 @@
       "significanceScore": 8000.5,
       "confidence": "medium",
       "staleDisclosure": false,
-      "narrative": "Matt Van Epps 通过 US Congress PTR 减持 GEV / GEV。交易日 2026-06-16。"
+      "narrative": "Matt Van Epps 通过 US Congress PTR 减持 XOM / XOM。交易日 2026-06-16。"
     },
     {
       "id": "congress-2026-06-17-2026-06-16-matt-van-epps-INTC-Sell",
@@ -9633,7 +9765,7 @@
       "narrative": "Matt Van Epps 通过 US Congress PTR 减持 LUV / LUV。交易日 2026-06-16。"
     },
     {
-      "id": "congress-2026-06-17-2026-06-16-matt-van-epps-NVDA-Sell",
+      "id": "congress-2026-06-17-2026-06-16-matt-van-epps-GE-Sell",
       "market": "us",
       "investorId": "us_congress",
       "investorName": "Matt Van Epps",
@@ -9647,8 +9779,8 @@
       "filingDate": "2026-06-17",
       "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034807.pdf",
       "security": {
-        "ticker": "NVDA",
-        "name": "NVDA",
+        "ticker": "GE",
+        "name": "GE",
         "cusip": "",
         "title": "Disclosed range"
       },
@@ -9663,40 +9795,7 @@
       "significanceScore": 8000.5,
       "confidence": "medium",
       "staleDisclosure": false,
-      "narrative": "Matt Van Epps 通过 US Congress PTR 减持 NVDA / NVDA。交易日 2026-06-16。"
-    },
-    {
-      "id": "congress-2026-06-17-2026-06-16-matt-van-epps-XOM-Sell",
-      "market": "us",
-      "investorId": "us_congress",
-      "investorName": "Matt Van Epps",
-      "vehicleName": "US Congress PTR",
-      "sourceTier": "L1",
-      "disclosureType": "STOCK Act PTR",
-      "sourceLabel": "House Clerk PTR",
-      "indexSourceLabel": "CongressFlow third-party index",
-      "reportDate": "2026-06-16",
-      "previousReportDate": null,
-      "filingDate": "2026-06-17",
-      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034807.pdf",
-      "security": {
-        "ticker": "XOM",
-        "name": "XOM",
-        "cusip": "",
-        "title": "Disclosed range"
-      },
-      "direction": "decrease",
-      "sharesBefore": null,
-      "sharesAfter": null,
-      "sharesDelta": null,
-      "marketValueBefore": null,
-      "marketValueAfter": null,
-      "marketValueDelta": -8000.5,
-      "disclosedAmountRange": "$1,001 - $15,000",
-      "significanceScore": 8000.5,
-      "confidence": "medium",
-      "staleDisclosure": false,
-      "narrative": "Matt Van Epps 通过 US Congress PTR 减持 XOM / XOM。交易日 2026-06-16。"
+      "narrative": "Matt Van Epps 通过 US Congress PTR 减持 GE / GE。交易日 2026-06-16。"
     },
     {
       "id": "congress-2026-06-17-2026-06-16-matt-van-epps-AAPL-Sell",
@@ -9798,7 +9897,7 @@
       "narrative": "Matt Van Epps 通过 US Congress PTR 减持 GOOGL / GOOGL。交易日 2026-06-16。"
     },
     {
-      "id": "congress-2026-06-17-2026-06-16-matt-van-epps-GE-Sell",
+      "id": "congress-2026-06-17-2026-06-16-matt-van-epps-GEV-Sell",
       "market": "us",
       "investorId": "us_congress",
       "investorName": "Matt Van Epps",
@@ -9812,8 +9911,8 @@
       "filingDate": "2026-06-17",
       "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034807.pdf",
       "security": {
-        "ticker": "GE",
-        "name": "GE",
+        "ticker": "GEV",
+        "name": "GEV",
         "cusip": "",
         "title": "Disclosed range"
       },
@@ -9828,7 +9927,7 @@
       "significanceScore": 8000.5,
       "confidence": "medium",
       "staleDisclosure": false,
-      "narrative": "Matt Van Epps 通过 US Congress PTR 减持 GE / GE。交易日 2026-06-16。"
+      "narrative": "Matt Van Epps 通过 US Congress PTR 减持 GEV / GEV。交易日 2026-06-16。"
     },
     {
       "id": "congress-2026-06-17-2026-05-08-richard-w-allen-AXP-Buy",
@@ -9897,7 +9996,7 @@
       "narrative": "Richard W. Allen 通过 US Congress PTR 增持 TSM / TSM。交易日 2026-05-08。"
     },
     {
-      "id": "congress-2026-06-16-2026-05-27-john-boozman-VNQI-Sell",
+      "id": "congress-2026-06-16-2026-05-27-john-boozman-TLH-Buy",
       "market": "us",
       "investorId": "us_congress",
       "investorName": "John Boozman",
@@ -9909,28 +10008,28 @@
       "reportDate": "2026-05-27",
       "previousReportDate": null,
       "filingDate": "2026-06-16",
-      "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/727b4eb6-d8c7-4792-aa5b-c651c2d72f9c/",
+      "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/2e076759-19df-458d-a3be-53610b8be5d0/",
       "security": {
-        "ticker": "VNQI",
-        "name": "VNQI",
+        "ticker": "TLH",
+        "name": "TLH",
         "cusip": "",
         "title": "Disclosed range"
       },
-      "direction": "decrease",
+      "direction": "increase",
       "sharesBefore": null,
       "sharesAfter": null,
       "sharesDelta": null,
       "marketValueBefore": null,
       "marketValueAfter": null,
-      "marketValueDelta": -8000.5,
+      "marketValueDelta": 8000.5,
       "disclosedAmountRange": "$1,001 - $15,000",
       "significanceScore": 8000.5,
       "confidence": "medium",
       "staleDisclosure": false,
-      "narrative": "John Boozman 通过 US Congress PTR 减持 VNQI / VNQI。交易日 2026-05-27。"
+      "narrative": "John Boozman 通过 US Congress PTR 增持 TLH / TLH。交易日 2026-05-27。"
     },
     {
-      "id": "congress-2026-06-16-2026-05-27-john-boozman-SPYM-Sell",
+      "id": "congress-2026-06-16-2026-05-27-john-boozman-RNWGX-Sell",
       "market": "us",
       "investorId": "us_congress",
       "investorName": "John Boozman",
@@ -9944,8 +10043,8 @@
       "filingDate": "2026-06-16",
       "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/727b4eb6-d8c7-4792-aa5b-c651c2d72f9c/",
       "security": {
-        "ticker": "SPYM",
-        "name": "SPYM",
+        "ticker": "RNWGX",
+        "name": "RNWGX",
         "cusip": "",
         "title": "Disclosed range"
       },
@@ -9960,7 +10059,7 @@
       "significanceScore": 8000.5,
       "confidence": "medium",
       "staleDisclosure": false,
-      "narrative": "John Boozman 通过 US Congress PTR 减持 SPYM / SPYM。交易日 2026-05-27。"
+      "narrative": "John Boozman 通过 US Congress PTR 减持 RNWGX / RNWGX。交易日 2026-05-27。"
     },
     {
       "id": "congress-2026-06-16-2026-05-27-john-boozman-XFIV-Buy",
@@ -9996,7 +10095,7 @@
       "narrative": "John Boozman 通过 US Congress PTR 增持 XFIV / XFIV。交易日 2026-05-27。"
     },
     {
-      "id": "congress-2026-06-16-2026-05-27-john-boozman-TLH-Buy",
+      "id": "congress-2026-06-16-2026-05-27-john-boozman-MBB-Buy",
       "market": "us",
       "investorId": "us_congress",
       "investorName": "John Boozman",
@@ -10010,8 +10109,8 @@
       "filingDate": "2026-06-16",
       "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/2e076759-19df-458d-a3be-53610b8be5d0/",
       "security": {
-        "ticker": "TLH",
-        "name": "TLH",
+        "ticker": "MBB",
+        "name": "MBB",
         "cusip": "",
         "title": "Disclosed range"
       },
@@ -10026,10 +10125,10 @@
       "significanceScore": 8000.5,
       "confidence": "medium",
       "staleDisclosure": false,
-      "narrative": "John Boozman 通过 US Congress PTR 增持 TLH / TLH。交易日 2026-05-27。"
+      "narrative": "John Boozman 通过 US Congress PTR 增持 MBB / MBB。交易日 2026-05-27。"
     },
     {
-      "id": "congress-2026-06-16-2026-05-27-john-boozman-GEM-Sell",
+      "id": "congress-2026-06-16-2026-05-27-john-boozman-VEA-Sell",
       "market": "us",
       "investorId": "us_congress",
       "investorName": "John Boozman",
@@ -10043,8 +10142,8 @@
       "filingDate": "2026-06-16",
       "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/727b4eb6-d8c7-4792-aa5b-c651c2d72f9c/",
       "security": {
-        "ticker": "GEM",
-        "name": "GEM",
+        "ticker": "VEA",
+        "name": "VEA",
         "cusip": "",
         "title": "Disclosed range"
       },
@@ -10059,10 +10158,10 @@
       "significanceScore": 8000.5,
       "confidence": "medium",
       "staleDisclosure": false,
-      "narrative": "John Boozman 通过 US Congress PTR 减持 GEM / GEM。交易日 2026-05-27。"
+      "narrative": "John Boozman 通过 US Congress PTR 减持 VEA / VEA。交易日 2026-05-27。"
     },
     {
-      "id": "congress-2026-06-16-2026-05-27-john-boozman-IVV-Sell",
+      "id": "congress-2026-06-16-2026-05-27-john-boozman-GIGB-Buy",
       "market": "us",
       "investorId": "us_congress",
       "investorName": "John Boozman",
@@ -10074,25 +10173,25 @@
       "reportDate": "2026-05-27",
       "previousReportDate": null,
       "filingDate": "2026-06-16",
-      "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/727b4eb6-d8c7-4792-aa5b-c651c2d72f9c/",
+      "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/2e076759-19df-458d-a3be-53610b8be5d0/",
       "security": {
-        "ticker": "IVV",
-        "name": "IVV",
+        "ticker": "GIGB",
+        "name": "GIGB",
         "cusip": "",
         "title": "Disclosed range"
       },
-      "direction": "decrease",
+      "direction": "increase",
       "sharesBefore": null,
       "sharesAfter": null,
       "sharesDelta": null,
       "marketValueBefore": null,
       "marketValueAfter": null,
-      "marketValueDelta": -8000.5,
+      "marketValueDelta": 8000.5,
       "disclosedAmountRange": "$1,001 - $15,000",
       "significanceScore": 8000.5,
       "confidence": "medium",
       "staleDisclosure": false,
-      "narrative": "John Boozman 通过 US Congress PTR 减持 IVV / IVV。交易日 2026-05-27。"
+      "narrative": "John Boozman 通过 US Congress PTR 增持 GIGB / GIGB。交易日 2026-05-27。"
     },
     {
       "id": "congress-2026-06-16-2026-05-27-john-boozman-XTWO-Buy",
@@ -10194,73 +10293,7 @@
       "narrative": "John Boozman 通过 US Congress PTR 增持 JMBS / JMBS。交易日 2026-05-27。"
     },
     {
-      "id": "congress-2026-06-16-2026-05-27-john-boozman-MBB-Buy",
-      "market": "us",
-      "investorId": "us_congress",
-      "investorName": "John Boozman",
-      "vehicleName": "US Congress PTR",
-      "sourceTier": "L1",
-      "disclosureType": "STOCK Act PTR",
-      "sourceLabel": "Senate eFD PTR",
-      "indexSourceLabel": "CongressFlow third-party index",
-      "reportDate": "2026-05-27",
-      "previousReportDate": null,
-      "filingDate": "2026-06-16",
-      "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/2e076759-19df-458d-a3be-53610b8be5d0/",
-      "security": {
-        "ticker": "MBB",
-        "name": "MBB",
-        "cusip": "",
-        "title": "Disclosed range"
-      },
-      "direction": "increase",
-      "sharesBefore": null,
-      "sharesAfter": null,
-      "sharesDelta": null,
-      "marketValueBefore": null,
-      "marketValueAfter": null,
-      "marketValueDelta": 8000.5,
-      "disclosedAmountRange": "$1,001 - $15,000",
-      "significanceScore": 8000.5,
-      "confidence": "medium",
-      "staleDisclosure": false,
-      "narrative": "John Boozman 通过 US Congress PTR 增持 MBB / MBB。交易日 2026-05-27。"
-    },
-    {
-      "id": "congress-2026-06-16-2026-05-27-john-boozman-SCHP-Buy",
-      "market": "us",
-      "investorId": "us_congress",
-      "investorName": "John Boozman",
-      "vehicleName": "US Congress PTR",
-      "sourceTier": "L1",
-      "disclosureType": "STOCK Act PTR",
-      "sourceLabel": "Senate eFD PTR",
-      "indexSourceLabel": "CongressFlow third-party index",
-      "reportDate": "2026-05-27",
-      "previousReportDate": null,
-      "filingDate": "2026-06-16",
-      "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/2e076759-19df-458d-a3be-53610b8be5d0/",
-      "security": {
-        "ticker": "SCHP",
-        "name": "SCHP",
-        "cusip": "",
-        "title": "Disclosed range"
-      },
-      "direction": "increase",
-      "sharesBefore": null,
-      "sharesAfter": null,
-      "sharesDelta": null,
-      "marketValueBefore": null,
-      "marketValueAfter": null,
-      "marketValueDelta": 8000.5,
-      "disclosedAmountRange": "$1,001 - $15,000",
-      "significanceScore": 8000.5,
-      "confidence": "medium",
-      "staleDisclosure": false,
-      "narrative": "John Boozman 通过 US Congress PTR 增持 SCHP / SCHP。交易日 2026-05-27。"
-    },
-    {
-      "id": "congress-2026-06-16-2026-05-27-john-boozman-VEA-Sell",
+      "id": "congress-2026-06-16-2026-05-27-john-boozman-VNQI-Sell",
       "market": "us",
       "investorId": "us_congress",
       "investorName": "John Boozman",
@@ -10274,8 +10307,8 @@
       "filingDate": "2026-06-16",
       "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/727b4eb6-d8c7-4792-aa5b-c651c2d72f9c/",
       "security": {
-        "ticker": "VEA",
-        "name": "VEA",
+        "ticker": "VNQI",
+        "name": "VNQI",
         "cusip": "",
         "title": "Disclosed range"
       },
@@ -10290,106 +10323,7 @@
       "significanceScore": 8000.5,
       "confidence": "medium",
       "staleDisclosure": false,
-      "narrative": "John Boozman 通过 US Congress PTR 减持 VEA / VEA。交易日 2026-05-27。"
-    },
-    {
-      "id": "congress-2026-06-16-2026-05-27-john-boozman-GIGB-Buy",
-      "market": "us",
-      "investorId": "us_congress",
-      "investorName": "John Boozman",
-      "vehicleName": "US Congress PTR",
-      "sourceTier": "L1",
-      "disclosureType": "STOCK Act PTR",
-      "sourceLabel": "Senate eFD PTR",
-      "indexSourceLabel": "CongressFlow third-party index",
-      "reportDate": "2026-05-27",
-      "previousReportDate": null,
-      "filingDate": "2026-06-16",
-      "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/2e076759-19df-458d-a3be-53610b8be5d0/",
-      "security": {
-        "ticker": "GIGB",
-        "name": "GIGB",
-        "cusip": "",
-        "title": "Disclosed range"
-      },
-      "direction": "increase",
-      "sharesBefore": null,
-      "sharesAfter": null,
-      "sharesDelta": null,
-      "marketValueBefore": null,
-      "marketValueAfter": null,
-      "marketValueDelta": 8000.5,
-      "disclosedAmountRange": "$1,001 - $15,000",
-      "significanceScore": 8000.5,
-      "confidence": "medium",
-      "staleDisclosure": false,
-      "narrative": "John Boozman 通过 US Congress PTR 增持 GIGB / GIGB。交易日 2026-05-27。"
-    },
-    {
-      "id": "congress-2026-06-16-2026-05-27-john-boozman-RNWGX-Sell",
-      "market": "us",
-      "investorId": "us_congress",
-      "investorName": "John Boozman",
-      "vehicleName": "US Congress PTR",
-      "sourceTier": "L1",
-      "disclosureType": "STOCK Act PTR",
-      "sourceLabel": "Senate eFD PTR",
-      "indexSourceLabel": "CongressFlow third-party index",
-      "reportDate": "2026-05-27",
-      "previousReportDate": null,
-      "filingDate": "2026-06-16",
-      "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/727b4eb6-d8c7-4792-aa5b-c651c2d72f9c/",
-      "security": {
-        "ticker": "RNWGX",
-        "name": "RNWGX",
-        "cusip": "",
-        "title": "Disclosed range"
-      },
-      "direction": "decrease",
-      "sharesBefore": null,
-      "sharesAfter": null,
-      "sharesDelta": null,
-      "marketValueBefore": null,
-      "marketValueAfter": null,
-      "marketValueDelta": -8000.5,
-      "disclosedAmountRange": "$1,001 - $15,000",
-      "significanceScore": 8000.5,
-      "confidence": "medium",
-      "staleDisclosure": false,
-      "narrative": "John Boozman 通过 US Congress PTR 减持 RNWGX / RNWGX。交易日 2026-05-27。"
-    },
-    {
-      "id": "congress-2026-06-16-2026-05-27-john-boozman-GBIL-Buy",
-      "market": "us",
-      "investorId": "us_congress",
-      "investorName": "John Boozman",
-      "vehicleName": "US Congress PTR",
-      "sourceTier": "L1",
-      "disclosureType": "STOCK Act PTR",
-      "sourceLabel": "Senate eFD PTR",
-      "indexSourceLabel": "CongressFlow third-party index",
-      "reportDate": "2026-05-27",
-      "previousReportDate": null,
-      "filingDate": "2026-06-16",
-      "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/2e076759-19df-458d-a3be-53610b8be5d0/",
-      "security": {
-        "ticker": "GBIL",
-        "name": "GBIL",
-        "cusip": "",
-        "title": "Disclosed range"
-      },
-      "direction": "increase",
-      "sharesBefore": null,
-      "sharesAfter": null,
-      "sharesDelta": null,
-      "marketValueBefore": null,
-      "marketValueAfter": null,
-      "marketValueDelta": 8000.5,
-      "disclosedAmountRange": "$1,001 - $15,000",
-      "significanceScore": 8000.5,
-      "confidence": "medium",
-      "staleDisclosure": false,
-      "narrative": "John Boozman 通过 US Congress PTR 增持 GBIL / GBIL。交易日 2026-05-27。"
+      "narrative": "John Boozman 通过 US Congress PTR 减持 VNQI / VNQI。交易日 2026-05-27。"
     },
     {
       "id": "cn_northbound_hkcc-000333-香港中央结算有限公司-2026-03-31",
@@ -12632,248 +12566,7 @@
       "narrative": "北向资金 / 香港中央结算 通过 香港中央结算有限公司 增持 300750 / 宁德时代。报告期 2026-03-31，披露日 2026-04-16。"
     }
   ],
-  "cnMainFundInflow": [
-    {
-      "ticker": "001399",
-      "name": "C惠科",
-      "periodLabel": "近10日",
-      "latestPrice": 34.66,
-      "pctChange": 242.49,
-      "mainNetInflow": 4172750592,
-      "mainNetInflowPct": 21.69,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-06-29"
-    },
-    {
-      "ticker": "688012",
-      "name": "中微公司",
-      "periodLabel": "近10日",
-      "latestPrice": 456.69,
-      "pctChange": 50.27,
-      "mainNetInflow": 3427420816,
-      "mainNetInflowPct": 3.06,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-06-29"
-    },
-    {
-      "ticker": "603259",
-      "name": "药明康德",
-      "periodLabel": "近10日",
-      "latestPrice": 126.17,
-      "pctChange": 26.54,
-      "mainNetInflow": 3089574288,
-      "mainNetInflowPct": 4.49,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-06-29"
-    },
-    {
-      "ticker": "688521",
-      "name": "芯原股份",
-      "periodLabel": "近10日",
-      "latestPrice": 362,
-      "pctChange": 62.24,
-      "mainNetInflow": 3000927984,
-      "mainNetInflowPct": 3.87,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-06-29"
-    },
-    {
-      "ticker": "688041",
-      "name": "海光信息",
-      "periodLabel": "近10日",
-      "latestPrice": 354.84,
-      "pctChange": 26.8,
-      "mainNetInflow": 2954798912,
-      "mainNetInflowPct": 2.09,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-06-29"
-    },
-    {
-      "ticker": "603083",
-      "name": "剑桥科技",
-      "periodLabel": "近10日",
-      "latestPrice": 247.78,
-      "pctChange": 35.41,
-      "mainNetInflow": 2426798800,
-      "mainNetInflowPct": 3.6,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-06-29"
-    },
-    {
-      "ticker": "688797",
-      "name": "C臻宝",
-      "periodLabel": "近10日",
-      "latestPrice": 598.28,
-      "pctChange": 1242.64,
-      "mainNetInflow": 2372356219,
-      "mainNetInflowPct": 7.43,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-06-29"
-    },
-    {
-      "ticker": "002600",
-      "name": "领益智造",
-      "periodLabel": "近10日",
-      "latestPrice": 15.76,
-      "pctChange": 12.49,
-      "mainNetInflow": 1980504913,
-      "mainNetInflowPct": 3.77,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-06-29"
-    },
-    {
-      "ticker": "688110",
-      "name": "东芯股份",
-      "periodLabel": "近10日",
-      "latestPrice": 193.3,
-      "pctChange": 53.78,
-      "mainNetInflow": 1941974736,
-      "mainNetInflowPct": 3.89,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-06-29"
-    },
-    {
-      "ticker": "300857",
-      "name": "协创数据",
-      "periodLabel": "近10日",
-      "latestPrice": 327.83,
-      "pctChange": 46.55,
-      "mainNetInflow": 1935541968,
-      "mainNetInflowPct": 2.29,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-06-29"
-    },
-    {
-      "ticker": "300408",
-      "name": "三环集团",
-      "periodLabel": "近10日",
-      "latestPrice": 166.69,
-      "pctChange": 31.77,
-      "mainNetInflow": 1799550656,
-      "mainNetInflowPct": 1.45,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-06-29"
-    },
-    {
-      "ticker": "002008",
-      "name": "大族激光",
-      "periodLabel": "近10日",
-      "latestPrice": 141.2,
-      "pctChange": 18.54,
-      "mainNetInflow": 1751601712,
-      "mainNetInflowPct": 1.31,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-06-29"
-    },
-    {
-      "ticker": "000977",
-      "name": "浪潮信息",
-      "periodLabel": "近10日",
-      "latestPrice": 65.82,
-      "pctChange": 13.76,
-      "mainNetInflow": 1567857296,
-      "mainNetInflowPct": 3.27,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-06-29"
-    },
-    {
-      "ticker": "002371",
-      "name": "北方华创",
-      "periodLabel": "近10日",
-      "latestPrice": 860.19,
-      "pctChange": 28.93,
-      "mainNetInflow": 1554475840,
-      "mainNetInflowPct": 1.79,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-06-29"
-    },
-    {
-      "ticker": "688766",
-      "name": "普冉股份",
-      "periodLabel": "近10日",
-      "latestPrice": 737.2,
-      "pctChange": 88.74,
-      "mainNetInflow": 1529751136,
-      "mainNetInflowPct": 2.62,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-06-29"
-    },
-    {
-      "ticker": "688347",
-      "name": "华虹宏力",
-      "periodLabel": "近10日",
-      "latestPrice": 339.14,
-      "pctChange": 55.31,
-      "mainNetInflow": 1455245104,
-      "mainNetInflowPct": 2.02,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-06-29"
-    },
-    {
-      "ticker": "688702",
-      "name": "盛科通信-U",
-      "periodLabel": "近10日",
-      "latestPrice": 350.11,
-      "pctChange": 38.41,
-      "mainNetInflow": 1444339824,
-      "mainNetInflowPct": 4.55,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-06-29"
-    },
-    {
-      "ticker": "600276",
-      "name": "恒瑞医药",
-      "periodLabel": "近10日",
-      "latestPrice": 52.93,
-      "pctChange": 9.16,
-      "mainNetInflow": 1418812336,
-      "mainNetInflowPct": 2.93,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-06-29"
-    },
-    {
-      "ticker": "603019",
-      "name": "中科曙光",
-      "periodLabel": "近10日",
-      "latestPrice": 97.48,
-      "pctChange": 18.66,
-      "mainNetInflow": 1397291136,
-      "mainNetInflowPct": 2.12,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-06-29"
-    },
-    {
-      "ticker": "688256",
-      "name": "寒武纪",
-      "periodLabel": "近10日",
-      "latestPrice": 1482,
-      "pctChange": 19.52,
-      "mainNetInflow": 1350082304,
-      "mainNetInflowPct": 0.65,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-06-29"
-    }
-  ],
+  "cnMainFundInflow": [],
   "arkHoldings": [
     {
       "investorId": "cathie_wood",
@@ -16387,6 +16080,11 @@
     }
   ],
   "sourceErrors": [
+    {
+      "id": "cn_main_fund_flow",
+      "displayName": "A股主力资金净流入",
+      "error": "Failed to fetch https://push2.eastmoney.com/api/qt/clist/get?fid=f174&po=1&pz=50&pn=1&np=1&fltt=2&invt=2&ut=b2884a393a59ad64002292a3e90d46a5&fs=m%3A0%2Bt%3A6%2Bf%3A%212%2Cm%3A0%2Bt%3A13%2Bf%3A%212%2Cm%3A0%2Bt%3A80%2Bf%3A%212%2Cm%3A1%2Bt%3A2%2Bf%3A%212%2Cm%3A1%2Bt%3A23%2Bf%3A%212%2Cm%3A0%2Bt%3A7%2Bf%3A%212%2Cm%3A1%2Bt%3A3%2Bf%3A%212&fields=f12%2Cf14%2Cf2%2Cf160%2Cf174%2Cf175%2Cf176%2Cf177%2Cf178%2Cf179%2Cf180%2Cf181%2Cf182%2Cf183%2Cf260%2Cf261%2Cf124: 502 Bad Gateway"
+    },
     {
       "id": "berkshire_hathaway",
       "displayName": "Warren Buffett",
