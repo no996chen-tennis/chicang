@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-02T13:09:49.892Z",
+  "generatedAt": "2026-07-03T01:08:54.899Z",
   "site": {
     "name": "chicang",
     "tagline": "重要资金公开披露雷达",
@@ -49,7 +49,7 @@
       },
       "latestFiling": {
         "reportDate": "2026-07-02",
-        "filingDate": "Thu, 02 Jul 2026 06:45:34 GMT",
+        "filingDate": "Thu, 02 Jul 2026 18:50:30 GMT",
         "form": "ARK ETF CSV"
       },
       "topHoldings": [
@@ -278,7 +278,7 @@
           "name": "ARK Innovation ETF",
           "rowCount": 46,
           "asOfDate": "2026-07-02",
-          "lastModified": "Thu, 02 Jul 2026 06:45:33 GMT",
+          "lastModified": "Thu, 02 Jul 2026 18:50:30 GMT",
           "url": "https://assets.ark-funds.com/fund-documents/funds-etf-csv/ARK_INNOVATION_ETF_ARKK_HOLDINGS.csv"
         },
         {
@@ -287,7 +287,7 @@
           "name": "ARK Autonomous Tech. & Robotics ETF",
           "rowCount": 40,
           "asOfDate": "2026-07-02",
-          "lastModified": "Thu, 02 Jul 2026 06:45:34 GMT",
+          "lastModified": "Thu, 02 Jul 2026 18:50:30 GMT",
           "url": "https://assets.ark-funds.com/fund-documents/funds-etf-csv/ARK_AUTONOMOUS_TECH._%26_ROBOTICS_ETF_ARKQ_HOLDINGS.csv"
         },
         {
@@ -296,7 +296,7 @@
           "name": "ARK Next Generation Internet ETF",
           "rowCount": 41,
           "asOfDate": "2026-07-02",
-          "lastModified": "Thu, 02 Jul 2026 06:45:33 GMT",
+          "lastModified": "Thu, 02 Jul 2026 18:50:29 GMT",
           "url": "https://assets.ark-funds.com/fund-documents/funds-etf-csv/ARK_NEXT_GENERATION_INTERNET_ETF_ARKW_HOLDINGS.csv"
         },
         {
@@ -305,7 +305,7 @@
           "name": "ARK Genomic Revolution ETF",
           "rowCount": 32,
           "asOfDate": "2026-07-02",
-          "lastModified": "Thu, 02 Jul 2026 06:45:34 GMT",
+          "lastModified": "Thu, 02 Jul 2026 18:50:30 GMT",
           "url": "https://assets.ark-funds.com/fund-documents/funds-etf-csv/ARK_GENOMIC_REVOLUTION_ETF_ARKG_HOLDINGS.csv"
         },
         {
@@ -826,9 +826,9 @@
         }
       ],
       "returns": {
-        "oneYearPct": 15.967696231226972,
-        "threeYearPct": 81.40514184397163,
-        "asOf": "2026-07-01",
+        "oneYearPct": 14.291742861161902,
+        "threeYearPct": 80.07535460992908,
+        "asOf": "2026-07-02",
         "sourceLabel": "ARKK ETF 市价代理，非 Cathie Wood 全部管理资产真实净值",
         "sourceUrl": "https://www.nasdaq.com/market-activity/etf/arkk/historical",
         "isProxy": true,
@@ -853,11 +853,77 @@
       "cadence": "披露后更新",
       "latestFiling": {
         "form": "PTR",
-        "reportDate": "2026-06-02",
-        "filingDate": "2026-06-30"
+        "reportDate": "2026-06-15",
+        "filingDate": "2026-07-02"
       },
       "positionCount": 45,
       "changes": [
+        {
+          "id": "congress-2026-07-02-2026-06-15-david-taylor-IBP-Buy",
+          "market": "us",
+          "investorId": "us_congress",
+          "investorName": "David Taylor",
+          "vehicleName": "US Congress PTR",
+          "sourceTier": "L1",
+          "disclosureType": "STOCK Act PTR",
+          "sourceLabel": "House Clerk PTR",
+          "indexSourceLabel": "CongressFlow third-party index",
+          "reportDate": "2026-06-15",
+          "previousReportDate": null,
+          "filingDate": "2026-07-02",
+          "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034897.pdf",
+          "security": {
+            "ticker": "IBP",
+            "name": "IBP",
+            "cusip": "",
+            "title": "Disclosed range"
+          },
+          "direction": "increase",
+          "sharesBefore": null,
+          "sharesAfter": null,
+          "sharesDelta": null,
+          "marketValueBefore": null,
+          "marketValueAfter": null,
+          "marketValueDelta": 8000.5,
+          "disclosedAmountRange": "$1,001 - $15,000",
+          "significanceScore": 8000.5,
+          "confidence": "medium",
+          "staleDisclosure": false,
+          "narrative": "David Taylor 通过 US Congress PTR 增持 IBP / IBP。交易日 2026-06-15。"
+        },
+        {
+          "id": "congress-2026-07-02-2026-06-15-david-taylor-CVX-Buy",
+          "market": "us",
+          "investorId": "us_congress",
+          "investorName": "David Taylor",
+          "vehicleName": "US Congress PTR",
+          "sourceTier": "L1",
+          "disclosureType": "STOCK Act PTR",
+          "sourceLabel": "House Clerk PTR",
+          "indexSourceLabel": "CongressFlow third-party index",
+          "reportDate": "2026-06-15",
+          "previousReportDate": null,
+          "filingDate": "2026-07-02",
+          "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034897.pdf",
+          "security": {
+            "ticker": "CVX",
+            "name": "CVX",
+            "cusip": "",
+            "title": "Disclosed range"
+          },
+          "direction": "increase",
+          "sharesBefore": null,
+          "sharesAfter": null,
+          "sharesDelta": null,
+          "marketValueBefore": null,
+          "marketValueAfter": null,
+          "marketValueDelta": 8000.5,
+          "disclosedAmountRange": "$1,001 - $15,000",
+          "significanceScore": 8000.5,
+          "confidence": "medium",
+          "staleDisclosure": false,
+          "narrative": "David Taylor 通过 US Congress PTR 增持 CVX / CVX。交易日 2026-06-15。"
+        },
         {
           "id": "congress-2026-06-30-2026-06-02-john-curtis-UBS-Buy",
           "market": "us",
@@ -1321,39 +1387,6 @@
           "narrative": "Neal P. Dunn 通过 US Congress PTR 减持 T / T。交易日 2026-05-11。"
         },
         {
-          "id": "congress-2026-06-22-2026-05-06-jared-moskowitz-COR-Sell",
-          "market": "us",
-          "investorId": "us_congress",
-          "investorName": "Jared Moskowitz",
-          "vehicleName": "US Congress PTR",
-          "sourceTier": "L1",
-          "disclosureType": "STOCK Act PTR",
-          "sourceLabel": "House Clerk PTR",
-          "indexSourceLabel": "CongressFlow third-party index",
-          "reportDate": "2026-05-06",
-          "previousReportDate": null,
-          "filingDate": "2026-06-22",
-          "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034749.pdf",
-          "security": {
-            "ticker": "COR",
-            "name": "COR",
-            "cusip": "",
-            "title": "Disclosed range"
-          },
-          "direction": "decrease",
-          "sharesBefore": null,
-          "sharesAfter": null,
-          "sharesDelta": null,
-          "marketValueBefore": null,
-          "marketValueAfter": null,
-          "marketValueDelta": -8000.5,
-          "disclosedAmountRange": "$1,001 - $15,000",
-          "significanceScore": 8000.5,
-          "confidence": "medium",
-          "staleDisclosure": false,
-          "narrative": "Jared Moskowitz 通过 US Congress PTR 减持 COR / COR。交易日 2026-05-06。"
-        },
-        {
           "id": "congress-2026-06-22-2026-05-06-jared-moskowitz-GILD-Buy",
           "market": "us",
           "investorId": "us_congress",
@@ -1387,37 +1420,37 @@
           "narrative": "Jared Moskowitz 通过 US Congress PTR 增持 GILD / GILD。交易日 2026-05-06。"
         },
         {
-          "id": "congress-2026-06-19-2026-06-01-thomas-h-kean-EQT-Buy",
+          "id": "congress-2026-06-22-2026-05-06-jared-moskowitz-COR-Sell",
           "market": "us",
           "investorId": "us_congress",
-          "investorName": "Thomas H. Kean",
+          "investorName": "Jared Moskowitz",
           "vehicleName": "US Congress PTR",
           "sourceTier": "L1",
           "disclosureType": "STOCK Act PTR",
           "sourceLabel": "House Clerk PTR",
           "indexSourceLabel": "CongressFlow third-party index",
-          "reportDate": "2026-06-01",
+          "reportDate": "2026-05-06",
           "previousReportDate": null,
-          "filingDate": "2026-06-19",
-          "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034783.pdf",
+          "filingDate": "2026-06-22",
+          "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034749.pdf",
           "security": {
-            "ticker": "EQT",
-            "name": "EQT",
+            "ticker": "COR",
+            "name": "COR",
             "cusip": "",
             "title": "Disclosed range"
           },
-          "direction": "increase",
+          "direction": "decrease",
           "sharesBefore": null,
           "sharesAfter": null,
           "sharesDelta": null,
           "marketValueBefore": null,
           "marketValueAfter": null,
-          "marketValueDelta": 8000.5,
+          "marketValueDelta": -8000.5,
           "disclosedAmountRange": "$1,001 - $15,000",
           "significanceScore": 8000.5,
           "confidence": "medium",
           "staleDisclosure": false,
-          "narrative": "Thomas H. Kean 通过 US Congress PTR 增持 EQT / EQT。交易日 2026-06-01。"
+          "narrative": "Jared Moskowitz 通过 US Congress PTR 减持 COR / COR。交易日 2026-05-06。"
         },
         {
           "id": "congress-2026-06-19-2026-06-01-thomas-h-kean-CHKP-Sell",
@@ -1451,6 +1484,39 @@
           "confidence": "medium",
           "staleDisclosure": false,
           "narrative": "Thomas H. Kean 通过 US Congress PTR 减持 CHKP / CHKP。交易日 2026-06-01。"
+        },
+        {
+          "id": "congress-2026-06-19-2026-06-01-thomas-h-kean-EQT-Buy",
+          "market": "us",
+          "investorId": "us_congress",
+          "investorName": "Thomas H. Kean",
+          "vehicleName": "US Congress PTR",
+          "sourceTier": "L1",
+          "disclosureType": "STOCK Act PTR",
+          "sourceLabel": "House Clerk PTR",
+          "indexSourceLabel": "CongressFlow third-party index",
+          "reportDate": "2026-06-01",
+          "previousReportDate": null,
+          "filingDate": "2026-06-19",
+          "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034783.pdf",
+          "security": {
+            "ticker": "EQT",
+            "name": "EQT",
+            "cusip": "",
+            "title": "Disclosed range"
+          },
+          "direction": "increase",
+          "sharesBefore": null,
+          "sharesAfter": null,
+          "sharesDelta": null,
+          "marketValueBefore": null,
+          "marketValueAfter": null,
+          "marketValueDelta": 8000.5,
+          "disclosedAmountRange": "$1,001 - $15,000",
+          "significanceScore": 8000.5,
+          "confidence": "medium",
+          "staleDisclosure": false,
+          "narrative": "Thomas H. Kean 通过 US Congress PTR 增持 EQT / EQT。交易日 2026-06-01。"
         },
         {
           "id": "congress-2026-06-19-2026-05-21-thomas-h-kean-BDX-Sell",
@@ -1583,72 +1649,6 @@
           "confidence": "medium",
           "staleDisclosure": false,
           "narrative": "Jonathan Jackson 通过 US Congress PTR 减持 MSFT / MSFT。交易日 2026-05-12。"
-        },
-        {
-          "id": "congress-2026-06-17-2026-05-08-richard-w-allen-ACN-Sell",
-          "market": "us",
-          "investorId": "us_congress",
-          "investorName": "Richard W. Allen",
-          "vehicleName": "US Congress PTR",
-          "sourceTier": "L1",
-          "disclosureType": "STOCK Act PTR",
-          "sourceLabel": "House Clerk PTR",
-          "indexSourceLabel": "CongressFlow third-party index",
-          "reportDate": "2026-05-08",
-          "previousReportDate": null,
-          "filingDate": "2026-06-17",
-          "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034740.pdf",
-          "security": {
-            "ticker": "ACN",
-            "name": "ACN",
-            "cusip": "",
-            "title": "Disclosed range"
-          },
-          "direction": "decrease",
-          "sharesBefore": null,
-          "sharesAfter": null,
-          "sharesDelta": null,
-          "marketValueBefore": null,
-          "marketValueAfter": null,
-          "marketValueDelta": -32500.5,
-          "disclosedAmountRange": "$15,001 - $50,000",
-          "significanceScore": 32500.5,
-          "confidence": "medium",
-          "staleDisclosure": false,
-          "narrative": "Richard W. Allen 通过 US Congress PTR 减持 ACN / ACN。交易日 2026-05-08。"
-        },
-        {
-          "id": "congress-2026-06-17-2026-06-16-matt-van-epps-GE-Sell",
-          "market": "us",
-          "investorId": "us_congress",
-          "investorName": "Matt Van Epps",
-          "vehicleName": "US Congress PTR",
-          "sourceTier": "L1",
-          "disclosureType": "STOCK Act PTR",
-          "sourceLabel": "House Clerk PTR",
-          "indexSourceLabel": "CongressFlow third-party index",
-          "reportDate": "2026-06-16",
-          "previousReportDate": null,
-          "filingDate": "2026-06-17",
-          "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034807.pdf",
-          "security": {
-            "ticker": "GE",
-            "name": "GE",
-            "cusip": "",
-            "title": "Disclosed range"
-          },
-          "direction": "decrease",
-          "sharesBefore": null,
-          "sharesAfter": null,
-          "sharesDelta": null,
-          "marketValueBefore": null,
-          "marketValueAfter": null,
-          "marketValueDelta": -8000.5,
-          "disclosedAmountRange": "$1,001 - $15,000",
-          "significanceScore": 8000.5,
-          "confidence": "medium",
-          "staleDisclosure": false,
-          "narrative": "Matt Van Epps 通过 US Congress PTR 减持 GE / GE。交易日 2026-06-16。"
         }
       ],
       "topIncreases": [
@@ -1782,11 +1782,11 @@
       "topIncreases": [],
       "topDecreases": [],
       "returns": {
-        "oneYearPct": 12.167213511047567,
-        "threeYearPct": 114.06476844385186,
+        "oneYearPct": 9.92218741457475,
+        "threeYearPct": 111.00275345977185,
         "sourceLabel": "13F Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://www.sec.gov/edgar/search/",
-        "asOf": "2026-07-01",
+        "asOf": "2026-07-02",
         "isProxy": true,
         "proxyDisclosure": "按当前公开 Top 持仓价格估算，不代表管理人真实组合净值或产品收益"
       }
@@ -2186,8 +2186,8 @@
         }
       ],
       "returns": {
-        "oneYearPct": 42.85664959600346,
-        "threeYearPct": 24.273274195528444,
+        "oneYearPct": 41.394621124125024,
+        "threeYearPct": 22.36231127808467,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SZ002415",
         "asOf": "2026-07-02",
@@ -2949,8 +2949,8 @@
         }
       ],
       "returns": {
-        "oneYearPct": 29.414228172034655,
-        "threeYearPct": 45.02663245791023,
+        "oneYearPct": 25.805948458661184,
+        "threeYearPct": 43.507241676783046,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SZ002594",
         "asOf": "2026-07-02",
@@ -3076,8 +3076,8 @@
       "topIncreases": [],
       "topDecreases": [],
       "returns": {
-        "oneYearPct": -2.3838753215063577,
-        "threeYearPct": 49.47845221607487,
+        "oneYearPct": -1.825609952397786,
+        "threeYearPct": 51.348921511465534,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SH601939",
         "asOf": "2026-07-02",
@@ -3586,8 +3586,8 @@
         }
       ],
       "returns": {
-        "oneYearPct": -2.3550713461820107,
-        "threeYearPct": 34.03172495332985,
+        "oneYearPct": -1.599314975599209,
+        "threeYearPct": 35.354716685799744,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SH601988",
         "asOf": "2026-07-02",
@@ -3788,8 +3788,8 @@
         }
       ],
       "returns": {
-        "oneYearPct": 119.69025811681706,
-        "threeYearPct": 154.58125209914328,
+        "oneYearPct": 121.35046108394812,
+        "threeYearPct": 149.1001701886899,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 99%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SH688802",
         "asOf": "2026-07-02",
@@ -3988,8 +3988,8 @@
         }
       ],
       "returns": {
-        "oneYearPct": 1.9764141169096934,
-        "threeYearPct": 84.88398155282583,
+        "oneYearPct": 0.4942284033111184,
+        "threeYearPct": 83.42453049022657,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SZ002625",
         "asOf": "2026-07-02",
@@ -4132,8 +4132,8 @@
       ],
       "topDecreases": [],
       "returns": {
-        "oneYearPct": 79.24802748921594,
-        "threeYearPct": 38.695244636017684,
+        "oneYearPct": 80.61129332414193,
+        "threeYearPct": 40.870720740950475,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SZ002150",
         "asOf": "2026-07-02",
@@ -4225,8 +4225,8 @@
         }
       ],
       "returns": {
-        "oneYearPct": -12.014134374849057,
-        "threeYearPct": -46.37473347781533,
+        "oneYearPct": -12.220921395049546,
+        "threeYearPct": -45.791001923473935,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SZ002153",
         "asOf": "2026-07-02",
@@ -4395,6 +4395,72 @@
       "confidence": "medium",
       "staleDisclosure": true,
       "narrative": "北向资金 / 香港中央结算 通过 香港中央结算有限公司 减持 002625 / 光启技术。报告期 2026-06-30，披露日 2026-07-02。"
+    },
+    {
+      "id": "congress-2026-07-02-2026-06-15-david-taylor-IBP-Buy",
+      "market": "us",
+      "investorId": "us_congress",
+      "investorName": "David Taylor",
+      "vehicleName": "US Congress PTR",
+      "sourceTier": "L1",
+      "disclosureType": "STOCK Act PTR",
+      "sourceLabel": "House Clerk PTR",
+      "indexSourceLabel": "CongressFlow third-party index",
+      "reportDate": "2026-06-15",
+      "previousReportDate": null,
+      "filingDate": "2026-07-02",
+      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034897.pdf",
+      "security": {
+        "ticker": "IBP",
+        "name": "IBP",
+        "cusip": "",
+        "title": "Disclosed range"
+      },
+      "direction": "increase",
+      "sharesBefore": null,
+      "sharesAfter": null,
+      "sharesDelta": null,
+      "marketValueBefore": null,
+      "marketValueAfter": null,
+      "marketValueDelta": 8000.5,
+      "disclosedAmountRange": "$1,001 - $15,000",
+      "significanceScore": 8000.5,
+      "confidence": "medium",
+      "staleDisclosure": false,
+      "narrative": "David Taylor 通过 US Congress PTR 增持 IBP / IBP。交易日 2026-06-15。"
+    },
+    {
+      "id": "congress-2026-07-02-2026-06-15-david-taylor-CVX-Buy",
+      "market": "us",
+      "investorId": "us_congress",
+      "investorName": "David Taylor",
+      "vehicleName": "US Congress PTR",
+      "sourceTier": "L1",
+      "disclosureType": "STOCK Act PTR",
+      "sourceLabel": "House Clerk PTR",
+      "indexSourceLabel": "CongressFlow third-party index",
+      "reportDate": "2026-06-15",
+      "previousReportDate": null,
+      "filingDate": "2026-07-02",
+      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034897.pdf",
+      "security": {
+        "ticker": "CVX",
+        "name": "CVX",
+        "cusip": "",
+        "title": "Disclosed range"
+      },
+      "direction": "increase",
+      "sharesBefore": null,
+      "sharesAfter": null,
+      "sharesDelta": null,
+      "marketValueBefore": null,
+      "marketValueAfter": null,
+      "marketValueDelta": 8000.5,
+      "disclosedAmountRange": "$1,001 - $15,000",
+      "significanceScore": 8000.5,
+      "confidence": "medium",
+      "staleDisclosure": false,
+      "narrative": "David Taylor 通过 US Congress PTR 增持 CVX / CVX。交易日 2026-06-15。"
     },
     {
       "id": "cathiesark-2026-07-01T00:00:00.000Z-ARKK-CRCL-Buy-210343",
@@ -8459,39 +8525,6 @@
       "narrative": "Neal P. Dunn 通过 US Congress PTR 减持 T / T。交易日 2026-05-11。"
     },
     {
-      "id": "congress-2026-06-22-2026-05-06-jared-moskowitz-COR-Sell",
-      "market": "us",
-      "investorId": "us_congress",
-      "investorName": "Jared Moskowitz",
-      "vehicleName": "US Congress PTR",
-      "sourceTier": "L1",
-      "disclosureType": "STOCK Act PTR",
-      "sourceLabel": "House Clerk PTR",
-      "indexSourceLabel": "CongressFlow third-party index",
-      "reportDate": "2026-05-06",
-      "previousReportDate": null,
-      "filingDate": "2026-06-22",
-      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034749.pdf",
-      "security": {
-        "ticker": "COR",
-        "name": "COR",
-        "cusip": "",
-        "title": "Disclosed range"
-      },
-      "direction": "decrease",
-      "sharesBefore": null,
-      "sharesAfter": null,
-      "sharesDelta": null,
-      "marketValueBefore": null,
-      "marketValueAfter": null,
-      "marketValueDelta": -8000.5,
-      "disclosedAmountRange": "$1,001 - $15,000",
-      "significanceScore": 8000.5,
-      "confidence": "medium",
-      "staleDisclosure": false,
-      "narrative": "Jared Moskowitz 通过 US Congress PTR 减持 COR / COR。交易日 2026-05-06。"
-    },
-    {
       "id": "congress-2026-06-22-2026-05-06-jared-moskowitz-GILD-Buy",
       "market": "us",
       "investorId": "us_congress",
@@ -8525,37 +8558,37 @@
       "narrative": "Jared Moskowitz 通过 US Congress PTR 增持 GILD / GILD。交易日 2026-05-06。"
     },
     {
-      "id": "congress-2026-06-19-2026-06-01-thomas-h-kean-EQT-Buy",
+      "id": "congress-2026-06-22-2026-05-06-jared-moskowitz-COR-Sell",
       "market": "us",
       "investorId": "us_congress",
-      "investorName": "Thomas H. Kean",
+      "investorName": "Jared Moskowitz",
       "vehicleName": "US Congress PTR",
       "sourceTier": "L1",
       "disclosureType": "STOCK Act PTR",
       "sourceLabel": "House Clerk PTR",
       "indexSourceLabel": "CongressFlow third-party index",
-      "reportDate": "2026-06-01",
+      "reportDate": "2026-05-06",
       "previousReportDate": null,
-      "filingDate": "2026-06-19",
-      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034783.pdf",
+      "filingDate": "2026-06-22",
+      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034749.pdf",
       "security": {
-        "ticker": "EQT",
-        "name": "EQT",
+        "ticker": "COR",
+        "name": "COR",
         "cusip": "",
         "title": "Disclosed range"
       },
-      "direction": "increase",
+      "direction": "decrease",
       "sharesBefore": null,
       "sharesAfter": null,
       "sharesDelta": null,
       "marketValueBefore": null,
       "marketValueAfter": null,
-      "marketValueDelta": 8000.5,
+      "marketValueDelta": -8000.5,
       "disclosedAmountRange": "$1,001 - $15,000",
       "significanceScore": 8000.5,
       "confidence": "medium",
       "staleDisclosure": false,
-      "narrative": "Thomas H. Kean 通过 US Congress PTR 增持 EQT / EQT。交易日 2026-06-01。"
+      "narrative": "Jared Moskowitz 通过 US Congress PTR 减持 COR / COR。交易日 2026-05-06。"
     },
     {
       "id": "congress-2026-06-19-2026-06-01-thomas-h-kean-CHKP-Sell",
@@ -8589,6 +8622,39 @@
       "confidence": "medium",
       "staleDisclosure": false,
       "narrative": "Thomas H. Kean 通过 US Congress PTR 减持 CHKP / CHKP。交易日 2026-06-01。"
+    },
+    {
+      "id": "congress-2026-06-19-2026-06-01-thomas-h-kean-EQT-Buy",
+      "market": "us",
+      "investorId": "us_congress",
+      "investorName": "Thomas H. Kean",
+      "vehicleName": "US Congress PTR",
+      "sourceTier": "L1",
+      "disclosureType": "STOCK Act PTR",
+      "sourceLabel": "House Clerk PTR",
+      "indexSourceLabel": "CongressFlow third-party index",
+      "reportDate": "2026-06-01",
+      "previousReportDate": null,
+      "filingDate": "2026-06-19",
+      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034783.pdf",
+      "security": {
+        "ticker": "EQT",
+        "name": "EQT",
+        "cusip": "",
+        "title": "Disclosed range"
+      },
+      "direction": "increase",
+      "sharesBefore": null,
+      "sharesAfter": null,
+      "sharesDelta": null,
+      "marketValueBefore": null,
+      "marketValueAfter": null,
+      "marketValueDelta": 8000.5,
+      "disclosedAmountRange": "$1,001 - $15,000",
+      "significanceScore": 8000.5,
+      "confidence": "medium",
+      "staleDisclosure": false,
+      "narrative": "Thomas H. Kean 通过 US Congress PTR 增持 EQT / EQT。交易日 2026-06-01。"
     },
     {
       "id": "congress-2026-06-19-2026-05-21-thomas-h-kean-BDX-Sell",
@@ -8756,72 +8822,6 @@
       "narrative": "Richard W. Allen 通过 US Congress PTR 减持 ACN / ACN。交易日 2026-05-08。"
     },
     {
-      "id": "congress-2026-06-17-2026-06-16-matt-van-epps-GE-Sell",
-      "market": "us",
-      "investorId": "us_congress",
-      "investorName": "Matt Van Epps",
-      "vehicleName": "US Congress PTR",
-      "sourceTier": "L1",
-      "disclosureType": "STOCK Act PTR",
-      "sourceLabel": "House Clerk PTR",
-      "indexSourceLabel": "CongressFlow third-party index",
-      "reportDate": "2026-06-16",
-      "previousReportDate": null,
-      "filingDate": "2026-06-17",
-      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034807.pdf",
-      "security": {
-        "ticker": "GE",
-        "name": "GE",
-        "cusip": "",
-        "title": "Disclosed range"
-      },
-      "direction": "decrease",
-      "sharesBefore": null,
-      "sharesAfter": null,
-      "sharesDelta": null,
-      "marketValueBefore": null,
-      "marketValueAfter": null,
-      "marketValueDelta": -8000.5,
-      "disclosedAmountRange": "$1,001 - $15,000",
-      "significanceScore": 8000.5,
-      "confidence": "medium",
-      "staleDisclosure": false,
-      "narrative": "Matt Van Epps 通过 US Congress PTR 减持 GE / GE。交易日 2026-06-16。"
-    },
-    {
-      "id": "congress-2026-06-17-2026-06-16-matt-van-epps-GEV-Sell",
-      "market": "us",
-      "investorId": "us_congress",
-      "investorName": "Matt Van Epps",
-      "vehicleName": "US Congress PTR",
-      "sourceTier": "L1",
-      "disclosureType": "STOCK Act PTR",
-      "sourceLabel": "House Clerk PTR",
-      "indexSourceLabel": "CongressFlow third-party index",
-      "reportDate": "2026-06-16",
-      "previousReportDate": null,
-      "filingDate": "2026-06-17",
-      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034807.pdf",
-      "security": {
-        "ticker": "GEV",
-        "name": "GEV",
-        "cusip": "",
-        "title": "Disclosed range"
-      },
-      "direction": "decrease",
-      "sharesBefore": null,
-      "sharesAfter": null,
-      "sharesDelta": null,
-      "marketValueBefore": null,
-      "marketValueAfter": null,
-      "marketValueDelta": -8000.5,
-      "disclosedAmountRange": "$1,001 - $15,000",
-      "significanceScore": 8000.5,
-      "confidence": "medium",
-      "staleDisclosure": false,
-      "narrative": "Matt Van Epps 通过 US Congress PTR 减持 GEV / GEV。交易日 2026-06-16。"
-    },
-    {
       "id": "congress-2026-06-17-2026-06-16-matt-van-epps-INTC-Sell",
       "market": "us",
       "investorId": "us_congress",
@@ -8921,7 +8921,7 @@
       "narrative": "Matt Van Epps 通过 US Congress PTR 减持 MSFT / MSFT。交易日 2026-06-16。"
     },
     {
-      "id": "congress-2026-06-17-2026-06-16-matt-van-epps-IBM-Sell",
+      "id": "congress-2026-06-17-2026-06-16-matt-van-epps-XOM-Sell",
       "market": "us",
       "investorId": "us_congress",
       "investorName": "Matt Van Epps",
@@ -8935,8 +8935,8 @@
       "filingDate": "2026-06-17",
       "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034807.pdf",
       "security": {
-        "ticker": "IBM",
-        "name": "IBM",
+        "ticker": "XOM",
+        "name": "XOM",
         "cusip": "",
         "title": "Disclosed range"
       },
@@ -8951,10 +8951,10 @@
       "significanceScore": 8000.5,
       "confidence": "medium",
       "staleDisclosure": false,
-      "narrative": "Matt Van Epps 通过 US Congress PTR 减持 IBM / IBM。交易日 2026-06-16。"
+      "narrative": "Matt Van Epps 通过 US Congress PTR 减持 XOM / XOM。交易日 2026-06-16。"
     },
     {
-      "id": "congress-2026-06-17-2026-06-16-matt-van-epps-AAPL-Sell",
+      "id": "congress-2026-06-17-2026-06-16-matt-van-epps-GE-Sell",
       "market": "us",
       "investorId": "us_congress",
       "investorName": "Matt Van Epps",
@@ -8968,8 +8968,8 @@
       "filingDate": "2026-06-17",
       "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034807.pdf",
       "security": {
-        "ticker": "AAPL",
-        "name": "AAPL",
+        "ticker": "GE",
+        "name": "GE",
         "cusip": "",
         "title": "Disclosed range"
       },
@@ -8984,10 +8984,10 @@
       "significanceScore": 8000.5,
       "confidence": "medium",
       "staleDisclosure": false,
-      "narrative": "Matt Van Epps 通过 US Congress PTR 减持 AAPL / AAPL。交易日 2026-06-16。"
+      "narrative": "Matt Van Epps 通过 US Congress PTR 减持 GE / GE。交易日 2026-06-16。"
     },
     {
-      "id": "congress-2026-06-17-2026-06-16-matt-van-epps-AMZN-Sell",
+      "id": "congress-2026-06-17-2026-06-16-matt-van-epps-GEV-Sell",
       "market": "us",
       "investorId": "us_congress",
       "investorName": "Matt Van Epps",
@@ -9001,8 +9001,8 @@
       "filingDate": "2026-06-17",
       "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034807.pdf",
       "security": {
-        "ticker": "AMZN",
-        "name": "AMZN",
+        "ticker": "GEV",
+        "name": "GEV",
         "cusip": "",
         "title": "Disclosed range"
       },
@@ -9017,7 +9017,7 @@
       "significanceScore": 8000.5,
       "confidence": "medium",
       "staleDisclosure": false,
-      "narrative": "Matt Van Epps 通过 US Congress PTR 减持 AMZN / AMZN。交易日 2026-06-16。"
+      "narrative": "Matt Van Epps 通过 US Congress PTR 减持 GEV / GEV。交易日 2026-06-16。"
     },
     {
       "id": "congress-2026-06-17-2026-06-16-matt-van-epps-GOOGL-Sell",
@@ -9119,7 +9119,7 @@
       "narrative": "Matt Van Epps 通过 US Congress PTR 减持 NVDA / NVDA。交易日 2026-06-16。"
     },
     {
-      "id": "congress-2026-06-17-2026-06-16-matt-van-epps-XOM-Sell",
+      "id": "congress-2026-06-17-2026-06-16-matt-van-epps-IBM-Sell",
       "market": "us",
       "investorId": "us_congress",
       "investorName": "Matt Van Epps",
@@ -9133,8 +9133,8 @@
       "filingDate": "2026-06-17",
       "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034807.pdf",
       "security": {
-        "ticker": "XOM",
-        "name": "XOM",
+        "ticker": "IBM",
+        "name": "IBM",
         "cusip": "",
         "title": "Disclosed range"
       },
@@ -9149,40 +9149,73 @@
       "significanceScore": 8000.5,
       "confidence": "medium",
       "staleDisclosure": false,
-      "narrative": "Matt Van Epps 通过 US Congress PTR 减持 XOM / XOM。交易日 2026-06-16。"
+      "narrative": "Matt Van Epps 通过 US Congress PTR 减持 IBM / IBM。交易日 2026-06-16。"
     },
     {
-      "id": "congress-2026-06-17-2026-05-08-richard-w-allen-TSM-Buy",
+      "id": "congress-2026-06-17-2026-06-16-matt-van-epps-AAPL-Sell",
       "market": "us",
       "investorId": "us_congress",
-      "investorName": "Richard W. Allen",
+      "investorName": "Matt Van Epps",
       "vehicleName": "US Congress PTR",
       "sourceTier": "L1",
       "disclosureType": "STOCK Act PTR",
       "sourceLabel": "House Clerk PTR",
       "indexSourceLabel": "CongressFlow third-party index",
-      "reportDate": "2026-05-08",
+      "reportDate": "2026-06-16",
       "previousReportDate": null,
       "filingDate": "2026-06-17",
-      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034740.pdf",
+      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034807.pdf",
       "security": {
-        "ticker": "TSM",
-        "name": "TSM",
+        "ticker": "AAPL",
+        "name": "AAPL",
         "cusip": "",
         "title": "Disclosed range"
       },
-      "direction": "increase",
+      "direction": "decrease",
       "sharesBefore": null,
       "sharesAfter": null,
       "sharesDelta": null,
       "marketValueBefore": null,
       "marketValueAfter": null,
-      "marketValueDelta": 8000.5,
+      "marketValueDelta": -8000.5,
       "disclosedAmountRange": "$1,001 - $15,000",
       "significanceScore": 8000.5,
       "confidence": "medium",
       "staleDisclosure": false,
-      "narrative": "Richard W. Allen 通过 US Congress PTR 增持 TSM / TSM。交易日 2026-05-08。"
+      "narrative": "Matt Van Epps 通过 US Congress PTR 减持 AAPL / AAPL。交易日 2026-06-16。"
+    },
+    {
+      "id": "congress-2026-06-17-2026-06-16-matt-van-epps-AMZN-Sell",
+      "market": "us",
+      "investorId": "us_congress",
+      "investorName": "Matt Van Epps",
+      "vehicleName": "US Congress PTR",
+      "sourceTier": "L1",
+      "disclosureType": "STOCK Act PTR",
+      "sourceLabel": "House Clerk PTR",
+      "indexSourceLabel": "CongressFlow third-party index",
+      "reportDate": "2026-06-16",
+      "previousReportDate": null,
+      "filingDate": "2026-06-17",
+      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034807.pdf",
+      "security": {
+        "ticker": "AMZN",
+        "name": "AMZN",
+        "cusip": "",
+        "title": "Disclosed range"
+      },
+      "direction": "decrease",
+      "sharesBefore": null,
+      "sharesAfter": null,
+      "sharesDelta": null,
+      "marketValueBefore": null,
+      "marketValueAfter": null,
+      "marketValueDelta": -8000.5,
+      "disclosedAmountRange": "$1,001 - $15,000",
+      "significanceScore": 8000.5,
+      "confidence": "medium",
+      "staleDisclosure": false,
+      "narrative": "Matt Van Epps 通过 US Congress PTR 减持 AMZN / AMZN。交易日 2026-06-16。"
     },
     {
       "id": "congress-2026-06-17-2026-05-08-richard-w-allen-AXP-Buy",
@@ -9218,6 +9251,39 @@
       "narrative": "Richard W. Allen 通过 US Congress PTR 增持 AXP / AXP。交易日 2026-05-08。"
     },
     {
+      "id": "congress-2026-06-17-2026-05-08-richard-w-allen-TSM-Buy",
+      "market": "us",
+      "investorId": "us_congress",
+      "investorName": "Richard W. Allen",
+      "vehicleName": "US Congress PTR",
+      "sourceTier": "L1",
+      "disclosureType": "STOCK Act PTR",
+      "sourceLabel": "House Clerk PTR",
+      "indexSourceLabel": "CongressFlow third-party index",
+      "reportDate": "2026-05-08",
+      "previousReportDate": null,
+      "filingDate": "2026-06-17",
+      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034740.pdf",
+      "security": {
+        "ticker": "TSM",
+        "name": "TSM",
+        "cusip": "",
+        "title": "Disclosed range"
+      },
+      "direction": "increase",
+      "sharesBefore": null,
+      "sharesAfter": null,
+      "sharesDelta": null,
+      "marketValueBefore": null,
+      "marketValueAfter": null,
+      "marketValueDelta": 8000.5,
+      "disclosedAmountRange": "$1,001 - $15,000",
+      "significanceScore": 8000.5,
+      "confidence": "medium",
+      "staleDisclosure": false,
+      "narrative": "Richard W. Allen 通过 US Congress PTR 增持 TSM / TSM。交易日 2026-05-08。"
+    },
+    {
       "id": "congress-2026-06-16-2026-05-27-john-boozman-TLH-Buy",
       "market": "us",
       "investorId": "us_congress",
@@ -9251,7 +9317,7 @@
       "narrative": "John Boozman 通过 US Congress PTR 增持 TLH / TLH。交易日 2026-05-27。"
     },
     {
-      "id": "congress-2026-06-16-2026-05-27-john-boozman-VEA-Sell",
+      "id": "congress-2026-06-16-2026-05-27-john-boozman-AGZ-Buy",
       "market": "us",
       "investorId": "us_congress",
       "investorName": "John Boozman",
@@ -9263,25 +9329,25 @@
       "reportDate": "2026-05-27",
       "previousReportDate": null,
       "filingDate": "2026-06-16",
-      "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/727b4eb6-d8c7-4792-aa5b-c651c2d72f9c/",
+      "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/2e076759-19df-458d-a3be-53610b8be5d0/",
       "security": {
-        "ticker": "VEA",
-        "name": "VEA",
+        "ticker": "AGZ",
+        "name": "AGZ",
         "cusip": "",
         "title": "Disclosed range"
       },
-      "direction": "decrease",
+      "direction": "increase",
       "sharesBefore": null,
       "sharesAfter": null,
       "sharesDelta": null,
       "marketValueBefore": null,
       "marketValueAfter": null,
-      "marketValueDelta": -8000.5,
+      "marketValueDelta": 8000.5,
       "disclosedAmountRange": "$1,001 - $15,000",
       "significanceScore": 8000.5,
       "confidence": "medium",
       "staleDisclosure": false,
-      "narrative": "John Boozman 通过 US Congress PTR 减持 VEA / VEA。交易日 2026-05-27。"
+      "narrative": "John Boozman 通过 US Congress PTR 增持 AGZ / AGZ。交易日 2026-05-27。"
     },
     {
       "id": "congress-2026-06-16-2026-05-27-john-boozman-XFIV-Buy",
@@ -9350,72 +9416,6 @@
       "narrative": "John Boozman 通过 US Congress PTR 增持 MBB / MBB。交易日 2026-05-27。"
     },
     {
-      "id": "congress-2026-06-16-2026-05-27-john-boozman-AGZ-Buy",
-      "market": "us",
-      "investorId": "us_congress",
-      "investorName": "John Boozman",
-      "vehicleName": "US Congress PTR",
-      "sourceTier": "L1",
-      "disclosureType": "STOCK Act PTR",
-      "sourceLabel": "Senate eFD PTR",
-      "indexSourceLabel": "CongressFlow third-party index",
-      "reportDate": "2026-05-27",
-      "previousReportDate": null,
-      "filingDate": "2026-06-16",
-      "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/2e076759-19df-458d-a3be-53610b8be5d0/",
-      "security": {
-        "ticker": "AGZ",
-        "name": "AGZ",
-        "cusip": "",
-        "title": "Disclosed range"
-      },
-      "direction": "increase",
-      "sharesBefore": null,
-      "sharesAfter": null,
-      "sharesDelta": null,
-      "marketValueBefore": null,
-      "marketValueAfter": null,
-      "marketValueDelta": 8000.5,
-      "disclosedAmountRange": "$1,001 - $15,000",
-      "significanceScore": 8000.5,
-      "confidence": "medium",
-      "staleDisclosure": false,
-      "narrative": "John Boozman 通过 US Congress PTR 增持 AGZ / AGZ。交易日 2026-05-27。"
-    },
-    {
-      "id": "congress-2026-06-16-2026-05-27-john-boozman-JMBS-Buy",
-      "market": "us",
-      "investorId": "us_congress",
-      "investorName": "John Boozman",
-      "vehicleName": "US Congress PTR",
-      "sourceTier": "L1",
-      "disclosureType": "STOCK Act PTR",
-      "sourceLabel": "Senate eFD PTR",
-      "indexSourceLabel": "CongressFlow third-party index",
-      "reportDate": "2026-05-27",
-      "previousReportDate": null,
-      "filingDate": "2026-06-16",
-      "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/2e076759-19df-458d-a3be-53610b8be5d0/",
-      "security": {
-        "ticker": "JMBS",
-        "name": "JMBS",
-        "cusip": "",
-        "title": "Disclosed range"
-      },
-      "direction": "increase",
-      "sharesBefore": null,
-      "sharesAfter": null,
-      "sharesDelta": null,
-      "marketValueBefore": null,
-      "marketValueAfter": null,
-      "marketValueDelta": 8000.5,
-      "disclosedAmountRange": "$1,001 - $15,000",
-      "significanceScore": 8000.5,
-      "confidence": "medium",
-      "staleDisclosure": false,
-      "narrative": "John Boozman 通过 US Congress PTR 增持 JMBS / JMBS。交易日 2026-05-27。"
-    },
-    {
       "id": "congress-2026-06-16-2026-05-27-john-boozman-XTWO-Buy",
       "market": "us",
       "investorId": "us_congress",
@@ -9449,7 +9449,7 @@
       "narrative": "John Boozman 通过 US Congress PTR 增持 XTWO / XTWO。交易日 2026-05-27。"
     },
     {
-      "id": "congress-2026-06-16-2026-05-27-john-boozman-GIGB-Buy",
+      "id": "congress-2026-06-16-2026-05-27-john-boozman-JMBS-Buy",
       "market": "us",
       "investorId": "us_congress",
       "investorName": "John Boozman",
@@ -9463,8 +9463,8 @@
       "filingDate": "2026-06-16",
       "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/2e076759-19df-458d-a3be-53610b8be5d0/",
       "security": {
-        "ticker": "GIGB",
-        "name": "GIGB",
+        "ticker": "JMBS",
+        "name": "JMBS",
         "cusip": "",
         "title": "Disclosed range"
       },
@@ -9479,7 +9479,7 @@
       "significanceScore": 8000.5,
       "confidence": "medium",
       "staleDisclosure": false,
-      "narrative": "John Boozman 通过 US Congress PTR 增持 GIGB / GIGB。交易日 2026-05-27。"
+      "narrative": "John Boozman 通过 US Congress PTR 增持 JMBS / JMBS。交易日 2026-05-27。"
     },
     {
       "id": "cn_china_securities_finance-601628-中国证券金融股份有限公司-2026-03-31",
