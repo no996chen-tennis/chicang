@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-23T12:50:11.000Z",
+  "generatedAt": "2026-07-24T00:54:21.801Z",
   "site": {
     "name": "chicang",
     "tagline": "重要资金公开披露雷达",
@@ -829,8 +829,8 @@
         }
       ],
       "returns": {
-        "oneYearPct": -1.6938194983191133,
-        "threeYearPct": 60.36701117907616,
+        "oneYearPct": 0.3034300791556781,
+        "threeYearPct": 60.84197165221069,
         "asOf": "2026-07-22",
         "sourceLabel": "ARKK ETF 市价代理，非 Cathie Wood 全部管理资产真实净值",
         "sourceUrl": "https://www.nasdaq.com/market-activity/etf/arkk/historical",
@@ -856,43 +856,43 @@
       "cadence": "披露后更新",
       "latestFiling": {
         "form": "PTR",
-        "reportDate": "2026-07-20",
-        "filingDate": "2026-07-21"
+        "reportDate": "2026-07-14",
+        "filingDate": "2026-07-23"
       },
       "positionCount": 49,
       "changes": [
         {
-          "id": "congress-2026-07-21-2026-07-20-james-a-himes-XOM-Sell",
+          "id": "congress-2026-07-23-2026-07-14-debbie-dingell-FMCC-Buy",
           "market": "us",
           "investorId": "us_congress",
-          "investorName": "James A. Himes",
+          "investorName": "Debbie Dingell",
           "vehicleName": "US Congress PTR",
           "sourceTier": "L1",
           "disclosureType": "STOCK Act PTR",
           "sourceLabel": "House Clerk PTR",
           "indexSourceLabel": "CongressFlow third-party index",
-          "reportDate": "2026-07-20",
+          "reportDate": "2026-07-14",
           "previousReportDate": null,
-          "filingDate": "2026-07-21",
-          "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035047.pdf",
+          "filingDate": "2026-07-23",
+          "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035048.pdf",
           "security": {
-            "ticker": "XOM",
-            "name": "XOM",
+            "ticker": "FMCC",
+            "name": "FMCC",
             "cusip": "",
             "title": "Disclosed range"
           },
-          "direction": "decrease",
+          "direction": "increase",
           "sharesBefore": null,
           "sharesAfter": null,
           "sharesDelta": null,
           "marketValueBefore": null,
           "marketValueAfter": null,
-          "marketValueDelta": -32500.5,
+          "marketValueDelta": 32500.5,
           "disclosedAmountRange": "$15,001 - $50,000",
           "significanceScore": 32500.5,
           "confidence": "medium",
           "staleDisclosure": false,
-          "narrative": "James A. Himes 通过 US Congress PTR 减持 XOM / XOM。交易日 2026-07-20。"
+          "narrative": "Debbie Dingell 通过 US Congress PTR 增持 FMCC / FMCC。交易日 2026-07-14。"
         },
         {
           "id": "congress-2026-07-21-2026-07-20-james-a-himes-HD-Sell",
@@ -928,7 +928,40 @@
           "narrative": "James A. Himes 通过 US Congress PTR 减持 HD / HD。交易日 2026-07-20。"
         },
         {
-          "id": "congress-2026-07-21-2026-03-30-alan-armstrong-DTEGY-Buy",
+          "id": "congress-2026-07-21-2026-07-20-james-a-himes-XOM-Sell",
+          "market": "us",
+          "investorId": "us_congress",
+          "investorName": "James A. Himes",
+          "vehicleName": "US Congress PTR",
+          "sourceTier": "L1",
+          "disclosureType": "STOCK Act PTR",
+          "sourceLabel": "House Clerk PTR",
+          "indexSourceLabel": "CongressFlow third-party index",
+          "reportDate": "2026-07-20",
+          "previousReportDate": null,
+          "filingDate": "2026-07-21",
+          "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035047.pdf",
+          "security": {
+            "ticker": "XOM",
+            "name": "XOM",
+            "cusip": "",
+            "title": "Disclosed range"
+          },
+          "direction": "decrease",
+          "sharesBefore": null,
+          "sharesAfter": null,
+          "sharesDelta": null,
+          "marketValueBefore": null,
+          "marketValueAfter": null,
+          "marketValueDelta": -32500.5,
+          "disclosedAmountRange": "$15,001 - $50,000",
+          "significanceScore": 32500.5,
+          "confidence": "medium",
+          "staleDisclosure": false,
+          "narrative": "James A. Himes 通过 US Congress PTR 减持 XOM / XOM。交易日 2026-07-20。"
+        },
+        {
+          "id": "congress-2026-07-21-2026-03-30-alan-armstrong-DBSDY-Buy",
           "market": "us",
           "investorId": "us_congress",
           "investorName": "Alan Armstrong",
@@ -942,8 +975,8 @@
           "filingDate": "2026-07-21",
           "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/fda235b3-bad7-4637-8fa1-053f354d929c/",
           "security": {
-            "ticker": "DTEGY",
-            "name": "DTEGY",
+            "ticker": "DBSDY",
+            "name": "DBSDY",
             "cusip": "",
             "title": "Disclosed range"
           },
@@ -958,7 +991,7 @@
           "significanceScore": 32500.5,
           "confidence": "medium",
           "staleDisclosure": false,
-          "narrative": "Alan Armstrong 通过 US Congress PTR 增持 DTEGY / DTEGY。交易日 2026-03-30。"
+          "narrative": "Alan Armstrong 通过 US Congress PTR 增持 DBSDY / DBSDY。交易日 2026-03-30。"
         },
         {
           "id": "congress-2026-07-21-2026-03-30-alan-armstrong-CMWAY-Buy",
@@ -1027,7 +1060,7 @@
           "narrative": "Alan Armstrong 通过 US Congress PTR 增持 DBOEY / DBOEY。交易日 2026-03-30。"
         },
         {
-          "id": "congress-2026-07-21-2026-03-30-alan-armstrong-DBSDY-Buy",
+          "id": "congress-2026-07-21-2026-03-30-alan-armstrong-DTEGY-Buy",
           "market": "us",
           "investorId": "us_congress",
           "investorName": "Alan Armstrong",
@@ -1041,8 +1074,8 @@
           "filingDate": "2026-07-21",
           "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/fda235b3-bad7-4637-8fa1-053f354d929c/",
           "security": {
-            "ticker": "DBSDY",
-            "name": "DBSDY",
+            "ticker": "DTEGY",
+            "name": "DTEGY",
             "cusip": "",
             "title": "Disclosed range"
           },
@@ -1057,40 +1090,7 @@
           "significanceScore": 32500.5,
           "confidence": "medium",
           "staleDisclosure": false,
-          "narrative": "Alan Armstrong 通过 US Congress PTR 增持 DBSDY / DBSDY。交易日 2026-03-30。"
-        },
-        {
-          "id": "congress-2026-07-21-2026-03-27-alan-armstrong-TMUS-Sell",
-          "market": "us",
-          "investorId": "us_congress",
-          "investorName": "Alan Armstrong",
-          "vehicleName": "US Congress PTR",
-          "sourceTier": "L1",
-          "disclosureType": "STOCK Act PTR",
-          "sourceLabel": "Senate eFD PTR",
-          "indexSourceLabel": "CongressFlow third-party index",
-          "reportDate": "2026-03-27",
-          "previousReportDate": null,
-          "filingDate": "2026-07-21",
-          "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/fda235b3-bad7-4637-8fa1-053f354d929c/",
-          "security": {
-            "ticker": "TMUS",
-            "name": "TMUS",
-            "cusip": "",
-            "title": "Disclosed range"
-          },
-          "direction": "decrease",
-          "sharesBefore": null,
-          "sharesAfter": null,
-          "sharesDelta": null,
-          "marketValueBefore": null,
-          "marketValueAfter": null,
-          "marketValueDelta": -32500.5,
-          "disclosedAmountRange": "$15,001 - $50,000",
-          "significanceScore": 32500.5,
-          "confidence": "medium",
-          "staleDisclosure": false,
-          "narrative": "Alan Armstrong 通过 US Congress PTR 减持 TMUS / TMUS。交易日 2026-03-27。"
+          "narrative": "Alan Armstrong 通过 US Congress PTR 增持 DTEGY / DTEGY。交易日 2026-03-30。"
         },
         {
           "id": "congress-2026-07-21-2026-03-27-alan-armstrong-TSLA-Buy",
@@ -1126,7 +1126,7 @@
           "narrative": "Alan Armstrong 通过 US Congress PTR 增持 TSLA / TSLA。交易日 2026-03-27。"
         },
         {
-          "id": "congress-2026-07-21-2026-03-27-alan-armstrong-PG-Sell",
+          "id": "congress-2026-07-21-2026-03-27-alan-armstrong-TMUS-Sell",
           "market": "us",
           "investorId": "us_congress",
           "investorName": "Alan Armstrong",
@@ -1140,8 +1140,8 @@
           "filingDate": "2026-07-21",
           "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/fda235b3-bad7-4637-8fa1-053f354d929c/",
           "security": {
-            "ticker": "PG",
-            "name": "PG",
+            "ticker": "TMUS",
+            "name": "TMUS",
             "cusip": "",
             "title": "Disclosed range"
           },
@@ -1156,7 +1156,7 @@
           "significanceScore": 32500.5,
           "confidence": "medium",
           "staleDisclosure": false,
-          "narrative": "Alan Armstrong 通过 US Congress PTR 减持 PG / PG。交易日 2026-03-27。"
+          "narrative": "Alan Armstrong 通过 US Congress PTR 减持 TMUS / TMUS。交易日 2026-03-27。"
         },
         {
           "id": "congress-2026-07-21-2026-07-20-james-a-himes-BAC-Sell",
@@ -1291,7 +1291,7 @@
           "narrative": "Alan Armstrong 通过 US Congress PTR 增持 DSCSY / DSCSY。交易日 2026-03-30。"
         },
         {
-          "id": "congress-2026-07-21-2026-03-30-alan-armstrong-DNZOY-Buy",
+          "id": "congress-2026-07-21-2026-03-30-alan-armstrong-DNKEY-Buy",
           "market": "us",
           "investorId": "us_congress",
           "investorName": "Alan Armstrong",
@@ -1305,8 +1305,8 @@
           "filingDate": "2026-07-21",
           "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/fda235b3-bad7-4637-8fa1-053f354d929c/",
           "security": {
-            "ticker": "DNZOY",
-            "name": "DNZOY",
+            "ticker": "DNKEY",
+            "name": "DNKEY",
             "cusip": "",
             "title": "Disclosed range"
           },
@@ -1321,10 +1321,10 @@
           "significanceScore": 8000.5,
           "confidence": "medium",
           "staleDisclosure": false,
-          "narrative": "Alan Armstrong 通过 US Congress PTR 增持 DNZOY / DNZOY。交易日 2026-03-30。"
+          "narrative": "Alan Armstrong 通过 US Congress PTR 增持 DNKEY / DNKEY。交易日 2026-03-30。"
         },
         {
-          "id": "congress-2026-07-21-2026-03-30-alan-armstrong-DNBBY-Buy",
+          "id": "congress-2026-07-21-2026-03-30-alan-armstrong-DLICY-Buy",
           "market": "us",
           "investorId": "us_congress",
           "investorName": "Alan Armstrong",
@@ -1338,8 +1338,8 @@
           "filingDate": "2026-07-21",
           "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/fda235b3-bad7-4637-8fa1-053f354d929c/",
           "security": {
-            "ticker": "DNBBY",
-            "name": "DNBBY",
+            "ticker": "DLICY",
+            "name": "DLICY",
             "cusip": "",
             "title": "Disclosed range"
           },
@@ -1354,10 +1354,10 @@
           "significanceScore": 8000.5,
           "confidence": "medium",
           "staleDisclosure": false,
-          "narrative": "Alan Armstrong 通过 US Congress PTR 增持 DNBBY / DNBBY。交易日 2026-03-30。"
+          "narrative": "Alan Armstrong 通过 US Congress PTR 增持 DLICY / DLICY。交易日 2026-03-30。"
         },
         {
-          "id": "congress-2026-07-21-2026-03-30-alan-armstrong-DRPRY-Buy",
+          "id": "congress-2026-07-21-2026-03-30-alan-armstrong-DB-Buy",
           "market": "us",
           "investorId": "us_congress",
           "investorName": "Alan Armstrong",
@@ -1371,8 +1371,8 @@
           "filingDate": "2026-07-21",
           "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/fda235b3-bad7-4637-8fa1-053f354d929c/",
           "security": {
-            "ticker": "DRPRY",
-            "name": "DRPRY",
+            "ticker": "DB",
+            "name": "DB",
             "cusip": "",
             "title": "Disclosed range"
           },
@@ -1387,10 +1387,10 @@
           "significanceScore": 8000.5,
           "confidence": "medium",
           "staleDisclosure": false,
-          "narrative": "Alan Armstrong 通过 US Congress PTR 增持 DRPRY / DRPRY。交易日 2026-03-30。"
+          "narrative": "Alan Armstrong 通过 US Congress PTR 增持 DB / DB。交易日 2026-03-30。"
         },
         {
-          "id": "congress-2026-07-21-2026-03-30-alan-armstrong-DKILY-Buy",
+          "id": "congress-2026-07-21-2026-03-30-alan-armstrong-DTRUY-Buy",
           "market": "us",
           "investorId": "us_congress",
           "investorName": "Alan Armstrong",
@@ -1404,8 +1404,8 @@
           "filingDate": "2026-07-21",
           "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/fda235b3-bad7-4637-8fa1-053f354d929c/",
           "security": {
-            "ticker": "DKILY",
-            "name": "DKILY",
+            "ticker": "DTRUY",
+            "name": "DTRUY",
             "cusip": "",
             "title": "Disclosed range"
           },
@@ -1420,40 +1420,7 @@
           "significanceScore": 8000.5,
           "confidence": "medium",
           "staleDisclosure": false,
-          "narrative": "Alan Armstrong 通过 US Congress PTR 增持 DKILY / DKILY。交易日 2026-03-30。"
-        },
-        {
-          "id": "congress-2026-07-21-2026-03-30-alan-armstrong-DHLGY-Buy",
-          "market": "us",
-          "investorId": "us_congress",
-          "investorName": "Alan Armstrong",
-          "vehicleName": "US Congress PTR",
-          "sourceTier": "L1",
-          "disclosureType": "STOCK Act PTR",
-          "sourceLabel": "Senate eFD PTR",
-          "indexSourceLabel": "CongressFlow third-party index",
-          "reportDate": "2026-03-30",
-          "previousReportDate": null,
-          "filingDate": "2026-07-21",
-          "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/fda235b3-bad7-4637-8fa1-053f354d929c/",
-          "security": {
-            "ticker": "DHLGY",
-            "name": "DHLGY",
-            "cusip": "",
-            "title": "Disclosed range"
-          },
-          "direction": "increase",
-          "sharesBefore": null,
-          "sharesAfter": null,
-          "sharesDelta": null,
-          "marketValueBefore": null,
-          "marketValueAfter": null,
-          "marketValueDelta": 8000.5,
-          "disclosedAmountRange": "$1,001 - $15,000",
-          "significanceScore": 8000.5,
-          "confidence": "medium",
-          "staleDisclosure": false,
-          "narrative": "Alan Armstrong 通过 US Congress PTR 增持 DHLGY / DHLGY。交易日 2026-03-30。"
+          "narrative": "Alan Armstrong 通过 US Congress PTR 增持 DTRUY / DTRUY。交易日 2026-03-30。"
         },
         {
           "id": "congress-2026-07-21-2026-03-30-alan-armstrong-CRARY-Buy",
@@ -1489,7 +1456,7 @@
           "narrative": "Alan Armstrong 通过 US Congress PTR 增持 CRARY / CRARY。交易日 2026-03-30。"
         },
         {
-          "id": "congress-2026-07-21-2026-03-30-alan-armstrong-DWAHY-Buy",
+          "id": "congress-2026-07-21-2026-03-30-alan-armstrong-DIFTY-Buy",
           "market": "us",
           "investorId": "us_congress",
           "investorName": "Alan Armstrong",
@@ -1503,8 +1470,8 @@
           "filingDate": "2026-07-21",
           "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/fda235b3-bad7-4637-8fa1-053f354d929c/",
           "security": {
-            "ticker": "DWAHY",
-            "name": "DWAHY",
+            "ticker": "DIFTY",
+            "name": "DIFTY",
             "cusip": "",
             "title": "Disclosed range"
           },
@@ -1519,7 +1486,40 @@
           "significanceScore": 8000.5,
           "confidence": "medium",
           "staleDisclosure": false,
-          "narrative": "Alan Armstrong 通过 US Congress PTR 增持 DWAHY / DWAHY。交易日 2026-03-30。"
+          "narrative": "Alan Armstrong 通过 US Congress PTR 增持 DIFTY / DIFTY。交易日 2026-03-30。"
+        },
+        {
+          "id": "congress-2026-07-21-2026-03-30-alan-armstrong-DNBBY-Buy",
+          "market": "us",
+          "investorId": "us_congress",
+          "investorName": "Alan Armstrong",
+          "vehicleName": "US Congress PTR",
+          "sourceTier": "L1",
+          "disclosureType": "STOCK Act PTR",
+          "sourceLabel": "Senate eFD PTR",
+          "indexSourceLabel": "CongressFlow third-party index",
+          "reportDate": "2026-03-30",
+          "previousReportDate": null,
+          "filingDate": "2026-07-21",
+          "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/fda235b3-bad7-4637-8fa1-053f354d929c/",
+          "security": {
+            "ticker": "DNBBY",
+            "name": "DNBBY",
+            "cusip": "",
+            "title": "Disclosed range"
+          },
+          "direction": "increase",
+          "sharesBefore": null,
+          "sharesAfter": null,
+          "sharesDelta": null,
+          "marketValueBefore": null,
+          "marketValueAfter": null,
+          "marketValueDelta": 8000.5,
+          "disclosedAmountRange": "$1,001 - $15,000",
+          "significanceScore": 8000.5,
+          "confidence": "medium",
+          "staleDisclosure": false,
+          "narrative": "Alan Armstrong 通过 US Congress PTR 增持 DNBBY / DNBBY。交易日 2026-03-30。"
         },
         {
           "id": "congress-2026-07-21-2026-03-30-alan-armstrong-CMPGY-Buy",
@@ -1588,7 +1588,7 @@
           "narrative": "Alan Armstrong 通过 US Congress PTR 增持 CFRUY / CFRUY。交易日 2026-03-30。"
         },
         {
-          "id": "congress-2026-07-21-2026-03-30-alan-armstrong-DB-Buy",
+          "id": "congress-2026-07-21-2026-03-30-alan-armstrong-DKILY-Buy",
           "market": "us",
           "investorId": "us_congress",
           "investorName": "Alan Armstrong",
@@ -1602,8 +1602,8 @@
           "filingDate": "2026-07-21",
           "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/fda235b3-bad7-4637-8fa1-053f354d929c/",
           "security": {
-            "ticker": "DB",
-            "name": "DB",
+            "ticker": "DKILY",
+            "name": "DKILY",
             "cusip": "",
             "title": "Disclosed range"
           },
@@ -1618,10 +1618,10 @@
           "significanceScore": 8000.5,
           "confidence": "medium",
           "staleDisclosure": false,
-          "narrative": "Alan Armstrong 通过 US Congress PTR 增持 DB / DB。交易日 2026-03-30。"
+          "narrative": "Alan Armstrong 通过 US Congress PTR 增持 DKILY / DKILY。交易日 2026-03-30。"
         },
         {
-          "id": "congress-2026-07-21-2026-03-30-alan-armstrong-DEO-Buy",
+          "id": "congress-2026-07-21-2026-03-30-alan-armstrong-DLAKY-Buy",
           "market": "us",
           "investorId": "us_congress",
           "investorName": "Alan Armstrong",
@@ -1635,8 +1635,8 @@
           "filingDate": "2026-07-21",
           "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/fda235b3-bad7-4637-8fa1-053f354d929c/",
           "security": {
-            "ticker": "DEO",
-            "name": "DEO",
+            "ticker": "DLAKY",
+            "name": "DLAKY",
             "cusip": "",
             "title": "Disclosed range"
           },
@@ -1651,13 +1651,23 @@
           "significanceScore": 8000.5,
           "confidence": "medium",
           "staleDisclosure": false,
-          "narrative": "Alan Armstrong 通过 US Congress PTR 增持 DEO / DEO。交易日 2026-03-30。"
+          "narrative": "Alan Armstrong 通过 US Congress PTR 增持 DLAKY / DLAKY。交易日 2026-03-30。"
         }
       ],
       "topIncreases": [
         {
-          "ticker": "DTEGY",
-          "name": "DTEGY",
+          "ticker": "FMCC",
+          "name": "FMCC",
+          "market": "us",
+          "direction": "increase",
+          "value": 32500.5,
+          "valueCurrency": "USD",
+          "date": "2026-07-23",
+          "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035048.pdf"
+        },
+        {
+          "ticker": "DBSDY",
+          "name": "DBSDY",
           "market": "us",
           "direction": "increase",
           "value": 32500.5,
@@ -1674,22 +1684,12 @@
           "valueCurrency": "USD",
           "date": "2026-07-21",
           "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/fda235b3-bad7-4637-8fa1-053f354d929c/"
-        },
-        {
-          "ticker": "DBOEY",
-          "name": "DBOEY",
-          "market": "us",
-          "direction": "increase",
-          "value": 32500.5,
-          "valueCurrency": "USD",
-          "date": "2026-07-21",
-          "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/fda235b3-bad7-4637-8fa1-053f354d929c/"
         }
       ],
       "topDecreases": [
         {
-          "ticker": "XOM",
-          "name": "XOM",
+          "ticker": "HD",
+          "name": "HD",
           "market": "us",
           "direction": "decrease",
           "value": -32500.5,
@@ -1698,8 +1698,8 @@
           "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035047.pdf"
         },
         {
-          "ticker": "HD",
-          "name": "HD",
+          "ticker": "XOM",
+          "name": "XOM",
           "market": "us",
           "direction": "decrease",
           "value": -32500.5,
@@ -1785,8 +1785,8 @@
       "topIncreases": [],
       "topDecreases": [],
       "returns": {
-        "oneYearPct": 10.186738112387323,
-        "threeYearPct": 116.95024235615392,
+        "oneYearPct": 11.099669297415991,
+        "threeYearPct": 114.55879466606945,
         "sourceLabel": "13F Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://www.sec.gov/edgar/search/",
         "asOf": "2026-07-22",
@@ -2189,8 +2189,8 @@
         }
       ],
       "returns": {
-        "oneYearPct": 30.044771452627025,
-        "threeYearPct": 17.073482355515793,
+        "oneYearPct": 28.672945993461827,
+        "threeYearPct": 13.772658988327596,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SZ002415",
         "asOf": "2026-07-23",
@@ -2952,8 +2952,8 @@
         }
       ],
       "returns": {
-        "oneYearPct": 20.277814938395583,
-        "threeYearPct": 54.96786030109477,
+        "oneYearPct": 19.249753606789366,
+        "threeYearPct": 49.438873938404654,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SZ002594",
         "asOf": "2026-07-23",
@@ -3079,8 +3079,8 @@
       "topIncreases": [],
       "topDecreases": [],
       "returns": {
-        "oneYearPct": 5.125047343440417,
-        "threeYearPct": 72.32552904067356,
+        "oneYearPct": 6.3153705538127545,
+        "threeYearPct": 69.04186124571996,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SH601939",
         "asOf": "2026-07-23",
@@ -3589,8 +3589,8 @@
         }
       ],
       "returns": {
-        "oneYearPct": 7.659180478468486,
-        "threeYearPct": 58.30351367595298,
+        "oneYearPct": 8.241406762769707,
+        "threeYearPct": 53.954604974528266,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SH601988",
         "asOf": "2026-07-23",
@@ -3791,8 +3791,8 @@
         }
       ],
       "returns": {
-        "oneYearPct": 72.5560794886824,
-        "threeYearPct": 90.07245554735842,
+        "oneYearPct": 71.55981242396552,
+        "threeYearPct": 86.75413550235945,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 99%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SH688802",
         "asOf": "2026-07-23",
@@ -4492,8 +4492,8 @@
         }
       ],
       "returns": {
-        "oneYearPct": 461.2516439107936,
-        "threeYearPct": 510.28328426877886,
+        "oneYearPct": 459.1003560997754,
+        "threeYearPct": 497.4985337632757,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SZ300604",
         "asOf": "2026-07-23",
@@ -5171,8 +5171,8 @@
         }
       ],
       "returns": {
-        "oneYearPct": 50.702737692851954,
-        "threeYearPct": 108.11633868567655,
+        "oneYearPct": 50.810943202659566,
+        "threeYearPct": 105.18045370298871,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SH601009",
         "asOf": "2026-07-23",
@@ -5264,8 +5264,8 @@
         }
       ],
       "returns": {
-        "oneYearPct": -28.018869435333055,
-        "threeYearPct": -43.81443183131735,
+        "oneYearPct": -29.089219775659643,
+        "threeYearPct": -43.648448035913376,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SZ002153",
         "asOf": "2026-07-23",
@@ -5466,6 +5466,39 @@
       "confidence": "medium",
       "staleDisclosure": true,
       "narrative": "QFII / 外资机构 通过 高盛国际-自有资金 新进 605228 / 神通科技。报告期 2026-06-30，披露日 2026-07-23。"
+    },
+    {
+      "id": "congress-2026-07-23-2026-07-14-debbie-dingell-FMCC-Buy",
+      "market": "us",
+      "investorId": "us_congress",
+      "investorName": "Debbie Dingell",
+      "vehicleName": "US Congress PTR",
+      "sourceTier": "L1",
+      "disclosureType": "STOCK Act PTR",
+      "sourceLabel": "House Clerk PTR",
+      "indexSourceLabel": "CongressFlow third-party index",
+      "reportDate": "2026-07-14",
+      "previousReportDate": null,
+      "filingDate": "2026-07-23",
+      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035048.pdf",
+      "security": {
+        "ticker": "FMCC",
+        "name": "FMCC",
+        "cusip": "",
+        "title": "Disclosed range"
+      },
+      "direction": "increase",
+      "sharesBefore": null,
+      "sharesAfter": null,
+      "sharesDelta": null,
+      "marketValueBefore": null,
+      "marketValueAfter": null,
+      "marketValueDelta": 32500.5,
+      "disclosedAmountRange": "$15,001 - $50,000",
+      "significanceScore": 32500.5,
+      "confidence": "medium",
+      "staleDisclosure": false,
+      "narrative": "Debbie Dingell 通过 US Congress PTR 增持 FMCC / FMCC。交易日 2026-07-14。"
     },
     {
       "id": "cn_qfii-603268-摩根士丹利国际股份有限公司-2026-06-30",
@@ -6812,39 +6845,6 @@
       "narrative": "Cathie Wood 通过 ARKQ / ARK Active ETFs 增持 KDK / Kodiak AI。交易日 2026-07-21。"
     },
     {
-      "id": "congress-2026-07-21-2026-07-20-james-a-himes-XOM-Sell",
-      "market": "us",
-      "investorId": "us_congress",
-      "investorName": "James A. Himes",
-      "vehicleName": "US Congress PTR",
-      "sourceTier": "L1",
-      "disclosureType": "STOCK Act PTR",
-      "sourceLabel": "House Clerk PTR",
-      "indexSourceLabel": "CongressFlow third-party index",
-      "reportDate": "2026-07-20",
-      "previousReportDate": null,
-      "filingDate": "2026-07-21",
-      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035047.pdf",
-      "security": {
-        "ticker": "XOM",
-        "name": "XOM",
-        "cusip": "",
-        "title": "Disclosed range"
-      },
-      "direction": "decrease",
-      "sharesBefore": null,
-      "sharesAfter": null,
-      "sharesDelta": null,
-      "marketValueBefore": null,
-      "marketValueAfter": null,
-      "marketValueDelta": -32500.5,
-      "disclosedAmountRange": "$15,001 - $50,000",
-      "significanceScore": 32500.5,
-      "confidence": "medium",
-      "staleDisclosure": false,
-      "narrative": "James A. Himes 通过 US Congress PTR 减持 XOM / XOM。交易日 2026-07-20。"
-    },
-    {
       "id": "congress-2026-07-21-2026-07-20-james-a-himes-HD-Sell",
       "market": "us",
       "investorId": "us_congress",
@@ -6878,7 +6878,40 @@
       "narrative": "James A. Himes 通过 US Congress PTR 减持 HD / HD。交易日 2026-07-20。"
     },
     {
-      "id": "congress-2026-07-21-2026-03-30-alan-armstrong-DTEGY-Buy",
+      "id": "congress-2026-07-21-2026-07-20-james-a-himes-XOM-Sell",
+      "market": "us",
+      "investorId": "us_congress",
+      "investorName": "James A. Himes",
+      "vehicleName": "US Congress PTR",
+      "sourceTier": "L1",
+      "disclosureType": "STOCK Act PTR",
+      "sourceLabel": "House Clerk PTR",
+      "indexSourceLabel": "CongressFlow third-party index",
+      "reportDate": "2026-07-20",
+      "previousReportDate": null,
+      "filingDate": "2026-07-21",
+      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035047.pdf",
+      "security": {
+        "ticker": "XOM",
+        "name": "XOM",
+        "cusip": "",
+        "title": "Disclosed range"
+      },
+      "direction": "decrease",
+      "sharesBefore": null,
+      "sharesAfter": null,
+      "sharesDelta": null,
+      "marketValueBefore": null,
+      "marketValueAfter": null,
+      "marketValueDelta": -32500.5,
+      "disclosedAmountRange": "$15,001 - $50,000",
+      "significanceScore": 32500.5,
+      "confidence": "medium",
+      "staleDisclosure": false,
+      "narrative": "James A. Himes 通过 US Congress PTR 减持 XOM / XOM。交易日 2026-07-20。"
+    },
+    {
+      "id": "congress-2026-07-21-2026-03-30-alan-armstrong-DBSDY-Buy",
       "market": "us",
       "investorId": "us_congress",
       "investorName": "Alan Armstrong",
@@ -6892,8 +6925,8 @@
       "filingDate": "2026-07-21",
       "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/fda235b3-bad7-4637-8fa1-053f354d929c/",
       "security": {
-        "ticker": "DTEGY",
-        "name": "DTEGY",
+        "ticker": "DBSDY",
+        "name": "DBSDY",
         "cusip": "",
         "title": "Disclosed range"
       },
@@ -6908,7 +6941,7 @@
       "significanceScore": 32500.5,
       "confidence": "medium",
       "staleDisclosure": false,
-      "narrative": "Alan Armstrong 通过 US Congress PTR 增持 DTEGY / DTEGY。交易日 2026-03-30。"
+      "narrative": "Alan Armstrong 通过 US Congress PTR 增持 DBSDY / DBSDY。交易日 2026-03-30。"
     },
     {
       "id": "congress-2026-07-21-2026-03-30-alan-armstrong-CMWAY-Buy",
@@ -6977,7 +7010,7 @@
       "narrative": "Alan Armstrong 通过 US Congress PTR 增持 DBOEY / DBOEY。交易日 2026-03-30。"
     },
     {
-      "id": "congress-2026-07-21-2026-03-30-alan-armstrong-DBSDY-Buy",
+      "id": "congress-2026-07-21-2026-03-30-alan-armstrong-DTEGY-Buy",
       "market": "us",
       "investorId": "us_congress",
       "investorName": "Alan Armstrong",
@@ -6991,8 +7024,8 @@
       "filingDate": "2026-07-21",
       "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/fda235b3-bad7-4637-8fa1-053f354d929c/",
       "security": {
-        "ticker": "DBSDY",
-        "name": "DBSDY",
+        "ticker": "DTEGY",
+        "name": "DTEGY",
         "cusip": "",
         "title": "Disclosed range"
       },
@@ -7007,40 +7040,7 @@
       "significanceScore": 32500.5,
       "confidence": "medium",
       "staleDisclosure": false,
-      "narrative": "Alan Armstrong 通过 US Congress PTR 增持 DBSDY / DBSDY。交易日 2026-03-30。"
-    },
-    {
-      "id": "congress-2026-07-21-2026-03-27-alan-armstrong-TMUS-Sell",
-      "market": "us",
-      "investorId": "us_congress",
-      "investorName": "Alan Armstrong",
-      "vehicleName": "US Congress PTR",
-      "sourceTier": "L1",
-      "disclosureType": "STOCK Act PTR",
-      "sourceLabel": "Senate eFD PTR",
-      "indexSourceLabel": "CongressFlow third-party index",
-      "reportDate": "2026-03-27",
-      "previousReportDate": null,
-      "filingDate": "2026-07-21",
-      "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/fda235b3-bad7-4637-8fa1-053f354d929c/",
-      "security": {
-        "ticker": "TMUS",
-        "name": "TMUS",
-        "cusip": "",
-        "title": "Disclosed range"
-      },
-      "direction": "decrease",
-      "sharesBefore": null,
-      "sharesAfter": null,
-      "sharesDelta": null,
-      "marketValueBefore": null,
-      "marketValueAfter": null,
-      "marketValueDelta": -32500.5,
-      "disclosedAmountRange": "$15,001 - $50,000",
-      "significanceScore": 32500.5,
-      "confidence": "medium",
-      "staleDisclosure": false,
-      "narrative": "Alan Armstrong 通过 US Congress PTR 减持 TMUS / TMUS。交易日 2026-03-27。"
+      "narrative": "Alan Armstrong 通过 US Congress PTR 增持 DTEGY / DTEGY。交易日 2026-03-30。"
     },
     {
       "id": "congress-2026-07-21-2026-03-27-alan-armstrong-TSLA-Buy",
@@ -7076,7 +7076,7 @@
       "narrative": "Alan Armstrong 通过 US Congress PTR 增持 TSLA / TSLA。交易日 2026-03-27。"
     },
     {
-      "id": "congress-2026-07-21-2026-03-27-alan-armstrong-PG-Sell",
+      "id": "congress-2026-07-21-2026-03-27-alan-armstrong-TMUS-Sell",
       "market": "us",
       "investorId": "us_congress",
       "investorName": "Alan Armstrong",
@@ -7090,8 +7090,8 @@
       "filingDate": "2026-07-21",
       "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/fda235b3-bad7-4637-8fa1-053f354d929c/",
       "security": {
-        "ticker": "PG",
-        "name": "PG",
+        "ticker": "TMUS",
+        "name": "TMUS",
         "cusip": "",
         "title": "Disclosed range"
       },
@@ -7106,7 +7106,7 @@
       "significanceScore": 32500.5,
       "confidence": "medium",
       "staleDisclosure": false,
-      "narrative": "Alan Armstrong 通过 US Congress PTR 减持 PG / PG。交易日 2026-03-27。"
+      "narrative": "Alan Armstrong 通过 US Congress PTR 减持 TMUS / TMUS。交易日 2026-03-27。"
     },
     {
       "id": "cathiesark-2026-07-21T00:00:00.000Z-ARKQ-XE-Buy-912",
@@ -7313,7 +7313,7 @@
       "narrative": "Alan Armstrong 通过 US Congress PTR 增持 DSCSY / DSCSY。交易日 2026-03-30。"
     },
     {
-      "id": "congress-2026-07-21-2026-03-30-alan-armstrong-DNZOY-Buy",
+      "id": "congress-2026-07-21-2026-03-30-alan-armstrong-DNKEY-Buy",
       "market": "us",
       "investorId": "us_congress",
       "investorName": "Alan Armstrong",
@@ -7327,8 +7327,8 @@
       "filingDate": "2026-07-21",
       "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/fda235b3-bad7-4637-8fa1-053f354d929c/",
       "security": {
-        "ticker": "DNZOY",
-        "name": "DNZOY",
+        "ticker": "DNKEY",
+        "name": "DNKEY",
         "cusip": "",
         "title": "Disclosed range"
       },
@@ -7343,10 +7343,10 @@
       "significanceScore": 8000.5,
       "confidence": "medium",
       "staleDisclosure": false,
-      "narrative": "Alan Armstrong 通过 US Congress PTR 增持 DNZOY / DNZOY。交易日 2026-03-30。"
+      "narrative": "Alan Armstrong 通过 US Congress PTR 增持 DNKEY / DNKEY。交易日 2026-03-30。"
     },
     {
-      "id": "congress-2026-07-21-2026-03-30-alan-armstrong-DNBBY-Buy",
+      "id": "congress-2026-07-21-2026-03-30-alan-armstrong-DLICY-Buy",
       "market": "us",
       "investorId": "us_congress",
       "investorName": "Alan Armstrong",
@@ -7360,8 +7360,8 @@
       "filingDate": "2026-07-21",
       "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/fda235b3-bad7-4637-8fa1-053f354d929c/",
       "security": {
-        "ticker": "DNBBY",
-        "name": "DNBBY",
+        "ticker": "DLICY",
+        "name": "DLICY",
         "cusip": "",
         "title": "Disclosed range"
       },
@@ -7376,10 +7376,10 @@
       "significanceScore": 8000.5,
       "confidence": "medium",
       "staleDisclosure": false,
-      "narrative": "Alan Armstrong 通过 US Congress PTR 增持 DNBBY / DNBBY。交易日 2026-03-30。"
+      "narrative": "Alan Armstrong 通过 US Congress PTR 增持 DLICY / DLICY。交易日 2026-03-30。"
     },
     {
-      "id": "congress-2026-07-21-2026-03-30-alan-armstrong-DRPRY-Buy",
+      "id": "congress-2026-07-21-2026-03-30-alan-armstrong-DB-Buy",
       "market": "us",
       "investorId": "us_congress",
       "investorName": "Alan Armstrong",
@@ -7393,8 +7393,8 @@
       "filingDate": "2026-07-21",
       "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/fda235b3-bad7-4637-8fa1-053f354d929c/",
       "security": {
-        "ticker": "DRPRY",
-        "name": "DRPRY",
+        "ticker": "DB",
+        "name": "DB",
         "cusip": "",
         "title": "Disclosed range"
       },
@@ -7409,10 +7409,10 @@
       "significanceScore": 8000.5,
       "confidence": "medium",
       "staleDisclosure": false,
-      "narrative": "Alan Armstrong 通过 US Congress PTR 增持 DRPRY / DRPRY。交易日 2026-03-30。"
+      "narrative": "Alan Armstrong 通过 US Congress PTR 增持 DB / DB。交易日 2026-03-30。"
     },
     {
-      "id": "congress-2026-07-21-2026-03-30-alan-armstrong-DKILY-Buy",
+      "id": "congress-2026-07-21-2026-03-30-alan-armstrong-DTRUY-Buy",
       "market": "us",
       "investorId": "us_congress",
       "investorName": "Alan Armstrong",
@@ -7426,8 +7426,8 @@
       "filingDate": "2026-07-21",
       "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/fda235b3-bad7-4637-8fa1-053f354d929c/",
       "security": {
-        "ticker": "DKILY",
-        "name": "DKILY",
+        "ticker": "DTRUY",
+        "name": "DTRUY",
         "cusip": "",
         "title": "Disclosed range"
       },
@@ -7442,40 +7442,7 @@
       "significanceScore": 8000.5,
       "confidence": "medium",
       "staleDisclosure": false,
-      "narrative": "Alan Armstrong 通过 US Congress PTR 增持 DKILY / DKILY。交易日 2026-03-30。"
-    },
-    {
-      "id": "congress-2026-07-21-2026-03-30-alan-armstrong-DHLGY-Buy",
-      "market": "us",
-      "investorId": "us_congress",
-      "investorName": "Alan Armstrong",
-      "vehicleName": "US Congress PTR",
-      "sourceTier": "L1",
-      "disclosureType": "STOCK Act PTR",
-      "sourceLabel": "Senate eFD PTR",
-      "indexSourceLabel": "CongressFlow third-party index",
-      "reportDate": "2026-03-30",
-      "previousReportDate": null,
-      "filingDate": "2026-07-21",
-      "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/fda235b3-bad7-4637-8fa1-053f354d929c/",
-      "security": {
-        "ticker": "DHLGY",
-        "name": "DHLGY",
-        "cusip": "",
-        "title": "Disclosed range"
-      },
-      "direction": "increase",
-      "sharesBefore": null,
-      "sharesAfter": null,
-      "sharesDelta": null,
-      "marketValueBefore": null,
-      "marketValueAfter": null,
-      "marketValueDelta": 8000.5,
-      "disclosedAmountRange": "$1,001 - $15,000",
-      "significanceScore": 8000.5,
-      "confidence": "medium",
-      "staleDisclosure": false,
-      "narrative": "Alan Armstrong 通过 US Congress PTR 增持 DHLGY / DHLGY。交易日 2026-03-30。"
+      "narrative": "Alan Armstrong 通过 US Congress PTR 增持 DTRUY / DTRUY。交易日 2026-03-30。"
     },
     {
       "id": "congress-2026-07-21-2026-03-30-alan-armstrong-CRARY-Buy",
@@ -7511,7 +7478,7 @@
       "narrative": "Alan Armstrong 通过 US Congress PTR 增持 CRARY / CRARY。交易日 2026-03-30。"
     },
     {
-      "id": "congress-2026-07-21-2026-03-30-alan-armstrong-DWAHY-Buy",
+      "id": "congress-2026-07-21-2026-03-30-alan-armstrong-DIFTY-Buy",
       "market": "us",
       "investorId": "us_congress",
       "investorName": "Alan Armstrong",
@@ -7525,8 +7492,8 @@
       "filingDate": "2026-07-21",
       "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/fda235b3-bad7-4637-8fa1-053f354d929c/",
       "security": {
-        "ticker": "DWAHY",
-        "name": "DWAHY",
+        "ticker": "DIFTY",
+        "name": "DIFTY",
         "cusip": "",
         "title": "Disclosed range"
       },
@@ -7541,7 +7508,40 @@
       "significanceScore": 8000.5,
       "confidence": "medium",
       "staleDisclosure": false,
-      "narrative": "Alan Armstrong 通过 US Congress PTR 增持 DWAHY / DWAHY。交易日 2026-03-30。"
+      "narrative": "Alan Armstrong 通过 US Congress PTR 增持 DIFTY / DIFTY。交易日 2026-03-30。"
+    },
+    {
+      "id": "congress-2026-07-21-2026-03-30-alan-armstrong-DNBBY-Buy",
+      "market": "us",
+      "investorId": "us_congress",
+      "investorName": "Alan Armstrong",
+      "vehicleName": "US Congress PTR",
+      "sourceTier": "L1",
+      "disclosureType": "STOCK Act PTR",
+      "sourceLabel": "Senate eFD PTR",
+      "indexSourceLabel": "CongressFlow third-party index",
+      "reportDate": "2026-03-30",
+      "previousReportDate": null,
+      "filingDate": "2026-07-21",
+      "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/fda235b3-bad7-4637-8fa1-053f354d929c/",
+      "security": {
+        "ticker": "DNBBY",
+        "name": "DNBBY",
+        "cusip": "",
+        "title": "Disclosed range"
+      },
+      "direction": "increase",
+      "sharesBefore": null,
+      "sharesAfter": null,
+      "sharesDelta": null,
+      "marketValueBefore": null,
+      "marketValueAfter": null,
+      "marketValueDelta": 8000.5,
+      "disclosedAmountRange": "$1,001 - $15,000",
+      "significanceScore": 8000.5,
+      "confidence": "medium",
+      "staleDisclosure": false,
+      "narrative": "Alan Armstrong 通过 US Congress PTR 增持 DNBBY / DNBBY。交易日 2026-03-30。"
     },
     {
       "id": "congress-2026-07-21-2026-03-30-alan-armstrong-CMPGY-Buy",
@@ -7610,7 +7610,7 @@
       "narrative": "Alan Armstrong 通过 US Congress PTR 增持 CFRUY / CFRUY。交易日 2026-03-30。"
     },
     {
-      "id": "congress-2026-07-21-2026-03-30-alan-armstrong-DB-Buy",
+      "id": "congress-2026-07-21-2026-03-30-alan-armstrong-DKILY-Buy",
       "market": "us",
       "investorId": "us_congress",
       "investorName": "Alan Armstrong",
@@ -7624,8 +7624,8 @@
       "filingDate": "2026-07-21",
       "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/fda235b3-bad7-4637-8fa1-053f354d929c/",
       "security": {
-        "ticker": "DB",
-        "name": "DB",
+        "ticker": "DKILY",
+        "name": "DKILY",
         "cusip": "",
         "title": "Disclosed range"
       },
@@ -7640,304 +7640,7 @@
       "significanceScore": 8000.5,
       "confidence": "medium",
       "staleDisclosure": false,
-      "narrative": "Alan Armstrong 通过 US Congress PTR 增持 DB / DB。交易日 2026-03-30。"
-    },
-    {
-      "id": "congress-2026-07-21-2026-03-30-alan-armstrong-DEO-Buy",
-      "market": "us",
-      "investorId": "us_congress",
-      "investorName": "Alan Armstrong",
-      "vehicleName": "US Congress PTR",
-      "sourceTier": "L1",
-      "disclosureType": "STOCK Act PTR",
-      "sourceLabel": "Senate eFD PTR",
-      "indexSourceLabel": "CongressFlow third-party index",
-      "reportDate": "2026-03-30",
-      "previousReportDate": null,
-      "filingDate": "2026-07-21",
-      "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/fda235b3-bad7-4637-8fa1-053f354d929c/",
-      "security": {
-        "ticker": "DEO",
-        "name": "DEO",
-        "cusip": "",
-        "title": "Disclosed range"
-      },
-      "direction": "increase",
-      "sharesBefore": null,
-      "sharesAfter": null,
-      "sharesDelta": null,
-      "marketValueBefore": null,
-      "marketValueAfter": null,
-      "marketValueDelta": 8000.5,
-      "disclosedAmountRange": "$1,001 - $15,000",
-      "significanceScore": 8000.5,
-      "confidence": "medium",
-      "staleDisclosure": false,
-      "narrative": "Alan Armstrong 通过 US Congress PTR 增持 DEO / DEO。交易日 2026-03-30。"
-    },
-    {
-      "id": "congress-2026-07-21-2026-03-30-alan-armstrong-DTRUY-Buy",
-      "market": "us",
-      "investorId": "us_congress",
-      "investorName": "Alan Armstrong",
-      "vehicleName": "US Congress PTR",
-      "sourceTier": "L1",
-      "disclosureType": "STOCK Act PTR",
-      "sourceLabel": "Senate eFD PTR",
-      "indexSourceLabel": "CongressFlow third-party index",
-      "reportDate": "2026-03-30",
-      "previousReportDate": null,
-      "filingDate": "2026-07-21",
-      "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/fda235b3-bad7-4637-8fa1-053f354d929c/",
-      "security": {
-        "ticker": "DTRUY",
-        "name": "DTRUY",
-        "cusip": "",
-        "title": "Disclosed range"
-      },
-      "direction": "increase",
-      "sharesBefore": null,
-      "sharesAfter": null,
-      "sharesDelta": null,
-      "marketValueBefore": null,
-      "marketValueAfter": null,
-      "marketValueDelta": 8000.5,
-      "disclosedAmountRange": "$1,001 - $15,000",
-      "significanceScore": 8000.5,
-      "confidence": "medium",
-      "staleDisclosure": false,
-      "narrative": "Alan Armstrong 通过 US Congress PTR 增持 DTRUY / DTRUY。交易日 2026-03-30。"
-    },
-    {
-      "id": "congress-2026-07-21-2026-03-30-alan-armstrong-DASTY-Buy",
-      "market": "us",
-      "investorId": "us_congress",
-      "investorName": "Alan Armstrong",
-      "vehicleName": "US Congress PTR",
-      "sourceTier": "L1",
-      "disclosureType": "STOCK Act PTR",
-      "sourceLabel": "Senate eFD PTR",
-      "indexSourceLabel": "CongressFlow third-party index",
-      "reportDate": "2026-03-30",
-      "previousReportDate": null,
-      "filingDate": "2026-07-21",
-      "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/fda235b3-bad7-4637-8fa1-053f354d929c/",
-      "security": {
-        "ticker": "DASTY",
-        "name": "DASTY",
-        "cusip": "",
-        "title": "Disclosed range"
-      },
-      "direction": "increase",
-      "sharesBefore": null,
-      "sharesAfter": null,
-      "sharesDelta": null,
-      "marketValueBefore": null,
-      "marketValueAfter": null,
-      "marketValueDelta": 8000.5,
-      "disclosedAmountRange": "$1,001 - $15,000",
-      "significanceScore": 8000.5,
-      "confidence": "medium",
-      "staleDisclosure": false,
-      "narrative": "Alan Armstrong 通过 US Congress PTR 增持 DASTY / DASTY。交易日 2026-03-30。"
-    },
-    {
-      "id": "congress-2026-07-21-2026-03-30-alan-armstrong-DNKEY-Buy",
-      "market": "us",
-      "investorId": "us_congress",
-      "investorName": "Alan Armstrong",
-      "vehicleName": "US Congress PTR",
-      "sourceTier": "L1",
-      "disclosureType": "STOCK Act PTR",
-      "sourceLabel": "Senate eFD PTR",
-      "indexSourceLabel": "CongressFlow third-party index",
-      "reportDate": "2026-03-30",
-      "previousReportDate": null,
-      "filingDate": "2026-07-21",
-      "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/fda235b3-bad7-4637-8fa1-053f354d929c/",
-      "security": {
-        "ticker": "DNKEY",
-        "name": "DNKEY",
-        "cusip": "",
-        "title": "Disclosed range"
-      },
-      "direction": "increase",
-      "sharesBefore": null,
-      "sharesAfter": null,
-      "sharesDelta": null,
-      "marketValueBefore": null,
-      "marketValueAfter": null,
-      "marketValueDelta": 8000.5,
-      "disclosedAmountRange": "$1,001 - $15,000",
-      "significanceScore": 8000.5,
-      "confidence": "medium",
-      "staleDisclosure": false,
-      "narrative": "Alan Armstrong 通过 US Congress PTR 增持 DNKEY / DNKEY。交易日 2026-03-30。"
-    },
-    {
-      "id": "congress-2026-07-21-2026-03-30-alan-armstrong-DLICY-Buy",
-      "market": "us",
-      "investorId": "us_congress",
-      "investorName": "Alan Armstrong",
-      "vehicleName": "US Congress PTR",
-      "sourceTier": "L1",
-      "disclosureType": "STOCK Act PTR",
-      "sourceLabel": "Senate eFD PTR",
-      "indexSourceLabel": "CongressFlow third-party index",
-      "reportDate": "2026-03-30",
-      "previousReportDate": null,
-      "filingDate": "2026-07-21",
-      "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/fda235b3-bad7-4637-8fa1-053f354d929c/",
-      "security": {
-        "ticker": "DLICY",
-        "name": "DLICY",
-        "cusip": "",
-        "title": "Disclosed range"
-      },
-      "direction": "increase",
-      "sharesBefore": null,
-      "sharesAfter": null,
-      "sharesDelta": null,
-      "marketValueBefore": null,
-      "marketValueAfter": null,
-      "marketValueDelta": 8000.5,
-      "disclosedAmountRange": "$1,001 - $15,000",
-      "significanceScore": 8000.5,
-      "confidence": "medium",
-      "staleDisclosure": false,
-      "narrative": "Alan Armstrong 通过 US Congress PTR 增持 DLICY / DLICY。交易日 2026-03-30。"
-    },
-    {
-      "id": "congress-2026-07-21-2026-03-30-alan-armstrong-RDSMY-Buy",
-      "market": "us",
-      "investorId": "us_congress",
-      "investorName": "Alan Armstrong",
-      "vehicleName": "US Congress PTR",
-      "sourceTier": "L1",
-      "disclosureType": "STOCK Act PTR",
-      "sourceLabel": "Senate eFD PTR",
-      "indexSourceLabel": "CongressFlow third-party index",
-      "reportDate": "2026-03-30",
-      "previousReportDate": null,
-      "filingDate": "2026-07-21",
-      "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/fda235b3-bad7-4637-8fa1-053f354d929c/",
-      "security": {
-        "ticker": "RDSMY",
-        "name": "RDSMY",
-        "cusip": "",
-        "title": "Disclosed range"
-      },
-      "direction": "increase",
-      "sharesBefore": null,
-      "sharesAfter": null,
-      "sharesDelta": null,
-      "marketValueBefore": null,
-      "marketValueAfter": null,
-      "marketValueDelta": 8000.5,
-      "disclosedAmountRange": "$1,001 - $15,000",
-      "significanceScore": 8000.5,
-      "confidence": "medium",
-      "staleDisclosure": false,
-      "narrative": "Alan Armstrong 通过 US Congress PTR 增持 RDSMY / RDSMY。交易日 2026-03-30。"
-    },
-    {
-      "id": "congress-2026-07-21-2026-03-30-alan-armstrong-DIFTY-Buy",
-      "market": "us",
-      "investorId": "us_congress",
-      "investorName": "Alan Armstrong",
-      "vehicleName": "US Congress PTR",
-      "sourceTier": "L1",
-      "disclosureType": "STOCK Act PTR",
-      "sourceLabel": "Senate eFD PTR",
-      "indexSourceLabel": "CongressFlow third-party index",
-      "reportDate": "2026-03-30",
-      "previousReportDate": null,
-      "filingDate": "2026-07-21",
-      "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/fda235b3-bad7-4637-8fa1-053f354d929c/",
-      "security": {
-        "ticker": "DIFTY",
-        "name": "DIFTY",
-        "cusip": "",
-        "title": "Disclosed range"
-      },
-      "direction": "increase",
-      "sharesBefore": null,
-      "sharesAfter": null,
-      "sharesDelta": null,
-      "marketValueBefore": null,
-      "marketValueAfter": null,
-      "marketValueDelta": 8000.5,
-      "disclosedAmountRange": "$1,001 - $15,000",
-      "significanceScore": 8000.5,
-      "confidence": "medium",
-      "staleDisclosure": false,
-      "narrative": "Alan Armstrong 通过 US Congress PTR 增持 DIFTY / DIFTY。交易日 2026-03-30。"
-    },
-    {
-      "id": "congress-2026-07-21-2026-03-30-alan-armstrong-DSNKY-Buy",
-      "market": "us",
-      "investorId": "us_congress",
-      "investorName": "Alan Armstrong",
-      "vehicleName": "US Congress PTR",
-      "sourceTier": "L1",
-      "disclosureType": "STOCK Act PTR",
-      "sourceLabel": "Senate eFD PTR",
-      "indexSourceLabel": "CongressFlow third-party index",
-      "reportDate": "2026-03-30",
-      "previousReportDate": null,
-      "filingDate": "2026-07-21",
-      "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/fda235b3-bad7-4637-8fa1-053f354d929c/",
-      "security": {
-        "ticker": "DSNKY",
-        "name": "DSNKY",
-        "cusip": "",
-        "title": "Disclosed range"
-      },
-      "direction": "increase",
-      "sharesBefore": null,
-      "sharesAfter": null,
-      "sharesDelta": null,
-      "marketValueBefore": null,
-      "marketValueAfter": null,
-      "marketValueDelta": 8000.5,
-      "disclosedAmountRange": "$1,001 - $15,000",
-      "significanceScore": 8000.5,
-      "confidence": "medium",
-      "staleDisclosure": false,
-      "narrative": "Alan Armstrong 通过 US Congress PTR 增持 DSNKY / DSNKY。交易日 2026-03-30。"
-    },
-    {
-      "id": "congress-2026-07-21-2026-03-30-alan-armstrong-CMSQY-Buy",
-      "market": "us",
-      "investorId": "us_congress",
-      "investorName": "Alan Armstrong",
-      "vehicleName": "US Congress PTR",
-      "sourceTier": "L1",
-      "disclosureType": "STOCK Act PTR",
-      "sourceLabel": "Senate eFD PTR",
-      "indexSourceLabel": "CongressFlow third-party index",
-      "reportDate": "2026-03-30",
-      "previousReportDate": null,
-      "filingDate": "2026-07-21",
-      "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/fda235b3-bad7-4637-8fa1-053f354d929c/",
-      "security": {
-        "ticker": "CMSQY",
-        "name": "CMSQY",
-        "cusip": "",
-        "title": "Disclosed range"
-      },
-      "direction": "increase",
-      "sharesBefore": null,
-      "sharesAfter": null,
-      "sharesDelta": null,
-      "marketValueBefore": null,
-      "marketValueAfter": null,
-      "marketValueDelta": 8000.5,
-      "disclosedAmountRange": "$1,001 - $15,000",
-      "significanceScore": 8000.5,
-      "confidence": "medium",
-      "staleDisclosure": false,
-      "narrative": "Alan Armstrong 通过 US Congress PTR 增持 CMSQY / CMSQY。交易日 2026-03-30。"
+      "narrative": "Alan Armstrong 通过 US Congress PTR 增持 DKILY / DKILY。交易日 2026-03-30。"
     },
     {
       "id": "congress-2026-07-21-2026-03-30-alan-armstrong-DLAKY-Buy",
@@ -7973,6 +7676,39 @@
       "narrative": "Alan Armstrong 通过 US Congress PTR 增持 DLAKY / DLAKY。交易日 2026-03-30。"
     },
     {
+      "id": "congress-2026-07-21-2026-03-30-alan-armstrong-DNZOY-Buy",
+      "market": "us",
+      "investorId": "us_congress",
+      "investorName": "Alan Armstrong",
+      "vehicleName": "US Congress PTR",
+      "sourceTier": "L1",
+      "disclosureType": "STOCK Act PTR",
+      "sourceLabel": "Senate eFD PTR",
+      "indexSourceLabel": "CongressFlow third-party index",
+      "reportDate": "2026-03-30",
+      "previousReportDate": null,
+      "filingDate": "2026-07-21",
+      "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/fda235b3-bad7-4637-8fa1-053f354d929c/",
+      "security": {
+        "ticker": "DNZOY",
+        "name": "DNZOY",
+        "cusip": "",
+        "title": "Disclosed range"
+      },
+      "direction": "increase",
+      "sharesBefore": null,
+      "sharesAfter": null,
+      "sharesDelta": null,
+      "marketValueBefore": null,
+      "marketValueAfter": null,
+      "marketValueDelta": 8000.5,
+      "disclosedAmountRange": "$1,001 - $15,000",
+      "significanceScore": 8000.5,
+      "confidence": "medium",
+      "staleDisclosure": false,
+      "narrative": "Alan Armstrong 通过 US Congress PTR 增持 DNZOY / DNZOY。交易日 2026-03-30。"
+    },
+    {
       "id": "congress-2026-07-21-2026-03-30-alan-armstrong-DFKCY-Buy",
       "market": "us",
       "investorId": "us_congress",
@@ -8006,6 +7742,237 @@
       "narrative": "Alan Armstrong 通过 US Congress PTR 增持 DFKCY / DFKCY。交易日 2026-03-30。"
     },
     {
+      "id": "congress-2026-07-21-2026-03-30-alan-armstrong-DWAHY-Buy",
+      "market": "us",
+      "investorId": "us_congress",
+      "investorName": "Alan Armstrong",
+      "vehicleName": "US Congress PTR",
+      "sourceTier": "L1",
+      "disclosureType": "STOCK Act PTR",
+      "sourceLabel": "Senate eFD PTR",
+      "indexSourceLabel": "CongressFlow third-party index",
+      "reportDate": "2026-03-30",
+      "previousReportDate": null,
+      "filingDate": "2026-07-21",
+      "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/fda235b3-bad7-4637-8fa1-053f354d929c/",
+      "security": {
+        "ticker": "DWAHY",
+        "name": "DWAHY",
+        "cusip": "",
+        "title": "Disclosed range"
+      },
+      "direction": "increase",
+      "sharesBefore": null,
+      "sharesAfter": null,
+      "sharesDelta": null,
+      "marketValueBefore": null,
+      "marketValueAfter": null,
+      "marketValueDelta": 8000.5,
+      "disclosedAmountRange": "$1,001 - $15,000",
+      "significanceScore": 8000.5,
+      "confidence": "medium",
+      "staleDisclosure": false,
+      "narrative": "Alan Armstrong 通过 US Congress PTR 增持 DWAHY / DWAHY。交易日 2026-03-30。"
+    },
+    {
+      "id": "congress-2026-07-21-2026-03-30-alan-armstrong-DHLGY-Buy",
+      "market": "us",
+      "investorId": "us_congress",
+      "investorName": "Alan Armstrong",
+      "vehicleName": "US Congress PTR",
+      "sourceTier": "L1",
+      "disclosureType": "STOCK Act PTR",
+      "sourceLabel": "Senate eFD PTR",
+      "indexSourceLabel": "CongressFlow third-party index",
+      "reportDate": "2026-03-30",
+      "previousReportDate": null,
+      "filingDate": "2026-07-21",
+      "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/fda235b3-bad7-4637-8fa1-053f354d929c/",
+      "security": {
+        "ticker": "DHLGY",
+        "name": "DHLGY",
+        "cusip": "",
+        "title": "Disclosed range"
+      },
+      "direction": "increase",
+      "sharesBefore": null,
+      "sharesAfter": null,
+      "sharesDelta": null,
+      "marketValueBefore": null,
+      "marketValueAfter": null,
+      "marketValueDelta": 8000.5,
+      "disclosedAmountRange": "$1,001 - $15,000",
+      "significanceScore": 8000.5,
+      "confidence": "medium",
+      "staleDisclosure": false,
+      "narrative": "Alan Armstrong 通过 US Congress PTR 增持 DHLGY / DHLGY。交易日 2026-03-30。"
+    },
+    {
+      "id": "congress-2026-07-21-2026-03-30-alan-armstrong-DASTY-Buy",
+      "market": "us",
+      "investorId": "us_congress",
+      "investorName": "Alan Armstrong",
+      "vehicleName": "US Congress PTR",
+      "sourceTier": "L1",
+      "disclosureType": "STOCK Act PTR",
+      "sourceLabel": "Senate eFD PTR",
+      "indexSourceLabel": "CongressFlow third-party index",
+      "reportDate": "2026-03-30",
+      "previousReportDate": null,
+      "filingDate": "2026-07-21",
+      "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/fda235b3-bad7-4637-8fa1-053f354d929c/",
+      "security": {
+        "ticker": "DASTY",
+        "name": "DASTY",
+        "cusip": "",
+        "title": "Disclosed range"
+      },
+      "direction": "increase",
+      "sharesBefore": null,
+      "sharesAfter": null,
+      "sharesDelta": null,
+      "marketValueBefore": null,
+      "marketValueAfter": null,
+      "marketValueDelta": 8000.5,
+      "disclosedAmountRange": "$1,001 - $15,000",
+      "significanceScore": 8000.5,
+      "confidence": "medium",
+      "staleDisclosure": false,
+      "narrative": "Alan Armstrong 通过 US Congress PTR 增持 DASTY / DASTY。交易日 2026-03-30。"
+    },
+    {
+      "id": "congress-2026-07-21-2026-03-30-alan-armstrong-DSNKY-Buy",
+      "market": "us",
+      "investorId": "us_congress",
+      "investorName": "Alan Armstrong",
+      "vehicleName": "US Congress PTR",
+      "sourceTier": "L1",
+      "disclosureType": "STOCK Act PTR",
+      "sourceLabel": "Senate eFD PTR",
+      "indexSourceLabel": "CongressFlow third-party index",
+      "reportDate": "2026-03-30",
+      "previousReportDate": null,
+      "filingDate": "2026-07-21",
+      "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/fda235b3-bad7-4637-8fa1-053f354d929c/",
+      "security": {
+        "ticker": "DSNKY",
+        "name": "DSNKY",
+        "cusip": "",
+        "title": "Disclosed range"
+      },
+      "direction": "increase",
+      "sharesBefore": null,
+      "sharesAfter": null,
+      "sharesDelta": null,
+      "marketValueBefore": null,
+      "marketValueAfter": null,
+      "marketValueDelta": 8000.5,
+      "disclosedAmountRange": "$1,001 - $15,000",
+      "significanceScore": 8000.5,
+      "confidence": "medium",
+      "staleDisclosure": false,
+      "narrative": "Alan Armstrong 通过 US Congress PTR 增持 DSNKY / DSNKY。交易日 2026-03-30。"
+    },
+    {
+      "id": "congress-2026-07-21-2026-03-30-alan-armstrong-RDSMY-Buy",
+      "market": "us",
+      "investorId": "us_congress",
+      "investorName": "Alan Armstrong",
+      "vehicleName": "US Congress PTR",
+      "sourceTier": "L1",
+      "disclosureType": "STOCK Act PTR",
+      "sourceLabel": "Senate eFD PTR",
+      "indexSourceLabel": "CongressFlow third-party index",
+      "reportDate": "2026-03-30",
+      "previousReportDate": null,
+      "filingDate": "2026-07-21",
+      "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/fda235b3-bad7-4637-8fa1-053f354d929c/",
+      "security": {
+        "ticker": "RDSMY",
+        "name": "RDSMY",
+        "cusip": "",
+        "title": "Disclosed range"
+      },
+      "direction": "increase",
+      "sharesBefore": null,
+      "sharesAfter": null,
+      "sharesDelta": null,
+      "marketValueBefore": null,
+      "marketValueAfter": null,
+      "marketValueDelta": 8000.5,
+      "disclosedAmountRange": "$1,001 - $15,000",
+      "significanceScore": 8000.5,
+      "confidence": "medium",
+      "staleDisclosure": false,
+      "narrative": "Alan Armstrong 通过 US Congress PTR 增持 RDSMY / RDSMY。交易日 2026-03-30。"
+    },
+    {
+      "id": "congress-2026-07-21-2026-03-30-alan-armstrong-CMSQY-Buy",
+      "market": "us",
+      "investorId": "us_congress",
+      "investorName": "Alan Armstrong",
+      "vehicleName": "US Congress PTR",
+      "sourceTier": "L1",
+      "disclosureType": "STOCK Act PTR",
+      "sourceLabel": "Senate eFD PTR",
+      "indexSourceLabel": "CongressFlow third-party index",
+      "reportDate": "2026-03-30",
+      "previousReportDate": null,
+      "filingDate": "2026-07-21",
+      "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/fda235b3-bad7-4637-8fa1-053f354d929c/",
+      "security": {
+        "ticker": "CMSQY",
+        "name": "CMSQY",
+        "cusip": "",
+        "title": "Disclosed range"
+      },
+      "direction": "increase",
+      "sharesBefore": null,
+      "sharesAfter": null,
+      "sharesDelta": null,
+      "marketValueBefore": null,
+      "marketValueAfter": null,
+      "marketValueDelta": 8000.5,
+      "disclosedAmountRange": "$1,001 - $15,000",
+      "significanceScore": 8000.5,
+      "confidence": "medium",
+      "staleDisclosure": false,
+      "narrative": "Alan Armstrong 通过 US Congress PTR 增持 CMSQY / CMSQY。交易日 2026-03-30。"
+    },
+    {
+      "id": "congress-2026-07-21-2026-03-30-alan-armstrong-DRPRY-Buy",
+      "market": "us",
+      "investorId": "us_congress",
+      "investorName": "Alan Armstrong",
+      "vehicleName": "US Congress PTR",
+      "sourceTier": "L1",
+      "disclosureType": "STOCK Act PTR",
+      "sourceLabel": "Senate eFD PTR",
+      "indexSourceLabel": "CongressFlow third-party index",
+      "reportDate": "2026-03-30",
+      "previousReportDate": null,
+      "filingDate": "2026-07-21",
+      "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/fda235b3-bad7-4637-8fa1-053f354d929c/",
+      "security": {
+        "ticker": "DRPRY",
+        "name": "DRPRY",
+        "cusip": "",
+        "title": "Disclosed range"
+      },
+      "direction": "increase",
+      "sharesBefore": null,
+      "sharesAfter": null,
+      "sharesDelta": null,
+      "marketValueBefore": null,
+      "marketValueAfter": null,
+      "marketValueDelta": 8000.5,
+      "disclosedAmountRange": "$1,001 - $15,000",
+      "significanceScore": 8000.5,
+      "confidence": "medium",
+      "staleDisclosure": false,
+      "narrative": "Alan Armstrong 通过 US Congress PTR 增持 DRPRY / DRPRY。交易日 2026-03-30。"
+    },
+    {
       "id": "congress-2026-07-21-2026-03-30-alan-armstrong-DANOY-Buy",
       "market": "us",
       "investorId": "us_congress",
@@ -8037,6 +8004,72 @@
       "confidence": "medium",
       "staleDisclosure": false,
       "narrative": "Alan Armstrong 通过 US Congress PTR 增持 DANOY / DANOY。交易日 2026-03-30。"
+    },
+    {
+      "id": "congress-2026-07-21-2026-03-30-alan-armstrong-DEO-Buy",
+      "market": "us",
+      "investorId": "us_congress",
+      "investorName": "Alan Armstrong",
+      "vehicleName": "US Congress PTR",
+      "sourceTier": "L1",
+      "disclosureType": "STOCK Act PTR",
+      "sourceLabel": "Senate eFD PTR",
+      "indexSourceLabel": "CongressFlow third-party index",
+      "reportDate": "2026-03-30",
+      "previousReportDate": null,
+      "filingDate": "2026-07-21",
+      "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/fda235b3-bad7-4637-8fa1-053f354d929c/",
+      "security": {
+        "ticker": "DEO",
+        "name": "DEO",
+        "cusip": "",
+        "title": "Disclosed range"
+      },
+      "direction": "increase",
+      "sharesBefore": null,
+      "sharesAfter": null,
+      "sharesDelta": null,
+      "marketValueBefore": null,
+      "marketValueAfter": null,
+      "marketValueDelta": 8000.5,
+      "disclosedAmountRange": "$1,001 - $15,000",
+      "significanceScore": 8000.5,
+      "confidence": "medium",
+      "staleDisclosure": false,
+      "narrative": "Alan Armstrong 通过 US Congress PTR 增持 DEO / DEO。交易日 2026-03-30。"
+    },
+    {
+      "id": "congress-2026-07-21-2026-03-27-alan-armstrong-POOL-Buy",
+      "market": "us",
+      "investorId": "us_congress",
+      "investorName": "Alan Armstrong",
+      "vehicleName": "US Congress PTR",
+      "sourceTier": "L1",
+      "disclosureType": "STOCK Act PTR",
+      "sourceLabel": "Senate eFD PTR",
+      "indexSourceLabel": "CongressFlow third-party index",
+      "reportDate": "2026-03-27",
+      "previousReportDate": null,
+      "filingDate": "2026-07-21",
+      "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/fda235b3-bad7-4637-8fa1-053f354d929c/",
+      "security": {
+        "ticker": "POOL",
+        "name": "POOL",
+        "cusip": "",
+        "title": "Disclosed range"
+      },
+      "direction": "increase",
+      "sharesBefore": null,
+      "sharesAfter": null,
+      "sharesDelta": null,
+      "marketValueBefore": null,
+      "marketValueAfter": null,
+      "marketValueDelta": 8000.5,
+      "disclosedAmountRange": "$1,001 - $15,000",
+      "significanceScore": 8000.5,
+      "confidence": "medium",
+      "staleDisclosure": false,
+      "narrative": "Alan Armstrong 通过 US Congress PTR 增持 POOL / POOL。交易日 2026-03-27。"
     },
     {
       "id": "congress-2026-07-21-2026-03-27-alan-armstrong-SJM-Buy",
@@ -8204,39 +8237,6 @@
       "narrative": "Alan Armstrong 通过 US Congress PTR 增持 PSA / PSA。交易日 2026-03-27。"
     },
     {
-      "id": "congress-2026-07-21-2026-03-27-alan-armstrong-TTWO-Buy",
-      "market": "us",
-      "investorId": "us_congress",
-      "investorName": "Alan Armstrong",
-      "vehicleName": "US Congress PTR",
-      "sourceTier": "L1",
-      "disclosureType": "STOCK Act PTR",
-      "sourceLabel": "Senate eFD PTR",
-      "indexSourceLabel": "CongressFlow third-party index",
-      "reportDate": "2026-03-27",
-      "previousReportDate": null,
-      "filingDate": "2026-07-21",
-      "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/fda235b3-bad7-4637-8fa1-053f354d929c/",
-      "security": {
-        "ticker": "TTWO",
-        "name": "TTWO",
-        "cusip": "",
-        "title": "Disclosed range"
-      },
-      "direction": "increase",
-      "sharesBefore": null,
-      "sharesAfter": null,
-      "sharesDelta": null,
-      "marketValueBefore": null,
-      "marketValueAfter": null,
-      "marketValueDelta": 8000.5,
-      "disclosedAmountRange": "$1,001 - $15,000",
-      "significanceScore": 8000.5,
-      "confidence": "medium",
-      "staleDisclosure": false,
-      "narrative": "Alan Armstrong 通过 US Congress PTR 增持 TTWO / TTWO。交易日 2026-03-27。"
-    },
-    {
       "id": "congress-2026-07-21-2026-03-27-alan-armstrong-TER-Buy",
       "market": "us",
       "investorId": "us_congress",
@@ -8303,6 +8303,39 @@
       "narrative": "Alan Armstrong 通过 US Congress PTR 增持 TPR / TPR。交易日 2026-03-27。"
     },
     {
+      "id": "congress-2026-07-21-2026-03-27-alan-armstrong-TTWO-Buy",
+      "market": "us",
+      "investorId": "us_congress",
+      "investorName": "Alan Armstrong",
+      "vehicleName": "US Congress PTR",
+      "sourceTier": "L1",
+      "disclosureType": "STOCK Act PTR",
+      "sourceLabel": "Senate eFD PTR",
+      "indexSourceLabel": "CongressFlow third-party index",
+      "reportDate": "2026-03-27",
+      "previousReportDate": null,
+      "filingDate": "2026-07-21",
+      "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/fda235b3-bad7-4637-8fa1-053f354d929c/",
+      "security": {
+        "ticker": "TTWO",
+        "name": "TTWO",
+        "cusip": "",
+        "title": "Disclosed range"
+      },
+      "direction": "increase",
+      "sharesBefore": null,
+      "sharesAfter": null,
+      "sharesDelta": null,
+      "marketValueBefore": null,
+      "marketValueAfter": null,
+      "marketValueDelta": 8000.5,
+      "disclosedAmountRange": "$1,001 - $15,000",
+      "significanceScore": 8000.5,
+      "confidence": "medium",
+      "staleDisclosure": false,
+      "narrative": "Alan Armstrong 通过 US Congress PTR 增持 TTWO / TTWO。交易日 2026-03-27。"
+    },
+    {
       "id": "congress-2026-07-21-2026-03-27-alan-armstrong-CPB-Buy",
       "market": "us",
       "investorId": "us_congress",
@@ -8334,39 +8367,6 @@
       "confidence": "medium",
       "staleDisclosure": false,
       "narrative": "Alan Armstrong 通过 US Congress PTR 增持 CPB / CPB。交易日 2026-03-27。"
-    },
-    {
-      "id": "congress-2026-07-21-2026-03-27-alan-armstrong-PTC-Buy",
-      "market": "us",
-      "investorId": "us_congress",
-      "investorName": "Alan Armstrong",
-      "vehicleName": "US Congress PTR",
-      "sourceTier": "L1",
-      "disclosureType": "STOCK Act PTR",
-      "sourceLabel": "Senate eFD PTR",
-      "indexSourceLabel": "CongressFlow third-party index",
-      "reportDate": "2026-03-27",
-      "previousReportDate": null,
-      "filingDate": "2026-07-21",
-      "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/fda235b3-bad7-4637-8fa1-053f354d929c/",
-      "security": {
-        "ticker": "PTC",
-        "name": "PTC",
-        "cusip": "",
-        "title": "Disclosed range"
-      },
-      "direction": "increase",
-      "sharesBefore": null,
-      "sharesAfter": null,
-      "sharesDelta": null,
-      "marketValueBefore": null,
-      "marketValueAfter": null,
-      "marketValueDelta": 8000.5,
-      "disclosedAmountRange": "$1,001 - $15,000",
-      "significanceScore": 8000.5,
-      "confidence": "medium",
-      "staleDisclosure": false,
-      "narrative": "Alan Armstrong 通过 US Congress PTR 增持 PTC / PTC。交易日 2026-03-27。"
     },
     {
       "id": "congress-2026-07-21-2026-03-27-alan-armstrong-CI-Buy",
@@ -8402,7 +8402,7 @@
       "narrative": "Alan Armstrong 通过 US Congress PTR 增持 CI / CI。交易日 2026-03-27。"
     },
     {
-      "id": "congress-2026-07-21-2026-03-27-alan-armstrong-TDG-Buy",
+      "id": "congress-2026-07-21-2026-03-27-alan-armstrong-PTC-Buy",
       "market": "us",
       "investorId": "us_congress",
       "investorName": "Alan Armstrong",
@@ -8416,8 +8416,8 @@
       "filingDate": "2026-07-21",
       "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/fda235b3-bad7-4637-8fa1-053f354d929c/",
       "security": {
-        "ticker": "TDG",
-        "name": "TDG",
+        "ticker": "PTC",
+        "name": "PTC",
         "cusip": "",
         "title": "Disclosed range"
       },
@@ -8432,7 +8432,7 @@
       "significanceScore": 8000.5,
       "confidence": "medium",
       "staleDisclosure": false,
-      "narrative": "Alan Armstrong 通过 US Congress PTR 增持 TDG / TDG。交易日 2026-03-27。"
+      "narrative": "Alan Armstrong 通过 US Congress PTR 增持 PTC / PTC。交易日 2026-03-27。"
     },
     {
       "id": "congress-2026-07-21-2026-03-27-alan-armstrong-PWR-Buy",
@@ -8468,7 +8468,7 @@
       "narrative": "Alan Armstrong 通过 US Congress PTR 增持 PWR / PWR。交易日 2026-03-27。"
     },
     {
-      "id": "congress-2026-07-21-2026-03-27-alan-armstrong-TRV-Buy",
+      "id": "congress-2026-07-21-2026-03-27-alan-armstrong-TDG-Buy",
       "market": "us",
       "investorId": "us_congress",
       "investorName": "Alan Armstrong",
@@ -8482,8 +8482,8 @@
       "filingDate": "2026-07-21",
       "evidenceUrl": "https://efdsearch.senate.gov/search/view/ptr/fda235b3-bad7-4637-8fa1-053f354d929c/",
       "security": {
-        "ticker": "TRV",
-        "name": "TRV",
+        "ticker": "TDG",
+        "name": "TDG",
         "cusip": "",
         "title": "Disclosed range"
       },
@@ -8498,7 +8498,7 @@
       "significanceScore": 8000.5,
       "confidence": "medium",
       "staleDisclosure": false,
-      "narrative": "Alan Armstrong 通过 US Congress PTR 增持 TRV / TRV。交易日 2026-03-27。"
+      "narrative": "Alan Armstrong 通过 US Congress PTR 增持 TDG / TDG。交易日 2026-03-27。"
     },
     {
       "id": "cathiesark-2026-07-21T00:00:00.000Z-ARKW-SLMT-Sell-1108",
@@ -12770,241 +12770,241 @@
       "ticker": "601899",
       "name": "紫金矿业",
       "periodLabel": "近10日",
-      "latestPrice": 33.06,
-      "pctChange": 19.7,
-      "mainNetInflow": 5104846160,
-      "mainNetInflowPct": 5.25,
+      "latestPrice": null,
+      "pctChange": 19.26,
+      "mainNetInflow": 4802935312,
+      "mainNetInflowPct": 5.35,
       "sourceLabel": "东方财富资金流向",
       "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-07-23"
-    },
-    {
-      "ticker": "603993",
-      "name": "洛阳钼业",
-      "periodLabel": "近10日",
-      "latestPrice": 20.03,
-      "pctChange": 16.52,
-      "mainNetInflow": 3228878240,
-      "mainNetInflowPct": 6.05,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-07-23"
-    },
-    {
-      "ticker": "603259",
-      "name": "药明康德",
-      "periodLabel": "近10日",
-      "latestPrice": 127.45,
-      "pctChange": 5.27,
-      "mainNetInflow": 1821502464,
-      "mainNetInflowPct": 2,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-07-23"
-    },
-    {
-      "ticker": "002594",
-      "name": "比亚迪",
-      "periodLabel": "近10日",
-      "latestPrice": 92.65,
-      "pctChange": 6.65,
-      "mainNetInflow": 1787232800,
-      "mainNetInflowPct": 3.51,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-07-23"
-    },
-    {
-      "ticker": "301583",
-      "name": "托伦斯",
-      "periodLabel": "近10日",
-      "latestPrice": 145,
-      "pctChange": 541.59,
-      "mainNetInflow": 1738867364,
-      "mainNetInflowPct": 6.24,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-07-23"
+      "asOf": "2026-07-24"
     },
     {
       "ticker": "300750",
       "name": "宁德时代",
       "periodLabel": "近10日",
-      "latestPrice": 385.99,
-      "pctChange": 2.79,
-      "mainNetInflow": 1592417072,
-      "mainNetInflowPct": 1.04,
+      "latestPrice": null,
+      "pctChange": 10.67,
+      "mainNetInflow": 3877582128,
+      "mainNetInflowPct": 2.92,
       "sourceLabel": "东方财富资金流向",
       "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-07-23"
+      "asOf": "2026-07-24"
     },
     {
-      "ticker": "000807",
-      "name": "云铝股份",
+      "ticker": "603993",
+      "name": "洛阳钼业",
       "periodLabel": "近10日",
-      "latestPrice": 26.87,
-      "pctChange": 22.75,
-      "mainNetInflow": 1382420517,
-      "mainNetInflowPct": 4.51,
+      "latestPrice": null,
+      "pctChange": 14.46,
+      "mainNetInflow": 2932802176,
+      "mainNetInflowPct": 6.01,
       "sourceLabel": "东方财富资金流向",
       "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-07-23"
-    },
-    {
-      "ticker": "603228",
-      "name": "景旺电子",
-      "periodLabel": "近10日",
-      "latestPrice": 73.79,
-      "pctChange": 8.12,
-      "mainNetInflow": 1275989049,
-      "mainNetInflowPct": 3.44,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-07-23"
-    },
-    {
-      "ticker": "603893",
-      "name": "瑞芯微",
-      "periodLabel": "近10日",
-      "latestPrice": 214,
-      "pctChange": 3.2,
-      "mainNetInflow": 1257961952,
-      "mainNetInflowPct": 1.91,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-07-23"
-    },
-    {
-      "ticker": "600309",
-      "name": "万华化学",
-      "periodLabel": "近10日",
-      "latestPrice": 75.49,
-      "pctChange": 9.6,
-      "mainNetInflow": 1249647003,
-      "mainNetInflowPct": 3.9,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-07-23"
-    },
-    {
-      "ticker": "002532",
-      "name": "天山铝业",
-      "periodLabel": "近10日",
-      "latestPrice": 13.22,
-      "pctChange": 23.9,
-      "mainNetInflow": 1140413924,
-      "mainNetInflowPct": 5.92,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-07-23"
-    },
-    {
-      "ticker": "600396",
-      "name": "华电辽能",
-      "periodLabel": "近10日",
-      "latestPrice": 16.41,
-      "pctChange": 34.29,
-      "mainNetInflow": 1139932855,
-      "mainNetInflowPct": 3.83,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-07-23"
-    },
-    {
-      "ticker": "688256",
-      "name": "寒武纪",
-      "periodLabel": "近10日",
-      "latestPrice": 1249,
-      "pctChange": -18.63,
-      "mainNetInflow": 1113928848,
-      "mainNetInflowPct": 0.6,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-07-23"
-    },
-    {
-      "ticker": "002938",
-      "name": "鹏鼎控股",
-      "periodLabel": "近10日",
-      "latestPrice": 87.61,
-      "pctChange": -8.15,
-      "mainNetInflow": 1111518405,
-      "mainNetInflowPct": 2.71,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-07-23"
-    },
-    {
-      "ticker": "000776",
-      "name": "广发证券",
-      "periodLabel": "近10日",
-      "latestPrice": 22.82,
-      "pctChange": 1.33,
-      "mainNetInflow": 1096009687,
-      "mainNetInflowPct": 5.29,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-07-23"
-    },
-    {
-      "ticker": "601857",
-      "name": "中国石油",
-      "periodLabel": "近10日",
-      "latestPrice": 10.88,
-      "pctChange": 15.74,
-      "mainNetInflow": 1046504855,
-      "mainNetInflowPct": 4.31,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-07-23"
-    },
-    {
-      "ticker": "000779",
-      "name": "甘咨询",
-      "periodLabel": "近10日",
-      "latestPrice": 9.4,
-      "pctChange": -4.18,
-      "mainNetInflow": 1041152984,
-      "mainNetInflowPct": 15.82,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-07-23"
-    },
-    {
-      "ticker": "601600",
-      "name": "中国铝业",
-      "periodLabel": "近10日",
-      "latestPrice": 9.78,
-      "pctChange": 20.74,
-      "mainNetInflow": 983118682,
-      "mainNetInflowPct": 2.93,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-07-23"
-    },
-    {
-      "ticker": "688072",
-      "name": "拓荆科技",
-      "periodLabel": "近10日",
-      "latestPrice": 743,
-      "pctChange": -10.7,
-      "mainNetInflow": 977047056,
-      "mainNetInflowPct": 1.1,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-07-23"
+      "asOf": "2026-07-24"
     },
     {
       "ticker": "002156",
       "name": "通富微电",
       "periodLabel": "近10日",
-      "latestPrice": 69.82,
-      "pctChange": -3.26,
-      "mainNetInflow": 930606432,
-      "mainNetInflowPct": 0.56,
+      "latestPrice": null,
+      "pctChange": -1.59,
+      "mainNetInflow": 1366128688,
+      "mainNetInflowPct": 0.91,
       "sourceLabel": "东方财富资金流向",
       "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-07-23"
+      "asOf": "2026-07-24"
+    },
+    {
+      "ticker": "603893",
+      "name": "瑞芯微",
+      "periodLabel": "近10日",
+      "latestPrice": null,
+      "pctChange": 2.49,
+      "mainNetInflow": 1360504496,
+      "mainNetInflowPct": 2.29,
+      "sourceLabel": "东方财富资金流向",
+      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
+      "asOf": "2026-07-24"
+    },
+    {
+      "ticker": "600309",
+      "name": "万华化学",
+      "periodLabel": "近10日",
+      "latestPrice": null,
+      "pctChange": 9.87,
+      "mainNetInflow": 1243695531,
+      "mainNetInflowPct": 4.26,
+      "sourceLabel": "东方财富资金流向",
+      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
+      "asOf": "2026-07-24"
+    },
+    {
+      "ticker": "002396",
+      "name": "星网锐捷",
+      "periodLabel": "近10日",
+      "latestPrice": null,
+      "pctChange": 23.52,
+      "mainNetInflow": 1178861552,
+      "mainNetInflowPct": 2.33,
+      "sourceLabel": "东方财富资金流向",
+      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
+      "asOf": "2026-07-24"
+    },
+    {
+      "ticker": "000807",
+      "name": "云铝股份",
+      "periodLabel": "近10日",
+      "latestPrice": null,
+      "pctChange": 16.07,
+      "mainNetInflow": 1151495781,
+      "mainNetInflowPct": 4.12,
+      "sourceLabel": "东方财富资金流向",
+      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
+      "asOf": "2026-07-24"
+    },
+    {
+      "ticker": "000776",
+      "name": "广发证券",
+      "periodLabel": "近10日",
+      "latestPrice": null,
+      "pctChange": 4.92,
+      "mainNetInflow": 1112119911,
+      "mainNetInflowPct": 5.88,
+      "sourceLabel": "东方财富资金流向",
+      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
+      "asOf": "2026-07-24"
+    },
+    {
+      "ticker": "601857",
+      "name": "中国石油",
+      "periodLabel": "近10日",
+      "latestPrice": null,
+      "pctChange": 17.37,
+      "mainNetInflow": 1080587028,
+      "mainNetInflowPct": 4.75,
+      "sourceLabel": "东方财富资金流向",
+      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
+      "asOf": "2026-07-24"
+    },
+    {
+      "ticker": "002532",
+      "name": "天山铝业",
+      "periodLabel": "近10日",
+      "latestPrice": null,
+      "pctChange": 18.35,
+      "mainNetInflow": 1076702398,
+      "mainNetInflowPct": 6.08,
+      "sourceLabel": "东方财富资金流向",
+      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
+      "asOf": "2026-07-24"
+    },
+    {
+      "ticker": "603259",
+      "name": "药明康德",
+      "periodLabel": "近10日",
+      "latestPrice": null,
+      "pctChange": 3.37,
+      "mainNetInflow": 1049466112,
+      "mainNetInflowPct": 1.27,
+      "sourceLabel": "东方财富资金流向",
+      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
+      "asOf": "2026-07-24"
+    },
+    {
+      "ticker": "603228",
+      "name": "景旺电子",
+      "periodLabel": "近10日",
+      "latestPrice": null,
+      "pctChange": 5.34,
+      "mainNetInflow": 1044772969,
+      "mainNetInflowPct": 3.08,
+      "sourceLabel": "东方财富资金流向",
+      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
+      "asOf": "2026-07-24"
+    },
+    {
+      "ticker": "688256",
+      "name": "寒武纪",
+      "periodLabel": "近10日",
+      "latestPrice": null,
+      "pctChange": -10.79,
+      "mainNetInflow": 1011858832,
+      "mainNetInflowPct": 0.61,
+      "sourceLabel": "东方财富资金流向",
+      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
+      "asOf": "2026-07-24"
+    },
+    {
+      "ticker": "002028",
+      "name": "思源电气",
+      "periodLabel": "近10日",
+      "latestPrice": null,
+      "pctChange": 8.48,
+      "mainNetInflow": 995031168,
+      "mainNetInflowPct": 4.88,
+      "sourceLabel": "东方财富资金流向",
+      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
+      "asOf": "2026-07-24"
+    },
+    {
+      "ticker": "688072",
+      "name": "拓荆科技",
+      "periodLabel": "近10日",
+      "latestPrice": null,
+      "pctChange": -10.7,
+      "mainNetInflow": 977047056,
+      "mainNetInflowPct": 1.1,
+      "sourceLabel": "东方财富资金流向",
+      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
+      "asOf": "2026-07-24"
+    },
+    {
+      "ticker": "000779",
+      "name": "甘咨询",
+      "periodLabel": "近10日",
+      "latestPrice": null,
+      "pctChange": -11.32,
+      "mainNetInflow": 926330789,
+      "mainNetInflowPct": 16.25,
+      "sourceLabel": "东方财富资金流向",
+      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
+      "asOf": "2026-07-24"
+    },
+    {
+      "ticker": "600989",
+      "name": "宝丰能源",
+      "periodLabel": "近10日",
+      "latestPrice": null,
+      "pctChange": 19.54,
+      "mainNetInflow": 811594102,
+      "mainNetInflowPct": 3.1,
+      "sourceLabel": "东方财富资金流向",
+      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
+      "asOf": "2026-07-24"
+    },
+    {
+      "ticker": "601600",
+      "name": "中国铝业",
+      "periodLabel": "近10日",
+      "latestPrice": null,
+      "pctChange": 17.13,
+      "mainNetInflow": 775586618,
+      "mainNetInflowPct": 2.49,
+      "sourceLabel": "东方财富资金流向",
+      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
+      "asOf": "2026-07-24"
+    },
+    {
+      "ticker": "301165",
+      "name": "锐捷网络",
+      "periodLabel": "近10日",
+      "latestPrice": null,
+      "pctChange": 22.38,
+      "mainNetInflow": 759392739,
+      "mainNetInflowPct": 2.12,
+      "sourceLabel": "东方财富资金流向",
+      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
+      "asOf": "2026-07-24"
     }
   ],
   "arkHoldings": [
