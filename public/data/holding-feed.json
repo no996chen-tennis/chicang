@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-05T13:03:16.478Z",
+  "generatedAt": "2026-08-06T00:50:18.428Z",
   "site": {
     "name": "chicang",
     "tagline": "重要资金公开披露雷达",
@@ -26,8 +26,8 @@
     "form4TradeCount": 0,
     "regionalWatchlistCount": 8,
     "regionalTradeCount": 56,
-    "sourceErrorCount": 14,
-    "cnMainFundInflowCount": 20,
+    "sourceErrorCount": 15,
+    "cnMainFundInflowCount": 0,
     "latestEventDate": "2026-08-06"
   },
   "profiles": [
@@ -828,8 +828,8 @@
         }
       ],
       "returns": {
-        "oneYearPct": 5.686355500481908,
-        "threeYearPct": 69.14940502423975,
+        "oneYearPct": 3.505933117583614,
+        "threeYearPct": 70.01107419712072,
         "asOf": "2026-08-04",
         "sourceLabel": "ARKK ETF 市价代理，非 Cathie Wood 全部管理资产真实净值",
         "sourceUrl": "https://www.nasdaq.com/market-activity/etf/arkk/historical",
@@ -1784,8 +1784,8 @@
       "topIncreases": [],
       "topDecreases": [],
       "returns": {
-        "oneYearPct": 12.928145732830345,
-        "threeYearPct": 118.60437598746788,
+        "oneYearPct": 10.059549371158544,
+        "threeYearPct": 116.6508130311053,
         "sourceLabel": "13F Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://www.sec.gov/edgar/search/",
         "asOf": "2026-08-04",
@@ -1878,7 +1878,7 @@
         }
       ],
       "returns": {
-        "oneYearPct": 31.060343425503206,
+        "oneYearPct": 31.284145236517414,
         "threeYearPct": 5.084736748359722,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SZ002415",
@@ -2269,7 +2269,7 @@
         }
       ],
       "returns": {
-        "oneYearPct": 21.537019442796236,
+        "oneYearPct": 21.186680393439445,
         "threeYearPct": 86.83911865723896,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SH688018",
@@ -2396,7 +2396,7 @@
       "topIncreases": [],
       "topDecreases": [],
       "returns": {
-        "oneYearPct": 0.40772194185886823,
+        "oneYearPct": 0.29791061150462217,
         "threeYearPct": 62.63591999986845,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SH601939",
@@ -2906,7 +2906,7 @@
         }
       ],
       "returns": {
-        "oneYearPct": 3.6778389069219832,
+        "oneYearPct": 3.561991157503704,
         "threeYearPct": 45.56924720928305,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SH601988",
@@ -3108,7 +3108,7 @@
         }
       ],
       "returns": {
-        "oneYearPct": 50.200204952811376,
+        "oneYearPct": 50.03786535150535,
         "threeYearPct": 73.43566865335215,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 99%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SH688802",
@@ -3809,7 +3809,7 @@
         }
       ],
       "returns": {
-        "oneYearPct": 66.4298716058436,
+        "oneYearPct": 66.61343864590576,
         "threeYearPct": 86.09838775363835,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SZ300750",
@@ -4562,7 +4562,7 @@
         }
       ],
       "returns": {
-        "oneYearPct": 48.52161916189917,
+        "oneYearPct": 47.73730664029503,
         "threeYearPct": 89.85456774114382,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SH601009",
@@ -4655,7 +4655,7 @@
         }
       ],
       "returns": {
-        "oneYearPct": -15.980393577657843,
+        "oneYearPct": -16.553073876976576,
         "threeYearPct": -39.34890569416454,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SZ002153",
@@ -11709,248 +11709,7 @@
       "narrative": "中国证券金融股份有限公司 通过 中国证券金融股份有限公司 减持 601899 / 紫金矿业。报告期 2026-03-31，披露日 2026-04-22。"
     }
   ],
-  "cnMainFundInflow": [
-    {
-      "ticker": "688825",
-      "name": "长鑫科技",
-      "periodLabel": "近10日",
-      "latestPrice": 54.3,
-      "pctChange": 527.02,
-      "mainNetInflow": 68579082608,
-      "mainNetInflowPct": 16.54,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-08-05"
-    },
-    {
-      "ticker": "300408",
-      "name": "三环集团",
-      "periodLabel": "近10日",
-      "latestPrice": 128.19,
-      "pctChange": 24.48,
-      "mainNetInflow": 4615020880,
-      "mainNetInflowPct": 5.12,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-08-05"
-    },
-    {
-      "ticker": "001232",
-      "name": "C嘉立创",
-      "periodLabel": "近10日",
-      "latestPrice": 199.91,
-      "pctChange": 136.69,
-      "mainNetInflow": 2930773460,
-      "mainNetInflowPct": 25.33,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-08-05"
-    },
-    {
-      "ticker": "603259",
-      "name": "药明康德",
-      "periodLabel": "近10日",
-      "latestPrice": 147.5,
-      "pctChange": 17.16,
-      "mainNetInflow": 2581072752,
-      "mainNetInflowPct": 3.2,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-08-05"
-    },
-    {
-      "ticker": "601138",
-      "name": "工业富联",
-      "periodLabel": "近10日",
-      "latestPrice": 65.92,
-      "pctChange": 9.76,
-      "mainNetInflow": 2404950496,
-      "mainNetInflowPct": 2.79,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-08-05"
-    },
-    {
-      "ticker": "300750",
-      "name": "宁德时代",
-      "periodLabel": "近10日",
-      "latestPrice": 405.2,
-      "pctChange": 8.85,
-      "mainNetInflow": 2010456416,
-      "mainNetInflowPct": 1.46,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-08-05"
-    },
-    {
-      "ticker": "000636",
-      "name": "风华高科",
-      "periodLabel": "近10日",
-      "latestPrice": 57.8,
-      "pctChange": 39.95,
-      "mainNetInflow": 1986764976,
-      "mainNetInflowPct": 2.2,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-08-05"
-    },
-    {
-      "ticker": "600036",
-      "name": "招商银行",
-      "periodLabel": "近10日",
-      "latestPrice": 38.94,
-      "pctChange": 0.59,
-      "mainNetInflow": 1768719472,
-      "mainNetInflowPct": 4.13,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-08-05"
-    },
-    {
-      "ticker": "601899",
-      "name": "紫金矿业",
-      "periodLabel": "近10日",
-      "latestPrice": 34.1,
-      "pctChange": 5.9,
-      "mainNetInflow": 1737355744,
-      "mainNetInflowPct": 1.85,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-08-05"
-    },
-    {
-      "ticker": "002131",
-      "name": "利欧股份",
-      "periodLabel": "近10日",
-      "latestPrice": 5.67,
-      "pctChange": 45.38,
-      "mainNetInflow": 1730397050,
-      "mainNetInflowPct": 4.97,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-08-05"
-    },
-    {
-      "ticker": "301526",
-      "name": "国际复材",
-      "periodLabel": "近10日",
-      "latestPrice": 34.19,
-      "pctChange": 25.28,
-      "mainNetInflow": 1722272048,
-      "mainNetInflowPct": 2.34,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-08-05"
-    },
-    {
-      "ticker": "600176",
-      "name": "中国巨石",
-      "periodLabel": "近10日",
-      "latestPrice": 39.28,
-      "pctChange": 1.5,
-      "mainNetInflow": 1691635440,
-      "mainNetInflowPct": 1.68,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-08-05"
-    },
-    {
-      "ticker": "600549",
-      "name": "厦门钨业",
-      "periodLabel": "近10日",
-      "latestPrice": 53.72,
-      "pctChange": 8.39,
-      "mainNetInflow": 1555575126,
-      "mainNetInflowPct": 5.58,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-08-05"
-    },
-    {
-      "ticker": "600667",
-      "name": "太极实业",
-      "periodLabel": "近10日",
-      "latestPrice": 18.45,
-      "pctChange": 10.55,
-      "mainNetInflow": 1459867472,
-      "mainNetInflowPct": 2.46,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-08-05"
-    },
-    {
-      "ticker": "603993",
-      "name": "洛阳钼业",
-      "periodLabel": "近10日",
-      "latestPrice": 20.47,
-      "pctChange": 4.39,
-      "mainNetInflow": 1140455520,
-      "mainNetInflowPct": 2.52,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-08-05"
-    },
-    {
-      "ticker": "002138",
-      "name": "顺络电子",
-      "periodLabel": "近10日",
-      "latestPrice": 49.6,
-      "pctChange": 13.14,
-      "mainNetInflow": 1038911624,
-      "mainNetInflowPct": 4.96,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-08-05"
-    },
-    {
-      "ticker": "688596",
-      "name": "正帆科技",
-      "periodLabel": "近10日",
-      "latestPrice": 57.42,
-      "pctChange": 21.11,
-      "mainNetInflow": 1023416319,
-      "mainNetInflowPct": 5.16,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-08-05"
-    },
-    {
-      "ticker": "605376",
-      "name": "博迁新材",
-      "periodLabel": "近10日",
-      "latestPrice": 157.65,
-      "pctChange": 8.71,
-      "mainNetInflow": 1012594945,
-      "mainNetInflowPct": 4.21,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-08-05"
-    },
-    {
-      "ticker": "688256",
-      "name": "寒武纪",
-      "periodLabel": "近10日",
-      "latestPrice": 1136.9,
-      "pctChange": -13.21,
-      "mainNetInflow": 991926000,
-      "mainNetInflowPct": 0.62,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-08-05"
-    },
-    {
-      "ticker": "000811",
-      "name": "冰轮环境",
-      "periodLabel": "近10日",
-      "latestPrice": 39.47,
-      "pctChange": -8.12,
-      "mainNetInflow": 862235564,
-      "mainNetInflowPct": 3.99,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-08-05"
-    }
-  ],
+  "cnMainFundInflow": [],
   "arkHoldings": [
     {
       "investorId": "cathie_wood",
@@ -15359,6 +15118,11 @@
     }
   ],
   "sourceErrors": [
+    {
+      "id": "cn_main_fund_flow",
+      "displayName": "A股主力资金净流入",
+      "error": "Failed to fetch https://push2.eastmoney.com/api/qt/clist/get?fid=f174&po=1&pz=50&pn=1&np=1&fltt=2&invt=2&ut=b2884a393a59ad64002292a3e90d46a5&fs=m%3A0%2Bt%3A6%2Bf%3A%212%2Cm%3A0%2Bt%3A13%2Bf%3A%212%2Cm%3A0%2Bt%3A80%2Bf%3A%212%2Cm%3A1%2Bt%3A2%2Bf%3A%212%2Cm%3A1%2Bt%3A23%2Bf%3A%212%2Cm%3A0%2Bt%3A7%2Bf%3A%212%2Cm%3A1%2Bt%3A3%2Bf%3A%212&fields=f12%2Cf14%2Cf2%2Cf160%2Cf174%2Cf175%2Cf176%2Cf177%2Cf178%2Cf179%2Cf180%2Cf181%2Cf182%2Cf183%2Cf260%2Cf261%2Cf124: 502 Bad Gateway"
+    },
     {
       "id": "berkshire_hathaway",
       "displayName": "Warren Buffett",
