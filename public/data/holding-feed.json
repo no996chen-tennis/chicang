@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T11:46:05.056Z",
+  "generatedAt": "2026-08-25T23:48:09.473Z",
   "site": {
     "name": "chicang",
     "tagline": "重要资金公开披露雷达",
@@ -26,8 +26,8 @@
     "form4TradeCount": 0,
     "regionalWatchlistCount": 8,
     "regionalTradeCount": 67,
-    "sourceErrorCount": 15,
-    "cnMainFundInflowCount": 0,
+    "sourceErrorCount": 14,
+    "cnMainFundInflowCount": 20,
     "latestEventDate": "2026-08-26"
   },
   "profiles": [
@@ -3025,8 +3025,8 @@
       ],
       "topDecreases": [],
       "returns": {
-        "oneYearPct": 138.97350994942408,
-        "threeYearPct": 329.2303499884111,
+        "oneYearPct": 138.97350993155553,
+        "threeYearPct": 329.23034993512556,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SH603986",
         "asOf": "2026-08-25",
@@ -8259,7 +8259,248 @@
       "narrative": "QFII / 外资机构 通过 UBS AG 新进 300604 / 长川科技。报告期 2026-06-30，披露日 2026-07-16。"
     }
   ],
-  "cnMainFundInflow": [],
+  "cnMainFundInflow": [
+    {
+      "ticker": "688825",
+      "name": "长鑫科技",
+      "periodLabel": "近10日",
+      "latestPrice": 56.5,
+      "pctChange": 12.1,
+      "mainNetInflow": 3000499056,
+      "mainNetInflowPct": 1.36,
+      "sourceLabel": "东方财富资金流向",
+      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
+      "asOf": "2026-08-25"
+    },
+    {
+      "ticker": "688835",
+      "name": "N高凯",
+      "periodLabel": "近10日",
+      "latestPrice": 235,
+      "pctChange": 282.99,
+      "mainNetInflow": 2137050350,
+      "mainNetInflowPct": 61.37,
+      "sourceLabel": "东方财富资金流向",
+      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
+      "asOf": "2026-08-25"
+    },
+    {
+      "ticker": "002837",
+      "name": "英维克",
+      "periodLabel": "近10日",
+      "latestPrice": 60.23,
+      "pctChange": 10.15,
+      "mainNetInflow": 1513581894,
+      "mainNetInflowPct": 6.03,
+      "sourceLabel": "东方财富资金流向",
+      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
+      "asOf": "2026-08-25"
+    },
+    {
+      "ticker": "300570",
+      "name": "太辰光",
+      "periodLabel": "近10日",
+      "latestPrice": 202.7,
+      "pctChange": 44.32,
+      "mainNetInflow": 1417025696,
+      "mainNetInflowPct": 2.86,
+      "sourceLabel": "东方财富资金流向",
+      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
+      "asOf": "2026-08-25"
+    },
+    {
+      "ticker": "601869",
+      "name": "长飞光纤",
+      "periodLabel": "近10日",
+      "latestPrice": 394.5,
+      "pctChange": 17.54,
+      "mainNetInflow": 1409486704,
+      "mainNetInflowPct": 2.76,
+      "sourceLabel": "东方财富资金流向",
+      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
+      "asOf": "2026-08-25"
+    },
+    {
+      "ticker": "601899",
+      "name": "紫金矿业",
+      "periodLabel": "近10日",
+      "latestPrice": 33.68,
+      "pctChange": 2.81,
+      "mainNetInflow": 1233912000,
+      "mainNetInflowPct": 1.41,
+      "sourceLabel": "东方财富资金流向",
+      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
+      "asOf": "2026-08-25"
+    },
+    {
+      "ticker": "601288",
+      "name": "农业银行",
+      "periodLabel": "近10日",
+      "latestPrice": 6.85,
+      "pctChange": 5.71,
+      "mainNetInflow": 1218994576,
+      "mainNetInflowPct": 4.26,
+      "sourceLabel": "东方财富资金流向",
+      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
+      "asOf": "2026-08-25"
+    },
+    {
+      "ticker": "300433",
+      "name": "蓝思科技",
+      "periodLabel": "近10日",
+      "latestPrice": 37.9,
+      "pctChange": 9.54,
+      "mainNetInflow": 1214888192,
+      "mainNetInflowPct": 2.72,
+      "sourceLabel": "东方财富资金流向",
+      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
+      "asOf": "2026-08-25"
+    },
+    {
+      "ticker": "603083",
+      "name": "剑桥科技",
+      "periodLabel": "近10日",
+      "latestPrice": 173.5,
+      "pctChange": 13.88,
+      "mainNetInflow": 1089915408,
+      "mainNetInflowPct": 2.25,
+      "sourceLabel": "东方财富资金流向",
+      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
+      "asOf": "2026-08-25"
+    },
+    {
+      "ticker": "688143",
+      "name": "长盈通",
+      "periodLabel": "近10日",
+      "latestPrice": 168.8,
+      "pctChange": 61.75,
+      "mainNetInflow": 895501504,
+      "mainNetInflowPct": 2.96,
+      "sourceLabel": "东方财富资金流向",
+      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
+      "asOf": "2026-08-25"
+    },
+    {
+      "ticker": "688677",
+      "name": "海泰新光",
+      "periodLabel": "近10日",
+      "latestPrice": 84.25,
+      "pctChange": 10.4,
+      "mainNetInflow": 818951320,
+      "mainNetInflowPct": 7.59,
+      "sourceLabel": "东方财富资金流向",
+      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
+      "asOf": "2026-08-25"
+    },
+    {
+      "ticker": "601398",
+      "name": "工商银行",
+      "periodLabel": "近10日",
+      "latestPrice": 7.9,
+      "pctChange": 3.95,
+      "mainNetInflow": 813479376,
+      "mainNetInflowPct": 3.15,
+      "sourceLabel": "东方财富资金流向",
+      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
+      "asOf": "2026-08-25"
+    },
+    {
+      "ticker": "002536",
+      "name": "飞龙股份",
+      "periodLabel": "近10日",
+      "latestPrice": 51.56,
+      "pctChange": 29.81,
+      "mainNetInflow": 809417089,
+      "mainNetInflowPct": 3.5,
+      "sourceLabel": "东方财富资金流向",
+      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
+      "asOf": "2026-08-25"
+    },
+    {
+      "ticker": "002491",
+      "name": "通鼎互联",
+      "periodLabel": "近10日",
+      "latestPrice": 21.4,
+      "pctChange": 24.93,
+      "mainNetInflow": 770971592,
+      "mainNetInflowPct": 1.58,
+      "sourceLabel": "东方财富资金流向",
+      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
+      "asOf": "2026-08-25"
+    },
+    {
+      "ticker": "002436",
+      "name": "兴森科技",
+      "periodLabel": "近10日",
+      "latestPrice": 33.31,
+      "pctChange": 0.24,
+      "mainNetInflow": 744276266,
+      "mainNetInflowPct": 1.77,
+      "sourceLabel": "东方财富资金流向",
+      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
+      "asOf": "2026-08-25"
+    },
+    {
+      "ticker": "600330",
+      "name": "天通股份",
+      "periodLabel": "近10日",
+      "latestPrice": 27.41,
+      "pctChange": 17.89,
+      "mainNetInflow": 739995392,
+      "mainNetInflowPct": 1.95,
+      "sourceLabel": "东方财富资金流向",
+      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
+      "asOf": "2026-08-25"
+    },
+    {
+      "ticker": "300751",
+      "name": "迈为股份",
+      "periodLabel": "近10日",
+      "latestPrice": 211.5,
+      "pctChange": 24.24,
+      "mainNetInflow": 713431912,
+      "mainNetInflowPct": 3.98,
+      "sourceLabel": "东方财富资金流向",
+      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
+      "asOf": "2026-08-25"
+    },
+    {
+      "ticker": "600489",
+      "name": "中金黄金",
+      "periodLabel": "近10日",
+      "latestPrice": 26.24,
+      "pctChange": 7.15,
+      "mainNetInflow": 703547573,
+      "mainNetInflowPct": 2.68,
+      "sourceLabel": "东方财富资金流向",
+      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
+      "asOf": "2026-08-25"
+    },
+    {
+      "ticker": "002594",
+      "name": "比亚迪",
+      "periodLabel": "近10日",
+      "latestPrice": 91.36,
+      "pctChange": 1.38,
+      "mainNetInflow": 696069209,
+      "mainNetInflowPct": 3.23,
+      "sourceLabel": "东方财富资金流向",
+      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
+      "asOf": "2026-08-25"
+    },
+    {
+      "ticker": "600367",
+      "name": "红星发展",
+      "periodLabel": "近10日",
+      "latestPrice": 38.27,
+      "pctChange": 13.39,
+      "mainNetInflow": 690386374,
+      "mainNetInflowPct": 3.41,
+      "sourceLabel": "东方财富资金流向",
+      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
+      "asOf": "2026-08-25"
+    }
+  ],
   "arkHoldings": [
     {
       "investorId": "cathie_wood",
@@ -11668,11 +11909,6 @@
     }
   ],
   "sourceErrors": [
-    {
-      "id": "cn_main_fund_flow",
-      "displayName": "A股主力资金净流入",
-      "error": "Failed to fetch https://push2.eastmoney.com/api/qt/clist/get?fid=f174&po=1&pz=50&pn=1&np=1&fltt=2&invt=2&ut=b2884a393a59ad64002292a3e90d46a5&fs=m%3A0%2Bt%3A6%2Bf%3A%212%2Cm%3A0%2Bt%3A13%2Bf%3A%212%2Cm%3A0%2Bt%3A80%2Bf%3A%212%2Cm%3A1%2Bt%3A2%2Bf%3A%212%2Cm%3A1%2Bt%3A23%2Bf%3A%212%2Cm%3A0%2Bt%3A7%2Bf%3A%212%2Cm%3A1%2Bt%3A3%2Bf%3A%212&fields=f12%2Cf14%2Cf2%2Cf160%2Cf174%2Cf175%2Cf176%2Cf177%2Cf178%2Cf179%2Cf180%2Cf181%2Cf182%2Cf183%2Cf260%2Cf261%2Cf124: 502 Bad Gateway"
-    },
     {
       "id": "berkshire_hathaway",
       "displayName": "Warren Buffett",
