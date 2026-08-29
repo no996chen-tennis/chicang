@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-28T21:26:18.766Z",
+  "generatedAt": "2026-08-29T04:15:47.474Z",
   "site": {
     "name": "chicang",
     "tagline": "重要资金公开披露雷达",
@@ -334,9 +334,9 @@
       "topIncreases": [],
       "topDecreases": [],
       "returns": {
-        "oneYearPct": 14.867884842907852,
-        "threeYearPct": 101.75479104132992,
-        "asOf": "2026-08-27",
+        "oneYearPct": 12.846851654215596,
+        "threeYearPct": 93.96927310249944,
+        "asOf": "2026-08-28",
         "sourceLabel": "ARKK ETF 市价代理，非 Cathie Wood 全部管理资产真实净值",
         "sourceUrl": "https://www.nasdaq.com/market-activity/etf/arkk/historical",
         "isProxy": true,
@@ -1290,11 +1290,11 @@
       "topIncreases": [],
       "topDecreases": [],
       "returns": {
-        "oneYearPct": 8.356611458565878,
-        "threeYearPct": 118.58868445702112,
+        "oneYearPct": 10.50302696718042,
+        "threeYearPct": 116.17294015026309,
         "sourceLabel": "13F Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://www.sec.gov/edgar/search/",
-        "asOf": "2026-08-27",
+        "asOf": "2026-08-28",
         "isProxy": true,
         "proxyDisclosure": "按当前公开 Top 持仓价格估算，不代表管理人真实组合净值或产品收益"
       }
@@ -1832,8 +1832,8 @@
         }
       ],
       "returns": {
-        "oneYearPct": 15.67397746733007,
-        "threeYearPct": 35.54637217803633,
+        "oneYearPct": 14.42731930129523,
+        "threeYearPct": 33.00705781508395,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SZ002415",
         "asOf": "2026-08-27",
@@ -2595,8 +2595,8 @@
         }
       ],
       "returns": {
-        "oneYearPct": 80.43532272187295,
-        "threeYearPct": 132.70646897580815,
+        "oneYearPct": 70.84182787485345,
+        "threeYearPct": 131.28649324538748,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SH600176",
         "asOf": "2026-08-27",
@@ -2722,8 +2722,8 @@
       "topIncreases": [],
       "topDecreases": [],
       "returns": {
-        "oneYearPct": 8.472382038822149,
-        "threeYearPct": 71.75950836561887,
+        "oneYearPct": 8.45223794529665,
+        "threeYearPct": 73.0175722177042,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SH601939",
         "asOf": "2026-08-27",
@@ -3136,8 +3136,8 @@
         }
       ],
       "returns": {
-        "oneYearPct": 9.396342207565803,
-        "threeYearPct": 55.13193423233916,
+        "oneYearPct": 9.61062751434802,
+        "threeYearPct": 56.37091581731208,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SH601988",
         "asOf": "2026-08-27",
@@ -3251,8 +3251,8 @@
       ],
       "topDecreases": [],
       "returns": {
-        "oneYearPct": 138.4566946232996,
-        "threeYearPct": 330.0824817819652,
+        "oneYearPct": 146.44545803480054,
+        "threeYearPct": 322.0106514137541,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SH603986",
         "asOf": "2026-08-27",
@@ -3952,8 +3952,8 @@
         }
       ],
       "returns": {
-        "oneYearPct": 57.45667630050715,
-        "threeYearPct": 170.92736204743122,
+        "oneYearPct": 53.883268065244486,
+        "threeYearPct": 167.46798587062955,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SZ300750",
         "asOf": "2026-08-27",
@@ -4556,8 +4556,8 @@
       ],
       "topDecreases": [],
       "returns": {
-        "oneYearPct": 44.15905202335888,
-        "threeYearPct": 228.76903183989742,
+        "oneYearPct": 43.51343139586911,
+        "threeYearPct": 224.54614369399667,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SH601328",
         "asOf": "2026-08-27",
@@ -4649,8 +4649,8 @@
         }
       ],
       "returns": {
-        "oneYearPct": -30.009066390864852,
-        "threeYearPct": -41.954889627974524,
+        "oneYearPct": -30.135749710984904,
+        "threeYearPct": -43.48462755177698,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SZ002153",
         "asOf": "2026-08-27",
