@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-04T14:59:05.835Z",
+  "generatedAt": "2026-09-05T01:13:39.217Z",
   "site": {
     "name": "chicang",
     "tagline": "重要资金公开披露雷达",
@@ -26,9 +26,9 @@
     "form4TradeCount": 0,
     "regionalWatchlistCount": 8,
     "regionalTradeCount": 69,
-    "sourceErrorCount": 14,
-    "cnMainFundInflowCount": 20,
-    "latestEventDate": "2026-09-03"
+    "sourceErrorCount": 15,
+    "cnMainFundInflowCount": 0,
+    "latestEventDate": "2026-09-04"
   },
   "profiles": [
     {
@@ -828,9 +828,9 @@
         }
       ],
       "returns": {
-        "oneYearPct": 16.15569181551587,
-        "threeYearPct": 98.00045444217224,
-        "asOf": "2026-09-03",
+        "oneYearPct": 14.395648135863068,
+        "threeYearPct": 95.20036223681231,
+        "asOf": "2026-09-04",
         "sourceLabel": "ARKK ETF 市价代理，非 Cathie Wood 全部管理资产真实净值",
         "sourceUrl": "https://www.nasdaq.com/market-activity/etf/arkk/historical",
         "isProxy": true,
@@ -855,43 +855,43 @@
       "cadence": "披露后更新",
       "latestFiling": {
         "form": "PTR",
-        "reportDate": "2026-08-18",
-        "filingDate": "2026-09-03"
+        "reportDate": "2026-08-28",
+        "filingDate": "2026-09-04"
       },
       "positionCount": 44,
       "changes": [
         {
-          "id": "congress-2026-09-03-2026-08-18-john-mcguire-NVDA-Buy",
+          "id": "congress-2026-09-04-2026-08-28-jonathan-jackson-VSAT-Sell",
           "market": "us",
           "investorId": "us_congress",
-          "investorName": "John McGuire",
+          "investorName": "Jonathan Jackson",
           "vehicleName": "US Congress PTR",
           "sourceTier": "L1",
           "disclosureType": "STOCK Act PTR",
           "sourceLabel": "House Clerk PTR",
           "indexSourceLabel": "CongressFlow third-party index",
-          "reportDate": "2026-08-18",
+          "reportDate": "2026-08-28",
           "previousReportDate": null,
-          "filingDate": "2026-09-03",
-          "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035367.pdf",
+          "filingDate": "2026-09-04",
+          "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035370.pdf",
           "security": {
-            "ticker": "NVDA",
-            "name": "NVDA",
+            "ticker": "VSAT",
+            "name": "VSAT",
             "cusip": "",
             "title": "Disclosed range"
           },
-          "direction": "increase",
+          "direction": "decrease",
           "sharesBefore": null,
           "sharesAfter": null,
           "sharesDelta": null,
           "marketValueBefore": null,
           "marketValueAfter": null,
-          "marketValueDelta": 8000.5,
+          "marketValueDelta": -8000.5,
           "disclosedAmountRange": "$1,001 - $15,000",
           "significanceScore": 8000.5,
           "confidence": "medium",
           "staleDisclosure": false,
-          "narrative": "John McGuire 通过 US Congress PTR 增持 NVDA / NVDA。交易日 2026-08-18。"
+          "narrative": "Jonathan Jackson 通过 US Congress PTR 减持 VSAT / VSAT。交易日 2026-08-28。"
         },
         {
           "id": "congress-2026-09-03-2026-08-18-john-mcguire-AAPL-Sell",
@@ -925,6 +925,39 @@
           "confidence": "medium",
           "staleDisclosure": false,
           "narrative": "John McGuire 通过 US Congress PTR 减持 AAPL / AAPL。交易日 2026-08-18。"
+        },
+        {
+          "id": "congress-2026-09-03-2026-08-18-john-mcguire-NVDA-Buy",
+          "market": "us",
+          "investorId": "us_congress",
+          "investorName": "John McGuire",
+          "vehicleName": "US Congress PTR",
+          "sourceTier": "L1",
+          "disclosureType": "STOCK Act PTR",
+          "sourceLabel": "House Clerk PTR",
+          "indexSourceLabel": "CongressFlow third-party index",
+          "reportDate": "2026-08-18",
+          "previousReportDate": null,
+          "filingDate": "2026-09-03",
+          "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035367.pdf",
+          "security": {
+            "ticker": "NVDA",
+            "name": "NVDA",
+            "cusip": "",
+            "title": "Disclosed range"
+          },
+          "direction": "increase",
+          "sharesBefore": null,
+          "sharesAfter": null,
+          "sharesDelta": null,
+          "marketValueBefore": null,
+          "marketValueAfter": null,
+          "marketValueDelta": 8000.5,
+          "disclosedAmountRange": "$1,001 - $15,000",
+          "significanceScore": 8000.5,
+          "confidence": "medium",
+          "staleDisclosure": false,
+          "narrative": "John McGuire 通过 US Congress PTR 增持 NVDA / NVDA。交易日 2026-08-18。"
         },
         {
           "id": "congress-2026-09-03-2026-08-13-cleo-fields-AAPL-Buy",
@@ -1257,6 +1290,39 @@
           "narrative": "Kevin Hern 通过 US Congress PTR 减持 ADBE / ADBE。交易日 2026-08-14。"
         },
         {
+          "id": "congress-2026-09-02-2026-08-13-kevin-hern-BA-Sell",
+          "market": "us",
+          "investorId": "us_congress",
+          "investorName": "Kevin Hern",
+          "vehicleName": "US Congress PTR",
+          "sourceTier": "L1",
+          "disclosureType": "STOCK Act PTR",
+          "sourceLabel": "House Clerk PTR",
+          "indexSourceLabel": "CongressFlow third-party index",
+          "reportDate": "2026-08-13",
+          "previousReportDate": null,
+          "filingDate": "2026-09-02",
+          "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035326.pdf",
+          "security": {
+            "ticker": "BA",
+            "name": "BA",
+            "cusip": "",
+            "title": "Disclosed range"
+          },
+          "direction": "decrease",
+          "sharesBefore": null,
+          "sharesAfter": null,
+          "sharesDelta": null,
+          "marketValueBefore": null,
+          "marketValueAfter": null,
+          "marketValueDelta": -32500.5,
+          "disclosedAmountRange": "$15,001 - $50,000",
+          "significanceScore": 32500.5,
+          "confidence": "medium",
+          "staleDisclosure": false,
+          "narrative": "Kevin Hern 通过 US Congress PTR 减持 BA / BA。交易日 2026-08-13。"
+        },
+        {
           "id": "congress-2026-09-02-2026-08-10-kevin-hern-DIS-Sell",
           "market": "us",
           "investorId": "us_congress",
@@ -1585,72 +1651,6 @@
           "confidence": "medium",
           "staleDisclosure": false,
           "narrative": "Kevin Hern 通过 US Congress PTR 减持 VLTO / VLTO。交易日 2026-08-14。"
-        },
-        {
-          "id": "congress-2026-09-02-2026-08-13-kevin-hern-BA-Sell",
-          "market": "us",
-          "investorId": "us_congress",
-          "investorName": "Kevin Hern",
-          "vehicleName": "US Congress PTR",
-          "sourceTier": "L1",
-          "disclosureType": "STOCK Act PTR",
-          "sourceLabel": "House Clerk PTR",
-          "indexSourceLabel": "CongressFlow third-party index",
-          "reportDate": "2026-08-13",
-          "previousReportDate": null,
-          "filingDate": "2026-09-02",
-          "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035326.pdf",
-          "security": {
-            "ticker": "BA",
-            "name": "BA",
-            "cusip": "",
-            "title": "Disclosed range"
-          },
-          "direction": "decrease",
-          "sharesBefore": null,
-          "sharesAfter": null,
-          "sharesDelta": null,
-          "marketValueBefore": null,
-          "marketValueAfter": null,
-          "marketValueDelta": -8000.5,
-          "disclosedAmountRange": "$1,001 - $15,000",
-          "significanceScore": 8000.5,
-          "confidence": "medium",
-          "staleDisclosure": false,
-          "narrative": "Kevin Hern 通过 US Congress PTR 减持 BA / BA。交易日 2026-08-13。"
-        },
-        {
-          "id": "congress-2026-09-02-2026-08-13-kevin-hern-HRL-Sell",
-          "market": "us",
-          "investorId": "us_congress",
-          "investorName": "Kevin Hern",
-          "vehicleName": "US Congress PTR",
-          "sourceTier": "L1",
-          "disclosureType": "STOCK Act PTR",
-          "sourceLabel": "House Clerk PTR",
-          "indexSourceLabel": "CongressFlow third-party index",
-          "reportDate": "2026-08-13",
-          "previousReportDate": null,
-          "filingDate": "2026-09-02",
-          "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035326.pdf",
-          "security": {
-            "ticker": "HRL",
-            "name": "HRL",
-            "cusip": "",
-            "title": "Disclosed range"
-          },
-          "direction": "decrease",
-          "sharesBefore": null,
-          "sharesAfter": null,
-          "sharesDelta": null,
-          "marketValueBefore": null,
-          "marketValueAfter": null,
-          "marketValueDelta": -8000.5,
-          "disclosedAmountRange": "$1,001 - $15,000",
-          "significanceScore": 8000.5,
-          "confidence": "medium",
-          "staleDisclosure": false,
-          "narrative": "Kevin Hern 通过 US Congress PTR 减持 HRL / HRL。交易日 2026-08-13。"
         }
       ],
       "topIncreases": [
@@ -1784,11 +1784,11 @@
       "topIncreases": [],
       "topDecreases": [],
       "returns": {
-        "oneYearPct": 12.164193817084223,
-        "threeYearPct": 122.55307903670989,
+        "oneYearPct": 11.08775806337437,
+        "threeYearPct": 125.3720144567685,
         "sourceLabel": "13F Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://www.sec.gov/edgar/search/",
-        "asOf": "2026-09-03",
+        "asOf": "2026-09-04",
         "isProxy": true,
         "proxyDisclosure": "按当前公开 Top 持仓价格估算，不代表管理人真实组合净值或产品收益"
       }
@@ -2326,8 +2326,8 @@
         }
       ],
       "returns": {
-        "oneYearPct": 16.92253083903219,
-        "threeYearPct": 26.682164503560763,
+        "oneYearPct": 14.100003602549243,
+        "threeYearPct": 27.857871990061163,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SZ002415",
         "asOf": "2026-09-04",
@@ -3089,8 +3089,8 @@
         }
       ],
       "returns": {
-        "oneYearPct": 71.79801746275493,
-        "threeYearPct": 103.36431544230526,
+        "oneYearPct": 66.91033952053995,
+        "threeYearPct": 103.42488171370482,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SH600176",
         "asOf": "2026-09-04",
@@ -3216,8 +3216,8 @@
       "topIncreases": [],
       "topDecreases": [],
       "returns": {
-        "oneYearPct": 10.254056155944417,
-        "threeYearPct": 80.89096396401072,
+        "oneYearPct": 12.235122168465137,
+        "threeYearPct": 80.44191289191876,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SH601939",
         "asOf": "2026-09-04",
@@ -3630,8 +3630,8 @@
         }
       ],
       "returns": {
-        "oneYearPct": 12.90571272509898,
-        "threeYearPct": 61.79821851807503,
+        "oneYearPct": 14.4007860637249,
+        "threeYearPct": 61.642368506634796,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SH601988",
         "asOf": "2026-09-04",
@@ -3756,8 +3756,8 @@
       ],
       "topDecreases": [],
       "returns": {
-        "oneYearPct": 60.02439888615978,
-        "threeYearPct": 131.13636648204206,
+        "oneYearPct": 55.67356455992668,
+        "threeYearPct": 130.59522549305376,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SH603986",
         "asOf": "2026-09-04",
@@ -4457,8 +4457,8 @@
         }
       ],
       "returns": {
-        "oneYearPct": 46.133031214665095,
-        "threeYearPct": 154.4315016252557,
+        "oneYearPct": 38.80570590234321,
+        "threeYearPct": 151.8334057533774,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SZ300750",
         "asOf": "2026-09-04",
@@ -5061,8 +5061,8 @@
       ],
       "topDecreases": [],
       "returns": {
-        "oneYearPct": 52.65398556459958,
-        "threeYearPct": 213.36629379249868,
+        "oneYearPct": 49.07999553480445,
+        "threeYearPct": 211.07366402137774,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SH601328",
         "asOf": "2026-09-04",
@@ -5154,8 +5154,8 @@
         }
       ],
       "returns": {
-        "oneYearPct": -19.277109125906744,
-        "threeYearPct": -39.27492370965486,
+        "oneYearPct": -20.631788045179498,
+        "threeYearPct": -38.62595627687305,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SZ002153",
         "asOf": "2026-09-04",
@@ -5165,6 +5165,39 @@
     }
   ],
   "events": [
+    {
+      "id": "congress-2026-09-04-2026-08-28-jonathan-jackson-VSAT-Sell",
+      "market": "us",
+      "investorId": "us_congress",
+      "investorName": "Jonathan Jackson",
+      "vehicleName": "US Congress PTR",
+      "sourceTier": "L1",
+      "disclosureType": "STOCK Act PTR",
+      "sourceLabel": "House Clerk PTR",
+      "indexSourceLabel": "CongressFlow third-party index",
+      "reportDate": "2026-08-28",
+      "previousReportDate": null,
+      "filingDate": "2026-09-04",
+      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035370.pdf",
+      "security": {
+        "ticker": "VSAT",
+        "name": "VSAT",
+        "cusip": "",
+        "title": "Disclosed range"
+      },
+      "direction": "decrease",
+      "sharesBefore": null,
+      "sharesAfter": null,
+      "sharesDelta": null,
+      "marketValueBefore": null,
+      "marketValueAfter": null,
+      "marketValueDelta": -8000.5,
+      "disclosedAmountRange": "$1,001 - $15,000",
+      "significanceScore": 8000.5,
+      "confidence": "medium",
+      "staleDisclosure": false,
+      "narrative": "Jonathan Jackson 通过 US Congress PTR 减持 VSAT / VSAT。交易日 2026-08-28。"
+    },
     {
       "id": "cathiesark-2026-09-03T00:00:00.000Z-ARKG-NTLA-Buy-39548",
       "market": "us",
@@ -5274,39 +5307,6 @@
       "narrative": "Cathie Wood 通过 ARKW / ARK Active ETFs 减持 SLMT / Brera Holdings。交易日 2026-09-03。"
     },
     {
-      "id": "congress-2026-09-03-2026-08-18-john-mcguire-NVDA-Buy",
-      "market": "us",
-      "investorId": "us_congress",
-      "investorName": "John McGuire",
-      "vehicleName": "US Congress PTR",
-      "sourceTier": "L1",
-      "disclosureType": "STOCK Act PTR",
-      "sourceLabel": "House Clerk PTR",
-      "indexSourceLabel": "CongressFlow third-party index",
-      "reportDate": "2026-08-18",
-      "previousReportDate": null,
-      "filingDate": "2026-09-03",
-      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035367.pdf",
-      "security": {
-        "ticker": "NVDA",
-        "name": "NVDA",
-        "cusip": "",
-        "title": "Disclosed range"
-      },
-      "direction": "increase",
-      "sharesBefore": null,
-      "sharesAfter": null,
-      "sharesDelta": null,
-      "marketValueBefore": null,
-      "marketValueAfter": null,
-      "marketValueDelta": 8000.5,
-      "disclosedAmountRange": "$1,001 - $15,000",
-      "significanceScore": 8000.5,
-      "confidence": "medium",
-      "staleDisclosure": false,
-      "narrative": "John McGuire 通过 US Congress PTR 增持 NVDA / NVDA。交易日 2026-08-18。"
-    },
-    {
       "id": "congress-2026-09-03-2026-08-18-john-mcguire-AAPL-Sell",
       "market": "us",
       "investorId": "us_congress",
@@ -5338,6 +5338,39 @@
       "confidence": "medium",
       "staleDisclosure": false,
       "narrative": "John McGuire 通过 US Congress PTR 减持 AAPL / AAPL。交易日 2026-08-18。"
+    },
+    {
+      "id": "congress-2026-09-03-2026-08-18-john-mcguire-NVDA-Buy",
+      "market": "us",
+      "investorId": "us_congress",
+      "investorName": "John McGuire",
+      "vehicleName": "US Congress PTR",
+      "sourceTier": "L1",
+      "disclosureType": "STOCK Act PTR",
+      "sourceLabel": "House Clerk PTR",
+      "indexSourceLabel": "CongressFlow third-party index",
+      "reportDate": "2026-08-18",
+      "previousReportDate": null,
+      "filingDate": "2026-09-03",
+      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035367.pdf",
+      "security": {
+        "ticker": "NVDA",
+        "name": "NVDA",
+        "cusip": "",
+        "title": "Disclosed range"
+      },
+      "direction": "increase",
+      "sharesBefore": null,
+      "sharesAfter": null,
+      "sharesDelta": null,
+      "marketValueBefore": null,
+      "marketValueAfter": null,
+      "marketValueDelta": 8000.5,
+      "disclosedAmountRange": "$1,001 - $15,000",
+      "significanceScore": 8000.5,
+      "confidence": "medium",
+      "staleDisclosure": false,
+      "narrative": "John McGuire 通过 US Congress PTR 增持 NVDA / NVDA。交易日 2026-08-18。"
     },
     {
       "id": "congress-2026-09-03-2026-08-13-cleo-fields-AAPL-Buy",
@@ -5886,6 +5919,39 @@
       "narrative": "Kevin Hern 通过 US Congress PTR 减持 ADBE / ADBE。交易日 2026-08-14。"
     },
     {
+      "id": "congress-2026-09-02-2026-08-13-kevin-hern-BA-Sell",
+      "market": "us",
+      "investorId": "us_congress",
+      "investorName": "Kevin Hern",
+      "vehicleName": "US Congress PTR",
+      "sourceTier": "L1",
+      "disclosureType": "STOCK Act PTR",
+      "sourceLabel": "House Clerk PTR",
+      "indexSourceLabel": "CongressFlow third-party index",
+      "reportDate": "2026-08-13",
+      "previousReportDate": null,
+      "filingDate": "2026-09-02",
+      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035326.pdf",
+      "security": {
+        "ticker": "BA",
+        "name": "BA",
+        "cusip": "",
+        "title": "Disclosed range"
+      },
+      "direction": "decrease",
+      "sharesBefore": null,
+      "sharesAfter": null,
+      "sharesDelta": null,
+      "marketValueBefore": null,
+      "marketValueAfter": null,
+      "marketValueDelta": -32500.5,
+      "disclosedAmountRange": "$15,001 - $50,000",
+      "significanceScore": 32500.5,
+      "confidence": "medium",
+      "staleDisclosure": false,
+      "narrative": "Kevin Hern 通过 US Congress PTR 减持 BA / BA。交易日 2026-08-13。"
+    },
+    {
       "id": "congress-2026-09-02-2026-08-10-kevin-hern-DIS-Sell",
       "market": "us",
       "investorId": "us_congress",
@@ -6216,7 +6282,7 @@
       "narrative": "Kevin Hern 通过 US Congress PTR 减持 VLTO / VLTO。交易日 2026-08-14。"
     },
     {
-      "id": "congress-2026-09-02-2026-08-13-kevin-hern-BA-Sell",
+      "id": "congress-2026-09-02-2026-08-13-kevin-hern-NKE-Sell",
       "market": "us",
       "investorId": "us_congress",
       "investorName": "Kevin Hern",
@@ -6230,8 +6296,8 @@
       "filingDate": "2026-09-02",
       "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035326.pdf",
       "security": {
-        "ticker": "BA",
-        "name": "BA",
+        "ticker": "NKE",
+        "name": "NKE",
         "cusip": "",
         "title": "Disclosed range"
       },
@@ -6246,7 +6312,7 @@
       "significanceScore": 8000.5,
       "confidence": "medium",
       "staleDisclosure": false,
-      "narrative": "Kevin Hern 通过 US Congress PTR 减持 BA / BA。交易日 2026-08-13。"
+      "narrative": "Kevin Hern 通过 US Congress PTR 减持 NKE / NKE。交易日 2026-08-13。"
     },
     {
       "id": "congress-2026-09-02-2026-08-13-kevin-hern-HRL-Sell",
@@ -6313,39 +6379,6 @@
       "confidence": "medium",
       "staleDisclosure": false,
       "narrative": "Kevin Hern 通过 US Congress PTR 减持 GPS / GPS。交易日 2026-08-13。"
-    },
-    {
-      "id": "congress-2026-09-02-2026-08-13-kevin-hern-NKE-Sell",
-      "market": "us",
-      "investorId": "us_congress",
-      "investorName": "Kevin Hern",
-      "vehicleName": "US Congress PTR",
-      "sourceTier": "L1",
-      "disclosureType": "STOCK Act PTR",
-      "sourceLabel": "House Clerk PTR",
-      "indexSourceLabel": "CongressFlow third-party index",
-      "reportDate": "2026-08-13",
-      "previousReportDate": null,
-      "filingDate": "2026-09-02",
-      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035326.pdf",
-      "security": {
-        "ticker": "NKE",
-        "name": "NKE",
-        "cusip": "",
-        "title": "Disclosed range"
-      },
-      "direction": "decrease",
-      "sharesBefore": null,
-      "sharesAfter": null,
-      "sharesDelta": null,
-      "marketValueBefore": null,
-      "marketValueAfter": null,
-      "marketValueDelta": -8000.5,
-      "disclosedAmountRange": "$1,001 - $15,000",
-      "significanceScore": 8000.5,
-      "confidence": "medium",
-      "staleDisclosure": false,
-      "narrative": "Kevin Hern 通过 US Congress PTR 减持 NKE / NKE。交易日 2026-08-13。"
     },
     {
       "id": "congress-2026-09-02-2026-08-13-kevin-hern-WAT-Sell",
@@ -7267,39 +7300,6 @@
       "confidence": "medium",
       "staleDisclosure": false,
       "narrative": "Richard Blumenthal 通过 US Congress PTR 减持 TKNO / TKNO。交易日 2026-08-07。"
-    },
-    {
-      "id": "congress-2026-09-01-2026-08-05-richard-blumenthal-TKNO-Sell",
-      "market": "us",
-      "investorId": "us_congress",
-      "investorName": "Richard Blumenthal",
-      "vehicleName": "US Congress PTR",
-      "sourceTier": "L1",
-      "disclosureType": "STOCK Act PTR",
-      "sourceLabel": "Senate eFD PTR",
-      "indexSourceLabel": "CongressFlow third-party index",
-      "reportDate": "2026-08-05",
-      "previousReportDate": null,
-      "filingDate": "2026-09-01",
-      "evidenceUrl": "https://efdsearch.senate.gov/search/view/paper/929216d5-5dbd-429c-858c-1e9332924627/",
-      "security": {
-        "ticker": "TKNO",
-        "name": "TKNO",
-        "cusip": "",
-        "title": "Disclosed range"
-      },
-      "direction": "decrease",
-      "sharesBefore": null,
-      "sharesAfter": null,
-      "sharesDelta": null,
-      "marketValueBefore": null,
-      "marketValueAfter": null,
-      "marketValueDelta": -8000.5,
-      "disclosedAmountRange": "$1,001 - $15,000",
-      "significanceScore": 8000.5,
-      "confidence": "medium",
-      "staleDisclosure": false,
-      "narrative": "Richard Blumenthal 通过 US Congress PTR 减持 TKNO / TKNO。交易日 2026-08-05。"
     },
     {
       "id": "cathiesark-2026-09-01T00:00:00.000Z-ARKK-SLMT-Sell-703",
@@ -12426,248 +12426,7 @@
       "narrative": "高毅资产 / 冯柳 / 邓晓峰 通过 上海高毅资产管理合伙企业(有限合伙)-高毅邻山1号远望基金 减持 002415 / 海康威视。报告期 2026-06-30，披露日 2026-07-25。"
     }
   ],
-  "cnMainFundInflow": [
-    {
-      "ticker": "600150",
-      "name": "中国船舶",
-      "periodLabel": "近10日",
-      "latestPrice": 37.47,
-      "pctChange": 11.25,
-      "mainNetInflow": 2264422192,
-      "mainNetInflowPct": 6.62,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-09-04"
-    },
-    {
-      "ticker": "688835",
-      "name": "高凯技术",
-      "periodLabel": "近10日",
-      "latestPrice": 271,
-      "pctChange": 341.66,
-      "mainNetInflow": 2072735083,
-      "mainNetInflowPct": 15.31,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-09-04"
-    },
-    {
-      "ticker": "300857",
-      "name": "协创数据",
-      "periodLabel": "近10日",
-      "latestPrice": 252.9,
-      "pctChange": 2.22,
-      "mainNetInflow": 1916246624,
-      "mainNetInflowPct": 4.41,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-09-04"
-    },
-    {
-      "ticker": "600183",
-      "name": "生益科技",
-      "periodLabel": "近10日",
-      "latestPrice": 137.5,
-      "pctChange": 3.54,
-      "mainNetInflow": 1532427648,
-      "mainNetInflowPct": 1.42,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-09-04"
-    },
-    {
-      "ticker": "603083",
-      "name": "剑桥科技",
-      "periodLabel": "近10日",
-      "latestPrice": 188.37,
-      "pctChange": 4.09,
-      "mainNetInflow": 1424625376,
-      "mainNetInflowPct": 3.33,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-09-04"
-    },
-    {
-      "ticker": "000592",
-      "name": "平潭发展",
-      "periodLabel": "近10日",
-      "latestPrice": 7.49,
-      "pctChange": 23.19,
-      "mainNetInflow": 1400863937,
-      "mainNetInflowPct": 9.13,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-09-04"
-    },
-    {
-      "ticker": "002837",
-      "name": "英维克",
-      "periodLabel": "近10日",
-      "latestPrice": 63.91,
-      "pctChange": 18.09,
-      "mainNetInflow": 1374682403,
-      "mainNetInflowPct": 2.6,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-09-04"
-    },
-    {
-      "ticker": "601318",
-      "name": "中国平安",
-      "periodLabel": "近10日",
-      "latestPrice": 58.24,
-      "pctChange": 9.17,
-      "mainNetInflow": 1309533632,
-      "mainNetInflowPct": 2.79,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-09-04"
-    },
-    {
-      "ticker": "002354",
-      "name": "天娱数科",
-      "periodLabel": "近10日",
-      "latestPrice": 8.45,
-      "pctChange": 16.71,
-      "mainNetInflow": 1293523014,
-      "mainNetInflowPct": 5.3,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-09-04"
-    },
-    {
-      "ticker": "601138",
-      "name": "工业富联",
-      "periodLabel": "近10日",
-      "latestPrice": 63.69,
-      "pctChange": 1.35,
-      "mainNetInflow": 1278618048,
-      "mainNetInflowPct": 1.99,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-09-04"
-    },
-    {
-      "ticker": "688205",
-      "name": "德科立",
-      "periodLabel": "近10日",
-      "latestPrice": 194,
-      "pctChange": 21.74,
-      "mainNetInflow": 1208301111,
-      "mainNetInflowPct": 5.18,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-09-04"
-    },
-    {
-      "ticker": "002008",
-      "name": "大族激光",
-      "periodLabel": "近10日",
-      "latestPrice": 87.67,
-      "pctChange": -3.55,
-      "mainNetInflow": 1182072721,
-      "mainNetInflowPct": 2.99,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-09-04"
-    },
-    {
-      "ticker": "300489",
-      "name": "光智科技",
-      "periodLabel": "近10日",
-      "latestPrice": 214.33,
-      "pctChange": -1.03,
-      "mainNetInflow": 1147806912,
-      "mainNetInflowPct": 3.83,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-09-04"
-    },
-    {
-      "ticker": "301171",
-      "name": "易点天下",
-      "periodLabel": "近10日",
-      "latestPrice": 38.28,
-      "pctChange": 5.34,
-      "mainNetInflow": 1121329948,
-      "mainNetInflowPct": 4.13,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-09-04"
-    },
-    {
-      "ticker": "300395",
-      "name": "菲利华",
-      "periodLabel": "近10日",
-      "latestPrice": 89.31,
-      "pctChange": 1.5,
-      "mainNetInflow": 1052069889,
-      "mainNetInflowPct": 4.84,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-09-04"
-    },
-    {
-      "ticker": "002602",
-      "name": "世纪华通",
-      "periodLabel": "近10日",
-      "latestPrice": 15.73,
-      "pctChange": 13.82,
-      "mainNetInflow": 1050384225,
-      "mainNetInflowPct": 6.31,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-09-04"
-    },
-    {
-      "ticker": "600309",
-      "name": "万华化学",
-      "periodLabel": "近10日",
-      "latestPrice": 77.66,
-      "pctChange": 4.97,
-      "mainNetInflow": 975247792,
-      "mainNetInflowPct": 3.36,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-09-04"
-    },
-    {
-      "ticker": "600601",
-      "name": "方正科技",
-      "periodLabel": "近10日",
-      "latestPrice": 13.09,
-      "pctChange": 5.06,
-      "mainNetInflow": 965473685,
-      "mainNetInflowPct": 4.35,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-09-04"
-    },
-    {
-      "ticker": "600030",
-      "name": "中信证券",
-      "periodLabel": "近10日",
-      "latestPrice": 27.99,
-      "pctChange": 3.21,
-      "mainNetInflow": 924832992,
-      "mainNetInflowPct": 2.87,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-09-04"
-    },
-    {
-      "ticker": "002396",
-      "name": "星网锐捷",
-      "periodLabel": "近10日",
-      "latestPrice": 37.01,
-      "pctChange": 11.58,
-      "mainNetInflow": 894420156,
-      "mainNetInflowPct": 2.26,
-      "sourceLabel": "东方财富资金流向",
-      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
-      "asOf": "2026-09-04"
-    }
-  ],
+  "cnMainFundInflow": [],
   "arkHoldings": [
     {
       "investorId": "cathie_wood",
@@ -16061,6 +15820,11 @@
     }
   ],
   "sourceErrors": [
+    {
+      "id": "cn_main_fund_flow",
+      "displayName": "A股主力资金净流入",
+      "error": "Failed to fetch https://push2.eastmoney.com/api/qt/clist/get?fid=f174&po=1&pz=50&pn=1&np=1&fltt=2&invt=2&ut=b2884a393a59ad64002292a3e90d46a5&fs=m%3A0%2Bt%3A6%2Bf%3A%212%2Cm%3A0%2Bt%3A13%2Bf%3A%212%2Cm%3A0%2Bt%3A80%2Bf%3A%212%2Cm%3A1%2Bt%3A2%2Bf%3A%212%2Cm%3A1%2Bt%3A23%2Bf%3A%212%2Cm%3A0%2Bt%3A7%2Bf%3A%212%2Cm%3A1%2Bt%3A3%2Bf%3A%212&fields=f12%2Cf14%2Cf2%2Cf160%2Cf174%2Cf175%2Cf176%2Cf177%2Cf178%2Cf179%2Cf180%2Cf181%2Cf182%2Cf183%2Cf260%2Cf261%2Cf124: 502 Bad Gateway"
+    },
     {
       "id": "berkshire_hathaway",
       "displayName": "Warren Buffett",
