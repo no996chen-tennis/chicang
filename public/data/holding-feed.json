@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T15:49:51.416Z",
+  "generatedAt": "2026-09-25T01:42:24.458Z",
   "site": {
     "name": "chicang",
     "tagline": "重要资金公开披露雷达",
@@ -26,9 +26,9 @@
     "form4TradeCount": 0,
     "regionalWatchlistCount": 8,
     "regionalTradeCount": 69,
-    "sourceErrorCount": 15,
-    "cnMainFundInflowCount": 0,
-    "latestEventDate": "2026-09-23"
+    "sourceErrorCount": 14,
+    "cnMainFundInflowCount": 20,
+    "latestEventDate": "2026-09-24"
   },
   "profiles": [
     {
@@ -49,7 +49,7 @@
       },
       "latestFiling": {
         "reportDate": "2026-09-24",
-        "filingDate": "Thu, 24 Sep 2026 06:05:13 GMT",
+        "filingDate": "Thu, 24 Sep 2026 19:35:19 GMT",
         "form": "ARK ETF CSV"
       },
       "topHoldings": [
@@ -281,7 +281,7 @@
           "name": "ARK Innovation ETF",
           "rowCount": 42,
           "asOfDate": "2026-09-24",
-          "lastModified": "Thu, 24 Sep 2026 06:05:12 GMT",
+          "lastModified": "Thu, 24 Sep 2026 19:35:19 GMT",
           "url": "https://assets.ark-funds.com/fund-documents/funds-etf-csv/ARK_INNOVATION_ETF_ARKK_HOLDINGS.csv"
         },
         {
@@ -290,7 +290,7 @@
           "name": "ARK Autonomous Tech. & Robotics ETF",
           "rowCount": 37,
           "asOfDate": "2026-09-24",
-          "lastModified": "Thu, 24 Sep 2026 06:05:12 GMT",
+          "lastModified": "Thu, 24 Sep 2026 19:35:19 GMT",
           "url": "https://assets.ark-funds.com/fund-documents/funds-etf-csv/ARK_AUTONOMOUS_TECH._%26_ROBOTICS_ETF_ARKQ_HOLDINGS.csv"
         },
         {
@@ -299,7 +299,7 @@
           "name": "ARK Next Generation Internet ETF",
           "rowCount": 38,
           "asOfDate": "2026-09-24",
-          "lastModified": "Thu, 24 Sep 2026 06:05:12 GMT",
+          "lastModified": "Thu, 24 Sep 2026 19:35:19 GMT",
           "url": "https://assets.ark-funds.com/fund-documents/funds-etf-csv/ARK_NEXT_GENERATION_INTERNET_ETF_ARKW_HOLDINGS.csv"
         },
         {
@@ -308,7 +308,7 @@
           "name": "ARK Genomic Revolution ETF",
           "rowCount": 32,
           "asOfDate": "2026-09-24",
-          "lastModified": "Thu, 24 Sep 2026 06:05:13 GMT",
+          "lastModified": "Thu, 24 Sep 2026 19:35:19 GMT",
           "url": "https://assets.ark-funds.com/fund-documents/funds-etf-csv/ARK_GENOMIC_REVOLUTION_ETF_ARKG_HOLDINGS.csv"
         },
         {
@@ -331,6 +331,42 @@
         }
       ],
       "changes": [
+        {
+          "id": "cathiesark-2026-09-24T00:00:00.000Z-ARKG-SCTX-Buy-39149",
+          "market": "us",
+          "investorId": "cathie_wood",
+          "investorName": "Cathie Wood",
+          "vehicleName": "ARKG / ARK Active ETFs",
+          "sourceTier": "L1-derived",
+          "disclosureType": "Cathie's Ark combined trades",
+          "sourceLabel": "Cathie's Ark third-party index",
+          "indexSourceLabel": "Cathie's Ark third-party index",
+          "reportDate": "2026-09-24",
+          "previousReportDate": null,
+          "filingDate": "2026-09-24",
+          "evidenceUrl": "https://cathiesark.com/ark-funds-combined/trades",
+          "security": {
+            "ticker": "SCTX",
+            "name": "SCRIBE THERAPEUTICS INC",
+            "cusip": "",
+            "title": ""
+          },
+          "direction": "increase",
+          "sharesBefore": null,
+          "sharesAfter": null,
+          "sharesDelta": 39149,
+          "marketValueBefore": null,
+          "marketValueAfter": null,
+          "marketValueDelta": 932333.4559078217,
+          "weightPctDelta": 0.04,
+          "percentOfPosition": 5.66,
+          "isNewPosition": false,
+          "prettyDate": "Sep 24, 2026",
+          "significanceScore": 932333.4559078217,
+          "confidence": "medium",
+          "staleDisclosure": false,
+          "narrative": "Cathie Wood 通过 ARKG / ARK Active ETFs 增持 SCTX / SCRIBE THERAPEUTICS INC。交易日 2026-09-24。"
+        },
         {
           "id": "cathiesark-2026-09-23T00:00:00.000Z-ARKK-TEM-Sell-90621",
           "market": "us",
@@ -726,42 +762,6 @@
           "confidence": "medium",
           "staleDisclosure": false,
           "narrative": "Cathie Wood 通过 ARKG / ARK Active ETFs 增持 SCTX / SCRIBE THERAPEUTICS INC。交易日 2026-09-22。"
-        },
-        {
-          "id": "cathiesark-2026-09-22T00:00:00.000Z-ARKW-P-Sell-19139",
-          "market": "us",
-          "investorId": "cathie_wood",
-          "investorName": "Cathie Wood",
-          "vehicleName": "ARKW / ARK Active ETFs",
-          "sourceTier": "L1-derived",
-          "disclosureType": "Cathie's Ark combined trades",
-          "sourceLabel": "Cathie's Ark third-party index",
-          "indexSourceLabel": "Cathie's Ark third-party index",
-          "reportDate": "2026-09-22",
-          "previousReportDate": null,
-          "filingDate": "2026-09-22",
-          "evidenceUrl": "https://cathiesark.com/ark-funds-combined/trades",
-          "security": {
-            "ticker": "P",
-            "name": "EVERPURE INC-A",
-            "cusip": "",
-            "title": ""
-          },
-          "direction": "decrease",
-          "sharesBefore": null,
-          "sharesAfter": null,
-          "sharesDelta": -19139,
-          "marketValueBefore": null,
-          "marketValueAfter": null,
-          "marketValueDelta": -2092562.5474777222,
-          "weightPctDelta": -0.11,
-          "percentOfPosition": 6.95,
-          "isNewPosition": false,
-          "prettyDate": "Sep 22, 2026",
-          "significanceScore": 2092562.5474777222,
-          "confidence": "medium",
-          "staleDisclosure": false,
-          "narrative": "Cathie Wood 通过 ARKW / ARK Active ETFs 减持 P / EVERPURE INC-A。交易日 2026-09-22。"
         }
       ],
       "topIncreases": [
@@ -829,9 +829,9 @@
         }
       ],
       "returns": {
-        "oneYearPct": 7.56050802779775,
-        "threeYearPct": 131.3659793814433,
-        "asOf": "2026-09-23",
+        "oneYearPct": 12.33615092490507,
+        "threeYearPct": 138.61566484517306,
+        "asOf": "2026-09-24",
         "sourceLabel": "ARKK ETF 市价代理，非 Cathie Wood 全部管理资产真实净值",
         "sourceUrl": "https://www.nasdaq.com/market-activity/etf/arkk/historical",
         "isProxy": true,
@@ -1785,11 +1785,11 @@
       "topIncreases": [],
       "topDecreases": [],
       "returns": {
-        "oneYearPct": 9.332366443832372,
-        "threeYearPct": 145.7157320050306,
+        "oneYearPct": 10.46313837874907,
+        "threeYearPct": 150.5977667632664,
         "sourceLabel": "13F Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://www.sec.gov/edgar/search/",
-        "asOf": "2026-09-23",
+        "asOf": "2026-09-24",
         "isProxy": true,
         "proxyDisclosure": "按当前公开 Top 持仓价格估算，不代表管理人真实组合净值或产品收益"
       }
@@ -2327,8 +2327,8 @@
         }
       ],
       "returns": {
-        "oneYearPct": 3.487258832999039,
-        "threeYearPct": 22.444324892110263,
+        "oneYearPct": 1.309286478153003,
+        "threeYearPct": 22.438152855984796,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SZ002415",
         "asOf": "2026-09-24",
@@ -3090,8 +3090,8 @@
         }
       ],
       "returns": {
-        "oneYearPct": 57.407286645720845,
-        "threeYearPct": 113.61274823346055,
+        "oneYearPct": 53.0092119906847,
+        "threeYearPct": 116.87029963895496,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SH600176",
         "asOf": "2026-09-24",
@@ -3217,8 +3217,8 @@
       "topIncreases": [],
       "topDecreases": [],
       "returns": {
-        "oneYearPct": 16.749894385559426,
-        "threeYearPct": 74.11355350467025,
+        "oneYearPct": 17.236259607357457,
+        "threeYearPct": 74.48397264939464,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SH601939",
         "asOf": "2026-09-24",
@@ -3631,8 +3631,8 @@
         }
       ],
       "returns": {
-        "oneYearPct": 17.83374207794971,
-        "threeYearPct": 56.94987098792179,
+        "oneYearPct": 18.529963583185527,
+        "threeYearPct": 57.52508313508233,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SH601988",
         "asOf": "2026-09-24",
@@ -3757,8 +3757,8 @@
       ],
       "topDecreases": [],
       "returns": {
-        "oneYearPct": 30.686609186245164,
-        "threeYearPct": 133.2981754819436,
+        "oneYearPct": 31.842169359188603,
+        "threeYearPct": 135.7230777425171,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SH603986",
         "asOf": "2026-09-24",
@@ -4458,8 +4458,8 @@
         }
       ],
       "returns": {
-        "oneYearPct": 14.094393108285267,
-        "threeYearPct": 169.1586074872526,
+        "oneYearPct": 12.727334426789012,
+        "threeYearPct": 167.26677365077708,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SZ300750",
         "asOf": "2026-09-24",
@@ -5062,8 +5062,8 @@
       ],
       "topDecreases": [],
       "returns": {
-        "oneYearPct": 43.2175567097413,
-        "threeYearPct": 213.39121555353552,
+        "oneYearPct": 43.270056275864825,
+        "threeYearPct": 218.2726288707351,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SH601328",
         "asOf": "2026-09-24",
@@ -5155,8 +5155,8 @@
         }
       ],
       "returns": {
-        "oneYearPct": -31.244241697100744,
-        "threeYearPct": -34.38874130841601,
+        "oneYearPct": -32.18181783502752,
+        "threeYearPct": -34.67600710762941,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SZ002153",
         "asOf": "2026-09-24",
@@ -5166,6 +5166,42 @@
     }
   ],
   "events": [
+    {
+      "id": "cathiesark-2026-09-24T00:00:00.000Z-ARKG-SCTX-Buy-39149",
+      "market": "us",
+      "investorId": "cathie_wood",
+      "investorName": "Cathie Wood",
+      "vehicleName": "ARKG / ARK Active ETFs",
+      "sourceTier": "L1-derived",
+      "disclosureType": "Cathie's Ark combined trades",
+      "sourceLabel": "Cathie's Ark third-party index",
+      "indexSourceLabel": "Cathie's Ark third-party index",
+      "reportDate": "2026-09-24",
+      "previousReportDate": null,
+      "filingDate": "2026-09-24",
+      "evidenceUrl": "https://cathiesark.com/ark-funds-combined/trades",
+      "security": {
+        "ticker": "SCTX",
+        "name": "SCRIBE THERAPEUTICS INC",
+        "cusip": "",
+        "title": ""
+      },
+      "direction": "increase",
+      "sharesBefore": null,
+      "sharesAfter": null,
+      "sharesDelta": 39149,
+      "marketValueBefore": null,
+      "marketValueAfter": null,
+      "marketValueDelta": 932333.4559078217,
+      "weightPctDelta": 0.04,
+      "percentOfPosition": 5.66,
+      "isNewPosition": false,
+      "prettyDate": "Sep 24, 2026",
+      "significanceScore": 932333.4559078217,
+      "confidence": "medium",
+      "staleDisclosure": false,
+      "narrative": "Cathie Wood 通过 ARKG / ARK Active ETFs 增持 SCTX / SCRIBE THERAPEUTICS INC。交易日 2026-09-24。"
+    },
     {
       "id": "cathiesark-2026-09-23T00:00:00.000Z-ARKK-TEM-Sell-90621",
       "market": "us",
@@ -10084,42 +10120,6 @@
       "narrative": "Cathie Wood 通过 ARKG / ARK Active ETFs 增持 CRSP / CRISPR Therapeutics。交易日 2026-09-09。"
     },
     {
-      "id": "cathiesark-2026-09-09T00:00:00.000Z-ARKG-NTLA-Buy-15925",
-      "market": "us",
-      "investorId": "cathie_wood",
-      "investorName": "Cathie Wood",
-      "vehicleName": "ARKG / ARK Active ETFs",
-      "sourceTier": "L1-derived",
-      "disclosureType": "Cathie's Ark combined trades",
-      "sourceLabel": "Cathie's Ark third-party index",
-      "indexSourceLabel": "Cathie's Ark third-party index",
-      "reportDate": "2026-09-09",
-      "previousReportDate": null,
-      "filingDate": "2026-09-09",
-      "evidenceUrl": "https://cathiesark.com/ark-funds-combined/trades",
-      "security": {
-        "ticker": "NTLA",
-        "name": "Intellia Therapeutics",
-        "cusip": "",
-        "title": ""
-      },
-      "direction": "increase",
-      "sharesBefore": null,
-      "sharesAfter": null,
-      "sharesDelta": 15925,
-      "marketValueBefore": null,
-      "marketValueAfter": null,
-      "marketValueDelta": 199142.11922883987,
-      "weightPctDelta": 0.01,
-      "percentOfPosition": 0.56,
-      "isNewPosition": false,
-      "prettyDate": "Sep 09, 2026",
-      "significanceScore": 199142.11922883987,
-      "confidence": "medium",
-      "staleDisclosure": false,
-      "narrative": "Cathie Wood 通过 ARKG / ARK Active ETFs 增持 NTLA / Intellia Therapeutics。交易日 2026-09-09。"
-    },
-    {
       "id": "cn_social_security_fund-600031-全国社保基金一零三组合-2026-06-30",
       "market": "cn",
       "investorId": "cn_social_security_fund",
@@ -12328,7 +12328,248 @@
       "narrative": "高毅资产 / 冯柳 / 邓晓峰 通过 上海高毅资产管理合伙企业(有限合伙)-高毅邻山1号远望基金 减持 002415 / 海康威视。报告期 2026-06-30，披露日 2026-07-25。"
     }
   ],
-  "cnMainFundInflow": [],
+  "cnMainFundInflow": [
+    {
+      "ticker": "688802",
+      "name": "沐曦股份-U",
+      "periodLabel": "近10日",
+      "latestPrice": 556.86,
+      "pctChange": 12.77,
+      "mainNetInflow": 2847887374,
+      "mainNetInflowPct": 10.84,
+      "sourceLabel": "东方财富资金流向",
+      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
+      "asOf": "2026-09-24"
+    },
+    {
+      "ticker": "688801",
+      "name": "燧原科技-U",
+      "periodLabel": "近10日",
+      "latestPrice": 490,
+      "pctChange": 244.63,
+      "mainNetInflow": 2482387182,
+      "mainNetInflowPct": 11.1,
+      "sourceLabel": "东方财富资金流向",
+      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
+      "asOf": "2026-09-24"
+    },
+    {
+      "ticker": "603256",
+      "name": "宏和科技",
+      "periodLabel": "近10日",
+      "latestPrice": 152,
+      "pctChange": 17.74,
+      "mainNetInflow": 2417062086,
+      "mainNetInflowPct": 5.4,
+      "sourceLabel": "东方财富资金流向",
+      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
+      "asOf": "2026-09-24"
+    },
+    {
+      "ticker": "003006",
+      "name": "百亚股份",
+      "periodLabel": "近10日",
+      "latestPrice": 22.64,
+      "pctChange": 32.4,
+      "mainNetInflow": 1970641551,
+      "mainNetInflowPct": 19.66,
+      "sourceLabel": "东方财富资金流向",
+      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
+      "asOf": "2026-09-24"
+    },
+    {
+      "ticker": "000725",
+      "name": "京东方Ａ",
+      "periodLabel": "近10日",
+      "latestPrice": 5.85,
+      "pctChange": 7.14,
+      "mainNetInflow": 1735072768,
+      "mainNetInflowPct": 2.2,
+      "sourceLabel": "东方财富资金流向",
+      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
+      "asOf": "2026-09-24"
+    },
+    {
+      "ticker": "002436",
+      "name": "兴森科技",
+      "periodLabel": "近10日",
+      "latestPrice": 43.31,
+      "pctChange": 9.07,
+      "mainNetInflow": 1706778384,
+      "mainNetInflowPct": 2.83,
+      "sourceLabel": "东方财富资金流向",
+      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
+      "asOf": "2026-09-24"
+    },
+    {
+      "ticker": "300489",
+      "name": "光智科技",
+      "periodLabel": "近10日",
+      "latestPrice": 271.15,
+      "pctChange": 28.09,
+      "mainNetInflow": 1505190819,
+      "mainNetInflowPct": 4.96,
+      "sourceLabel": "东方财富资金流向",
+      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
+      "asOf": "2026-09-24"
+    },
+    {
+      "ticker": "600418",
+      "name": "江淮汽车",
+      "periodLabel": "近10日",
+      "latestPrice": 22.93,
+      "pctChange": 18.62,
+      "mainNetInflow": 1347734201,
+      "mainNetInflowPct": 6.58,
+      "sourceLabel": "东方财富资金流向",
+      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
+      "asOf": "2026-09-24"
+    },
+    {
+      "ticker": "300502",
+      "name": "新易盛",
+      "periodLabel": "近10日",
+      "latestPrice": 435,
+      "pctChange": 5.87,
+      "mainNetInflow": 1332090640,
+      "mainNetInflowPct": 0.93,
+      "sourceLabel": "东方财富资金流向",
+      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
+      "asOf": "2026-09-24"
+    },
+    {
+      "ticker": "002080",
+      "name": "中材科技",
+      "periodLabel": "近10日",
+      "latestPrice": 57.2,
+      "pctChange": 12.49,
+      "mainNetInflow": 1186113542,
+      "mainNetInflowPct": 2.45,
+      "sourceLabel": "东方财富资金流向",
+      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
+      "asOf": "2026-09-24"
+    },
+    {
+      "ticker": "300285",
+      "name": "国瓷材料",
+      "periodLabel": "近10日",
+      "latestPrice": 70,
+      "pctChange": 15.99,
+      "mainNetInflow": 1134728848,
+      "mainNetInflowPct": 1.84,
+      "sourceLabel": "东方财富资金流向",
+      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
+      "asOf": "2026-09-24"
+    },
+    {
+      "ticker": "688521",
+      "name": "芯原股份",
+      "periodLabel": "近10日",
+      "latestPrice": 207.45,
+      "pctChange": 12.65,
+      "mainNetInflow": 1133436656,
+      "mainNetInflowPct": 2.82,
+      "sourceLabel": "东方财富资金流向",
+      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
+      "asOf": "2026-09-24"
+    },
+    {
+      "ticker": "688702",
+      "name": "盛科通信-U",
+      "periodLabel": "近10日",
+      "latestPrice": 328.5,
+      "pctChange": 7,
+      "mainNetInflow": 1088278894,
+      "mainNetInflowPct": 4.92,
+      "sourceLabel": "东方财富资金流向",
+      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
+      "asOf": "2026-09-24"
+    },
+    {
+      "ticker": "600641",
+      "name": "先导基电",
+      "periodLabel": "近10日",
+      "latestPrice": 51.56,
+      "pctChange": 71.58,
+      "mainNetInflow": 1007273082,
+      "mainNetInflowPct": 2.81,
+      "sourceLabel": "东方财富资金流向",
+      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
+      "asOf": "2026-09-24"
+    },
+    {
+      "ticker": "688041",
+      "name": "海光信息",
+      "periodLabel": "近10日",
+      "latestPrice": 248.3,
+      "pctChange": 6.86,
+      "mainNetInflow": 994565984,
+      "mainNetInflowPct": 1.94,
+      "sourceLabel": "东方财富资金流向",
+      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
+      "asOf": "2026-09-24"
+    },
+    {
+      "ticker": "603773",
+      "name": "沃格光电",
+      "periodLabel": "近10日",
+      "latestPrice": 97.7,
+      "pctChange": 12.16,
+      "mainNetInflow": 948950009,
+      "mainNetInflowPct": 3.23,
+      "sourceLabel": "东方财富资金流向",
+      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
+      "asOf": "2026-09-24"
+    },
+    {
+      "ticker": "605358",
+      "name": "立昂微",
+      "periodLabel": "近10日",
+      "latestPrice": 48.34,
+      "pctChange": 16.93,
+      "mainNetInflow": 933786940,
+      "mainNetInflowPct": 5.05,
+      "sourceLabel": "东方财富资金流向",
+      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
+      "asOf": "2026-09-24"
+    },
+    {
+      "ticker": "688200",
+      "name": "华峰测控",
+      "periodLabel": "近10日",
+      "latestPrice": 398.08,
+      "pctChange": 11.96,
+      "mainNetInflow": 917324558,
+      "mainNetInflowPct": 5.31,
+      "sourceLabel": "东方财富资金流向",
+      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
+      "asOf": "2026-09-24"
+    },
+    {
+      "ticker": "000002",
+      "name": "万  科Ａ",
+      "periodLabel": "近10日",
+      "latestPrice": 3.76,
+      "pctChange": 18.99,
+      "mainNetInflow": 915986580,
+      "mainNetInflowPct": 5.91,
+      "sourceLabel": "东方财富资金流向",
+      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
+      "asOf": "2026-09-24"
+    },
+    {
+      "ticker": "300476",
+      "name": "胜宏科技",
+      "periodLabel": "近10日",
+      "latestPrice": 232.69,
+      "pctChange": 1.19,
+      "mainNetInflow": 892192560,
+      "mainNetInflowPct": 1.22,
+      "sourceLabel": "东方财富资金流向",
+      "evidenceUrl": "https://data.eastmoney.com/zjlx/list.html?mkt=all",
+      "asOf": "2026-09-24"
+    }
+  ],
   "arkHoldings": [
     {
       "investorId": "cathie_wood",
@@ -15677,11 +15918,6 @@
     }
   ],
   "sourceErrors": [
-    {
-      "id": "cn_main_fund_flow",
-      "displayName": "A股主力资金净流入",
-      "error": "Failed to fetch https://push2.eastmoney.com/api/qt/clist/get?fid=f174&po=1&pz=50&pn=1&np=1&fltt=2&invt=2&ut=b2884a393a59ad64002292a3e90d46a5&fs=m%3A0%2Bt%3A6%2Bf%3A%212%2Cm%3A0%2Bt%3A13%2Bf%3A%212%2Cm%3A0%2Bt%3A80%2Bf%3A%212%2Cm%3A1%2Bt%3A2%2Bf%3A%212%2Cm%3A1%2Bt%3A23%2Bf%3A%212%2Cm%3A0%2Bt%3A7%2Bf%3A%212%2Cm%3A1%2Bt%3A3%2Bf%3A%212&fields=f12%2Cf14%2Cf2%2Cf160%2Cf174%2Cf175%2Cf176%2Cf177%2Cf178%2Cf179%2Cf180%2Cf181%2Cf182%2Cf183%2Cf260%2Cf261%2Cf124: 502 Bad Gateway"
-    },
     {
       "id": "berkshire_hathaway",
       "displayName": "Warren Buffett",
