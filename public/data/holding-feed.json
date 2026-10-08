@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T17:50:16.611Z",
+  "generatedAt": "2026-10-08T02:49:11.926Z",
   "site": {
     "name": "chicang",
     "tagline": "重要资金公开披露雷达",
@@ -9,7 +9,7 @@
     "us": {
       "label": "美股",
       "profileCount": 3,
-      "eventCount": 139
+      "eventCount": 130
     },
     "cn": {
       "label": "A 股",
@@ -19,10 +19,10 @@
   },
   "stats": {
     "investorCount": 11,
-    "eventCount": 208,
+    "eventCount": 199,
     "arkTradeCount": 100,
     "secManagerCount": 0,
-    "congressTradeCount": 39,
+    "congressTradeCount": 30,
     "form4TradeCount": 0,
     "regionalWatchlistCount": 8,
     "regionalTradeCount": 69,
@@ -829,9 +829,9 @@
         }
       ],
       "returns": {
-        "oneYearPct": 1.5486477387498545,
-        "threeYearPct": 130.7829635297118,
-        "asOf": "2026-10-06",
+        "oneYearPct": -4.571490327461368,
+        "threeYearPct": 124.33943089430895,
+        "asOf": "2026-10-07",
         "sourceLabel": "ARKK ETF 市价代理，非 Cathie Wood 全部管理资产真实净值",
         "sourceUrl": "https://www.nasdaq.com/market-activity/etf/arkk/historical",
         "isProxy": true,
@@ -859,7 +859,7 @@
         "reportDate": "2026-09-17",
         "filingDate": "2026-10-07"
       },
-      "positionCount": 39,
+      "positionCount": 30,
       "changes": [
         {
           "id": "congress-2026-10-07-2026-09-17-tony-wied-NOW-Sell",
@@ -895,39 +895,6 @@
           "narrative": "Tony Wied 通过 US Congress PTR 减持 NOW / NOW。交易日 2026-09-17。"
         },
         {
-          "id": "congress-2026-10-07-2026-09-17-tony-wied-UPST-Sell",
-          "market": "us",
-          "investorId": "us_congress",
-          "investorName": "Tony Wied",
-          "vehicleName": "US Congress PTR",
-          "sourceTier": "L1",
-          "disclosureType": "STOCK Act PTR",
-          "sourceLabel": "House Clerk PTR",
-          "indexSourceLabel": "CongressFlow third-party index",
-          "reportDate": "2026-09-17",
-          "previousReportDate": null,
-          "filingDate": "2026-10-07",
-          "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/9116361.pdf",
-          "security": {
-            "ticker": "UPST",
-            "name": "UPST",
-            "cusip": "",
-            "title": "Disclosed range"
-          },
-          "direction": "decrease",
-          "sharesBefore": null,
-          "sharesAfter": null,
-          "sharesDelta": null,
-          "marketValueBefore": null,
-          "marketValueAfter": null,
-          "marketValueDelta": -32500.5,
-          "disclosedAmountRange": "$15,001 - $50,000",
-          "significanceScore": 32500.5,
-          "confidence": "medium",
-          "staleDisclosure": false,
-          "narrative": "Tony Wied 通过 US Congress PTR 减持 UPST / UPST。交易日 2026-09-17。"
-        },
-        {
           "id": "congress-2026-10-07-2026-09-17-tony-wied-TTD-Sell",
           "market": "us",
           "investorId": "us_congress",
@@ -959,6 +926,72 @@
           "confidence": "medium",
           "staleDisclosure": false,
           "narrative": "Tony Wied 通过 US Congress PTR 减持 TTD / TTD。交易日 2026-09-17。"
+        },
+        {
+          "id": "congress-2026-10-07-2026-09-17-tony-wied-CMG-Sell",
+          "market": "us",
+          "investorId": "us_congress",
+          "investorName": "Tony Wied",
+          "vehicleName": "US Congress PTR",
+          "sourceTier": "L1",
+          "disclosureType": "STOCK Act PTR",
+          "sourceLabel": "House Clerk PTR",
+          "indexSourceLabel": "CongressFlow third-party index",
+          "reportDate": "2026-09-17",
+          "previousReportDate": null,
+          "filingDate": "2026-10-07",
+          "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/9116361.pdf",
+          "security": {
+            "ticker": "CMG",
+            "name": "CMG",
+            "cusip": "",
+            "title": "Disclosed range"
+          },
+          "direction": "decrease",
+          "sharesBefore": null,
+          "sharesAfter": null,
+          "sharesDelta": null,
+          "marketValueBefore": null,
+          "marketValueAfter": null,
+          "marketValueDelta": -32500.5,
+          "disclosedAmountRange": "$15,001 - $50,000",
+          "significanceScore": 32500.5,
+          "confidence": "medium",
+          "staleDisclosure": false,
+          "narrative": "Tony Wied 通过 US Congress PTR 减持 CMG / CMG。交易日 2026-09-17。"
+        },
+        {
+          "id": "congress-2026-10-07-2026-09-17-tony-wied-UPST-Sell",
+          "market": "us",
+          "investorId": "us_congress",
+          "investorName": "Tony Wied",
+          "vehicleName": "US Congress PTR",
+          "sourceTier": "L1",
+          "disclosureType": "STOCK Act PTR",
+          "sourceLabel": "House Clerk PTR",
+          "indexSourceLabel": "CongressFlow third-party index",
+          "reportDate": "2026-09-17",
+          "previousReportDate": null,
+          "filingDate": "2026-10-07",
+          "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/9116361.pdf",
+          "security": {
+            "ticker": "UPST",
+            "name": "UPST",
+            "cusip": "",
+            "title": "Disclosed range"
+          },
+          "direction": "decrease",
+          "sharesBefore": null,
+          "sharesAfter": null,
+          "sharesDelta": null,
+          "marketValueBefore": null,
+          "marketValueAfter": null,
+          "marketValueDelta": -32500.5,
+          "disclosedAmountRange": "$15,001 - $50,000",
+          "significanceScore": 32500.5,
+          "confidence": "medium",
+          "staleDisclosure": false,
+          "narrative": "Tony Wied 通过 US Congress PTR 减持 UPST / UPST。交易日 2026-09-17。"
         },
         {
           "id": "congress-2026-10-06-2026-09-17-lloyd-doggett-HD-Buy",
@@ -1192,39 +1225,6 @@
           "narrative": "Michael Rulli 通过 US Congress PTR 减持 WFC / WFC。交易日 2026-09-03。"
         },
         {
-          "id": "congress-2026-10-02-2026-09-22-david-taylor-MPC-Sell",
-          "market": "us",
-          "investorId": "us_congress",
-          "investorName": "David Taylor",
-          "vehicleName": "US Congress PTR",
-          "sourceTier": "L1",
-          "disclosureType": "STOCK Act PTR",
-          "sourceLabel": "House Clerk PTR",
-          "indexSourceLabel": "CongressFlow third-party index",
-          "reportDate": "2026-09-22",
-          "previousReportDate": null,
-          "filingDate": "2026-10-02",
-          "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035549.pdf",
-          "security": {
-            "ticker": "MPC",
-            "name": "MPC",
-            "cusip": "",
-            "title": "Disclosed range"
-          },
-          "direction": "decrease",
-          "sharesBefore": null,
-          "sharesAfter": null,
-          "sharesDelta": null,
-          "marketValueBefore": null,
-          "marketValueAfter": null,
-          "marketValueDelta": -8000.5,
-          "disclosedAmountRange": "$1,001 - $15,000",
-          "significanceScore": 8000.5,
-          "confidence": "medium",
-          "staleDisclosure": false,
-          "narrative": "David Taylor 通过 US Congress PTR 减持 MPC / MPC。交易日 2026-09-22。"
-        },
-        {
           "id": "congress-2026-10-02-2026-09-22-david-taylor-HD-Buy",
           "market": "us",
           "investorId": "us_congress",
@@ -1256,6 +1256,39 @@
           "confidence": "medium",
           "staleDisclosure": false,
           "narrative": "David Taylor 通过 US Congress PTR 增持 HD / HD。交易日 2026-09-22。"
+        },
+        {
+          "id": "congress-2026-10-02-2026-09-22-david-taylor-MPC-Sell",
+          "market": "us",
+          "investorId": "us_congress",
+          "investorName": "David Taylor",
+          "vehicleName": "US Congress PTR",
+          "sourceTier": "L1",
+          "disclosureType": "STOCK Act PTR",
+          "sourceLabel": "House Clerk PTR",
+          "indexSourceLabel": "CongressFlow third-party index",
+          "reportDate": "2026-09-22",
+          "previousReportDate": null,
+          "filingDate": "2026-10-02",
+          "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035549.pdf",
+          "security": {
+            "ticker": "MPC",
+            "name": "MPC",
+            "cusip": "",
+            "title": "Disclosed range"
+          },
+          "direction": "decrease",
+          "sharesBefore": null,
+          "sharesAfter": null,
+          "sharesDelta": null,
+          "marketValueBefore": null,
+          "marketValueAfter": null,
+          "marketValueDelta": -8000.5,
+          "disclosedAmountRange": "$1,001 - $15,000",
+          "significanceScore": 8000.5,
+          "confidence": "medium",
+          "staleDisclosure": false,
+          "narrative": "David Taylor 通过 US Congress PTR 减持 MPC / MPC。交易日 2026-09-22。"
         },
         {
           "id": "congress-2026-10-02-2026-09-22-david-taylor-AMGN-Buy",
@@ -1522,39 +1555,6 @@
           "narrative": "Sheldon Whitehouse 通过 US Congress PTR 减持 ADI / ADI。交易日 2026-09-04。"
         },
         {
-          "id": "congress-2026-09-28-2026-09-09-kevin-hern-MRSH-Sell",
-          "market": "us",
-          "investorId": "us_congress",
-          "investorName": "Kevin Hern",
-          "vehicleName": "US Congress PTR",
-          "sourceTier": "L1",
-          "disclosureType": "STOCK Act PTR",
-          "sourceLabel": "House Clerk PTR",
-          "indexSourceLabel": "CongressFlow third-party index",
-          "reportDate": "2026-09-09",
-          "previousReportDate": null,
-          "filingDate": "2026-09-28",
-          "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035491.pdf",
-          "security": {
-            "ticker": "MRSH",
-            "name": "MRSH",
-            "cusip": "",
-            "title": "Disclosed range"
-          },
-          "direction": "decrease",
-          "sharesBefore": null,
-          "sharesAfter": null,
-          "sharesDelta": null,
-          "marketValueBefore": null,
-          "marketValueAfter": null,
-          "marketValueDelta": -175000.5,
-          "disclosedAmountRange": "$100,001 - $250,000",
-          "significanceScore": 175000.5,
-          "confidence": "medium",
-          "staleDisclosure": false,
-          "narrative": "Kevin Hern 通过 US Congress PTR 减持 MRSH / MRSH。交易日 2026-09-09。"
-        },
-        {
           "id": "congress-2026-09-28-2026-09-15-kevin-hern-CNP-Sell",
           "market": "us",
           "investorId": "us_congress",
@@ -1621,7 +1621,7 @@
           "narrative": "Kevin Hern 通过 US Congress PTR 减持 STE / STE。交易日 2026-09-15。"
         },
         {
-          "id": "congress-2026-09-28-2026-09-14-kevin-hern-CDNS-Sell",
+          "id": "congress-2026-09-28-2026-09-14-kevin-hern-HD-Sell",
           "market": "us",
           "investorId": "us_congress",
           "investorName": "Kevin Hern",
@@ -1635,8 +1635,8 @@
           "filingDate": "2026-09-28",
           "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035491.pdf",
           "security": {
-            "ticker": "CDNS",
-            "name": "CDNS",
+            "ticker": "HD",
+            "name": "HD",
             "cusip": "",
             "title": "Disclosed range"
           },
@@ -1651,7 +1651,7 @@
           "significanceScore": 32500.5,
           "confidence": "medium",
           "staleDisclosure": false,
-          "narrative": "Kevin Hern 通过 US Congress PTR 减持 CDNS / CDNS。交易日 2026-09-14。"
+          "narrative": "Kevin Hern 通过 US Congress PTR 减持 HD / HD。交易日 2026-09-14。"
         }
       ],
       "topIncreases": [
@@ -1688,16 +1688,6 @@
       ],
       "topDecreases": [
         {
-          "ticker": "MRSH",
-          "name": "MRSH",
-          "market": "us",
-          "direction": "decrease",
-          "value": -175000.5,
-          "valueCurrency": "USD",
-          "date": "2026-09-28",
-          "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035491.pdf"
-        },
-        {
           "ticker": "NOW",
           "name": "NOW",
           "market": "us",
@@ -1708,8 +1698,18 @@
           "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/9116361.pdf"
         },
         {
-          "ticker": "UPST",
-          "name": "UPST",
+          "ticker": "TTD",
+          "name": "TTD",
+          "market": "us",
+          "direction": "decrease",
+          "value": -32500.5,
+          "valueCurrency": "USD",
+          "date": "2026-10-07",
+          "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/9116361.pdf"
+        },
+        {
+          "ticker": "CMG",
+          "name": "CMG",
           "market": "us",
           "direction": "decrease",
           "value": -32500.5,
@@ -1785,11 +1785,11 @@
       "topIncreases": [],
       "topDecreases": [],
       "returns": {
-        "oneYearPct": 11.243958349342238,
-        "threeYearPct": 142.19197217944085,
+        "oneYearPct": 9.830450405205308,
+        "threeYearPct": 141.32697360345472,
         "sourceLabel": "13F Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://www.sec.gov/edgar/search/",
-        "asOf": "2026-10-06",
+        "asOf": "2026-10-07",
         "isProxy": true,
         "proxyDisclosure": "按当前公开 Top 持仓价格估算，不代表管理人真实组合净值或产品收益"
       }
@@ -2327,11 +2327,11 @@
         }
       ],
       "returns": {
-        "oneYearPct": -1.7078777509287058,
-        "threeYearPct": 22.3033966947246,
+        "oneYearPct": -1.9646325997478398,
+        "threeYearPct": 22.073756829673556,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SZ002415",
-        "asOf": "2026-09-30",
+        "asOf": "2026-10-08",
         "isProxy": true,
         "proxyDisclosure": "按当前公开 Top 持仓价格估算，不代表管理人真实组合净值或产品收益"
       }
@@ -3090,11 +3090,11 @@
         }
       ],
       "returns": {
-        "oneYearPct": 43.087095857928404,
-        "threeYearPct": 98.94734733607561,
+        "oneYearPct": 45.046533693749765,
+        "threeYearPct": 101.42394793724367,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SH600176",
-        "asOf": "2026-09-30",
+        "asOf": "2026-10-08",
         "isProxy": true,
         "proxyDisclosure": "按当前公开 Top 持仓价格估算，不代表管理人真实组合净值或产品收益"
       }
@@ -3217,11 +3217,11 @@
       "topIncreases": [],
       "topDecreases": [],
       "returns": {
-        "oneYearPct": 19.619644811614723,
-        "threeYearPct": 77.65433498391371,
+        "oneYearPct": 20.66503566399384,
+        "threeYearPct": 79.20687538354417,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SH601939",
-        "asOf": "2026-09-30",
+        "asOf": "2026-10-08",
         "isProxy": true,
         "proxyDisclosure": "按当前公开 Top 持仓价格估算，不代表管理人真实组合净值或产品收益"
       }
@@ -3631,11 +3631,11 @@
         }
       ],
       "returns": {
-        "oneYearPct": 20.30006612591086,
-        "threeYearPct": 59.919679103507335,
+        "oneYearPct": 21.16064657143612,
+        "threeYearPct": 61.13634526817017,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SH601988",
-        "asOf": "2026-09-30",
+        "asOf": "2026-10-08",
         "isProxy": true,
         "proxyDisclosure": "按当前公开 Top 持仓价格估算，不代表管理人真实组合净值或产品收益"
       }
@@ -3757,11 +3757,11 @@
       ],
       "topDecreases": [],
       "returns": {
-        "oneYearPct": 14.141556559880474,
-        "threeYearPct": 110.25091455330234,
+        "oneYearPct": 10.655351167898461,
+        "threeYearPct": 103.50457296388285,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SH603986",
-        "asOf": "2026-09-30",
+        "asOf": "2026-10-08",
         "isProxy": true,
         "proxyDisclosure": "按当前公开 Top 持仓价格估算，不代表管理人真实组合净值或产品收益"
       }
@@ -4458,11 +4458,11 @@
         }
       ],
       "returns": {
-        "oneYearPct": 8.360946855158536,
-        "threeYearPct": 151.80273633572267,
+        "oneYearPct": 8.71326154897032,
+        "threeYearPct": 152.30481461273376,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SZ300750",
-        "asOf": "2026-09-30",
+        "asOf": "2026-10-08",
         "isProxy": true,
         "proxyDisclosure": "按当前公开 Top 持仓价格估算，不代表管理人真实组合净值或产品收益"
       }
@@ -5062,11 +5062,11 @@
       ],
       "topDecreases": [],
       "returns": {
-        "oneYearPct": 44.57210381151577,
-        "threeYearPct": 204.87268114274445,
+        "oneYearPct": 48.37252175039085,
+        "threeYearPct": 216.2599553044022,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SH601328",
-        "asOf": "2026-09-30",
+        "asOf": "2026-10-08",
         "isProxy": true,
         "proxyDisclosure": "按当前公开 Top 持仓价格估算，不代表管理人真实组合净值或产品收益"
       }
@@ -5155,11 +5155,11 @@
         }
       ],
       "returns": {
-        "oneYearPct": -31.05706103970845,
-        "threeYearPct": -34.720992821425625,
+        "oneYearPct": -31.61833274349452,
+        "threeYearPct": -35.25243607193289,
         "sourceLabel": "A股前十大股东 Top持仓价格代理 · 覆盖 100%",
         "sourceUrl": "https://emweb.securities.eastmoney.com/PC_HSF10/ShareholderResearch/Index?type=web&code=SZ002153",
-        "asOf": "2026-09-30",
+        "asOf": "2026-10-08",
         "isProxy": true,
         "proxyDisclosure": "按当前公开 Top 持仓价格估算，不代表管理人真实组合净值或产品收益"
       }
@@ -5200,39 +5200,6 @@
       "narrative": "Tony Wied 通过 US Congress PTR 减持 NOW / NOW。交易日 2026-09-17。"
     },
     {
-      "id": "congress-2026-10-07-2026-09-17-tony-wied-UPST-Sell",
-      "market": "us",
-      "investorId": "us_congress",
-      "investorName": "Tony Wied",
-      "vehicleName": "US Congress PTR",
-      "sourceTier": "L1",
-      "disclosureType": "STOCK Act PTR",
-      "sourceLabel": "House Clerk PTR",
-      "indexSourceLabel": "CongressFlow third-party index",
-      "reportDate": "2026-09-17",
-      "previousReportDate": null,
-      "filingDate": "2026-10-07",
-      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/9116361.pdf",
-      "security": {
-        "ticker": "UPST",
-        "name": "UPST",
-        "cusip": "",
-        "title": "Disclosed range"
-      },
-      "direction": "decrease",
-      "sharesBefore": null,
-      "sharesAfter": null,
-      "sharesDelta": null,
-      "marketValueBefore": null,
-      "marketValueAfter": null,
-      "marketValueDelta": -32500.5,
-      "disclosedAmountRange": "$15,001 - $50,000",
-      "significanceScore": 32500.5,
-      "confidence": "medium",
-      "staleDisclosure": false,
-      "narrative": "Tony Wied 通过 US Congress PTR 减持 UPST / UPST。交易日 2026-09-17。"
-    },
-    {
       "id": "congress-2026-10-07-2026-09-17-tony-wied-TTD-Sell",
       "market": "us",
       "investorId": "us_congress",
@@ -5264,6 +5231,72 @@
       "confidence": "medium",
       "staleDisclosure": false,
       "narrative": "Tony Wied 通过 US Congress PTR 减持 TTD / TTD。交易日 2026-09-17。"
+    },
+    {
+      "id": "congress-2026-10-07-2026-09-17-tony-wied-CMG-Sell",
+      "market": "us",
+      "investorId": "us_congress",
+      "investorName": "Tony Wied",
+      "vehicleName": "US Congress PTR",
+      "sourceTier": "L1",
+      "disclosureType": "STOCK Act PTR",
+      "sourceLabel": "House Clerk PTR",
+      "indexSourceLabel": "CongressFlow third-party index",
+      "reportDate": "2026-09-17",
+      "previousReportDate": null,
+      "filingDate": "2026-10-07",
+      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/9116361.pdf",
+      "security": {
+        "ticker": "CMG",
+        "name": "CMG",
+        "cusip": "",
+        "title": "Disclosed range"
+      },
+      "direction": "decrease",
+      "sharesBefore": null,
+      "sharesAfter": null,
+      "sharesDelta": null,
+      "marketValueBefore": null,
+      "marketValueAfter": null,
+      "marketValueDelta": -32500.5,
+      "disclosedAmountRange": "$15,001 - $50,000",
+      "significanceScore": 32500.5,
+      "confidence": "medium",
+      "staleDisclosure": false,
+      "narrative": "Tony Wied 通过 US Congress PTR 减持 CMG / CMG。交易日 2026-09-17。"
+    },
+    {
+      "id": "congress-2026-10-07-2026-09-17-tony-wied-UPST-Sell",
+      "market": "us",
+      "investorId": "us_congress",
+      "investorName": "Tony Wied",
+      "vehicleName": "US Congress PTR",
+      "sourceTier": "L1",
+      "disclosureType": "STOCK Act PTR",
+      "sourceLabel": "House Clerk PTR",
+      "indexSourceLabel": "CongressFlow third-party index",
+      "reportDate": "2026-09-17",
+      "previousReportDate": null,
+      "filingDate": "2026-10-07",
+      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/9116361.pdf",
+      "security": {
+        "ticker": "UPST",
+        "name": "UPST",
+        "cusip": "",
+        "title": "Disclosed range"
+      },
+      "direction": "decrease",
+      "sharesBefore": null,
+      "sharesAfter": null,
+      "sharesDelta": null,
+      "marketValueBefore": null,
+      "marketValueAfter": null,
+      "marketValueDelta": -32500.5,
+      "disclosedAmountRange": "$15,001 - $50,000",
+      "significanceScore": 32500.5,
+      "confidence": "medium",
+      "staleDisclosure": false,
+      "narrative": "Tony Wied 通过 US Congress PTR 减持 UPST / UPST。交易日 2026-09-17。"
     },
     {
       "id": "cathiesark-2026-10-06T00:00:00.000Z-ARKQ-TER-Sell-51524",
@@ -7837,39 +7870,6 @@
       "narrative": "Cathie Wood 通过 ARKG / ARK Active ETFs 减持 TXG / 10x Genomics。交易日 2026-10-02。"
     },
     {
-      "id": "congress-2026-10-02-2026-09-22-david-taylor-MPC-Sell",
-      "market": "us",
-      "investorId": "us_congress",
-      "investorName": "David Taylor",
-      "vehicleName": "US Congress PTR",
-      "sourceTier": "L1",
-      "disclosureType": "STOCK Act PTR",
-      "sourceLabel": "House Clerk PTR",
-      "indexSourceLabel": "CongressFlow third-party index",
-      "reportDate": "2026-09-22",
-      "previousReportDate": null,
-      "filingDate": "2026-10-02",
-      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035549.pdf",
-      "security": {
-        "ticker": "MPC",
-        "name": "MPC",
-        "cusip": "",
-        "title": "Disclosed range"
-      },
-      "direction": "decrease",
-      "sharesBefore": null,
-      "sharesAfter": null,
-      "sharesDelta": null,
-      "marketValueBefore": null,
-      "marketValueAfter": null,
-      "marketValueDelta": -8000.5,
-      "disclosedAmountRange": "$1,001 - $15,000",
-      "significanceScore": 8000.5,
-      "confidence": "medium",
-      "staleDisclosure": false,
-      "narrative": "David Taylor 通过 US Congress PTR 减持 MPC / MPC。交易日 2026-09-22。"
-    },
-    {
       "id": "congress-2026-10-02-2026-09-22-david-taylor-HD-Buy",
       "market": "us",
       "investorId": "us_congress",
@@ -7901,6 +7901,39 @@
       "confidence": "medium",
       "staleDisclosure": false,
       "narrative": "David Taylor 通过 US Congress PTR 增持 HD / HD。交易日 2026-09-22。"
+    },
+    {
+      "id": "congress-2026-10-02-2026-09-22-david-taylor-MPC-Sell",
+      "market": "us",
+      "investorId": "us_congress",
+      "investorName": "David Taylor",
+      "vehicleName": "US Congress PTR",
+      "sourceTier": "L1",
+      "disclosureType": "STOCK Act PTR",
+      "sourceLabel": "House Clerk PTR",
+      "indexSourceLabel": "CongressFlow third-party index",
+      "reportDate": "2026-09-22",
+      "previousReportDate": null,
+      "filingDate": "2026-10-02",
+      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035549.pdf",
+      "security": {
+        "ticker": "MPC",
+        "name": "MPC",
+        "cusip": "",
+        "title": "Disclosed range"
+      },
+      "direction": "decrease",
+      "sharesBefore": null,
+      "sharesAfter": null,
+      "sharesDelta": null,
+      "marketValueBefore": null,
+      "marketValueAfter": null,
+      "marketValueDelta": -8000.5,
+      "disclosedAmountRange": "$1,001 - $15,000",
+      "significanceScore": 8000.5,
+      "confidence": "medium",
+      "staleDisclosure": false,
+      "narrative": "David Taylor 通过 US Congress PTR 减持 MPC / MPC。交易日 2026-09-22。"
     },
     {
       "id": "congress-2026-10-02-2026-09-22-david-taylor-AMGN-Buy",
@@ -8815,39 +8848,6 @@
       "narrative": "Cathie Wood 通过 ARKF / ARK Active ETFs 减持 Z / Zillow。交易日 2026-09-30。"
     },
     {
-      "id": "congress-2026-09-28-2026-09-09-kevin-hern-MRSH-Sell",
-      "market": "us",
-      "investorId": "us_congress",
-      "investorName": "Kevin Hern",
-      "vehicleName": "US Congress PTR",
-      "sourceTier": "L1",
-      "disclosureType": "STOCK Act PTR",
-      "sourceLabel": "House Clerk PTR",
-      "indexSourceLabel": "CongressFlow third-party index",
-      "reportDate": "2026-09-09",
-      "previousReportDate": null,
-      "filingDate": "2026-09-28",
-      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035491.pdf",
-      "security": {
-        "ticker": "MRSH",
-        "name": "MRSH",
-        "cusip": "",
-        "title": "Disclosed range"
-      },
-      "direction": "decrease",
-      "sharesBefore": null,
-      "sharesAfter": null,
-      "sharesDelta": null,
-      "marketValueBefore": null,
-      "marketValueAfter": null,
-      "marketValueDelta": -175000.5,
-      "disclosedAmountRange": "$100,001 - $250,000",
-      "significanceScore": 175000.5,
-      "confidence": "medium",
-      "staleDisclosure": false,
-      "narrative": "Kevin Hern 通过 US Congress PTR 减持 MRSH / MRSH。交易日 2026-09-09。"
-    },
-    {
       "id": "congress-2026-09-28-2026-09-15-kevin-hern-CNP-Sell",
       "market": "us",
       "investorId": "us_congress",
@@ -8914,7 +8914,7 @@
       "narrative": "Kevin Hern 通过 US Congress PTR 减持 STE / STE。交易日 2026-09-15。"
     },
     {
-      "id": "congress-2026-09-28-2026-09-14-kevin-hern-CDNS-Sell",
+      "id": "congress-2026-09-28-2026-09-14-kevin-hern-HD-Sell",
       "market": "us",
       "investorId": "us_congress",
       "investorName": "Kevin Hern",
@@ -8928,8 +8928,8 @@
       "filingDate": "2026-09-28",
       "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035491.pdf",
       "security": {
-        "ticker": "CDNS",
-        "name": "CDNS",
+        "ticker": "HD",
+        "name": "HD",
         "cusip": "",
         "title": "Disclosed range"
       },
@@ -8944,73 +8944,7 @@
       "significanceScore": 32500.5,
       "confidence": "medium",
       "staleDisclosure": false,
-      "narrative": "Kevin Hern 通过 US Congress PTR 减持 CDNS / CDNS。交易日 2026-09-14。"
-    },
-    {
-      "id": "congress-2026-09-28-2026-09-14-kevin-hern-DVN-Sell",
-      "market": "us",
-      "investorId": "us_congress",
-      "investorName": "Kevin Hern",
-      "vehicleName": "US Congress PTR",
-      "sourceTier": "L1",
-      "disclosureType": "STOCK Act PTR",
-      "sourceLabel": "House Clerk PTR",
-      "indexSourceLabel": "CongressFlow third-party index",
-      "reportDate": "2026-09-14",
-      "previousReportDate": null,
-      "filingDate": "2026-09-28",
-      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035491.pdf",
-      "security": {
-        "ticker": "DVN",
-        "name": "DVN",
-        "cusip": "",
-        "title": "Disclosed range"
-      },
-      "direction": "decrease",
-      "sharesBefore": null,
-      "sharesAfter": null,
-      "sharesDelta": null,
-      "marketValueBefore": null,
-      "marketValueAfter": null,
-      "marketValueDelta": -32500.5,
-      "disclosedAmountRange": "$15,001 - $50,000",
-      "significanceScore": 32500.5,
-      "confidence": "medium",
-      "staleDisclosure": false,
-      "narrative": "Kevin Hern 通过 US Congress PTR 减持 DVN / DVN。交易日 2026-09-14。"
-    },
-    {
-      "id": "congress-2026-09-28-2026-09-14-kevin-hern-NEE-Sell",
-      "market": "us",
-      "investorId": "us_congress",
-      "investorName": "Kevin Hern",
-      "vehicleName": "US Congress PTR",
-      "sourceTier": "L1",
-      "disclosureType": "STOCK Act PTR",
-      "sourceLabel": "House Clerk PTR",
-      "indexSourceLabel": "CongressFlow third-party index",
-      "reportDate": "2026-09-14",
-      "previousReportDate": null,
-      "filingDate": "2026-09-28",
-      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035491.pdf",
-      "security": {
-        "ticker": "NEE",
-        "name": "NEE",
-        "cusip": "",
-        "title": "Disclosed range"
-      },
-      "direction": "decrease",
-      "sharesBefore": null,
-      "sharesAfter": null,
-      "sharesDelta": null,
-      "marketValueBefore": null,
-      "marketValueAfter": null,
-      "marketValueDelta": -32500.5,
-      "disclosedAmountRange": "$15,001 - $50,000",
-      "significanceScore": 32500.5,
-      "confidence": "medium",
-      "staleDisclosure": false,
-      "narrative": "Kevin Hern 通过 US Congress PTR 减持 NEE / NEE。交易日 2026-09-14。"
+      "narrative": "Kevin Hern 通过 US Congress PTR 减持 HD / HD。交易日 2026-09-14。"
     },
     {
       "id": "congress-2026-09-28-2026-09-14-kevin-hern-AIO-Sell",
@@ -9046,7 +8980,7 @@
       "narrative": "Kevin Hern 通过 US Congress PTR 减持 AIO / AIO。交易日 2026-09-14。"
     },
     {
-      "id": "congress-2026-09-28-2026-09-14-kevin-hern-IQV-Sell",
+      "id": "congress-2026-09-28-2026-09-14-kevin-hern-CDNS-Sell",
       "market": "us",
       "investorId": "us_congress",
       "investorName": "Kevin Hern",
@@ -9060,8 +8994,8 @@
       "filingDate": "2026-09-28",
       "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035491.pdf",
       "security": {
-        "ticker": "IQV",
-        "name": "IQV",
+        "ticker": "CDNS",
+        "name": "CDNS",
         "cusip": "",
         "title": "Disclosed range"
       },
@@ -9076,7 +9010,7 @@
       "significanceScore": 32500.5,
       "confidence": "medium",
       "staleDisclosure": false,
-      "narrative": "Kevin Hern 通过 US Congress PTR 减持 IQV / IQV。交易日 2026-09-14。"
+      "narrative": "Kevin Hern 通过 US Congress PTR 减持 CDNS / CDNS。交易日 2026-09-14。"
     },
     {
       "id": "congress-2026-09-28-2026-09-14-kevin-hern-ROK-Sell",
@@ -9112,7 +9046,7 @@
       "narrative": "Kevin Hern 通过 US Congress PTR 减持 ROK / ROK。交易日 2026-09-14。"
     },
     {
-      "id": "congress-2026-09-28-2026-09-10-kevin-hern-UNH-Sell",
+      "id": "congress-2026-09-28-2026-09-15-kevin-hern-TJX-Sell",
       "market": "us",
       "investorId": "us_congress",
       "investorName": "Kevin Hern",
@@ -9121,13 +9055,13 @@
       "disclosureType": "STOCK Act PTR",
       "sourceLabel": "House Clerk PTR",
       "indexSourceLabel": "CongressFlow third-party index",
-      "reportDate": "2026-09-10",
+      "reportDate": "2026-09-15",
       "previousReportDate": null,
       "filingDate": "2026-09-28",
       "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035491.pdf",
       "security": {
-        "ticker": "UNH",
-        "name": "UNH",
+        "ticker": "TJX",
+        "name": "TJX",
         "cusip": "",
         "title": "Disclosed range"
       },
@@ -9137,78 +9071,12 @@
       "sharesDelta": null,
       "marketValueBefore": null,
       "marketValueAfter": null,
-      "marketValueDelta": -32500.5,
-      "disclosedAmountRange": "$15,001 - $50,000",
-      "significanceScore": 32500.5,
+      "marketValueDelta": -8000.5,
+      "disclosedAmountRange": "$1,001 - $15,000",
+      "significanceScore": 8000.5,
       "confidence": "medium",
       "staleDisclosure": false,
-      "narrative": "Kevin Hern 通过 US Congress PTR 减持 UNH / UNH。交易日 2026-09-10。"
-    },
-    {
-      "id": "congress-2026-09-28-2026-09-10-kevin-hern-HD-Sell",
-      "market": "us",
-      "investorId": "us_congress",
-      "investorName": "Kevin Hern",
-      "vehicleName": "US Congress PTR",
-      "sourceTier": "L1",
-      "disclosureType": "STOCK Act PTR",
-      "sourceLabel": "House Clerk PTR",
-      "indexSourceLabel": "CongressFlow third-party index",
-      "reportDate": "2026-09-10",
-      "previousReportDate": null,
-      "filingDate": "2026-09-28",
-      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035491.pdf",
-      "security": {
-        "ticker": "HD",
-        "name": "HD",
-        "cusip": "",
-        "title": "Disclosed range"
-      },
-      "direction": "decrease",
-      "sharesBefore": null,
-      "sharesAfter": null,
-      "sharesDelta": null,
-      "marketValueBefore": null,
-      "marketValueAfter": null,
-      "marketValueDelta": -32500.5,
-      "disclosedAmountRange": "$15,001 - $50,000",
-      "significanceScore": 32500.5,
-      "confidence": "medium",
-      "staleDisclosure": false,
-      "narrative": "Kevin Hern 通过 US Congress PTR 减持 HD / HD。交易日 2026-09-10。"
-    },
-    {
-      "id": "congress-2026-09-28-2026-09-09-kevin-hern-ITW-Sell",
-      "market": "us",
-      "investorId": "us_congress",
-      "investorName": "Kevin Hern",
-      "vehicleName": "US Congress PTR",
-      "sourceTier": "L1",
-      "disclosureType": "STOCK Act PTR",
-      "sourceLabel": "House Clerk PTR",
-      "indexSourceLabel": "CongressFlow third-party index",
-      "reportDate": "2026-09-09",
-      "previousReportDate": null,
-      "filingDate": "2026-09-28",
-      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035491.pdf",
-      "security": {
-        "ticker": "ITW",
-        "name": "ITW",
-        "cusip": "",
-        "title": "Disclosed range"
-      },
-      "direction": "decrease",
-      "sharesBefore": null,
-      "sharesAfter": null,
-      "sharesDelta": null,
-      "marketValueBefore": null,
-      "marketValueAfter": null,
-      "marketValueDelta": -32500.5,
-      "disclosedAmountRange": "$15,001 - $50,000",
-      "significanceScore": 32500.5,
-      "confidence": "medium",
-      "staleDisclosure": false,
-      "narrative": "Kevin Hern 通过 US Congress PTR 减持 ITW / ITW。交易日 2026-09-09。"
+      "narrative": "Kevin Hern 通过 US Congress PTR 减持 TJX / TJX。交易日 2026-09-15。"
     },
     {
       "id": "congress-2026-09-28-2026-09-15-kevin-hern-STX-Sell",
@@ -9244,39 +9112,6 @@
       "narrative": "Kevin Hern 通过 US Congress PTR 减持 STX / STX。交易日 2026-09-15。"
     },
     {
-      "id": "congress-2026-09-28-2026-09-15-kevin-hern-TJX-Sell",
-      "market": "us",
-      "investorId": "us_congress",
-      "investorName": "Kevin Hern",
-      "vehicleName": "US Congress PTR",
-      "sourceTier": "L1",
-      "disclosureType": "STOCK Act PTR",
-      "sourceLabel": "House Clerk PTR",
-      "indexSourceLabel": "CongressFlow third-party index",
-      "reportDate": "2026-09-15",
-      "previousReportDate": null,
-      "filingDate": "2026-09-28",
-      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035491.pdf",
-      "security": {
-        "ticker": "TJX",
-        "name": "TJX",
-        "cusip": "",
-        "title": "Disclosed range"
-      },
-      "direction": "decrease",
-      "sharesBefore": null,
-      "sharesAfter": null,
-      "sharesDelta": null,
-      "marketValueBefore": null,
-      "marketValueAfter": null,
-      "marketValueDelta": -8000.5,
-      "disclosedAmountRange": "$1,001 - $15,000",
-      "significanceScore": 8000.5,
-      "confidence": "medium",
-      "staleDisclosure": false,
-      "narrative": "Kevin Hern 通过 US Congress PTR 减持 TJX / TJX。交易日 2026-09-15。"
-    },
-    {
       "id": "congress-2026-09-28-2026-09-14-kevin-hern-EMR-Sell",
       "market": "us",
       "investorId": "us_congress",
@@ -9308,138 +9143,6 @@
       "confidence": "medium",
       "staleDisclosure": false,
       "narrative": "Kevin Hern 通过 US Congress PTR 减持 EMR / EMR。交易日 2026-09-14。"
-    },
-    {
-      "id": "congress-2026-09-28-2026-09-14-kevin-hern-HD-Sell",
-      "market": "us",
-      "investorId": "us_congress",
-      "investorName": "Kevin Hern",
-      "vehicleName": "US Congress PTR",
-      "sourceTier": "L1",
-      "disclosureType": "STOCK Act PTR",
-      "sourceLabel": "House Clerk PTR",
-      "indexSourceLabel": "CongressFlow third-party index",
-      "reportDate": "2026-09-14",
-      "previousReportDate": null,
-      "filingDate": "2026-09-28",
-      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035491.pdf",
-      "security": {
-        "ticker": "HD",
-        "name": "HD",
-        "cusip": "",
-        "title": "Disclosed range"
-      },
-      "direction": "decrease",
-      "sharesBefore": null,
-      "sharesAfter": null,
-      "sharesDelta": null,
-      "marketValueBefore": null,
-      "marketValueAfter": null,
-      "marketValueDelta": -8000.5,
-      "disclosedAmountRange": "$1,001 - $15,000",
-      "significanceScore": 8000.5,
-      "confidence": "medium",
-      "staleDisclosure": false,
-      "narrative": "Kevin Hern 通过 US Congress PTR 减持 HD / HD。交易日 2026-09-14。"
-    },
-    {
-      "id": "congress-2026-09-28-2026-09-14-kevin-hern-MRSH-Sell",
-      "market": "us",
-      "investorId": "us_congress",
-      "investorName": "Kevin Hern",
-      "vehicleName": "US Congress PTR",
-      "sourceTier": "L1",
-      "disclosureType": "STOCK Act PTR",
-      "sourceLabel": "House Clerk PTR",
-      "indexSourceLabel": "CongressFlow third-party index",
-      "reportDate": "2026-09-14",
-      "previousReportDate": null,
-      "filingDate": "2026-09-28",
-      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035491.pdf",
-      "security": {
-        "ticker": "MRSH",
-        "name": "MRSH",
-        "cusip": "",
-        "title": "Disclosed range"
-      },
-      "direction": "decrease",
-      "sharesBefore": null,
-      "sharesAfter": null,
-      "sharesDelta": null,
-      "marketValueBefore": null,
-      "marketValueAfter": null,
-      "marketValueDelta": -8000.5,
-      "disclosedAmountRange": "$1,001 - $15,000",
-      "significanceScore": 8000.5,
-      "confidence": "medium",
-      "staleDisclosure": false,
-      "narrative": "Kevin Hern 通过 US Congress PTR 减持 MRSH / MRSH。交易日 2026-09-14。"
-    },
-    {
-      "id": "congress-2026-09-28-2026-09-10-kevin-hern-NVO-Sell",
-      "market": "us",
-      "investorId": "us_congress",
-      "investorName": "Kevin Hern",
-      "vehicleName": "US Congress PTR",
-      "sourceTier": "L1",
-      "disclosureType": "STOCK Act PTR",
-      "sourceLabel": "House Clerk PTR",
-      "indexSourceLabel": "CongressFlow third-party index",
-      "reportDate": "2026-09-10",
-      "previousReportDate": null,
-      "filingDate": "2026-09-28",
-      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035491.pdf",
-      "security": {
-        "ticker": "NVO",
-        "name": "NVO",
-        "cusip": "",
-        "title": "Disclosed range"
-      },
-      "direction": "decrease",
-      "sharesBefore": null,
-      "sharesAfter": null,
-      "sharesDelta": null,
-      "marketValueBefore": null,
-      "marketValueAfter": null,
-      "marketValueDelta": -8000.5,
-      "disclosedAmountRange": "$1,001 - $15,000",
-      "significanceScore": 8000.5,
-      "confidence": "medium",
-      "staleDisclosure": false,
-      "narrative": "Kevin Hern 通过 US Congress PTR 减持 NVO / NVO。交易日 2026-09-10。"
-    },
-    {
-      "id": "congress-2026-09-28-2026-09-10-kevin-hern-ETN-Sell",
-      "market": "us",
-      "investorId": "us_congress",
-      "investorName": "Kevin Hern",
-      "vehicleName": "US Congress PTR",
-      "sourceTier": "L1",
-      "disclosureType": "STOCK Act PTR",
-      "sourceLabel": "House Clerk PTR",
-      "indexSourceLabel": "CongressFlow third-party index",
-      "reportDate": "2026-09-10",
-      "previousReportDate": null,
-      "filingDate": "2026-09-28",
-      "evidenceUrl": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035491.pdf",
-      "security": {
-        "ticker": "ETN",
-        "name": "ETN",
-        "cusip": "",
-        "title": "Disclosed range"
-      },
-      "direction": "decrease",
-      "sharesBefore": null,
-      "sharesAfter": null,
-      "sharesDelta": null,
-      "marketValueBefore": null,
-      "marketValueAfter": null,
-      "marketValueDelta": -8000.5,
-      "disclosedAmountRange": "$1,001 - $15,000",
-      "significanceScore": 8000.5,
-      "confidence": "medium",
-      "staleDisclosure": false,
-      "narrative": "Kevin Hern 通过 US Congress PTR 减持 ETN / ETN。交易日 2026-09-10。"
     },
     {
       "id": "cathiesark-2026-09-24T00:00:00.000Z-ARKG-SCTX-Buy-39149",
